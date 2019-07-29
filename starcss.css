@@ -22,14 +22,6 @@ a {
     color: #007bff;
 }
 
-.trans_02{
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;  
-}   
-
 /*Buttons */
 .btn, 
 .button, 
@@ -2039,6 +2031,46 @@ input[type='button'] {
 .r_2 {
     border-radius: 2px !important;
 }
+
+.trans_01{
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;  
+}  
+
+.trans_02{
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;  
+}   
+
+.trans_03{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;  
+}   
+
+.trans_04{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;  
+}  
+
+.trans_05{
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;  
+}  
  
 /*Site Logo*/ 
 .site_logo {
@@ -2834,7 +2866,6 @@ input[type='button'] {
 
 
 
-/*Responsive Start*/
 
 
 /*Mobile Responsive*/ 
