@@ -1,11 +1,19 @@
-/*      Start CSS: In a CSS library to design a Website in short amount of time;      */
-/*      Created By: Shrikant Yadav              */  
-/*      Contact: shrikant9907@gmail.com         */
-/*      Web Developer and Desinger              */ 
-/*      Version: 1.5.1                          */    
+/*      Start CSS       : In a CSS library to design a Website in short amount of time.     */
+/*      Created By      : Shrikant Yadav                                                    */  
+/*      Contact         : shrikant9907@gmail.com                                            */
+/*      Web Developer and Desinger                                                          */ 
+/*      Version: 1.5.1                                                                      */    
  
 * {
     outline: none !important; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #494949;
 }
 
 img {
@@ -22,7 +30,37 @@ a {
     color: #007bff;
 }
 
+/*Containers*/
+.container_1050 {
+    max-width: 1050px;
+}
+
+.container_1000 {
+    max-width: 1000px;
+}
+
+.container_950 {
+    max-width: 950px;
+}
+
+.container_900 {
+    max-width: 900px;
+}
+
+.container_850 {
+    max-width: 850px;
+}
+
+.container_800 {
+    max-width: 800px;
+}
+
 /*Buttons */
+.btn-primary.focus, 
+.btn-primary:focus {
+    box-shadow: none;
+}
+
 .btn, 
 .button, 
 button, 
@@ -186,6 +224,43 @@ input[type='button'] {
     top: 50%;
     margin-top: -2px;
     height: 3px;
+} 
+
+/*Heading Style*/
+.heading_style.type_2 {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.heading_style.type_2:before {
+    display: block;
+    content: "";
+    border-top: 3px solid #007bff;
+    border-bottom: none;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-width: 36px;
+    top: unset;
+    margin-top: -2px;
+    height: 0;
+    bottom: -20px;
+}
+
+.heading_style.type_2.text-center:before {
+    left: 50%;
+    margin-left: -25px;    
+}
+
+
+.heading_style.type_2.text-white:before {
+    border-color:#ffffff;   
 } 
 
 /*section*/
@@ -1823,15 +1898,18 @@ input[type='button'] {
     max-height: 600px;
 }
 
+.overflow_hidden,
 .box_scroll_hidden {
     overflow: hidden;
 }
 
+.overflow_x_hidden,
 .box_x_scrollable {
     overflow: hidden;
     overflow-x: scroll !important;
 }
 
+.overflow_y_hidden,
 .box_y_scrollable {
     overflow: hidden;
     overflow-y: scroll !important; 
@@ -2072,29 +2150,3 @@ input[type='button'] {
     transition: all 0.5s ease-out;  
 }  
  
-/*Site Logo*/ 
-.site_logo {
-    padding: 0; 
-    width: 100%;
-    border-radius: 4px;
-    margin: 12px 0; 
-}
-
-.site_logo a {
-    text-decoration: none;
-}
-
-.logo_wr img {
-    width: 200px;
-}
-
-.site_logo span.logo_text {
-    display: block;
-    line-height: 28px;
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: bold;
-    color: black;
-} 
-
-

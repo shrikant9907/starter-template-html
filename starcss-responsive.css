@@ -1,4 +1,19 @@
 
+/*Responsive*/
+
+@media all and (min-width: 787px) {
+
+    .scrolled header .text-white {
+        color: #fff !important;
+    }
+
+    .scrolled .go_top_arrow {
+        display: block;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
 
 /*Mobile Responsive*/ 
 @media all and (max-width: 500px) {
