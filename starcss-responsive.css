@@ -33,13 +33,21 @@
 
 }
 
-    /*Tablet*/
+/*Tablet*/
 @media all and (max-width: 786px) {
     
     .navbar-toggler {
         background: #fff;
+        border: unset;
         position: static !important;
         padding: 2px 3px 3px 3px;    
+        top: -55px;
+        right: 0px;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 20px;
+        padding: 6px 5px;
     }
 
     .header_mobile_control {
@@ -49,19 +57,6 @@
 
     .logo_text {
         text-align: right;
-    }
-
-     .navbar-toggler {
-        background: #fff;
-        padding: 4px;
-        position: absolute;
-        top: -55px;
-        right: 0px;
-    }
-    
-    .navbar-toggler-icon {
-        font-size: 20px;
-        padding: 6px 5px;
     }
 
     header .navbar-nav .nav-link {
