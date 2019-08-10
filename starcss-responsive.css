@@ -71,14 +71,14 @@
         color: #343a40 !important; 
     }
 
-    
+
     .header_mobile_control .navbar.navbar-expand-lg {
             width: 100%;
     }
 
     .header_mobile_control .navbar.navbar-expand-lg  #navbarNavDropdown{
             background: #fff;
-            padding: 0 0 50px 0;
+            padding: 0 0 30px 0;
     }
  
 }
