@@ -3,6 +3,12 @@
 
 @media all and (min-width: 787px) {
 
+    .scrolled .logo_text {
+        font-size: 18px;
+        line-height: 18px;
+        color: #494949 !important;
+    } 
+
     .scrolled header .text-white {
         color: #fff !important;
     }
