@@ -9,8 +9,20 @@
         color: #494949 !important;
     } 
 
-    .scrolled header .text-white {
-        color: #fff !important;
+    .scrolled header {
+        background: #ffffff;
+    }
+
+    .scrolled .logo_text {
+        font-size: 18px;
+        line-height: 18px;
+        color: #494949 !important;
+        padding-top: 14px !important;
+    }
+
+    .scrolled header .navbar-nav a.nav-link {
+        padding: 18px 24px !important;
+        color: #494948;
     }
 
     .scrolled .go_top_arrow {
