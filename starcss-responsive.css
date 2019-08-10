@@ -70,6 +70,16 @@
         border-top: 1px solid #f2f2f2;
         color: #343a40 !important; 
     }
+
+    
+    .header_mobile_control .navbar.navbar-expand-lg {
+            width: 100%;
+    }
+
+    .header_mobile_control .navbar.navbar-expand-lg  #navbarNavDropdown{
+            background: #fff;
+            padding: 0 0 50px 0;
+    }
  
 }
 
@@ -105,14 +115,6 @@
         padding: 10px !important;
     }
     
-    .header_mobile_control .navbar.navbar-expand-lg {
-            width: 100%;
-    }
-
-    .header_mobile_control .navbar.navbar-expand-lg  #navbarNavDropdown{
-            background: #fff;
-            padding: 0 0 50px 0;
-    }
          
     div.city_select {
         width: 100%;
