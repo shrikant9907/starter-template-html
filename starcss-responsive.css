@@ -38,7 +38,6 @@
     
     .navbar-toggler {
         background: #fff;
-        border: unset;
         position: static !important;
         padding: 2px 3px 3px 3px;    
     }
