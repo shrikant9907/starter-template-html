@@ -30,6 +30,50 @@
         bottom: 10px;
         right: 10px;
     }
+
+}
+
+/*Tablet*/
+@media all and (max-width: 786px) {
+    
+    .navbar-toggler {
+        background: #fff;
+        border: unset;
+        position: static !important;
+        padding: 2px 3px 3px 3px;    
+    }
+
+    .header_mobile_control {
+        position: absolute;
+        top: 14px;
+    }
+
+    .logo_text {
+        text-align: right;
+    }
+
+     .navbar-toggler {
+            background: #fff;
+            border: 1px solid #e64a19;
+            padding: 4px;
+            position: absolute;
+            top: -55px;
+            right: 0px;
+    }
+    
+    .navbar-toggler-icon {
+        font-size: 20px;
+        padding: 6px 5px;
+    }
+
+    header .navbar-nav .nav-link {
+        padding: 10px 15px !important;
+        display: block;
+        text-align: left;
+        border-top: 1px solid #f2f2f2;
+        color: #343a40 !important; 
+    }
+
 }
 
 
@@ -50,21 +94,6 @@
             max-width: 100%;
     }
     
-    .navbar-toggler {
-            background: #fff;
-            border: 1px solid #e64a19;
-            padding: 4px;
-            position: absolute;
-            top: -55px;
-            right: 0px;
-    }
-    
-    .navbar-toggler-icon {
-        color: #ff5722;
-        font-size: 20px;
-        padding: 6px 5px;
-    }
-    
     
     header#main_header { 
         position: fixed !important;
@@ -77,10 +106,6 @@
     .scrolled a.nav-link,
     .header_menus .nav-link {
         padding: 10px !important;
-        display: block;
-        text-align: left;
-        border-top: 1px solid #f2f2f2;
-        color: #343a40 !important; 
     }
     
     .header_mobile_control .navbar.navbar-expand-lg {
