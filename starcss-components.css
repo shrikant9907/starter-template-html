@@ -816,8 +816,8 @@ section.banner_section .banner_card:before {
  
 ul.social_links2,
 .social_links2 ul {
-    margin: 0;
-    padding: 0;
+    margin: 0  !important;
+    padding: 0 !important;
     clear: both;
     display: inline-block;
     width: 100%;
@@ -840,6 +840,11 @@ ul.social_links2 li,
     -o-transition: all .5s ease;
     transition: all .5s ease;
     margin:0 0 5px 0;
+}
+
+ul.social_links2 li:before,  
+.social_links2 ul li:before {
+    display: none;
 }
 
 ul.social_links2 li a,
