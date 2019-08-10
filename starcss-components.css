@@ -771,11 +771,6 @@ section.banner_section .banner_card:before {
     content: ' ';
     margin-right: 5px;
 }
-
-.card.widget_card .card-body ul li a {
-    color: #174BDA;
-    font-weight: 600;
-}
  
 /*Social Links*/
 .social_links {
