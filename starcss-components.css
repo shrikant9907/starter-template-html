@@ -726,6 +726,32 @@ section.banner_section .banner_card:before {
     margin: 0px auto 12px auto;		
 } 
 
+/*Sidebar Widget*/
+.card.widget_card {
+    margin: 0 0 20px 0;
+    box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.7);
+} 
+
+.card.widget_card .card-header {
+    overflow: hidden;
+}
+
+.card.widget_card .card-header h5,
+.card.widget_card .card-header h4,
+.card.widget_card .card-header h3 {
+    margin:0px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.card.widget_card .card-body {
+    padding-bottom: 8px !important;
+}
+
+.card.widget_card .card-body ul {
+    list-style: outside none none;
+}
+ 
 /*Social Links*/
 .social_links {
     clear: both;
@@ -781,12 +807,12 @@ section.banner_section .banner_card:before {
     background-color: #EA4235;
     width: 20%;
     float: left;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
-        transition: all .5s ease;
-        margin:0px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    margin:0 0 5px 0;
 }
 
 .social_links2 ul li a {
