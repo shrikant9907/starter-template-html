@@ -30,6 +30,10 @@ a {
     color: #007bff;
 }
 
+.t_deco_none {    
+    text-decoration: none;
+}
+
 /*Containers*/
 .container_1050 {
     max-width: 1050px;
@@ -1821,8 +1825,8 @@ input[type='button'] {
 
 .w_30 {
     width: 30px;
-    max-width: 100%; 
-} 
+    max-width: 100%;
+ } 
  
 .w_20 {
     width: 20px;
