@@ -1789,6 +1789,56 @@ input[type='button'] {
     max-width: 100%;
 }  
 
+.w_90 {
+    width: 90px;
+    max-width: 100%;
+}
+
+.w_80 {
+    width: 80px;
+    max-width: 100%;
+}
+
+.w_70 {
+    width: 70px;
+    max-width: 100%;
+}
+ 
+.w_60 {
+    width: 60px;
+    max-width: 100%;
+}
+
+.w_50 {
+    width: 50px;
+    max-width: 100%;
+}
+
+.w_40 {
+    width: 40px;
+    max-width: 100%;
+}
+
+.w_30 {
+    width: 30px;
+    max-width: 100%; 
+} 
+ 
+.w_20 {
+    width: 20px;
+    max-width: 100%;
+}
+ 
+.w_10 { 
+    width: 10px;
+    max-width: 100%;
+}
+
+.w_5 { 
+    width: 5px;
+    max-width: 100%;
+}
+
 .w_0 { 
     width: 0px !important;
 }   
