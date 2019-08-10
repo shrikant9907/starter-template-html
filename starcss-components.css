@@ -813,7 +813,8 @@ section.banner_section .banner_card:before {
 .social_links.boxed.rounded a {
     border-radius: 100%;
 }
-
+ 
+ul.social_links2,
 .social_links2 ul {
     margin: 0;
     padding: 0;
@@ -828,6 +829,7 @@ section.banner_section .banner_card:before {
     transition: all .5s ease;
 } 
 
+ul.social_links2 li,
 .social_links2 ul li {
     background-color: #EA4235;
     width: 20%;
@@ -840,15 +842,16 @@ section.banner_section .banner_card:before {
     margin:0 0 5px 0;
 }
 
+ul.social_links2 li a,
 .social_links2 ul li a {
     height: 40px;
     line-height: 40px;
-        color:#ffffff !important;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
-        transition: all .5s ease;
+    color:#ffffff !important;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .social_links2 li#facebook{
@@ -862,15 +865,17 @@ section.banner_section .banner_card:before {
 .social_links2 li#twitter{
     background-color:#00acec;   
 }
-
+ 
 .social_links2 li#instagram{ 
     background-color:#527fa4;   
 }
 
+ul.social_links2:hover li,
 .social_links2 ul:hover li {
         width: 18%;
 }
 
+ul.social_links2 li:hover,
 .social_links2 ul li:hover {
     width: 28%;
         -moz-transform: scale(1.1);
@@ -881,7 +886,6 @@ section.banner_section .banner_card:before {
         position: relative;
         z-index: 2;
 }
-
 
 /* Scroll Down */ 
 .mouse_scroll_down {
