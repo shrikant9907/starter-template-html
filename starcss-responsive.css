@@ -59,7 +59,7 @@
         text-align: right;
     }
 
-    header .navbar-nav .nav-link {
+    header .navbar-expand-lg .navbar-nav .nav-link {
         padding: 10px 15px !important;
         display: block;
         text-align: left;
