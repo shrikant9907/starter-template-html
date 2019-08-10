@@ -749,6 +749,32 @@ section.banner_section .banner_card:before {
 
 .card.widget_card .card-body ul {
     list-style: outside none none;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+.card.widget_card .card-body ul li {
+    position: relative;
+    margin: 0 0 12px 0;
+}
+
+.card.widget_card .card-body ul li::before {
+    position: absolute;
+    top: 8px;
+    left: -23px;
+    border: none;
+    border-top: 1px solid #174BDA;
+    border-right: 1px solid #174BDA;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    content: ' ';
+    margin-right: 5px;
+}
+
+.card.widget_card .card-body ul li a {
+    color: #174BDA;
+    font-weight: 600;
 }
  
 /*Social Links*/
