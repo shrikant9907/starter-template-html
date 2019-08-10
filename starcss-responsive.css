@@ -53,12 +53,11 @@
     }
 
      .navbar-toggler {
-            background: #fff;
-            border: 1px solid #e64a19;
-            padding: 4px;
-            position: absolute;
-            top: -55px;
-            right: 0px;
+        background: #fff;
+        padding: 4px;
+        position: absolute;
+        top: -55px;
+        right: 0px;
     }
     
     .navbar-toggler-icon {
