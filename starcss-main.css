@@ -28,10 +28,23 @@ p {
 .link,
 a {
     color: #007bff;
-}
+} 
 
+/*Text Decoration*/
+.t_d_n, 
+.tdn,
 .t_deco_none {    
     text-decoration: none !important;
+}
+
+
+/*Element Center*/
+.mx_auto {
+    margin: 0 auto;
+}  
+
+.mx_auto_i {
+    margin: 0 auto !important;
 }
 
 /*Containers*/
@@ -57,6 +70,22 @@ a {
 
 .container_800 {
     max-width: 800px;
+}
+
+.container_750 {
+    max-width: 750px;
+}
+
+.container_700 {
+    max-width: 700px;
+}
+
+.container_650 {
+    max-width: 650px;
+}
+
+.container_600 {
+    max-width: 600px;
 }
 
 /*Buttons */
@@ -2063,6 +2092,30 @@ input[type='button'] {
     top: unset !important;
 }
 
+/*Absolute*/
+.absolute,
+.p_absolute,
+.position-absolute,
+.position_absolute {
+    position: absolute !important;
+}
+
+/*Relative*/
+.relative,
+.p_relative,
+.position-relative,
+.position_relative {
+    position: relative !important;
+}
+
+/*Static*/
+.static,
+.p_static,
+.position-static,
+.position_static {
+    position: static !important;
+}
+
 /*Box Shadow*/
 .box_shw, 
 .box_shw1 {
@@ -2244,13 +2297,13 @@ input[type='button'] {
     overflow: hidden;
 }
 
-.overflow_x_hidden,
+.overflow_x_scroll,
 .box_x_scrollable {
     overflow: hidden;
     overflow-x: scroll !important;
 }
 
-.overflow_y_hidden,
+.overflow_y_scroll,
 .box_y_scrollable {
     overflow: hidden;
     overflow-y: scroll !important; 
@@ -2275,12 +2328,6 @@ input[type='button'] {
 
 .hover_scale_15:hover {
     transform: scale(1.5);
-}
-
-/*Text Decoration*/
-.t_d_n, 
-.tdn {
-    text-decoration: none !important;
 }
 
 /*Cursor*/ 
@@ -2389,6 +2436,19 @@ input[type='button'] {
     line-height: 70px !important;
 } 
 
+.f_l_h_80 {
+    line-height: 80px !important;
+} 
+
+.f_l_h_90 {
+    line-height: 90px !important;
+} 
+
+.f_l_h_100 {
+    line-height: 100px !important;
+} 
+
+
 /*Border*/
 .border_top_1 {
     border-top: 1px solid rgba(0,0,0,.125) !important;
@@ -2451,6 +2511,14 @@ input[type='button'] {
     border-radius: 2px !important;
 }
 
+.r_1 {
+    border-radius: 1px !important;
+}
+
+.r_0 {
+    border-radius: 0px !important;
+}
+
 .trans_01{
     -webkit-transition: all 0.1s ease-out;
     -moz-transition: all 0.1s ease-out;
@@ -2489,5 +2557,4 @@ input[type='button'] {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;  
-}  
- 
+} 
