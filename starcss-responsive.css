@@ -83,10 +83,14 @@
         top: 0;
         bottom: 0;
         background: #fff !important;
-        padding-top: 57px 0 0 0 !important;
+        padding: 57px 0 0 0 !important;
         box-shadow: 50vw 5px 1px 0 rgba(0,0,0,0.4);
         height: 100%;
         width: 0px;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
         overflow: hidden;
     }
 
