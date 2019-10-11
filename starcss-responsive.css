@@ -82,10 +82,17 @@
         left: 0;
         top: 0;
         bottom: 0;
-        background: #fff;
-        width: 300px;
-        padding-top: 57px;
+        background: #fff !important;
+        padding-top: 57px 0 0 0 !important;
         box-shadow: 50vw 5px 1px 0 rgba(0,0,0,0.4);
+        height: 100%;
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .navbar.navbar-expand-lg .navbar-collapse.show {
+        width: 300px;
+        overflow: visible;
     }
 
     .header_mobile_control .navbar.navbar-expand-lg {
