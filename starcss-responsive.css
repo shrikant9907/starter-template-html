@@ -76,7 +76,7 @@
         display: block !important;
     }
 
-    .navbar.navbar-expand-lg .navbar-nav {
+    .navbar.navbar-expand-lg .navbar-collapse {
         max-width: 100%;
         position: fixed;
         left: 0;
