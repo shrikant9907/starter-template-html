@@ -2239,6 +2239,8 @@ input[type='button'] {
     max-height: 600px;
 }
 
+
+/*Over Flow*/
 .overflow_hidden,
 .box_scroll_hidden {
     overflow: hidden;
@@ -2254,6 +2256,15 @@ input[type='button'] {
 .box_y_scrollable {
     overflow: hidden;
     overflow-y: scroll !important; 
+}
+
+/*Visibility*/
+.v_hide {
+    visibility: hidden;
+}
+
+.v_visiable {
+    visibility: visible;
 }
 
 /*Hover Effects*/
@@ -2390,21 +2401,33 @@ input[type='button'] {
 } 
 
 /*Border*/
-.border_top_1 {
+.border_t_1 {
     border-top: 1px solid rgba(0,0,0,.125) !important;
 }
 
-.border_bottom_1 {
+.border_b_1 {
     border-bottom: 1px solid rgba(0,0,0,.125) !important;
 }
-  
-.border_top_0 {
+
+.border_t_2 {
+    border-top: 2px solid rgba(0,0,0,.125) !important;
+}
+
+.border_b_2 {
+    border-bottom: 2px solid rgba(0,0,0,.125) !important;
+}
+
+.border_t_0 {
     border-top: none !important;
 }
 
-.border_bottom_0 {
+.border_b_0 {
     border-bottom: none !important;
 }
+
+.border_0 {
+    border: none !important;
+} 
 
 /*rounded*/
 .r_100p {
