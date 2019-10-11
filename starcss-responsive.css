@@ -72,6 +72,9 @@
         color: #343a40 !important; 
     }
 
+    .navbar-collapse {
+        display: block !important;
+    }
 
     .navbar.navbar-expand-lg .navbar-nav {
         max-width: 100%;
@@ -84,7 +87,7 @@
         padding-top: 57px;
         box-shadow: 50vw 5px 1px 0 rgba(0,0,0,0.4);
     }
-    
+
     .header_mobile_control .navbar.navbar-expand-lg {
             width: 100%;
     }
