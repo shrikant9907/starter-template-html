@@ -83,7 +83,6 @@
         top: 0;
         bottom: 0;
         background: #fff !important;
-        padding: 57px 0 0 0 !important;
         box-shadow: 4px 0 5px -2px rgba(0,0,0,0.4);
         height: 100%;
         width: 0px;
@@ -92,6 +91,13 @@
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         overflow: hidden;
+    }
+
+    .navbar.navbar-expand-lg .navbar-collapse ul.navbar-nav {
+        background: #fff;
+        min-height: 100vh;
+        padding: 57px 0 0 0 !important;
+        height: 100%;
     }
 
     .navbar.navbar-expand-lg .navbar-collapse::after {
