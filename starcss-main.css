@@ -2100,6 +2100,122 @@ input[type='button'] {
     position: absolute !important;
 }
 
+/*Positions*/
+.top_5 {
+    top:5px;
+}
+
+.top_10 {
+    top:10px;
+}
+
+.top_15 {
+    top:15px;
+}
+
+.top_20 {
+    top:20px;
+}
+
+.top_25 {
+    top:25px;
+}
+
+.top_30 {
+    top:30px;
+}
+
+/*Bottom*/
+.bottom_5 {
+    bottom:5px;
+}
+
+.bottom_10 {
+    bottom:10px;
+}
+
+.bottom_15 {
+    bottom:15px;
+}
+
+.bottom_20 {
+    bottom:20px;
+}
+
+.bottom_25 {
+    bottom:25px;
+}
+
+.bottom_30 {
+    bottom:30px;
+}
+
+/*Right*/
+.right_5 {
+    right:5px;
+}
+
+.right_10 {
+    right:10px;
+}
+
+.right_15 {
+    right:15px;
+}
+
+.right_20 {
+    right:20px;
+}
+
+.right_25 {
+    right:25px;
+}
+
+.right_30 {
+    right:30px;
+}
+.left_5 {
+    left:5px;
+}
+
+.left_10 {
+    left:10px;
+}
+
+.left_15 {
+    left:15px;
+}
+
+.left_20 {
+    left:20px;
+}
+
+.left_25 {
+    left:25px;
+}
+
+.left_30 {
+    left:30px;
+}
+
+/*Postion: unset*/
+.top_unset {
+    top:unset;
+}
+
+.bottom_unset {
+    bottom:unset;
+}
+
+.right_unset {
+    right:unset;
+}
+
+.left_unset {
+    left:unset;
+}
+
+
 /*Relative*/
 .relative,
 .p_relative,
@@ -2231,7 +2347,7 @@ input[type='button'] {
     height: 1000px;
 }
 
-
+/*Min Height*/
 .box_vheight_100,
 .vh_100,
 .box_height_100_ {
@@ -2268,6 +2384,7 @@ input[type='button'] {
     min-height: 600px;
 }
 
+/*Max Height*/
 .mx_h_100 {
     max-height: 100px;
 }
@@ -2312,11 +2429,14 @@ input[type='button'] {
 }
 
 /*Visibility*/
+.hidden,
+.hide,
 .v_hide {
     visibility: hidden;
 }
 
-.v_visiable {
+.visible,
+.v_visible {
     visibility: visible;
 }
 
