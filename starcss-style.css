@@ -38,11 +38,46 @@ a {
 }
 
 
+/*Display*/
+.d_block {
+    display: block;
+}
+
+.d_none {
+    display:none;
+}
+
+.d_flex {
+    display:flex;
+}
+
+.d_i_block {
+    display: inline-block;
+}
+
+/*Display with Important;*/
+.di_block {
+    display: block !important;
+}
+
+.di_none {
+    display:none !important;
+}
+
+.di_flex {
+    display:flex !important;
+}
+
+.di_i_block {
+    display: inline-block !important;
+}
+
 /*Element Center*/
 .mx_auto {
     margin: 0 auto;
 }  
 
+.mxi_auto,
 .mx_auto_i {
     margin: 0 auto !important;
 }
