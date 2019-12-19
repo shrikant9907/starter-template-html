@@ -1,0 +1,119 @@
+* {
+  outline: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: #494949;
+}
+
+.link,
+a {
+  color: #007bff;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/*Text Decoration*/
+.t_d_n,
+.tdn,
+.t_deco_none {
+  text-decoration: none !important;
+}
+
+/*Display*/
+.d_block {
+  display: block;
+}
+
+.d_none {
+  display: none;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.d_i_block {
+  display: inline-block;
+}
+
+/*Display with Important;*/
+.di_block {
+  display: block !important;
+}
+
+.di_none {
+  display: none !important;
+}
+
+.di_flex {
+  display: flex !important;
+}
+
+.di_i_block {
+  display: inline-block !important;
+}
+
+/*Element Center*/
+.mx_auto {
+  margin: 0 auto;
+}
+
+.mxi_auto,
+.mx_auto_i {
+  margin: 0 auto !important;
+}
+
+/*Container*/
+.container_600px {
+  max-width: 600px;
+}
+
+.container_650px {
+  max-width: 650px;
+}
+
+.container_700px {
+  max-width: 700px;
+}
+
+.container_750px {
+  max-width: 750px;
+}
+
+.container_800px {
+  max-width: 800px;
+}
+
+.container_850px {
+  max-width: 850px;
+}
+
+.container_900px {
+  max-width: 900px;
+}
+
+.container_950px {
+  max-width: 950px;
+}
+
+.container_1000px {
+  max-width: 1000px;
+}
+
+.container_1050px {
+  max-width: 1050px;
+}
+
+/*# sourceMappingURL=style.css.map */

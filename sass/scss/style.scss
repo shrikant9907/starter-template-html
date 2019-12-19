@@ -1,0 +1,92 @@
+$body_color: #494949;
+$link_color: #007bff;
+
+* {
+    outline: none !important; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+} 
+
+body {
+    color: $body_color;
+}
+
+.link,
+a {
+    color: $link_color;
+} 
+
+p {
+    margin-bottom: 20px; 
+}
+
+/*Text Decoration*/
+.t_d_n, 
+.tdn,
+.t_deco_none {    
+    text-decoration: none !important;
+}
+
+
+/*Display*/
+.d_block {
+    display: block;
+}
+
+.d_none {
+    display:none;
+}
+
+.d_flex {
+    display:flex;
+}
+
+.d_i_block {
+    display: inline-block;
+}
+
+/*Display with Important;*/
+.di_block {
+    display: block !important;
+}
+
+.di_none {
+    display:none !important;
+}
+
+.di_flex {
+    display:flex !important;
+}
+
+.di_i_block {
+    display: inline-block !important;
+}
+
+/*Element Center*/
+.mx_auto {
+    margin: 0 auto;
+}  
+
+.mxi_auto,
+.mx_auto_i {
+    margin: 0 auto !important;
+}
+
+/*Container*/
+@for $i from 1 through 10 {
+
+	$width: 550px;
+    $addwidth: $i*50;
+    $new_width: $width + $addwidth;
+
+    .container_#{$new_width} {
+	    max-width: $new_width;
+	}
+}
