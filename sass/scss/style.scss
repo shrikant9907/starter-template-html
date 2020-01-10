@@ -100,27 +100,64 @@ p {
         $newvalue2: $j*5;
         $finalvalue2: $value2 + $newvalue2;
 
-        .ptb_#{$finalvalue}_#{$finalvalue2} { padding-top: $finalvalue; padding-bottom: $finalvalue2; }
-        .mtb_#{$finalvalue}_#{$finalvalue2} { margin-top: $finalvalue;  margin-bottom: $finalvalue2;  }
+        .ptb_#{$finalvalue}_#{$finalvalue2}, .py_#{$finalvalue}_#{$finalvalue2} { padding-top: $finalvalue+px; padding-bottom: $finalvalue2+px; }
+        .mtb_#{$finalvalue}_#{$finalvalue2}, .my_#{$finalvalue}_#{$finalvalue2} { margin-top: $finalvalue+px;  margin-bottom: $finalvalue2+px;  }
     }
 
-    .pl_#{$finalvalue} { padding-left: $finalvalue; }
-    .pr_#{$finalvalue} { padding-right: $finalvalue; }
-    .pt_#{$finalvalue} { padding-top: $finalvalue; }
-    .pb_#{$finalvalue} { padding-bottom: $finalvalue; }
-    .pli_#{$finalvalue} { padding-left: $finalvalue !Important }
-    .pri_#{$finalvalue} { padding-right: $finalvalue !Important }
-    .pti_#{$finalvalue} { padding-top: $finalvalue !Important }
-    .pbi_#{$finalvalue} { padding-bottom: $finalvalue !Important }
-    .plr_#{$finalvalue} { padding-left: $finalvalue; padding-right: $finalvalue; }
-    .mt_#{$finalvalue} { margin-top: $finalvalue; }
-    .ml_#{$finalvalue} { margin-left: $finalvalue; }
-    .mr_#{$finalvalue} { margin-right: $finalvalue; }
-    .mb_#{$finalvalue} { margin-bottom: $finalvalue; }
-    .mtn_#{$finalvalue} { margin-top: -$finalvalue; }
-    .mln_#{$finalvalue} { margin-left: -$finalvalue; }
-    .mrn_#{$finalvalue} { margin-right: -$finalvalue; }
-    .mbn_#{$finalvalue} { margin-bottom: -$finalvalue; }
-    .mlr_#{$finalvalue} { margin-left: $finalvalue; margin-right: $finalvalue; }
+    .pl_#{$finalvalue} { padding-left: $finalvalue+px; }
+    .pr_#{$finalvalue} { padding-right: $finalvalue+px; }
+    .pt_#{$finalvalue} { padding-top: $finalvalue+px; }
+    .pb_#{$finalvalue} { padding-bottom: $finalvalue+px; }
+    .pli_#{$finalvalue} { padding-left: $finalvalue+px !Important }
+    .pri_#{$finalvalue} { padding-right: $finalvalue+px !Important }
+    .pti_#{$finalvalue} { padding-top: $finalvalue+px !Important }
+    .pbi_#{$finalvalue} { padding-bottom: $finalvalue+px !Important }
+    .plr_#{$finalvalue}, .px_#{$finalvalue} { padding-left: $finalvalue+px; padding-right: $finalvalue+px; }
+
+    .mt_#{$finalvalue} { margin-top: $finalvalue+px; }
+    .ml_#{$finalvalue} { margin-left: $finalvalue+px; }
+    .mr_#{$finalvalue} { margin-right: $finalvalue+px; }
+    .mb_#{$finalvalue} { margin-bottom: $finalvalue+px; }
+    .mtn_#{$finalvalue} { margin-top: -$finalvalue+px; }
+    .mln_#{$finalvalue} { margin-left: -$finalvalue+px; }
+    .mrn_#{$finalvalue} { margin-right: -$finalvalue+px; }
+    .mbn_#{$finalvalue} { margin-bottom: -$finalvalue+px; }
+    .mlr_#{$finalvalue}, .mx_#{$finalvalue} { margin-left: $finalvalue+px; margin-right: $finalvalue+px; }
+
+    .mbn_#{$finalvalue} { margin-bottom: -$finalvalue+px; }
+
+    .w_#{$finalvalue} { width:  $finalvalue+px; max-width:  100% }
+    .h_#{$finalvalue} { height: $finalvalue+px; }
+
+}
+
+
+@for $i from 2 through 20 {
+
+    $wvalue: 0;
+    $wnewvalue: $i*100;
+    $finalwvalue: $wvalue + $wnewvalue;
+    .w_#{$finalwvalue} { width:  $finalwvalue+px; max-width:  100% }
+
+}
+
+@for $i from 1 through 20 {
+
+    $wvalue: 0;
+    $per: '%';
+    $wnewvalue: $i*5;
+    $finalwvalue: $wvalue + $wnewvalue;
+    .w_#{$finalwvalue}p { width:  $finalwvalue+$per}
+
+}
+
+@for $i from 5 through 40 {
+
+    $wvalue: 0;
+    $wnewvalue: $i*25;
+    $finalwvalue: $wvalue + $wnewvalue;
+    .h_#{$finalwvalue} { height: $finalwvalue+px; }
+    .min_h_#{$finalwvalue} { min-height: $finalwvalue+px; }
+    .max_h_#{$finalwvalue} { max-height: $finalwvalue+px; }
 
 }
