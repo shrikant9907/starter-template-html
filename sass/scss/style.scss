@@ -28,9 +28,7 @@ p {
 }
 
 /*Text Decoration*/
-.t_d_n, 
-.tdn,
-.t_deco_none {    
+.tdn {    
     text-decoration: none !important;
 }
 
@@ -53,19 +51,19 @@ p {
 }
 
 /*Display with Important;*/
-.di_block {
+.d_blocki {
     display: block !important;
 }
 
-.di_none {
+.d_nonei {
     display:none !important;
 }
 
-.di_flex {
+.d_flexi {
     display:flex !important;
 }
 
-.di_i_block {
+.d_i_blocki {
     display: inline-block !important;
 }
 
@@ -74,7 +72,6 @@ p {
     margin: 0 auto;
 }  
 
-.mxi_auto,
 .mx_auto_i {
     margin: 0 auto !important;
 }
@@ -89,4 +86,41 @@ p {
     .container_#{$new_width} {
 	    max-width: $new_width;
 	}
+}
+
+/* value */
+@for $i from 0 through 20 {
+
+    $value: 0;
+    $newvalue: $i*5;
+    $finalvalue: $value + $newvalue;
+
+    @for $j from 0 through $i {
+        $value2: 0;
+        $newvalue2: $j*5;
+        $finalvalue2: $value2 + $newvalue2;
+
+        .ptb_#{$finalvalue}_#{$finalvalue2} { padding-top: $finalvalue; padding-bottom: $finalvalue2; }
+        .mtb_#{$finalvalue}_#{$finalvalue2} { margin-top: $finalvalue;  margin-bottom: $finalvalue2;  }
+    }
+
+    .pl_#{$finalvalue} { padding-left: $finalvalue; }
+    .pr_#{$finalvalue} { padding-right: $finalvalue; }
+    .pt_#{$finalvalue} { padding-top: $finalvalue; }
+    .pb_#{$finalvalue} { padding-bottom: $finalvalue; }
+    .pli_#{$finalvalue} { padding-left: $finalvalue !Important }
+    .pri_#{$finalvalue} { padding-right: $finalvalue !Important }
+    .pti_#{$finalvalue} { padding-top: $finalvalue !Important }
+    .pbi_#{$finalvalue} { padding-bottom: $finalvalue !Important }
+    .plr_#{$finalvalue} { padding-left: $finalvalue; padding-right: $finalvalue; }
+    .mt_#{$finalvalue} { margin-top: $finalvalue; }
+    .ml_#{$finalvalue} { margin-left: $finalvalue; }
+    .mr_#{$finalvalue} { margin-right: $finalvalue; }
+    .mb_#{$finalvalue} { margin-bottom: $finalvalue; }
+    .mtn_#{$finalvalue} { margin-top: -$finalvalue; }
+    .mln_#{$finalvalue} { margin-left: -$finalvalue; }
+    .mrn_#{$finalvalue} { margin-right: -$finalvalue; }
+    .mbn_#{$finalvalue} { margin-bottom: -$finalvalue; }
+    .mlr_#{$finalvalue} { margin-left: $finalvalue; margin-right: $finalvalue; }
+
 }
