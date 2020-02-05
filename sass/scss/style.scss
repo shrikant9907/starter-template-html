@@ -306,6 +306,19 @@ p {
  
 }
 
+
+/*Fonts Line Height*/
+@for $i from 1 through 100 {
+
+    $value: 0;
+    $newvalue: $i*2;
+    $finalvalue: $value + $newvalue;
+
+    .lh_#{$finalvalue} {
+        line-height: $finalvalue+px !important;
+    } 
+}
+
 /*Background */
 @for $i from 0 through 10 {
 
@@ -313,6 +326,53 @@ p {
         
     .bg_b_a_#{$i} { background: rgba(0,0,0,$value); }
     .bg_w_a_#{$i} { background: rgba(255,255,255,$value); }
+ 
+}
+
+
+/* Hover Scale */
+@for $i from 10 through 20 {
+
+    $value: $i/10;
+        
+    .hs_#{$i}:hover {
+        transform: scale($value);
+    }
+ 
+}
+
+/* Rounded */
+@for $i from 0 through 20 {
+
+    $value: $i*5;
+        
+    .r_#{$value} {
+        border-radius: $value+px !important;
+    }
+
+    .r_#{$value}p {
+        border-radius: percentage($value)/100 !important;
+    }
+ 
+}
+
+
+/* Hover Scale */
+@for $i from 10 through 20 {
+
+    $value: $i/10;
+        
+    .hs_#{$i}:hover {
+        transform: scale($value);
+    }
+
+    .trans_#{$i}{
+        -webkit-transition: all $value+s ease-out;
+        -moz-transition: all $value+s ease-out;
+        -ms-transition: all $value+s ease-out;
+        -o-transition: all $value+s ease-out;
+        transition: all $value+s ease-out;  
+    } 
  
 }
 
