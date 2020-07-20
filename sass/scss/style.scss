@@ -302,13 +302,13 @@ p {
     @for $j from 1 through 5 {
         $lhfinalvalue: $finalvalue + $j*2;    
         .f_#{$finalvalue}_#{$lhfinalvalue} {
-            font-size: $finalvalue;
-            line-height: $lhfinalvalue;
+            font-size: $finalvalue+px;
+            line-height: $lhfinalvalue+px;
         }
 
         .f_#{$finalvalue}_#{$lhfinalvalue}i {
-            font-size: $finalvalue;
-            line-height: $lhfinalvalue !important;
+            font-size: $finalvalue+px;
+            line-height: $lhfinalvalue+px !important;
         }
 
     }
