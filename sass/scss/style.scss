@@ -102,25 +102,17 @@ p {
 
 /* Padding */
 @for $i from 0 through 20 {
-
     $value: 0;
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
-
-    @for $j from 0 through $i {
-        $value2: 0;
-        $newvalue2: $j*5;
-        $finalvalue2: $value2 + $newvalue2;
-
-        .ptb_#{$finalvalue}_#{$finalvalue2}, .py_#{$finalvalue}_#{$finalvalue2} { padding-top: $finalvalue+px; padding-bottom: $finalvalue2+px; }
-    }
 
     .pl_#{$finalvalue} { padding-left: $finalvalue+px; }
     .pr_#{$finalvalue} { padding-right: $finalvalue+px; }
     .pt_#{$finalvalue} { padding-top: $finalvalue+px; }
     .pb_#{$finalvalue} { padding-bottom: $finalvalue+px; }
     .plr_#{$finalvalue}, .px_#{$finalvalue} { padding-left: $finalvalue+px; padding-right: $finalvalue+px; }
-
+    .ptb_#{$finalvalue}, .py_#{$finalvalue} { padding-top: $finalvalue+px; padding-bottom: $finalvalue+px; }
+    
     .pli_#{$finalvalue} { padding-left: $finalvalue+px !important }
     .pri_#{$finalvalue} { padding-right: $finalvalue+px !important }
     .pti_#{$finalvalue} { padding-top: $finalvalue+px !important }
