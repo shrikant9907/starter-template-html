@@ -1,7 +1,7 @@
 /*      Created By      : Shrikant Yadav                                                    */  
 /*      Contact         : shrikant9907@gmail.com                                            */
 /*      Web Developer and Desinger                                                          */ 
-/*      Version: 2.0  */
+/*      Version         : 2.0                                                               */
 
 
 $body_color: #494949;
@@ -291,41 +291,22 @@ p {
 
 }
 
-
-/*Fonts*/
-@for $i from 1 through 10 {
-
-    $value: 0;
-    $newvalue: $i*10;
-    $finalvalue: $value + $newvalue;
-
-    @for $j from 1 through 5 {
-        $lhfinalvalue: $finalvalue + $j*2;    
-        .f_#{$finalvalue}_#{$lhfinalvalue} {
-            font-size: $finalvalue+px;
-            line-height: $lhfinalvalue+px;
-        }
-
-        .f_#{$finalvalue}_#{$lhfinalvalue}i {
-            font-size: $finalvalue+px;
-            line-height: $lhfinalvalue+px !important;
-        }
-
+/*Fonts Sizes and Line Height*/
+@for $i from 0 through 100 {
+    .f#{$i} {
+        font-size: $i+px;
     }
- 
-}
-
-
-/*Fonts Line Height*/
-@for $i from 1 through 100 {
-
-    $value: 0;
-    $newvalue: $i*2;
-    $finalvalue: $value + $newvalue;
-
-    .lh_#{$finalvalue} {
-        line-height: $finalvalue+px !important;
-    } 
+    .f#{$i}i {
+        font-size: $i+px !important;
+    }
+    
+    .lh#{$i} {
+        line-height: $i+px;
+    }
+    
+    .lh#{$i}i {
+        line-height: $i+px !important;
+    }
 }
 
 /*Background */
