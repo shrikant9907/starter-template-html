@@ -1022,11 +1022,6 @@ p {
 }
 
 /* Margin */
-.mtb_0_0, .my_0_0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .mt_0 {
   margin-top: 0px;
 }
@@ -1064,6 +1059,11 @@ p {
   margin-right: 0px;
 }
 
+.mtb_0, .my_0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mti_0 {
   margin-top: 0px !important;
 }
@@ -1078,16 +1078,6 @@ p {
 
 .mbi_0 {
   margin-bottom: 0px !important;
-}
-
-.mtb_5_0, .my_5_0 {
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-.mtb_5_5, .my_5_5 {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .mt_5 {
@@ -1127,6 +1117,11 @@ p {
   margin-right: 5px;
 }
 
+.mtb_5, .my_5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .mti_5 {
   margin-top: 5px !important;
 }
@@ -1141,21 +1136,6 @@ p {
 
 .mbi_5 {
   margin-bottom: 5px !important;
-}
-
-.mtb_10_0, .my_10_0 {
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-
-.mtb_10_5, .my_10_5 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.mtb_10_10, .my_10_10 {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .mt_10 {
@@ -1195,6 +1175,11 @@ p {
   margin-right: 10px;
 }
 
+.mtb_10, .my_10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .mti_10 {
   margin-top: 10px !important;
 }
@@ -1209,26 +1194,6 @@ p {
 
 .mbi_10 {
   margin-bottom: 10px !important;
-}
-
-.mtb_15_0, .my_15_0 {
-  margin-top: 15px;
-  margin-bottom: 0px;
-}
-
-.mtb_15_5, .my_15_5 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-
-.mtb_15_10, .my_15_10 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.mtb_15_15, .my_15_15 {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .mt_15 {
@@ -1268,6 +1233,11 @@ p {
   margin-right: 15px;
 }
 
+.mtb_15, .my_15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .mti_15 {
   margin-top: 15px !important;
 }
@@ -1282,31 +1252,6 @@ p {
 
 .mbi_15 {
   margin-bottom: 15px !important;
-}
-
-.mtb_20_0, .my_20_0 {
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.mtb_20_5, .my_20_5 {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
-.mtb_20_10, .my_20_10 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.mtb_20_15, .my_20_15 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.mtb_20_20, .my_20_20 {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .mt_20 {
@@ -1346,6 +1291,11 @@ p {
   margin-right: 20px;
 }
 
+.mtb_20, .my_20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .mti_20 {
   margin-top: 20px !important;
 }
@@ -1360,36 +1310,6 @@ p {
 
 .mbi_20 {
   margin-bottom: 20px !important;
-}
-
-.mtb_25_0, .my_25_0 {
-  margin-top: 25px;
-  margin-bottom: 0px;
-}
-
-.mtb_25_5, .my_25_5 {
-  margin-top: 25px;
-  margin-bottom: 5px;
-}
-
-.mtb_25_10, .my_25_10 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.mtb_25_15, .my_25_15 {
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-.mtb_25_20, .my_25_20 {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-
-.mtb_25_25, .my_25_25 {
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .mt_25 {
@@ -1429,6 +1349,11 @@ p {
   margin-right: 25px;
 }
 
+.mtb_25, .my_25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .mti_25 {
   margin-top: 25px !important;
 }
@@ -1443,41 +1368,6 @@ p {
 
 .mbi_25 {
   margin-bottom: 25px !important;
-}
-
-.mtb_30_0, .my_30_0 {
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-
-.mtb_30_5, .my_30_5 {
-  margin-top: 30px;
-  margin-bottom: 5px;
-}
-
-.mtb_30_10, .my_30_10 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.mtb_30_15, .my_30_15 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.mtb_30_20, .my_30_20 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.mtb_30_25, .my_30_25 {
-  margin-top: 30px;
-  margin-bottom: 25px;
-}
-
-.mtb_30_30, .my_30_30 {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .mt_30 {
@@ -1517,6 +1407,11 @@ p {
   margin-right: 30px;
 }
 
+.mtb_30, .my_30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .mti_30 {
   margin-top: 30px !important;
 }
@@ -1531,46 +1426,6 @@ p {
 
 .mbi_30 {
   margin-bottom: 30px !important;
-}
-
-.mtb_35_0, .my_35_0 {
-  margin-top: 35px;
-  margin-bottom: 0px;
-}
-
-.mtb_35_5, .my_35_5 {
-  margin-top: 35px;
-  margin-bottom: 5px;
-}
-
-.mtb_35_10, .my_35_10 {
-  margin-top: 35px;
-  margin-bottom: 10px;
-}
-
-.mtb_35_15, .my_35_15 {
-  margin-top: 35px;
-  margin-bottom: 15px;
-}
-
-.mtb_35_20, .my_35_20 {
-  margin-top: 35px;
-  margin-bottom: 20px;
-}
-
-.mtb_35_25, .my_35_25 {
-  margin-top: 35px;
-  margin-bottom: 25px;
-}
-
-.mtb_35_30, .my_35_30 {
-  margin-top: 35px;
-  margin-bottom: 30px;
-}
-
-.mtb_35_35, .my_35_35 {
-  margin-top: 35px;
-  margin-bottom: 35px;
 }
 
 .mt_35 {
@@ -1610,6 +1465,11 @@ p {
   margin-right: 35px;
 }
 
+.mtb_35, .my_35 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .mti_35 {
   margin-top: 35px !important;
 }
@@ -1624,51 +1484,6 @@ p {
 
 .mbi_35 {
   margin-bottom: 35px !important;
-}
-
-.mtb_40_0, .my_40_0 {
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
-.mtb_40_5, .my_40_5 {
-  margin-top: 40px;
-  margin-bottom: 5px;
-}
-
-.mtb_40_10, .my_40_10 {
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-
-.mtb_40_15, .my_40_15 {
-  margin-top: 40px;
-  margin-bottom: 15px;
-}
-
-.mtb_40_20, .my_40_20 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.mtb_40_25, .my_40_25 {
-  margin-top: 40px;
-  margin-bottom: 25px;
-}
-
-.mtb_40_30, .my_40_30 {
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.mtb_40_35, .my_40_35 {
-  margin-top: 40px;
-  margin-bottom: 35px;
-}
-
-.mtb_40_40, .my_40_40 {
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .mt_40 {
@@ -1708,6 +1523,11 @@ p {
   margin-right: 40px;
 }
 
+.mtb_40, .my_40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .mti_40 {
   margin-top: 40px !important;
 }
@@ -1722,56 +1542,6 @@ p {
 
 .mbi_40 {
   margin-bottom: 40px !important;
-}
-
-.mtb_45_0, .my_45_0 {
-  margin-top: 45px;
-  margin-bottom: 0px;
-}
-
-.mtb_45_5, .my_45_5 {
-  margin-top: 45px;
-  margin-bottom: 5px;
-}
-
-.mtb_45_10, .my_45_10 {
-  margin-top: 45px;
-  margin-bottom: 10px;
-}
-
-.mtb_45_15, .my_45_15 {
-  margin-top: 45px;
-  margin-bottom: 15px;
-}
-
-.mtb_45_20, .my_45_20 {
-  margin-top: 45px;
-  margin-bottom: 20px;
-}
-
-.mtb_45_25, .my_45_25 {
-  margin-top: 45px;
-  margin-bottom: 25px;
-}
-
-.mtb_45_30, .my_45_30 {
-  margin-top: 45px;
-  margin-bottom: 30px;
-}
-
-.mtb_45_35, .my_45_35 {
-  margin-top: 45px;
-  margin-bottom: 35px;
-}
-
-.mtb_45_40, .my_45_40 {
-  margin-top: 45px;
-  margin-bottom: 40px;
-}
-
-.mtb_45_45, .my_45_45 {
-  margin-top: 45px;
-  margin-bottom: 45px;
 }
 
 .mt_45 {
@@ -1811,6 +1581,11 @@ p {
   margin-right: 45px;
 }
 
+.mtb_45, .my_45 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
 .mti_45 {
   margin-top: 45px !important;
 }
@@ -1825,61 +1600,6 @@ p {
 
 .mbi_45 {
   margin-bottom: 45px !important;
-}
-
-.mtb_50_0, .my_50_0 {
-  margin-top: 50px;
-  margin-bottom: 0px;
-}
-
-.mtb_50_5, .my_50_5 {
-  margin-top: 50px;
-  margin-bottom: 5px;
-}
-
-.mtb_50_10, .my_50_10 {
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
-
-.mtb_50_15, .my_50_15 {
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
-
-.mtb_50_20, .my_50_20 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.mtb_50_25, .my_50_25 {
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-.mtb_50_30, .my_50_30 {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.mtb_50_35, .my_50_35 {
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
-
-.mtb_50_40, .my_50_40 {
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-.mtb_50_45, .my_50_45 {
-  margin-top: 50px;
-  margin-bottom: 45px;
-}
-
-.mtb_50_50, .my_50_50 {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .mt_50 {
@@ -1919,6 +1639,11 @@ p {
   margin-right: 50px;
 }
 
+.mtb_50, .my_50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .mti_50 {
   margin-top: 50px !important;
 }
@@ -1933,66 +1658,6 @@ p {
 
 .mbi_50 {
   margin-bottom: 50px !important;
-}
-
-.mtb_55_0, .my_55_0 {
-  margin-top: 55px;
-  margin-bottom: 0px;
-}
-
-.mtb_55_5, .my_55_5 {
-  margin-top: 55px;
-  margin-bottom: 5px;
-}
-
-.mtb_55_10, .my_55_10 {
-  margin-top: 55px;
-  margin-bottom: 10px;
-}
-
-.mtb_55_15, .my_55_15 {
-  margin-top: 55px;
-  margin-bottom: 15px;
-}
-
-.mtb_55_20, .my_55_20 {
-  margin-top: 55px;
-  margin-bottom: 20px;
-}
-
-.mtb_55_25, .my_55_25 {
-  margin-top: 55px;
-  margin-bottom: 25px;
-}
-
-.mtb_55_30, .my_55_30 {
-  margin-top: 55px;
-  margin-bottom: 30px;
-}
-
-.mtb_55_35, .my_55_35 {
-  margin-top: 55px;
-  margin-bottom: 35px;
-}
-
-.mtb_55_40, .my_55_40 {
-  margin-top: 55px;
-  margin-bottom: 40px;
-}
-
-.mtb_55_45, .my_55_45 {
-  margin-top: 55px;
-  margin-bottom: 45px;
-}
-
-.mtb_55_50, .my_55_50 {
-  margin-top: 55px;
-  margin-bottom: 50px;
-}
-
-.mtb_55_55, .my_55_55 {
-  margin-top: 55px;
-  margin-bottom: 55px;
 }
 
 .mt_55 {
@@ -2032,6 +1697,11 @@ p {
   margin-right: 55px;
 }
 
+.mtb_55, .my_55 {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
 .mti_55 {
   margin-top: 55px !important;
 }
@@ -2046,71 +1716,6 @@ p {
 
 .mbi_55 {
   margin-bottom: 55px !important;
-}
-
-.mtb_60_0, .my_60_0 {
-  margin-top: 60px;
-  margin-bottom: 0px;
-}
-
-.mtb_60_5, .my_60_5 {
-  margin-top: 60px;
-  margin-bottom: 5px;
-}
-
-.mtb_60_10, .my_60_10 {
-  margin-top: 60px;
-  margin-bottom: 10px;
-}
-
-.mtb_60_15, .my_60_15 {
-  margin-top: 60px;
-  margin-bottom: 15px;
-}
-
-.mtb_60_20, .my_60_20 {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
-.mtb_60_25, .my_60_25 {
-  margin-top: 60px;
-  margin-bottom: 25px;
-}
-
-.mtb_60_30, .my_60_30 {
-  margin-top: 60px;
-  margin-bottom: 30px;
-}
-
-.mtb_60_35, .my_60_35 {
-  margin-top: 60px;
-  margin-bottom: 35px;
-}
-
-.mtb_60_40, .my_60_40 {
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-
-.mtb_60_45, .my_60_45 {
-  margin-top: 60px;
-  margin-bottom: 45px;
-}
-
-.mtb_60_50, .my_60_50 {
-  margin-top: 60px;
-  margin-bottom: 50px;
-}
-
-.mtb_60_55, .my_60_55 {
-  margin-top: 60px;
-  margin-bottom: 55px;
-}
-
-.mtb_60_60, .my_60_60 {
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .mt_60 {
@@ -2150,6 +1755,11 @@ p {
   margin-right: 60px;
 }
 
+.mtb_60, .my_60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .mti_60 {
   margin-top: 60px !important;
 }
@@ -2164,76 +1774,6 @@ p {
 
 .mbi_60 {
   margin-bottom: 60px !important;
-}
-
-.mtb_65_0, .my_65_0 {
-  margin-top: 65px;
-  margin-bottom: 0px;
-}
-
-.mtb_65_5, .my_65_5 {
-  margin-top: 65px;
-  margin-bottom: 5px;
-}
-
-.mtb_65_10, .my_65_10 {
-  margin-top: 65px;
-  margin-bottom: 10px;
-}
-
-.mtb_65_15, .my_65_15 {
-  margin-top: 65px;
-  margin-bottom: 15px;
-}
-
-.mtb_65_20, .my_65_20 {
-  margin-top: 65px;
-  margin-bottom: 20px;
-}
-
-.mtb_65_25, .my_65_25 {
-  margin-top: 65px;
-  margin-bottom: 25px;
-}
-
-.mtb_65_30, .my_65_30 {
-  margin-top: 65px;
-  margin-bottom: 30px;
-}
-
-.mtb_65_35, .my_65_35 {
-  margin-top: 65px;
-  margin-bottom: 35px;
-}
-
-.mtb_65_40, .my_65_40 {
-  margin-top: 65px;
-  margin-bottom: 40px;
-}
-
-.mtb_65_45, .my_65_45 {
-  margin-top: 65px;
-  margin-bottom: 45px;
-}
-
-.mtb_65_50, .my_65_50 {
-  margin-top: 65px;
-  margin-bottom: 50px;
-}
-
-.mtb_65_55, .my_65_55 {
-  margin-top: 65px;
-  margin-bottom: 55px;
-}
-
-.mtb_65_60, .my_65_60 {
-  margin-top: 65px;
-  margin-bottom: 60px;
-}
-
-.mtb_65_65, .my_65_65 {
-  margin-top: 65px;
-  margin-bottom: 65px;
 }
 
 .mt_65 {
@@ -2273,6 +1813,11 @@ p {
   margin-right: 65px;
 }
 
+.mtb_65, .my_65 {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
 .mti_65 {
   margin-top: 65px !important;
 }
@@ -2287,81 +1832,6 @@ p {
 
 .mbi_65 {
   margin-bottom: 65px !important;
-}
-
-.mtb_70_0, .my_70_0 {
-  margin-top: 70px;
-  margin-bottom: 0px;
-}
-
-.mtb_70_5, .my_70_5 {
-  margin-top: 70px;
-  margin-bottom: 5px;
-}
-
-.mtb_70_10, .my_70_10 {
-  margin-top: 70px;
-  margin-bottom: 10px;
-}
-
-.mtb_70_15, .my_70_15 {
-  margin-top: 70px;
-  margin-bottom: 15px;
-}
-
-.mtb_70_20, .my_70_20 {
-  margin-top: 70px;
-  margin-bottom: 20px;
-}
-
-.mtb_70_25, .my_70_25 {
-  margin-top: 70px;
-  margin-bottom: 25px;
-}
-
-.mtb_70_30, .my_70_30 {
-  margin-top: 70px;
-  margin-bottom: 30px;
-}
-
-.mtb_70_35, .my_70_35 {
-  margin-top: 70px;
-  margin-bottom: 35px;
-}
-
-.mtb_70_40, .my_70_40 {
-  margin-top: 70px;
-  margin-bottom: 40px;
-}
-
-.mtb_70_45, .my_70_45 {
-  margin-top: 70px;
-  margin-bottom: 45px;
-}
-
-.mtb_70_50, .my_70_50 {
-  margin-top: 70px;
-  margin-bottom: 50px;
-}
-
-.mtb_70_55, .my_70_55 {
-  margin-top: 70px;
-  margin-bottom: 55px;
-}
-
-.mtb_70_60, .my_70_60 {
-  margin-top: 70px;
-  margin-bottom: 60px;
-}
-
-.mtb_70_65, .my_70_65 {
-  margin-top: 70px;
-  margin-bottom: 65px;
-}
-
-.mtb_70_70, .my_70_70 {
-  margin-top: 70px;
-  margin-bottom: 70px;
 }
 
 .mt_70 {
@@ -2401,6 +1871,11 @@ p {
   margin-right: 70px;
 }
 
+.mtb_70, .my_70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 .mti_70 {
   margin-top: 70px !important;
 }
@@ -2415,86 +1890,6 @@ p {
 
 .mbi_70 {
   margin-bottom: 70px !important;
-}
-
-.mtb_75_0, .my_75_0 {
-  margin-top: 75px;
-  margin-bottom: 0px;
-}
-
-.mtb_75_5, .my_75_5 {
-  margin-top: 75px;
-  margin-bottom: 5px;
-}
-
-.mtb_75_10, .my_75_10 {
-  margin-top: 75px;
-  margin-bottom: 10px;
-}
-
-.mtb_75_15, .my_75_15 {
-  margin-top: 75px;
-  margin-bottom: 15px;
-}
-
-.mtb_75_20, .my_75_20 {
-  margin-top: 75px;
-  margin-bottom: 20px;
-}
-
-.mtb_75_25, .my_75_25 {
-  margin-top: 75px;
-  margin-bottom: 25px;
-}
-
-.mtb_75_30, .my_75_30 {
-  margin-top: 75px;
-  margin-bottom: 30px;
-}
-
-.mtb_75_35, .my_75_35 {
-  margin-top: 75px;
-  margin-bottom: 35px;
-}
-
-.mtb_75_40, .my_75_40 {
-  margin-top: 75px;
-  margin-bottom: 40px;
-}
-
-.mtb_75_45, .my_75_45 {
-  margin-top: 75px;
-  margin-bottom: 45px;
-}
-
-.mtb_75_50, .my_75_50 {
-  margin-top: 75px;
-  margin-bottom: 50px;
-}
-
-.mtb_75_55, .my_75_55 {
-  margin-top: 75px;
-  margin-bottom: 55px;
-}
-
-.mtb_75_60, .my_75_60 {
-  margin-top: 75px;
-  margin-bottom: 60px;
-}
-
-.mtb_75_65, .my_75_65 {
-  margin-top: 75px;
-  margin-bottom: 65px;
-}
-
-.mtb_75_70, .my_75_70 {
-  margin-top: 75px;
-  margin-bottom: 70px;
-}
-
-.mtb_75_75, .my_75_75 {
-  margin-top: 75px;
-  margin-bottom: 75px;
 }
 
 .mt_75 {
@@ -2534,6 +1929,11 @@ p {
   margin-right: 75px;
 }
 
+.mtb_75, .my_75 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
 .mti_75 {
   margin-top: 75px !important;
 }
@@ -2548,91 +1948,6 @@ p {
 
 .mbi_75 {
   margin-bottom: 75px !important;
-}
-
-.mtb_80_0, .my_80_0 {
-  margin-top: 80px;
-  margin-bottom: 0px;
-}
-
-.mtb_80_5, .my_80_5 {
-  margin-top: 80px;
-  margin-bottom: 5px;
-}
-
-.mtb_80_10, .my_80_10 {
-  margin-top: 80px;
-  margin-bottom: 10px;
-}
-
-.mtb_80_15, .my_80_15 {
-  margin-top: 80px;
-  margin-bottom: 15px;
-}
-
-.mtb_80_20, .my_80_20 {
-  margin-top: 80px;
-  margin-bottom: 20px;
-}
-
-.mtb_80_25, .my_80_25 {
-  margin-top: 80px;
-  margin-bottom: 25px;
-}
-
-.mtb_80_30, .my_80_30 {
-  margin-top: 80px;
-  margin-bottom: 30px;
-}
-
-.mtb_80_35, .my_80_35 {
-  margin-top: 80px;
-  margin-bottom: 35px;
-}
-
-.mtb_80_40, .my_80_40 {
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
-.mtb_80_45, .my_80_45 {
-  margin-top: 80px;
-  margin-bottom: 45px;
-}
-
-.mtb_80_50, .my_80_50 {
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-
-.mtb_80_55, .my_80_55 {
-  margin-top: 80px;
-  margin-bottom: 55px;
-}
-
-.mtb_80_60, .my_80_60 {
-  margin-top: 80px;
-  margin-bottom: 60px;
-}
-
-.mtb_80_65, .my_80_65 {
-  margin-top: 80px;
-  margin-bottom: 65px;
-}
-
-.mtb_80_70, .my_80_70 {
-  margin-top: 80px;
-  margin-bottom: 70px;
-}
-
-.mtb_80_75, .my_80_75 {
-  margin-top: 80px;
-  margin-bottom: 75px;
-}
-
-.mtb_80_80, .my_80_80 {
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 .mt_80 {
@@ -2672,6 +1987,11 @@ p {
   margin-right: 80px;
 }
 
+.mtb_80, .my_80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .mti_80 {
   margin-top: 80px !important;
 }
@@ -2686,96 +2006,6 @@ p {
 
 .mbi_80 {
   margin-bottom: 80px !important;
-}
-
-.mtb_85_0, .my_85_0 {
-  margin-top: 85px;
-  margin-bottom: 0px;
-}
-
-.mtb_85_5, .my_85_5 {
-  margin-top: 85px;
-  margin-bottom: 5px;
-}
-
-.mtb_85_10, .my_85_10 {
-  margin-top: 85px;
-  margin-bottom: 10px;
-}
-
-.mtb_85_15, .my_85_15 {
-  margin-top: 85px;
-  margin-bottom: 15px;
-}
-
-.mtb_85_20, .my_85_20 {
-  margin-top: 85px;
-  margin-bottom: 20px;
-}
-
-.mtb_85_25, .my_85_25 {
-  margin-top: 85px;
-  margin-bottom: 25px;
-}
-
-.mtb_85_30, .my_85_30 {
-  margin-top: 85px;
-  margin-bottom: 30px;
-}
-
-.mtb_85_35, .my_85_35 {
-  margin-top: 85px;
-  margin-bottom: 35px;
-}
-
-.mtb_85_40, .my_85_40 {
-  margin-top: 85px;
-  margin-bottom: 40px;
-}
-
-.mtb_85_45, .my_85_45 {
-  margin-top: 85px;
-  margin-bottom: 45px;
-}
-
-.mtb_85_50, .my_85_50 {
-  margin-top: 85px;
-  margin-bottom: 50px;
-}
-
-.mtb_85_55, .my_85_55 {
-  margin-top: 85px;
-  margin-bottom: 55px;
-}
-
-.mtb_85_60, .my_85_60 {
-  margin-top: 85px;
-  margin-bottom: 60px;
-}
-
-.mtb_85_65, .my_85_65 {
-  margin-top: 85px;
-  margin-bottom: 65px;
-}
-
-.mtb_85_70, .my_85_70 {
-  margin-top: 85px;
-  margin-bottom: 70px;
-}
-
-.mtb_85_75, .my_85_75 {
-  margin-top: 85px;
-  margin-bottom: 75px;
-}
-
-.mtb_85_80, .my_85_80 {
-  margin-top: 85px;
-  margin-bottom: 80px;
-}
-
-.mtb_85_85, .my_85_85 {
-  margin-top: 85px;
-  margin-bottom: 85px;
 }
 
 .mt_85 {
@@ -2815,6 +2045,11 @@ p {
   margin-right: 85px;
 }
 
+.mtb_85, .my_85 {
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+
 .mti_85 {
   margin-top: 85px !important;
 }
@@ -2829,101 +2064,6 @@ p {
 
 .mbi_85 {
   margin-bottom: 85px !important;
-}
-
-.mtb_90_0, .my_90_0 {
-  margin-top: 90px;
-  margin-bottom: 0px;
-}
-
-.mtb_90_5, .my_90_5 {
-  margin-top: 90px;
-  margin-bottom: 5px;
-}
-
-.mtb_90_10, .my_90_10 {
-  margin-top: 90px;
-  margin-bottom: 10px;
-}
-
-.mtb_90_15, .my_90_15 {
-  margin-top: 90px;
-  margin-bottom: 15px;
-}
-
-.mtb_90_20, .my_90_20 {
-  margin-top: 90px;
-  margin-bottom: 20px;
-}
-
-.mtb_90_25, .my_90_25 {
-  margin-top: 90px;
-  margin-bottom: 25px;
-}
-
-.mtb_90_30, .my_90_30 {
-  margin-top: 90px;
-  margin-bottom: 30px;
-}
-
-.mtb_90_35, .my_90_35 {
-  margin-top: 90px;
-  margin-bottom: 35px;
-}
-
-.mtb_90_40, .my_90_40 {
-  margin-top: 90px;
-  margin-bottom: 40px;
-}
-
-.mtb_90_45, .my_90_45 {
-  margin-top: 90px;
-  margin-bottom: 45px;
-}
-
-.mtb_90_50, .my_90_50 {
-  margin-top: 90px;
-  margin-bottom: 50px;
-}
-
-.mtb_90_55, .my_90_55 {
-  margin-top: 90px;
-  margin-bottom: 55px;
-}
-
-.mtb_90_60, .my_90_60 {
-  margin-top: 90px;
-  margin-bottom: 60px;
-}
-
-.mtb_90_65, .my_90_65 {
-  margin-top: 90px;
-  margin-bottom: 65px;
-}
-
-.mtb_90_70, .my_90_70 {
-  margin-top: 90px;
-  margin-bottom: 70px;
-}
-
-.mtb_90_75, .my_90_75 {
-  margin-top: 90px;
-  margin-bottom: 75px;
-}
-
-.mtb_90_80, .my_90_80 {
-  margin-top: 90px;
-  margin-bottom: 80px;
-}
-
-.mtb_90_85, .my_90_85 {
-  margin-top: 90px;
-  margin-bottom: 85px;
-}
-
-.mtb_90_90, .my_90_90 {
-  margin-top: 90px;
-  margin-bottom: 90px;
 }
 
 .mt_90 {
@@ -2963,6 +2103,11 @@ p {
   margin-right: 90px;
 }
 
+.mtb_90, .my_90 {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
 .mti_90 {
   margin-top: 90px !important;
 }
@@ -2977,106 +2122,6 @@ p {
 
 .mbi_90 {
   margin-bottom: 90px !important;
-}
-
-.mtb_95_0, .my_95_0 {
-  margin-top: 95px;
-  margin-bottom: 0px;
-}
-
-.mtb_95_5, .my_95_5 {
-  margin-top: 95px;
-  margin-bottom: 5px;
-}
-
-.mtb_95_10, .my_95_10 {
-  margin-top: 95px;
-  margin-bottom: 10px;
-}
-
-.mtb_95_15, .my_95_15 {
-  margin-top: 95px;
-  margin-bottom: 15px;
-}
-
-.mtb_95_20, .my_95_20 {
-  margin-top: 95px;
-  margin-bottom: 20px;
-}
-
-.mtb_95_25, .my_95_25 {
-  margin-top: 95px;
-  margin-bottom: 25px;
-}
-
-.mtb_95_30, .my_95_30 {
-  margin-top: 95px;
-  margin-bottom: 30px;
-}
-
-.mtb_95_35, .my_95_35 {
-  margin-top: 95px;
-  margin-bottom: 35px;
-}
-
-.mtb_95_40, .my_95_40 {
-  margin-top: 95px;
-  margin-bottom: 40px;
-}
-
-.mtb_95_45, .my_95_45 {
-  margin-top: 95px;
-  margin-bottom: 45px;
-}
-
-.mtb_95_50, .my_95_50 {
-  margin-top: 95px;
-  margin-bottom: 50px;
-}
-
-.mtb_95_55, .my_95_55 {
-  margin-top: 95px;
-  margin-bottom: 55px;
-}
-
-.mtb_95_60, .my_95_60 {
-  margin-top: 95px;
-  margin-bottom: 60px;
-}
-
-.mtb_95_65, .my_95_65 {
-  margin-top: 95px;
-  margin-bottom: 65px;
-}
-
-.mtb_95_70, .my_95_70 {
-  margin-top: 95px;
-  margin-bottom: 70px;
-}
-
-.mtb_95_75, .my_95_75 {
-  margin-top: 95px;
-  margin-bottom: 75px;
-}
-
-.mtb_95_80, .my_95_80 {
-  margin-top: 95px;
-  margin-bottom: 80px;
-}
-
-.mtb_95_85, .my_95_85 {
-  margin-top: 95px;
-  margin-bottom: 85px;
-}
-
-.mtb_95_90, .my_95_90 {
-  margin-top: 95px;
-  margin-bottom: 90px;
-}
-
-.mtb_95_95, .my_95_95 {
-  margin-top: 95px;
-  margin-bottom: 95px;
 }
 
 .mt_95 {
@@ -3116,6 +2161,11 @@ p {
   margin-right: 95px;
 }
 
+.mtb_95, .my_95 {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
 .mti_95 {
   margin-top: 95px !important;
 }
@@ -3130,111 +2180,6 @@ p {
 
 .mbi_95 {
   margin-bottom: 95px !important;
-}
-
-.mtb_100_0, .my_100_0 {
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-
-.mtb_100_5, .my_100_5 {
-  margin-top: 100px;
-  margin-bottom: 5px;
-}
-
-.mtb_100_10, .my_100_10 {
-  margin-top: 100px;
-  margin-bottom: 10px;
-}
-
-.mtb_100_15, .my_100_15 {
-  margin-top: 100px;
-  margin-bottom: 15px;
-}
-
-.mtb_100_20, .my_100_20 {
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
-
-.mtb_100_25, .my_100_25 {
-  margin-top: 100px;
-  margin-bottom: 25px;
-}
-
-.mtb_100_30, .my_100_30 {
-  margin-top: 100px;
-  margin-bottom: 30px;
-}
-
-.mtb_100_35, .my_100_35 {
-  margin-top: 100px;
-  margin-bottom: 35px;
-}
-
-.mtb_100_40, .my_100_40 {
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-.mtb_100_45, .my_100_45 {
-  margin-top: 100px;
-  margin-bottom: 45px;
-}
-
-.mtb_100_50, .my_100_50 {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.mtb_100_55, .my_100_55 {
-  margin-top: 100px;
-  margin-bottom: 55px;
-}
-
-.mtb_100_60, .my_100_60 {
-  margin-top: 100px;
-  margin-bottom: 60px;
-}
-
-.mtb_100_65, .my_100_65 {
-  margin-top: 100px;
-  margin-bottom: 65px;
-}
-
-.mtb_100_70, .my_100_70 {
-  margin-top: 100px;
-  margin-bottom: 70px;
-}
-
-.mtb_100_75, .my_100_75 {
-  margin-top: 100px;
-  margin-bottom: 75px;
-}
-
-.mtb_100_80, .my_100_80 {
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-
-.mtb_100_85, .my_100_85 {
-  margin-top: 100px;
-  margin-bottom: 85px;
-}
-
-.mtb_100_90, .my_100_90 {
-  margin-top: 100px;
-  margin-bottom: 90px;
-}
-
-.mtb_100_95, .my_100_95 {
-  margin-top: 100px;
-  margin-bottom: 95px;
-}
-
-.mtb_100_100, .my_100_100 {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .mt_100 {
@@ -3272,6 +2217,11 @@ p {
 .mlr_100, .mx_100 {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.mtb_100, .my_100 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .mti_100 {

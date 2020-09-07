@@ -126,14 +126,6 @@ p {
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
 
-    @for $j from 0 through $i {
-        $value2: 0;
-        $newvalue2: $j*5;
-        $finalvalue2: $value2 + $newvalue2;
-
-        .mtb_#{$finalvalue}_#{$finalvalue2}, .my_#{$finalvalue}_#{$finalvalue2} { margin-top: $finalvalue+px;  margin-bottom: $finalvalue2+px;  }
-    }
-
     .mt_#{$finalvalue} { margin-top: $finalvalue+px; }
     .ml_#{$finalvalue} { margin-left: $finalvalue+px; }
     .mr_#{$finalvalue} { margin-right: $finalvalue+px; }
@@ -143,6 +135,7 @@ p {
     .mrn_#{$finalvalue} { margin-right: -$finalvalue+px; }
     .mbn_#{$finalvalue} { margin-bottom: -$finalvalue+px; }
     .mlr_#{$finalvalue}, .mx_#{$finalvalue} { margin-left: $finalvalue+px; margin-right: $finalvalue+px; }
+    .mtb_#{$finalvalue}, .my_#{$finalvalue} { margin-top: $finalvalue+px;  margin-bottom: $finalvalue+px; }
 
     .mti_#{$finalvalue} { margin-top: $finalvalue+px !important; }
     .mli_#{$finalvalue} { margin-left: $finalvalue+px !important; }
