@@ -161,24 +161,26 @@ section.banner-section .banner-card:before {
 }
 
 /*Accordion CSS*/
-.accordion_design1 {
+.accordion.accordion-ui1 {
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.02);
   margin-bottom: 50px;
 }
-
-.accordion_design1 .card {
+.accordion.accordion-ui1 .card {
   border: none;
   border-bottom: 1px dashed #007bff;
   border-radius: 4px;
 }
-
-.accordion_design1 .card-header {
+.accordion.accordion-ui1 .card .card-header {
   padding: 15px;
   border-radius: 4px;
   border: none;
 }
-
-.accordion_design1 .card-header .card-count {
+.accordion.accordion-ui1 .card .card-header h2, .accordion.accordion-ui1 .card .card-header h3, .accordion.accordion-ui1 .card .card-header h4, .accordion.accordion-ui1 .card .card-header h5, .accordion.accordion-ui1 .card .card-header h6 {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.accordion.accordion-ui1 .card .card-header .card-count {
   border-radius: 100%;
   border: 1px solid #ffffff;
   width: 30px;
@@ -190,95 +192,81 @@ section.banner-section .banner-card:before {
   height: 30px;
   color: #ffffff;
 }
-
-.accordion_design1 .card-header .card-title {
+.accordion.accordion-ui1 .card .card-header .card-title {
   font-weight: normal;
 }
-
-.accordion_design1 .card-header a {
+.accordion.accordion-ui1 .card .card-header a {
   text-decoration: none;
   background: #007bff;
   color: #ffffff;
   font-weight: normal;
 }
-
-.accordion_design1 .card-header a.collapsed {
+.accordion.accordion-ui1 .card .card-header a.collapsed {
   background: #f2f2f2;
   color: #000;
 }
-
-.accordion_design1 .card-header a.collapsed .card-count {
+.accordion.accordion-ui1 .card .card-header a.collapsed .card-count {
   border-color: #007bff;
   color: #007bff;
 }
-
-.accordion_design1 .card-header h2,
-.accordion_design1 .card-header h3,
-.accordion_design1 .card-header h4,
-.accordion_design1 .card-header h5 {
-  margin: 0px;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.accordion_design1 .card.active .card-header .card-count {
+.accordion.accordion-ui1 .card.active .card-header .card-count {
   background: #ffffff;
   border-color: #ff7544;
   color: #FF9671;
 }
 
 /* Accordion Design 2*/
-.accordion_design2 {
+.accordion-ui2 {
   background: #ffffff;
 }
 
-.accordion_design2 .card-header {
+.accordion-ui2 .card-header {
   background: #007bff;
 }
 
-.accordion_design2 .card-header a {
+.accordion-ui2 .card-header a {
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
 }
 
-.accordion_design2 .card-header a i {
+.accordion-ui2 .card-header a i {
   right: 15px;
   top: 18px;
 }
 
-.accordion_design2 .card-header a.collapsed i.fa-caret-down,
-.accordion_design2 .card-header a i.fa-caret-left {
+.accordion-ui2 .card-header a.collapsed i.fa-caret-down,
+.accordion-ui2 .card-header a i.fa-caret-left {
   display: block !important;
 }
 
-.accordion_design2 .card-header a i.fa-caret-down,
-.accordion_design2 .card-header a.collapsed i.fa-caret-left {
+.accordion-ui2 .card-header a i.fa-caret-down,
+.accordion-ui2 .card-header a.collapsed i.fa-caret-left {
   display: none !important;
 }
 
 /* Accordion Design 3 */
-.accordion_design3 {
+.accordion-ui3 {
   background: #ffffff;
 }
 
-.accordion_design3 .card-header {
+.accordion-ui3 .card-header {
   background: #007bff;
 }
 
-.accordion_design3 .card-header a {
+.accordion-ui3 .card-header a {
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
 }
 
-.accordion_design3 .card-header a i {
+.accordion-ui3 .card-header a i {
   right: 15px;
   top: 18px;
 }
 
-.accordion_design3 .card-header a.collapsed i.fa-plus,
-.accordion_design3 .card-header a i.fa-minus {
+.accordion-ui3 .card-header a.collapsed i.fa-plus,
+.accordion-ui3 .card-header a i.fa-minus {
   display: block !important;
 }
 
