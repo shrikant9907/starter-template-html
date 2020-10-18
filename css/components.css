@@ -8,19 +8,17 @@
   width: 40px;
   font-weight: bold;
 }
-
 .close_times.black {
   color: #000;
 }
-
-.close_times.outlined {
+.close_times.white {
+  color: #fff;
+}
+.close_times .outlined {
   border: 1px solid #fff;
   border-radius: 100%;
 }
-
-.close_times.outlined.inverse {
-  border: 1px solid #fff;
-  border-radius: 100%;
+.close_times .outlined.inverse {
   background: #ffffff;
   color: #000;
 }
@@ -31,22 +29,22 @@
   width: 100%;
   display: block;
 }
-
-.heading_style.type_1 {
+.heading_style.text-center {
+  text-align: center;
+}
+.heading_style.type1 {
   font-weight: bold;
   font-size: 26px;
   line-height: 28px;
   margin-bottom: 16px;
   position: relative;
 }
-
-.heading_style.type_1 span {
+.heading_style.type1 span {
   padding: 0 16px;
   z-index: 1;
   position: relative;
 }
-
-.heading_style.type_1:before {
+.heading_style.type1::before {
   display: block;
   content: "";
   border-top: 1px solid rgba(0, 0, 0, 0.5);
@@ -61,9 +59,7 @@
   margin-top: -2px;
   height: 3px;
 }
-
-/*Heading Style*/
-.heading_style.type_2 {
+.heading_style.type2 {
   width: 100%;
   display: block;
   position: relative;
@@ -73,8 +69,7 @@
   margin-bottom: 40px;
   text-align: left;
 }
-
-.heading_style.type_2:before {
+.heading_style.type2:before {
   display: block;
   content: "";
   border-top: 3px solid #007bff;
@@ -88,35 +83,35 @@
   height: 0;
   bottom: -20px;
 }
-
-.heading_style.type_2.text-center:before {
+.heading_style.type2.text-center {
+  text-align: center;
+}
+.heading_style.type2.text-center:before {
   left: 50%;
   margin-left: -25px;
 }
-
-.heading_style.type_2.text-white:before {
+.heading_style.type2.text-white {
+  color: #fff;
+}
+.heading_style.type2.text-white:before {
   border-color: #ffffff;
 }
 
 /*Nav Menus*/
-header .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 24px !important;
-}
-
 header .navbar.navbar-expand-lg {
   float: right;
   padding: 0;
 }
-
+header .navbar.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 24px 20px !important;
+}
 header .nav-item.show .nav-link,
 header .nav-link:hover {
   color: #FFC75F;
 }
-
 header .active a.nav-link {
   color: #eb3941;
 }
-
 header .nav-item .dropdown-menu {
   top: 80px !important;
   padding: 5px 0;
@@ -125,7 +120,6 @@ header .nav-item .dropdown-menu {
   border: none;
   left: 20px;
 }
-
 header .nav-item div.dropdown-menu::after {
   display: block;
   content: "";
@@ -138,7 +132,6 @@ header .nav-item div.dropdown-menu::after {
   top: -10px;
   left: 15px;
 }
-
 header .dropdown-item {
   padding: 7px 15px;
   font-size: 14px;
@@ -146,22 +139,18 @@ header .dropdown-item {
 }
 
 /*Banner*/
-section.banner_section {
+section.banner-section {
   padding: 56px 0;
   height: auto !important;
 }
-
-section.banner_section h1.main_heading {
+section.banner-section .main-heading {
   font-size: 70px;
 }
-
-/*Banner */
-section.banner_section .banner_card {
+section.banner-section .banner-card {
   margin-top: 100px;
   padding-left: 18px;
 }
-
-section.banner_section .banner_card:before {
+section.banner-section .banner-card:before {
   content: "";
   display: block;
   width: 3px;

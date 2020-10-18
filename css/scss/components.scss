@@ -9,22 +9,24 @@
     display: inline-block;
     width: 40px;
     font-weight: bold;
-}
 
-.close_times.black {
-    color: #000;
-}
+    &.black {
+        color: #000;
+    }
 
-.close_times.outlined {
-    border: 1px solid #fff;
-    border-radius: 100%;
-}
+    &.white {
+        color: #fff;
+    }
 
-.close_times.outlined.inverse {
-    border: 1px solid #fff;
-    border-radius: 100%;
-    background: #ffffff;
-    color:#000;
+    .outlined {
+        border: 1px solid #fff;
+        border-radius: 100%;
+        
+        &.inverse {
+            background: #ffffff;
+            color:#000;
+        }
+    }
 }
 
 /*Heading Styles*/ 
@@ -32,147 +34,158 @@
     text-align: center;
     width: 100%;
     display: block;
+
+    &.text-center {
+        text-align: center;
+    }
+    
+    &.type1 {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom: 16px;
+        position: relative;
+ 
+        span {
+            padding: 0 16px;
+            z-index: 1;
+            position: relative;
+        }
+
+        &::before {
+            display: block;
+            content: "";
+            border-top: 1px solid rgba(0,0,0,0.5);
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            max-width: 300px;
+            left: 50%;
+            margin-left: -150px;
+            top: 50%;
+            margin-top: -2px;
+            height: 3px;
+        } 
+    }
+
+    &.type2 {
+        width: 100%;
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        color: #007bff;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: left;
+
+        &:before {
+            display: block;
+            content: "";
+            border-top: 3px solid #007bff;
+            border-bottom: none;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            max-width: 36px;
+            top: unset;
+            margin-top: -2px;
+            height: 0;
+            bottom: -20px;
+        }
+
+        &.text-center {
+            text-align: center;
+            &:before {
+                left: 50%;
+                margin-left: -25px;    
+            }
+        }
+
+        &.text-white {
+            color: #fff;
+            &:before {
+                border-color:#ffffff;   
+            } 
+        }
+    }
 }
-
-.heading_style.type_1 {
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 28px;
-    margin-bottom: 16px;
-    position: relative;
-}
-
-.heading_style.type_1 span {
-    padding: 0 16px;
-    z-index: 1;
-    position: relative;
-}
-
-.heading_style.type_1:before {
-    display: block;
-    content: "";
-    border-top: 1px solid rgba(0,0,0,0.5);
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    max-width: 300px;
-    left: 50%;
-    margin-left: -150px;
-    top: 50%;
-    margin-top: -2px;
-    height: 3px;
-} 
-
-/*Heading Style*/
-.heading_style.type_2 {
-    width: 100%;
-    display: block;
-    position: relative;
-    text-transform: uppercase;
-    color: #007bff;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.heading_style.type_2:before {
-    display: block;
-    content: "";
-    border-top: 3px solid #007bff;
-    border-bottom: none;
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    max-width: 36px;
-    top: unset;
-    margin-top: -2px;
-    height: 0;
-    bottom: -20px;
-}
-
-.heading_style.type_2.text-center:before {
-    left: 50%;
-    margin-left: -25px;    
-}
-
-
-.heading_style.type_2.text-white:before {
-    border-color:#ffffff;   
-} 
-
 
 /*Nav Menus*/
-header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 24px !important;
-}
+header {
+    .navbar {
+        &.navbar-expand-lg {
+            float: right;
+            padding: 0; 
+            .navbar-nav {
+                .nav-link {
+                    padding: 24px 20px !important;
+                }
+            }
+        }
+    }
 
-header .navbar.navbar-expand-lg {
-    float: right;
-    padding: 0; 
-}
-
-header .nav-item.show .nav-link,
-header .nav-link:hover{
+    .nav-item.show .nav-link,
+    .nav-link:hover{
         color: #FFC75F;
-}
+    }
 
-header .active a.nav-link {
+    .active a.nav-link {
         color:#eb3941; 
-}  
+    }
+    
+    .nav-item .dropdown-menu {
+        top: 80px !important;
+        padding: 5px 0;
+        border-radius: 3px;
+        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+        border: none;
+        left: 20px;
+    }
 
-header .nav-item .dropdown-menu {
-    top: 80px !important;
-    padding: 5px 0;
-    border-radius: 3px;
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
-    border: none;
-    left: 20px;
-}
+    .nav-item div.dropdown-menu::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        top: -10px;
+        left: 15px;
+    }
 
-header .nav-item div.dropdown-menu::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #fff;
-    top: -10px;
-    left: 15px;
-}
-
-header .dropdown-item {
-    padding: 7px 15px;
-    font-size: 14px;
-    line-height: 18px;
+    .dropdown-item {
+        padding: 7px 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 /*Banner*/
-section.banner_section {
+section.banner-section {
     padding: 56px 0;
     height: auto !important;
-}
 
-section.banner_section h1.main_heading {
-    font-size: 70px;
-}
+    .main-heading {
+        font-size: 70px;
+    }
 
-/*Banner */
-section.banner_section .banner_card {
-    margin-top: 100px;
-    padding-left: 18px;
-}
+    .banner-card {
+        margin-top: 100px;
+        padding-left: 18px;
 
-section.banner_section .banner_card:before {
-    content: "";
-    display: block;
-    width: 3px;
-    height: 160px;
-    position: absolute;
-    left: 0px;
-    background: #007bff;
+        &:before {
+            content: "";
+            display: block;
+            width: 3px;
+            height: 160px;
+            position: absolute;
+            left: 0px;
+            background: #007bff;
+        }
+    }
 }
 
 /*Accordion CSS*/
