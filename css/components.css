@@ -1,4 +1,33 @@
 /************************** Components ***************************/
+.site_logo {
+  font-size: 34px;
+  line-height: 34px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+}
+.site_logo.with_tagline {
+  padding: 9px 0;
+}
+.site_logo a {
+  color: #000000;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.site_logo .tag_line {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.4px;
+}
+.site_logo span {
+  display: inline-block;
+}
+.site_logo span.logo_text {
+  display: flex;
+}
+
 /*Button Close*/
 .close_times {
   color: #fff;
@@ -102,17 +131,14 @@ header .navbar.navbar-expand-lg {
   float: right;
   padding: 0;
 }
-header .navbar.navbar-expand-lg .navbar-nav .nav-link {
+header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 24px 20px !important;
+  color: #333333;
 }
-header .nav-item.show .nav-link,
-header .nav-link:hover {
-  color: #FFC75F;
+header .navbar.navbar-expand-lg .navbar-nav .nav-item.show a.nav-link, header .navbar.navbar-expand-lg .navbar-nav .nav-item:hover a.nav-link, header .navbar.navbar-expand-lg .navbar-nav .nav-item.active a.nav-link {
+  color: #0069d9;
 }
-header .active a.nav-link {
-  color: #eb3941;
-}
-header .nav-item .dropdown-menu {
+header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu {
   top: 80px !important;
   padding: 5px 0;
   border-radius: 3px;
@@ -120,7 +146,7 @@ header .nav-item .dropdown-menu {
   border: none;
   left: 20px;
 }
-header .nav-item div.dropdown-menu::after {
+header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu:after {
   display: block;
   content: "";
   position: absolute;
@@ -132,7 +158,7 @@ header .nav-item div.dropdown-menu::after {
   top: -10px;
   left: 15px;
 }
-header .dropdown-item {
+header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu .dropdown-item {
   padding: 7px 15px;
   font-size: 14px;
   line-height: 18px;
@@ -158,6 +184,30 @@ section.banner-section .banner-card:before {
   position: absolute;
   left: 0px;
   background: #007bff;
+}
+
+.card.card-ui1 {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0px;
+}
+.card.card-ui1 .card-header {
+  padding: 0px;
+  background: transparent;
+  border: none;
+}
+.card.card-ui1 .card-header .card-title {
+  font-size: 20px;
+  margin: 0px;
+}
+.card.card-ui1 .card-header .card-title a {
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+}
+.card.card-ui1 .card-body {
+  padding-top: 0px;
 }
 
 /*Accordion CSS*/
@@ -1121,6 +1171,11 @@ ul.social_links2 li:hover,
   z-index: 0;
 }
 
+.common-section-ui {
+  padding: 80px 0 60px 0;
+  position: relative;
+}
+
 /*Footer*/
 .footer_style1 ul {
   padding: 0;
@@ -1138,26 +1193,8 @@ ul.social_links2 li:hover,
 
 /*Responsive*/
 @media all and (min-width: 787px) {
-  .scrolled .logo_text {
-    font-size: 18px;
-    line-height: 18px;
-    color: #494949 !important;
-  }
-
   .scrolled header {
     background: #ffffff;
-  }
-
-  .scrolled .logo_text {
-    font-size: 18px;
-    line-height: 18px;
-    color: #494949 !important;
-    padding-top: 14px !important;
-  }
-
-  .scrolled header .navbar-nav a.nav-link {
-    padding: 18px 24px !important;
-    color: #494948;
   }
 
   .scrolled .go_top_arrow {

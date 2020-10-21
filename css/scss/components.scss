@@ -1,5 +1,38 @@
-
 /************************** Components ***************************/
+
+// Site Logo UI
+.site_logo {
+    font-size: 34px;
+    line-height: 34px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+
+    &.with_tagline {
+        padding: 9px 0;
+    }
+
+    a {
+      color: #000000;
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    .tag_line {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 1.4px;
+    }
+
+    span {
+        display: inline-block;
+
+        &.logo_text {
+            display: flex;
+        }
+    }
+}
 
 /*Button Close*/
 .close_times {
@@ -118,48 +151,48 @@ header {
             float: right;
             padding: 0; 
             .navbar-nav {
-                .nav-link {
-                    padding: 24px 20px !important;
+                .nav-item {
+                    .nav-link {
+                        padding: 24px 20px !important;
+                        color: #333333;
+                    }
+
+                    &.show,    
+                    &:hover,
+                    &.active {
+                        a.nav-link {
+                            color:#0069d9; 
+                        }
+                    }
+                    .dropdown-menu {
+                        top: 80px !important;
+                        padding: 5px 0;
+                        border-radius: 3px;
+                        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+                        border: none;
+                        left: 20px;
+                        &:after {
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-bottom: 10px solid #fff;
+                            top: -10px;
+                            left: 15px;
+                        }
+
+                        .dropdown-item {
+                            padding: 7px 15px;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
                 }
             }
         }
-    }
-
-    .nav-item.show .nav-link,
-    .nav-link:hover{
-        color: #FFC75F;
-    }
-
-    .active a.nav-link {
-        color:#eb3941; 
-    }
-    
-    .nav-item .dropdown-menu {
-        top: 80px !important;
-        padding: 5px 0;
-        border-radius: 3px;
-        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
-        border: none;
-        left: 20px;
-    }
-
-    .nav-item div.dropdown-menu::after {
-        display: block;
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #fff;
-        top: -10px;
-        left: 15px;
-    }
-
-    .dropdown-item {
-        padding: 7px 15px;
-        font-size: 14px;
-        line-height: 18px;
     }
 }
 
@@ -1168,6 +1201,12 @@ ul.social_links2 li:hover,
     z-index: 0;
 } 
 
+// Sections UI
+.common-section-ui {
+    padding: 80px 0 60px 0;
+    position: relative;
+}
+
 /*Footer*/
 .footer_style1 ul {
     padding: 0;
@@ -1187,28 +1226,9 @@ ul.social_links2 li:hover,
 /*Responsive*/
 @media all and (min-width: 787px) {
 
-    .scrolled .logo_text {
-        font-size: 18px;
-        line-height: 18px;
-        color: #494949 !important;
-    } 
-
     .scrolled header {
         background: #ffffff;
     }
-
-    .scrolled .logo_text {
-        font-size: 18px;
-        line-height: 18px;
-        color: #494949 !important;
-        padding-top: 14px !important;
-    }
-
-    .scrolled header .navbar-nav a.nav-link {
-        padding: 18px 24px !important;
-        color: #494948;
-    }
-
     .scrolled .go_top_arrow {
         display: block;
         bottom: 10px;
