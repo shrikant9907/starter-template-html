@@ -92,16 +92,13 @@
   width: 100%;
   display: block;
   position: relative;
-  text-transform: uppercase;
-  color: #007bff;
-  font-weight: bold;
   margin-bottom: 40px;
   text-align: left;
 }
 .heading_style.type2:before {
   display: block;
   content: "";
-  border-top: 3px solid #007bff;
+  border-top: 2px solid #007bff;
   border-bottom: none;
   position: absolute;
   z-index: 0;
@@ -110,7 +107,7 @@
   top: unset;
   margin-top: -2px;
   height: 0;
-  bottom: -20px;
+  bottom: -10px;
 }
 .heading_style.type2.text-center {
   text-align: center;
@@ -168,14 +165,17 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu .dropdown-i
 /*Banner*/
 section.banner-section {
   padding: 66px 0 56px 0;
-  height: auto !important;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 section.banner-section .main-heading {
   font-size: 70px;
 }
 section.banner-section .banner-card {
-  margin-top: 100px;
-  padding-left: 18px;
+  padding: 15px 0 20px 15px;
 }
 section.banner-section .banner-card:before {
   content: "";
@@ -185,6 +185,7 @@ section.banner-section .banner-card:before {
   position: absolute;
   left: 0px;
   background: #007bff;
+  top: 0px;
 }
 
 .card.card-ui1 {

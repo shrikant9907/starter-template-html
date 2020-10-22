@@ -106,16 +106,13 @@
         width: 100%;
         display: block;
         position: relative;
-        text-transform: uppercase;
-        color: #007bff;
-        font-weight: bold;
         margin-bottom: 40px;
         text-align: left;
 
         &:before {
             display: block;
             content: "";
-            border-top: 3px solid #007bff;
+            border-top: 2px solid #007bff;
             border-bottom: none;
             position: absolute;
             z-index: 0;
@@ -124,7 +121,7 @@
             top: unset;
             margin-top: -2px;
             height: 0;
-            bottom: -20px;
+            bottom: -10px;
         }
 
         &.text-center {
@@ -200,15 +197,18 @@ header {
 /*Banner*/
 section.banner-section {
     padding: 66px 0 56px 0;
-    height: auto !important;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
 
     .main-heading {
         font-size: 70px;
     }
 
     .banner-card {
-        margin-top: 100px;
-        padding-left: 18px;
+        padding: 15px 0 20px 15px;
 
         &:before {
             content: "";
@@ -218,6 +218,7 @@ section.banner-section {
             position: absolute;
             left: 0px;
             background: #007bff;
+            top: 0px;
         }
     }
 }
