@@ -2,8 +2,15 @@
 /* Text Color:  #333333 */
 
 header .navbar.navbar-expand-lg .navbar-nav .nav-item.show a.nav-link, header .navbar.navbar-expand-lg .navbar-nav .nav-item:hover a.nav-link, header .navbar.navbar-expand-lg .navbar-nav .nav-item.active a.nav-link,
+.text-primary,
+.accordion.accordion-ui1 .card .card-header a.collapsed .card-count,
 .text_primary {
-    color:#E6236F;
+    color:#E6236F !important;
+}
+
+.accordion.accordion-ui1 .card .card-header a.collapsed,
+.bg-light-primary {
+    background-color:rgba(230, 35, 111, 0.1);
 }
 
 .btn-primary {
@@ -11,8 +18,13 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item.show a.nav-link, header .n
     border:none;
 }
 
+.accordion.accordion-ui1 .card .card-header a,
 section.banner-section .banner-card:before {
     background-color:#E6236F;
+}
+
+.accordion.accordion-ui1 .card .card-header a.collapsed .card-count {
+    border-color:#E6236F;
 }
 
 .heading_font {

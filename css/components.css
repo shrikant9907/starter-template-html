@@ -125,7 +125,6 @@
 
 /*Nav Menus*/
 header .navbar.navbar-expand-lg {
-  float: right;
   padding: 0;
 }
 header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -219,8 +218,11 @@ section.banner-section .banner-card:before {
 }
 .accordion.accordion-ui1 .card {
   border: none;
-  border-bottom: 1px dashed #007bff;
   border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
 }
 .accordion.accordion-ui1 .card .card-header {
   padding: 15px;
@@ -229,7 +231,7 @@ section.banner-section .banner-card:before {
 }
 .accordion.accordion-ui1 .card .card-header h2, .accordion.accordion-ui1 .card .card-header h3, .accordion.accordion-ui1 .card .card-header h4, .accordion.accordion-ui1 .card .card-header h5, .accordion.accordion-ui1 .card .card-header h6 {
   margin: 0px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
 }
 .accordion.accordion-ui1 .card .card-header .card-count {
