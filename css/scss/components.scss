@@ -224,10 +224,20 @@ section.banner-section {
 
 // Cards UI
 .card {
+    
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+     
+    .nobg {
+        background: transparent !important;
+    }
+
     &.card-ui1 {
         margin-bottom: 30px;
-        border: none;
-        border-radius: 0px;
         .card-header {
             padding: 0px;
             background: transparent;
@@ -247,6 +257,14 @@ section.banner-section {
             padding-top: 0px;
         }
     }
+
+    .card-icon {
+        padding: 0 15px;
+        i   {
+            font-size: 30px;
+        }        
+    }
+
 }
 
 
@@ -365,57 +383,6 @@ section.banner-section {
 .accordion-ui3 .card-header a.collapsed i.fa-plus,
 .accordion-ui3 .card-header a i.fa-minus {
     display: block !important;
-}
-
-/* Card with icon1 */
-.card_with_icon1  {
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.card_with_icon1 .card-icon {
-    width: 80px;
-    height: 80px;
-    background: #007bff;
-    font-size: 30px;
-    left: 20px;
-    top: 50%; 
-    margin-top: -40px;
-}
-
-.card_with_icon1 {
-    padding-left: 100px !important;
-}
-
-.card_with_icon1.right_icon .card-icon {
-    left: unset;
-    right: 20px;
-}
-
-.card_with_icon1.right_icon {
-    padding-right: 100px !important;
-    padding-left: 0 !important;
-}
-
-.card_with_icon1.top_icon {
-    padding-left: 0 !important;
-}
-
-.card_with_icon1.top_icon .card-icon {
-    left: unset;
-}
-
-.card_with_icon1:hover {
-    background: #007bff;
-    color: #ffffff;
-}
-
-.card_with_icon1:hover .card-icon {
-    background: #ffffff;
-    color:  #007bff !important;
 }
 
 /* Card with Icon 2 */

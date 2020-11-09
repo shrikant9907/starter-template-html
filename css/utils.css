@@ -43,8 +43,19 @@ p {
   display: none;
 }
 
+.hidei,
+.d_nonei {
+  display: none !important;
+}
+
+.flex,
 .d_flex {
   display: flex;
+}
+.flex.center_center,
+.d_flex.center_center {
+  justify-content: center;
+  align-items: center;
 }
 
 .d_i_block {
@@ -7195,11 +7206,13 @@ input[type=button] {
 }
 
 /*Button Sizes*/
+.btn_lg,
 .btn_large {
   padding: 12px 30px !important;
   font-size: 16px !important;
 }
 
+.btn_sm,
 .btn_small {
   padding: 10px 20px !important;
   font-size: 12px !important;
@@ -7207,11 +7220,9 @@ input[type=button] {
 
 /*Alerts*/
 .alert {
-  box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.7);
   padding: 5px 10px;
   border-radius: 0px;
   font-size: 14px;
-  font-weight: bold;
 }
 
 /*Background Colors*/
@@ -7343,6 +7354,15 @@ input[type=button] {
   right: 0px;
 }
 
+.fixed_top_full {
+  position: fixed;
+  top: 0px;
+  bottom: unset !important;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
 /*Fixed To Bottom*/
 .fixed_bottom {
   position: fixed;
@@ -7350,6 +7370,15 @@ input[type=button] {
   bottom: 0px;
   left: 0px;
   right: 0px;
+}
+
+.fixed_bottom_full {
+  position: fixed;
+  top: unset !important;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
 }
 
 /*Fixed Top Right*/
