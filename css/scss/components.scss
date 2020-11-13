@@ -394,8 +394,17 @@ section.banner-section {
 
 .button,
 .btn {
+
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-size: 14px;
-    font-weight: normal;
     padding: 10px 0;
     max-width: 100%;
     width: auto;
