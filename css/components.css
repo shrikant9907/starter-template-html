@@ -198,32 +198,152 @@ section.banner-section .banner-card:before {
 .card .nobg {
   background: transparent !important;
 }
-.card.card-ui1 {
-  margin-bottom: 30px;
+.card .cicons,
+.card .ciconr,
+.card .ciconc,
+.card .ciconrc,
+.card .cicon {
+  margin-bottom: 20px;
 }
-.card.card-ui1 .card-header {
-  padding: 0px;
+.card .cicons i,
+.card .ciconr i,
+.card .ciconc i,
+.card .ciconrc i,
+.card .cicon i {
+  font-size: 30px;
+}
+.card .ciconrc,
+.card .ciconr,
+.card .cicons,
+.card .ciconc {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  background: #ddd;
+}
+.card .ciconc {
+  border-radius: 100%;
+}
+.card .ciconrc {
+  border-radius: 10px;
+}
+.card .ciconr {
+  width: 100px;
+}
+.card.cui1c, .card.cui1 {
+  margin-bottom: 30px;
+  background: transparent !important;
+  border: none !important;
+}
+.card.cui1c .card-header, .card.cui1 .card-header {
   background: transparent;
   border: none;
 }
-.card.card-ui1 .card-header .card-title {
+.card.cui1c .card-title, .card.cui1 .card-title {
   font-size: 20px;
-  margin: 0px;
+  line-height: 24px;
+  margin: 0px 0px 20px 0;
+  font-weight: bold;
 }
-.card.card-ui1 .card-header .card-title a {
+.card.cui1c .card-title a, .card.cui1 .card-title a {
   text-decoration: none;
   width: 100%;
   display: inline-block;
-  padding: 15px;
 }
-.card.card-ui1 .card-body {
-  padding-top: 0px;
+.card.cui1c .cbody,
+.card.cui1c .card-body, .card.cui1 .cbody,
+.card.cui1 .card-body {
+  padding: 0;
 }
-.card .card-icon {
-  padding: 0 15px;
+.card.cui1c, .card.cui2c, .card.cui3c, .card.cui4c {
+  text-align: center;
 }
-.card .card-icon i {
-  font-size: 30px;
+.card.cui1c .cbody,
+.card.cui1c .card-body, .card.cui2c .cbody,
+.card.cui2c .card-body, .card.cui3c .cbody,
+.card.cui3c .card-body, .card.cui4c .cbody,
+.card.cui4c .card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card.cui4, .card.cui3, .card.cui3c, .card.cui2c, .card.cui2 {
+  margin-bottom: 30px;
+  background: #ffffff !important;
+  border: none !important;
+}
+.card.cui4 .cheader,
+.card.cui4 .card-header, .card.cui3 .cheader,
+.card.cui3 .card-header, .card.cui3c .cheader,
+.card.cui3c .card-header, .card.cui2c .cheader,
+.card.cui2c .card-header, .card.cui2 .cheader,
+.card.cui2 .card-header {
+  background: transparent;
+  border: none;
+}
+.card.cui4 .ctitle,
+.card.cui4 .card-title, .card.cui3 .ctitle,
+.card.cui3 .card-title, .card.cui3c .ctitle,
+.card.cui3c .card-title, .card.cui2c .ctitle,
+.card.cui2c .card-title, .card.cui2 .ctitle,
+.card.cui2 .card-title {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px 0px 20px 0;
+  font-weight: bold;
+}
+.card.cui4 .ctitle a,
+.card.cui4 .card-title a, .card.cui3 .ctitle a,
+.card.cui3 .card-title a, .card.cui3c .ctitle a,
+.card.cui3c .card-title a, .card.cui2c .ctitle a,
+.card.cui2c .card-title a, .card.cui2 .ctitle a,
+.card.cui2 .card-title a {
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+.card.cui4 .cbody,
+.card.cui4 .card-body, .card.cui3 .cbody,
+.card.cui3 .card-body, .card.cui3c .cbody,
+.card.cui3c .card-body, .card.cui2c .cbody,
+.card.cui2c .card-body, .card.cui2 .cbody,
+.card.cui2 .card-body {
+  padding: 20px 15px;
+}
+.card.cui4 .ctext,
+.card.cui4 .card-text, .card.cui3 .ctext,
+.card.cui3 .card-text, .card.cui3c .ctext,
+.card.cui3c .card-text, .card.cui2c .ctext,
+.card.cui2c .card-text, .card.cui2 .ctext,
+.card.cui2 .card-text {
+  font-size: 14px;
+}
+.card.stext .ctitle,
+.card.stext .card-title {
+  font-size: 14px;
+  display: inline-block;
+}
+.card.cui3c, .card.cui3 {
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.card.cui4l, .card.cui4r, .card.cui4 {
+  display: flex;
+  flex-direction: row;
+}
+.card.cui4l .ritem,
+.card.cui4l .litem, .card.cui4r .ritem,
+.card.cui4r .litem, .card.cui4 .ritem,
+.card.cui4 .litem {
+  flex: 0 0 30%;
+  height: 100%;
+}
+.card.cui4l .ritem, .card.cui4r .ritem, .card.cui4 .ritem {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 /*Accordion CSS*/
@@ -337,66 +457,6 @@ section.banner-section .banner-card:before {
 .accordion-ui3 .card-header a.collapsed i.fa-plus,
 .accordion-ui3 .card-header a i.fa-minus {
   display: block !important;
-}
-
-/* Card with Icon 2 */
-.card_with_icon2 {
-  background: white;
-  moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-color: #007bff;
-}
-
-.card_with_icon2 .card-icon {
-  width: 80px;
-  height: 80px;
-  background: #007bff;
-  font-size: 30px;
-}
-
-/*Hover Effect*/
-.card_with_icon2:hover {
-  background: #007bff;
-  color: #ffffff;
-  border-color: #007bff;
-}
-
-.card_with_icon2:hover .card-icon {
-  background: #fff;
-  color: #007bff !important;
-}
-
-.card_with_icon2:hover a {
-  color: #ffffff;
-}
-
-/* Card with Icon 3 */
-.card_with_icon3 {
-  background: white;
-  border: 1px solid #ccc !important;
-  moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.card_with_icon3 .card-icon {
-  width: 80px;
-  height: 80px;
-  background: #007bff;
-  font-size: 30px;
-}
-
-.card_with_icon3:hover {
-  border: 1px solid #ffffff !important;
-  box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.06);
 }
 
 /* Testimonials 1 */
