@@ -455,6 +455,15 @@ section.banner-section .banner-card:before {
 .accordion-ui2 {
   background: #ffffff;
 }
+.accordion-ui2 .card {
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  box-shadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
+}
 .accordion-ui2 .card-header {
   background: #007bff;
   padding-right: 34px;

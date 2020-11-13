@@ -500,6 +500,15 @@ section.banner-section {
 /* Accordion Design 2*/
 .accordion-ui2 {
     background: #ffffff;
+    .card {
+        border:none;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 24px;
+        box-shadow: $cardShadow;
+    }
     .card-header {
         background: $primaryColor;
         padding-right: 34px;
