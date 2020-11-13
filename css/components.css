@@ -357,6 +357,36 @@ section.banner-section .banner-card:before {
   order: 2;
 }
 
+.button,
+.btn {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 0;
+  max-width: 100%;
+  width: auto;
+}
+.button.btnui1s, .button.btnui1,
+.btn.btnui1s,
+.btn.btnui1 {
+  border-radius: 0px !important;
+}
+.button.btnui2s, .button.btnui2,
+.btn.btnui2s,
+.btn.btnui2 {
+  border-radius: 4px !important;
+}
+.button.btnui3s, .button.btnui3,
+.btn.btnui3s,
+.btn.btnui3 {
+  border-radius: 50px !important;
+}
+.button.btnui3s, .button.btnui2s, .button.btnui1s,
+.btn.btnui3s,
+.btn.btnui2s,
+.btn.btnui1s {
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
 /*Accordion CSS*/
 .accordion.accordion-ui1 {
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.02);

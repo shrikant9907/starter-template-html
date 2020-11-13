@@ -392,6 +392,36 @@ section.banner-section {
 
 }
 
+.button,
+.btn {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0;
+    max-width: 100%;
+    width: auto;
+    
+    &.btnui1s,
+    &.btnui1 {
+        border-radius: 0px !important;
+    }
+
+    &.btnui2s,
+    &.btnui2 {
+        border-radius: 4px !important;
+    }
+    
+    &.btnui3s,
+    &.btnui3 {
+        border-radius: 50px !important;
+    }
+
+    &.btnui3s,
+    &.btnui2s,
+    &.btnui1s {
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
 
 /*Accordion CSS*/
 .accordion {
