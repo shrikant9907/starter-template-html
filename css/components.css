@@ -407,11 +407,9 @@ section.banner-section .banner-card:before {
   box-shadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 }
 .accordion.accordion-ui1 .card .card-header {
-  padding: 15px;
+  padding: 0;
   border-radius: 4px;
   border: none;
-}
-.accordion.accordion-ui1 .card .card-header h2, .accordion.accordion-ui1 .card .card-header h3, .accordion.accordion-ui1 .card .card-header h4, .accordion.accordion-ui1 .card .card-header h5, .accordion.accordion-ui1 .card .card-header h6 {
   margin: 0px;
   font-size: 16px;
   line-height: 22px;
@@ -436,6 +434,8 @@ section.banner-section .banner-card:before {
   background: #007bff;
   color: #ffffff;
   font-weight: normal;
+  padding: 16px;
+  display: block;
 }
 .accordion.accordion-ui1 .card .card-header a.collapsed {
   background: #f2f2f2;
@@ -444,6 +444,9 @@ section.banner-section .banner-card:before {
 .accordion.accordion-ui1 .card .card-header a.collapsed .card-count {
   border-color: #007bff;
   color: #007bff;
+}
+.accordion.accordion-ui1 .card .card-body p {
+  margin: 0;
 }
 .accordion.accordion-ui1 .card.active .card-header .card-count {
   background: #ffffff;

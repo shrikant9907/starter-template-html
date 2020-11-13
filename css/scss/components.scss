@@ -449,14 +449,12 @@ section.banner-section {
             box-shadow: $cardShadow;
     
             .card-header {
-                padding: 15px;
+                padding: 0;
                 border-radius: 4px;
                 border:none;
-                h2, h3, h4, h5, h6 {
-                    margin: 0px;
-                    font-size: 16px;
-                    line-height: 22px;
-                }
+                margin: 0px;
+                font-size: 16px;
+                line-height: 22px;
                 .card-count {
                     border-radius: 100%;
                     border: 1px solid #ffffff;
@@ -477,6 +475,9 @@ section.banner-section {
                     background: $primaryColor;
                     color: #ffffff;
                     font-weight: normal;
+                    padding: 16px;
+                    display: block;
+
                     &.collapsed {
                         background: #f2f2f2;
                         color: #000;
@@ -488,6 +489,13 @@ section.banner-section {
                     }
                 }    
             }
+
+            .card-body {
+                p {
+                    margin: 0;
+                }
+            }
+
             &.active .card-header .card-count  {
                 background: #ffffff;
                 border-color: #ff7544;
