@@ -194,6 +194,7 @@ section.banner-section .banner-card:before {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-bottom: 20px;
+  background-color: #ffffff;
 }
 .card .nobg {
   background: transparent !important;
@@ -313,11 +314,21 @@ section.banner-section .banner-card:before {
 .card.cui2 .card-body {
   padding: 20px 15px;
 }
+.card.cui4 .cbody,
+.card.cui4 .card-body,
 .card.cui4 .ctext,
-.card.cui4 .card-text, .card.cui3 .ctext,
-.card.cui3 .card-text, .card.cui3c .ctext,
-.card.cui3c .card-text, .card.cui2c .ctext,
-.card.cui2c .card-text, .card.cui2 .ctext,
+.card.cui4 .card-text, .card.cui3 .cbody,
+.card.cui3 .card-body,
+.card.cui3 .ctext,
+.card.cui3 .card-text, .card.cui3c .cbody,
+.card.cui3c .card-body,
+.card.cui3c .ctext,
+.card.cui3c .card-text, .card.cui2c .cbody,
+.card.cui2c .card-body,
+.card.cui2c .ctext,
+.card.cui2c .card-text, .card.cui2 .cbody,
+.card.cui2 .card-body,
+.card.cui2 .ctext,
 .card.cui2 .card-text {
   font-size: 14px;
 }
@@ -325,22 +336,22 @@ section.banner-section .banner-card:before {
 .card.stext .card-title {
   font-size: 14px;
   display: inline-block;
+  margin: 0px;
 }
-.card.cui3c, .card.cui3 {
+.card.cui4b, .card.cui3c, .card.cui3 {
   border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
-.card.cui4l, .card.cui4r, .card.cui4 {
+.card.cui4b, .card.cui4 {
   display: flex;
   flex-direction: row;
 }
-.card.cui4l .ritem,
-.card.cui4l .litem, .card.cui4r .ritem,
-.card.cui4r .litem, .card.cui4 .ritem,
+.card.cui4b .ritem,
+.card.cui4b .litem, .card.cui4 .ritem,
 .card.cui4 .litem {
   flex: 0 0 30%;
   height: 100%;
 }
-.card.cui4l .ritem, .card.cui4r .ritem, .card.cui4 .ritem {
+.card.cui4b .ritem, .card.cui4 .ritem {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;

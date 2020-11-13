@@ -231,6 +231,7 @@ section.banner-section {
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-bottom: 20px;
+    background-color: #ffffff;
 
     .nobg {
         background: transparent !important;
@@ -315,6 +316,7 @@ section.banner-section {
         }
     }
 
+    &.cui4,
     &.cui3,
     &.cui3c,
     &.cui2c,
@@ -347,6 +349,8 @@ section.banner-section {
             padding: 20px 15px;
         }
 
+        .cbody,
+        .card-body,
         .ctext,
         .card-text {
             font-size: 14px;
@@ -358,16 +362,17 @@ section.banner-section {
         .card-title {
             font-size: 14px;
             display: inline-block;
+            margin: 0px;
         }
     }
 
+    &.cui4b,
     &.cui3c,
     &.cui3 {
         border: 1px solid rgba(0,0,0,0.2) !important;
     }
 
-    &.cui4l,
-    &.cui4r,
+    &.cui4b,
     &.cui4 {
         display: flex;
         flex-direction: row;
