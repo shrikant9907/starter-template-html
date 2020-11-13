@@ -459,13 +459,15 @@ section.banner-section .banner-card:before {
   background: #007bff;
   padding-right: 34px;
   position: relative;
+  line-height: 0;
 }
 .accordion-ui2 .card-header a {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
   line-height: 24px;
+  font-weight: normal;
 }
 .accordion-ui2 .card-header a i {
   right: 15px;

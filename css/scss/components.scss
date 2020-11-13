@@ -504,12 +504,15 @@ section.banner-section {
         background: $primaryColor;
         padding-right: 34px;
         position: relative;
+        line-height: 0;
         a {
-            font-size: 18px;
+            font-size: 16px;
             color: #ffffff;
             text-decoration: none;
             display: inline-block;
             line-height: 24px;
+            font-weight: normal;
+            width: 100%;
             
             i {
                 right: 15px;
