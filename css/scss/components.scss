@@ -1,3 +1,6 @@
+$primaryColor: #007bff;
+$cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
+
 /************************** Components ***************************/
 
 // Site Logo UI
@@ -112,7 +115,7 @@
         &:before {
             display: block;
             content: "";
-            border-top: 2px solid #007bff;
+            border-top: 2px solid $primaryColor;
             border-bottom: none;
             position: absolute;
             z-index: 0;
@@ -216,7 +219,7 @@ section.banner-section {
             height: 160px;
             position: absolute;
             left: 0px;
-            background: #007bff;
+            background: $primaryColor;
             top: 0px;
         }
     }
@@ -405,9 +408,10 @@ section.banner-section {
     -ms-user-select: none;
     user-select: none;
     font-size: 14px;
-    padding: 10px 0;
+    padding: 10px;
     max-width: 100%;
     width: auto;
+    min-width: 150px;
     
     &.btnui1s,
     &.btnui1 {
@@ -435,16 +439,15 @@ section.banner-section {
 /*Accordion CSS*/
 .accordion {
     &.accordion-ui1 {
-        box-shadow: 0 1px 18px 10px rgba(0,0,0,0.02);
-        margin-bottom:50px;
-
         .card {
             border:none;
             border-radius: 4px;
             overflow: hidden;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             font-size: 14px;
             line-height: 24px;
+            box-shadow: $cardShadow;
+    
             .card-header {
                 padding: 15px;
                 border-radius: 4px;
@@ -471,7 +474,7 @@ section.banner-section {
                 }
                 a {
                     text-decoration: none;
-                    background: #007bff;
+                    background: $primaryColor;
                     color: #ffffff;
                     font-weight: normal;
                     &.collapsed {
@@ -479,8 +482,8 @@ section.banner-section {
                         color: #000;
 
                         .card-count {
-                            border-color: #007bff;
-                            color: #007bff;
+                            border-color: $primaryColor;
+                            color: $primaryColor;
                         }
                     }
                 }    
@@ -497,56 +500,42 @@ section.banner-section {
 /* Accordion Design 2*/
 .accordion-ui2 {
     background: #ffffff;
-}
+    .card-header {
+        background: $primaryColor;
+        padding-right: 34px;
+        position: relative;
+        a {
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 24px;
+            
+            i {
+                right: 15px;
+                top: calc(50% - 9px);
+                position: absolute;
+            }
 
-.accordion-ui2 .card-header {
-    background: #007bff;
-}
+            &.collapsed i.fa-caret-down,
+            &.collapsed i.fa-plus,
+            i.fa-minus,
+            i.fa-caret-left {
+                display: block !important;
+            }
 
-.accordion-ui2 .card-header a {
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-}
+            i.fa-caret-down,
+            i.fa-plus,
+            &.collapsed i.fa-minus,
+            &.collapsed i.fa-caret-left {
+                display: none !important;
+            }
+        }
+    }
 
-.accordion-ui2 .card-header a i {
-    right: 15px;
-    top: 18px;
-}
-
-.accordion-ui2 .card-header a.collapsed i.fa-caret-down,
-.accordion-ui2 .card-header a i.fa-caret-left {
-    display: block !important;
-}
-
-.accordion-ui2 .card-header a i.fa-caret-down,
-.accordion-ui2 .card-header a.collapsed i.fa-caret-left {
-    display: none !important;
-}
- 
-/* Accordion Design 3 */
-.accordion-ui3 {
-    background: #ffffff;
-}
-
-.accordion-ui3 .card-header {
-    background: #007bff;
-}
-
-.accordion-ui3 .card-header a {
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.accordion-ui3 .card-header a i {
-    right: 15px;
-    top: 18px;
-}
-
-.accordion-ui3 .card-header a.collapsed i.fa-plus,
-.accordion-ui3 .card-header a i.fa-minus {
-    display: block !important;
+    p  {
+        margin:0px;
+    }
 }
 
 /* Testimonials 1 */
@@ -562,7 +551,7 @@ section.banner-section {
 .testimonials_card1 .card-icon {
     width: 40px;
     height: 40px;
-    background: #007bff;
+    background: $primaryColor;
     font-size: 16px;
     top: 89px;
     right: 50%;
@@ -582,7 +571,7 @@ section.banner-section {
 .testimonials_card2 .card-icon {
     top: 37px;
     left: 50%;
-    color: #007bff;
+    color: $primaryColor;
     font-size: 250px;
     opacity: 0.1;
     z-index: 0;
@@ -604,7 +593,7 @@ section.banner-section {
 .testimonials_card3 .card-icon {
     top: 17px;
     left: 25px;
-    color: #007bff;
+    color: $primaryColor;
     font-size: 100px;
     opacity: 0.1;
     z-index: 0;
@@ -675,7 +664,7 @@ section.banner-section {
 
 .pricing_card2 .popular {
     position: absolute;
-    background: #007bff;
+    background: $primaryColor;
     color: #fff;
     padding: 1px 27px;
     font-size: 14px;
@@ -1260,7 +1249,7 @@ ul.social_links2 li:hover,
 .tab_bar_design li a.active {
     width: 30px;
     height: 30px;
-    background: #007bff;
+    background: $primaryColor;
     border: 12px solid #fff;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
 } 

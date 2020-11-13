@@ -359,11 +359,20 @@ section.banner-section .banner-card:before {
 
 .button,
 .btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 14px;
-  font-weight: normal;
-  padding: 10px 0;
+  padding: 10px;
   max-width: 100%;
   width: auto;
+  min-width: 150px;
 }
 .button.btnui1s, .button.btnui1,
 .btn.btnui1s,
@@ -388,17 +397,14 @@ section.banner-section .banner-card:before {
 }
 
 /*Accordion CSS*/
-.accordion.accordion-ui1 {
-  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.02);
-  margin-bottom: 50px;
-}
 .accordion.accordion-ui1 .card {
   border: none;
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 24px;
+  box-shadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 }
 .accordion.accordion-ui1 .card .card-header {
   padding: 15px;
@@ -449,55 +455,34 @@ section.banner-section .banner-card:before {
 .accordion-ui2 {
   background: #ffffff;
 }
-
 .accordion-ui2 .card-header {
   background: #007bff;
+  padding-right: 34px;
+  position: relative;
 }
-
 .accordion-ui2 .card-header a {
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
+  line-height: 24px;
 }
-
 .accordion-ui2 .card-header a i {
   right: 15px;
-  top: 18px;
+  top: calc(50% - 9px);
+  position: absolute;
 }
-
-.accordion-ui2 .card-header a.collapsed i.fa-caret-down,
+.accordion-ui2 .card-header a.collapsed i.fa-caret-down, .accordion-ui2 .card-header a.collapsed i.fa-plus,
+.accordion-ui2 .card-header a i.fa-minus,
 .accordion-ui2 .card-header a i.fa-caret-left {
   display: block !important;
 }
-
 .accordion-ui2 .card-header a i.fa-caret-down,
-.accordion-ui2 .card-header a.collapsed i.fa-caret-left {
+.accordion-ui2 .card-header a i.fa-plus, .accordion-ui2 .card-header a.collapsed i.fa-minus, .accordion-ui2 .card-header a.collapsed i.fa-caret-left {
   display: none !important;
 }
-
-/* Accordion Design 3 */
-.accordion-ui3 {
-  background: #ffffff;
-}
-
-.accordion-ui3 .card-header {
-  background: #007bff;
-}
-
-.accordion-ui3 .card-header a {
-  font-size: 18px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.accordion-ui3 .card-header a i {
-  right: 15px;
-  top: 18px;
-}
-
-.accordion-ui3 .card-header a.collapsed i.fa-plus,
-.accordion-ui3 .card-header a i.fa-minus {
-  display: block !important;
+.accordion-ui2 p {
+  margin: 0px;
 }
 
 /* Testimonials 1 */
