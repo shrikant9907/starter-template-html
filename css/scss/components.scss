@@ -282,11 +282,13 @@ section.banner-section {
         background: transparent !important;
         border: none !important;
        
+        .cheader,
         .card-header {
             background: transparent;
             border: none;        
         }
 
+        .ctitle,
         .card-title{
             font-size: 20px;
             line-height: 24px;
@@ -576,6 +578,74 @@ section.banner-section {
     top: 89px;
     right: 50%;
     margin-right: -44px;
+}
+
+// Alerts 
+.alert {
+
+    .alert-header,
+    .alert-heading {
+        font-size: 18px !important;
+        margin-bottom: 14px;
+    }
+
+    &.alertb,
+    &.alertbrc,
+    &.alertrc,
+    &.alertrcs,
+    &.alertui,
+    &.alertuis,
+    &.alertui1,
+    &.alertui2,
+    &.alertui3,
+    &.alertui4,
+    &.alertui5 {
+        border: none;
+        font-weight: normal;
+        font-size: 14px;
+        border-radius: 0px;
+        padding: 15px;
+    }
+
+    &.alertbrc,
+    &.alertui4,
+    &.alertb,
+    &.alertui2 {
+        border: 1px solid;
+    }
+
+    &.alertrcs,
+    &.alertui5,
+    &.alertbrc,
+    &.alertui4,
+    &.alertrc,
+    &.alertui3 {
+        border-radius: 6px;
+    }
+
+    &.alertrcs,
+    &.alertuis,
+    &.alertui5 {
+        box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &.dismissible,
+    &.alert-dismissible {
+        padding-right: 45px;
+
+        .close {            
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 14px;
+            color: inherit;
+            bottom: 0;
+            min-width: 45px;
+            text-align: center;
+            color: inherit;
+        }
+    }
+
 }
 
 /* Testimonials 2 */

@@ -239,17 +239,23 @@ section.banner-section .banner-card:before {
   background: transparent !important;
   border: none !important;
 }
-.card.cui1c .card-header, .card.cui1 .card-header {
+.card.cui1c .cheader,
+.card.cui1c .card-header, .card.cui1 .cheader,
+.card.cui1 .card-header {
   background: transparent;
   border: none;
 }
-.card.cui1c .card-title, .card.cui1 .card-title {
+.card.cui1c .ctitle,
+.card.cui1c .card-title, .card.cui1 .ctitle,
+.card.cui1 .card-title {
   font-size: 20px;
   line-height: 24px;
   margin: 0px 0px 20px 0;
   font-weight: bold;
 }
-.card.cui1c .card-title a, .card.cui1 .card-title a {
+.card.cui1c .ctitle a,
+.card.cui1c .card-title a, .card.cui1 .ctitle a,
+.card.cui1 .card-title a {
   text-decoration: none;
   width: 100%;
   display: inline-block;
@@ -519,6 +525,42 @@ section.banner-section .banner-card:before {
   top: 89px;
   right: 50%;
   margin-right: -44px;
+}
+
+.alert .alert-header,
+.alert .alert-heading {
+  font-size: 18px !important;
+  margin-bottom: 14px;
+}
+.alert.alertb, .alert.alertbrc, .alert.alertrc, .alert.alertrcs, .alert.alertui, .alert.alertuis, .alert.alertui1, .alert.alertui2, .alert.alertui3, .alert.alertui4, .alert.alertui5 {
+  border: none;
+  font-weight: normal;
+  font-size: 14px;
+  border-radius: 0px;
+  padding: 15px;
+}
+.alert.alertbrc, .alert.alertui4, .alert.alertb, .alert.alertui2 {
+  border: 1px solid;
+}
+.alert.alertrcs, .alert.alertui5, .alert.alertbrc, .alert.alertui4, .alert.alertrc, .alert.alertui3 {
+  border-radius: 6px;
+}
+.alert.alertrcs, .alert.alertuis, .alert.alertui5 {
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.alert.dismissible, .alert.alert-dismissible {
+  padding-right: 45px;
+}
+.alert.dismissible .close, .alert.alert-dismissible .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14px;
+  color: inherit;
+  bottom: 0;
+  min-width: 45px;
+  text-align: center;
+  color: inherit;
 }
 
 /* Testimonials 2 */
