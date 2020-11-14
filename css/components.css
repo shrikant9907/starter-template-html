@@ -199,6 +199,9 @@ section.banner-section .banner-card:before {
 .card .nobg {
   background: transparent !important;
 }
+.card.noshadow {
+  box-shadow: unset !important;
+}
 .card .cicons,
 .card .ciconr,
 .card .ciconc,
@@ -281,6 +284,7 @@ section.banner-section .banner-card:before {
   margin-bottom: 30px;
   background: #ffffff !important;
   border: none !important;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .card.cui4 .cheader,
 .card.cui4 .card-header, .card.cui3 .cheader,
@@ -361,6 +365,83 @@ section.banner-section .banner-card:before {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
+}
+.card.ctestimonial {
+  background: #fff;
+  overflow: hidden;
+}
+.card.ctestimonial.ctbgtop .cbody,
+.card.ctestimonial.ctbgtop .card-body {
+  z-index: 1;
+  padding-top: 40px;
+}
+.card.ctestimonial.ctbgtop .cbody:before,
+.card.ctestimonial.ctbgtop .card-body:before {
+  background-color: #007bff;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  z-index: -1;
+  top: 0px;
+}
+.card.ctestimonial .csmtext {
+  color: #6c757d !important;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+.card.ctestimonial .cimagewrb,
+.card.ctestimonial .cimagewrc,
+.card.ctestimonial .cimagewrbc,
+.card.ctestimonial .cimagewr {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  display: flex;
+  overflow: hidden !important;
+  justify-content: center;
+  align-items: center;
+}
+.card.ctestimonial .cimagewrb img,
+.card.ctestimonial .cimagewrc img,
+.card.ctestimonial .cimagewrbc img,
+.card.ctestimonial .cimagewr img {
+  height: 100%;
+  max-width: unset !important;
+  width: unset !important;
+}
+.card.ctestimonial .cimagewrbc,
+.card.ctestimonial .cimagewrb {
+  border: 5px solid #ffffff;
+  width: 85px;
+  height: 85px;
+}
+.card.ctestimonial .cimagewrbc,
+.card.ctestimonial .cimagewrc {
+  border-radius: 100%;
+}
+.card.ctestimonial .cicon {
+  margin: 0;
+  font-size: 20px;
+}
+.card.ctestimonial .ciconbgl,
+.card.ctestimonial .ciconbg {
+  top: calc(50% - 100px);
+  left: calc(50% - 120px);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 250px;
+  opacity: 0.1;
+  z-index: 0;
+  line-height: 200px;
+  position: absolute;
+  z-index: 0;
+}
+.card.ctestimonial .ciconbgl {
+  left: 15px;
 }
 
 .button,
@@ -506,27 +587,6 @@ section.banner-section .banner-card:before {
   margin: 0px;
 }
 
-/* Testimonials 1 */
-.testimonials_card1 {
-  background: #fff;
-}
-
-.testimonials_card1 .card_image {
-  width: 80px;
-  height: 80px;
-  font-size: 30px;
-}
-
-.testimonials_card1 .card-icon {
-  width: 40px;
-  height: 40px;
-  background: #007bff;
-  font-size: 16px;
-  top: 89px;
-  right: 50%;
-  margin-right: -44px;
-}
-
 .alert .alert-header,
 .alert .alert-heading {
   font-size: 18px !important;
@@ -561,57 +621,6 @@ section.banner-section .banner-card:before {
   min-width: 45px;
   text-align: center;
   color: inherit;
-}
-
-/* Testimonials 2 */
-.testimonials_card2 {
-  background: #fff;
-}
-
-.testimonials_card2 .card_image {
-  width: 80px;
-  height: 80px;
-  font-size: 30px;
-}
-
-.testimonials_card2 .card-icon {
-  top: 37px;
-  left: 50%;
-  color: #007bff;
-  font-size: 250px;
-  opacity: 0.1;
-  z-index: 0;
-  line-height: 200px;
-  margin-left: -120px;
-}
-
-/* Testimonials 3 */
-.testimonials_card3 {
-  background: #ffffff;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.04);
-}
-
-.testimonials_card3 .card_image {
-  width: 80px;
-  height: 80px;
-  font-size: 30px;
-}
-
-.testimonials_card3 .card-icon {
-  top: 17px;
-  left: 25px;
-  color: #007bff;
-  font-size: 100px;
-  opacity: 0.1;
-  z-index: 0;
-  line-height: 100px;
-}
-
-.testimonials_card3 .card-icon.card-icon2 {
-  top: unset;
-  bottom: 16px;
-  left: unset;
-  right: 24px;
 }
 
 /* Pricing Tables */
