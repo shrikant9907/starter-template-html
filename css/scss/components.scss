@@ -259,8 +259,8 @@ section.banner-section {
     .ciconr,
     .cicons,
     .ciconc {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -456,8 +456,8 @@ section.banner-section {
         .cimagewrbc,
         .cimagewrb {
             border: 5px solid #ffffff;
-            width: 85px;
-            height: 85px;
+            width: 95px;
+            height: 95px;
         }
         
         .cimagewrbc,
@@ -1118,121 +1118,107 @@ section.banner-section {
     margin-right: 5px;
 }
  
-/*Social Links*/
-.social_links {
-    clear: both;
-    display: inline-block;
-}
+/*Social Icons*/
 
-.social_links a {
-    padding: 15px;
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
-}     
-
-.social_links.boxed a {
-    width: 45px;
-    height: 45px;
-    padding: 11px;
-    text-align: center;
-    border: 1px solid #ffffff;
-    float: left;
-    margin-right: 10px;
-}
-
-.social_links.boxed a {
-    width: 45px;
-    height: 45px;
-    padding: 11px;
-    text-align: center;
-    border: 1px solid #ffffff;
-    float: left;
-    margin-right: 10px;
-}
-
-.social_links.boxed.rounded a {
-    border-radius: 100%;
-}
- 
-ul.social_links2,
-.social_links2 ul {
-    margin: 0  !important;
-    padding: 0 !important;
-    clear: both;
-    display: inline-block;
+.socialicons {
+    display: inline-flex;
+    font-size: 16px;
+    color: #000000;
+    padding: 0px;
+    list-style: none;
+    margin: 0 -3px;
     width: 100%;
-    text-align: center;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-} 
+    a {
+        height: 45px;
+        color: inherit;
+        text-decoration: none;
+        width: 45px;
+        min-width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: inherit;
+        margin: 0 3px 6px 3px;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }   
 
-ul.social_links2 li,
-.social_links2 ul li {
-    background-color: #EA4235;
-    width: 20%;
-    float: left;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    margin:0 0 5px 0;
-}
+    &.siconsbc a,
+    &.siconsbr a,
+    &.siconsb a {
+        border: 1px solid #000000;
+    }
 
-ul.social_links2 li:before,  
-.social_links2 ul li:before {
-    display: none;
-}
 
-ul.social_links2 li a,
-.social_links2 ul li a {
-    height: 40px;
-    line-height: 40px;
-    color:#ffffff !important;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-}
+    &.siconsbr a {
+        border-radius: 6px;
+    }
 
-.social_links2 li#facebook{
-    background-color: #395996;
-}
+    &.siconsc a,
+    &.siconsbc a {
+        border-radius: 100%;
+    }
 
-.social_links2 li#youtuble{
-    background-color:#FF0000;   
-}
+    &.inverse,
+    &.bg_dark,
+    &.bg-dark {
+        color: #ffffff;
+   
+        a {
+            border-color: #ffffff;
+        }
+    }
 
-.social_links2 li#twitter{
-    background-color:#00acec;   
-}
- 
-.social_links2 li#instagram{ 
-    background-color:#527fa4;   
-}
+    &.bg_dark,
+    &.bg-dark {
+        background: #000000;
+    }
 
-ul.social_links2:hover li,
-.social_links2 ul:hover li {
-        width: 18%;
-}
+    &.colored {
+        a {
+            color: #ffffff;
+        }
+        .fa-facebook-f,
+        .facebook a {
+            background-color: #395996;
+        }
+        
+        .fa-youtube,
+        .youtube a {
+            background-color:#FF0000;   
+        }
+        
+        .fa-twitter,
+        .twitter a {
+            background-color:#00acec;   
+        }
+         
+        .fa-instagram,
+        .instagram a { 
+            background-color:#527fa4;   
+        }
+    }
+    
+    &.autowidth {
+        a {
+            width: auto;
+        }
+    }
 
-ul.social_links2 li:hover,
-.social_links2 ul li:hover {
-    width: 28%;
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        position: relative;
-        z-index: 2;
+    &.text-left {
+        a {
+            justify-content: start;
+            i {
+                width: 45px;
+                text-align: center;
+            }
+        }
+    }
 }
-
+    
 /* Scroll Down */ 
 .mouse_scroll_down {
     position: absolute;

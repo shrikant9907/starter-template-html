@@ -220,8 +220,8 @@ section.banner-section .banner-card:before {
 .card .ciconr,
 .card .cicons,
 .card .ciconc {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,8 +417,8 @@ section.banner-section .banner-card:before {
 .card.ctestimonial .cimagewrbc,
 .card.ctestimonial .cimagewrb {
   border: 5px solid #ffffff;
-  width: 85px;
-  height: 85px;
+  width: 95px;
+  height: 95px;
 }
 .card.ctestimonial .cimagewrbc,
 .card.ctestimonial .cimagewrc {
@@ -1017,119 +1017,79 @@ section.banner-section .banner-card:before {
   margin-right: 5px;
 }
 
-/*Social Links*/
-.social_links {
-  clear: both;
-  display: inline-block;
+/*Social Icons*/
+.socialicons {
+  display: inline-flex;
+  font-size: 16px;
+  color: #000000;
+  padding: 0px;
+  list-style: none;
+  margin: 0 -3px;
+  width: 100%;
 }
-
-.social_links a {
-  padding: 15px;
-  display: inline-block;
-  color: #ffffff;
+.socialicons a {
+  height: 45px;
+  color: inherit;
   text-decoration: none;
-}
-
-.social_links.boxed a {
   width: 45px;
-  height: 45px;
-  padding: 11px;
-  text-align: center;
-  border: 1px solid #ffffff;
-  float: left;
-  margin-right: 10px;
+  min-width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: inherit;
+  margin: 0 3px 6px 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
-.social_links.boxed a {
-  width: 45px;
-  height: 45px;
-  padding: 11px;
-  text-align: center;
-  border: 1px solid #ffffff;
-  float: left;
-  margin-right: 10px;
+.socialicons.siconsbc a, .socialicons.siconsbr a, .socialicons.siconsb a {
+  border: 1px solid #000000;
 }
-
-.social_links.boxed.rounded a {
+.socialicons.siconsbr a {
+  border-radius: 6px;
+}
+.socialicons.siconsc a, .socialicons.siconsbc a {
   border-radius: 100%;
 }
-
-ul.social_links2,
-.social_links2 ul {
-  margin: 0 !important;
-  padding: 0 !important;
-  clear: both;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.socialicons.inverse, .socialicons.bg_dark, .socialicons.bg-dark {
+  color: #ffffff;
 }
-
-ul.social_links2 li,
-.social_links2 ul li {
-  background-color: #EA4235;
-  width: 20%;
-  float: left;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  margin: 0 0 5px 0;
+.socialicons.inverse a, .socialicons.bg_dark a, .socialicons.bg-dark a {
+  border-color: #ffffff;
 }
-
-ul.social_links2 li:before,
-.social_links2 ul li:before {
-  display: none;
+.socialicons.bg_dark, .socialicons.bg-dark {
+  background: #000000;
 }
-
-ul.social_links2 li a,
-.social_links2 ul li a {
-  height: 40px;
-  line-height: 40px;
-  color: #ffffff !important;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.socialicons.colored a {
+  color: #ffffff;
 }
-
-.social_links2 li#facebook {
+.socialicons.colored .fa-facebook-f,
+.socialicons.colored .facebook a {
   background-color: #395996;
 }
-
-.social_links2 li#youtuble {
+.socialicons.colored .fa-youtube,
+.socialicons.colored .youtube a {
   background-color: #FF0000;
 }
-
-.social_links2 li#twitter {
+.socialicons.colored .fa-twitter,
+.socialicons.colored .twitter a {
   background-color: #00acec;
 }
-
-.social_links2 li#instagram {
+.socialicons.colored .fa-instagram,
+.socialicons.colored .instagram a {
   background-color: #527fa4;
 }
-
-ul.social_links2:hover li,
-.social_links2 ul:hover li {
-  width: 18%;
+.socialicons.autowidth a {
+  width: auto;
 }
-
-ul.social_links2 li:hover,
-.social_links2 ul li:hover {
-  width: 28%;
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  position: relative;
-  z-index: 2;
+.socialicons.text-left a {
+  justify-content: start;
+}
+.socialicons.text-left a i {
+  width: 45px;
+  text-align: center;
 }
 
 /* Scroll Down */
