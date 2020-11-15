@@ -775,73 +775,43 @@ section.banner-section {
 }
 
 /* Pricing Table 2 */
-.price_tables_wr .cpricing2 {
-    background: rgba(183,233,255, 0.2);
-    border:none;
+.pricing_cards .pcard2 {
+    background: rgba(183,233,255, 0.2) !important;
     overflow: hidden;
-}
+   
+    .popular {
+        position: absolute;
+        background: $primaryColor;
+        color: #fff;
+        padding: 1px 27px;
+        font-size: 14px;
+        transform: rotate(-45deg);
+        left: -32px;
+        top: 25px;
+    }
 
-.price_tables_wr .col:nth-child(2) .cpricing2{
-    background: rgba(183,233,255, 0.6);
-    top:-10px;
-}
+    .col:nth-child(2) .pcard2{
+        background: rgba(183,233,255, 0.6);
+        top:-10px;
+    }
 
-.price_tables_wr .col:nth-child(3) .cpricing2{
-    background: rgba(183,233,255, 0.2);
-}
-
-.cpricing2 .card-title {
-    font-size: 14px;
-}
-
-.cpricing2 .popular {
-    position: absolute;
-    background: $primaryColor;
-    color: #fff;
-    padding: 1px 27px;
-    font-size: 14px;
-    transform: rotate(-45deg);
-    left: -32px;
-    top: 25px;
-}
-
-.cpricing2 .card-price {
-    display: inline-block;
-}
-
-.cpricing2 .card-price .price {
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: -2px;
-}
-
-.cpricing2 .card-price .symbol {
-    font-size: 16px;
-    left: -14px;
-    top: 11px;
-}
-
-.cpricing2 .card-price .period {
-    right: -26px;
-    bottom: 10px;
-}
-
-.cpricing2 .btn {
-    font-size: 14px;
+    .col:nth-child(3) .pcard2{
+        background: rgba(183,233,255, 0.2);
+    }
 }
 
 /* Pricing Table 3 */
-.price_tables_wr .cpricing3 {
+.pricing_cards .cpricing3 {
     background: #B10031;
     border:none;
 }
 
-.price_tables_wr .col:nth-child(2) .cpricing3{
+.pricing_cards .col:nth-child(2) .cpricing3{
     background: #9A59FF;
     /*top:-10px;*/
 }
 
-.price_tables_wr .col:nth-child(3) .cpricing3{
+.pricing_cards .col:nth-child(3) .cpricing3{
     background: #FE005A;
 }
 
@@ -910,7 +880,7 @@ section.banner-section {
 
 /* Pricing Table 4 */
 
-.price_tables_wr .cpricing4 {
+.pricing_cards .cpricing4 {
     background: #FF917E;
     box-shadow: 0 0 14px -6px #FF917E;
     border: none;
@@ -921,22 +891,22 @@ section.banner-section {
     transition: all 0.3s ease-in-out;
 }
 
-.price_tables_wr .col:nth-child(2) .cpricing4{
+.pricing_cards .col:nth-child(2) .cpricing4{
     background: #FFC65F;
     box-shadow: 0 0 14px -6px #FFC65F;
 }
 
-.price_tables_wr .col:nth-child(3) .cpricing4{
+.pricing_cards .col:nth-child(3) .cpricing4{
     background: #cac9ff;
     box-shadow: 0 0 14px -6px #cac9ff;
 }
 
-.price_tables_wr .col:nth-child(4) .cpricing4{
+.pricing_cards .col:nth-child(4) .cpricing4{
     background: #c7de68;
     box-shadow: 0 0 14px -6px #c7de68;
 }
 
-.price_tables_wr .cpricing4:hover {
+.pricing_cards .cpricing4:hover {
     box-shadow: unset;
     -moz-transform: scale(1.03);
     -webkit-transform: scale(1.03);
