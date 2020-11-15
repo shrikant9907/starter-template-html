@@ -946,38 +946,42 @@ section.banner-section {
 
 
 /* Team Card */
-.card_team1{
+.cteam{
     box-shadow: 2px 2px 9px 5px whitesmoke;
     border: 1px solid white;
     border-radius: 8px;
     padding: 27px 15px 16px 15px;
+    .card-title p{
+        text-align: center;
+        line-height: 12px;
+    }
+    .card-header .img_circle{
+        border-radius: 100%;
+        border:4px solid silver;
+        margin:0px auto;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        .images{
+            margin: 0px auto;
+            width: 100%;
+        }
+    }
+    .card-body .separator{
+        height: 4px;
+        background: #0062cc;
+        width: 40px;
+        margin: 0px auto 12px auto;     
+    } 
 }
 
-.card_team1 .card-title p{
-    text-align: center;
-    line-height: 12px;
-}
+.card_team1 
 
-.card_team1 .card-header .img_circle{
-    border-radius: 100%;
-    border:4px solid silver;
-    margin:0px auto;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-}
+.card_team1 
 
-.card_team1 .card-header .images{
-    margin: 0px auto;
-    width: 100%;
-}
+.card_team1 
 
-.card_team1 .card-body .separator{
-    height: 4px;
-    background: #0062cc;
-    width: 40px;
-    margin: 0px auto 12px auto;     
-} 
+.card_team1 
 
 /*Sidebar Widget*/
 .card.widget_card {
