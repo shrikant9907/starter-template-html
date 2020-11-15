@@ -693,25 +693,19 @@ section.banner-section .banner-card:before {
 }
 
 /* Pricing Table 3 */
-.pricing_cards .cpricing3 {
-  background: #B10031;
-  border: none;
+.pricing_cards .pcard3 {
+  background: #B10031 !important;
+  color: #ffffff;
 }
-
-.pricing_cards .col:nth-child(2) .cpricing3 {
-  background: #9A59FF;
-  /*top:-10px;*/
+.pricing_cards .pcard3 .card-title,
+.pricing_cards .pcard3 .card-body ul {
+  color: inherit !important;
 }
-
-.pricing_cards .col:nth-child(3) .cpricing3 {
-  background: #FE005A;
+.pricing_cards .pcard3 .card-title li strong,
+.pricing_cards .pcard3 .card-body ul li strong {
+  color: inherit !important;
 }
-
-.cpricing3 .card-title {
-  font-size: 14px;
-}
-
-.cpricing3 .popular {
+.pricing_cards .pcard3 .popular {
   position: absolute;
   background: #ffc107;
   color: #000;
@@ -722,8 +716,7 @@ section.banner-section .banner-card:before {
   width: 108%;
   z-index: 99;
 }
-
-.cpricing3 .popular:before {
+.pricing_cards .pcard3 .popular:before {
   display: block;
   content: "";
   border-top: 17px solid transparent;
@@ -733,8 +726,7 @@ section.banner-section .banner-card:before {
   top: 0;
   left: 0;
 }
-
-.cpricing3 .popular:after {
+.pricing_cards .pcard3 .popular:after {
   display: block;
   content: "";
   border-top: 17px solid transparent;
@@ -744,30 +736,11 @@ section.banner-section .banner-card:before {
   top: 0;
   right: 0;
 }
-
-.cpricing3 .card-price {
-  display: inline-block;
+.pricing_cards .pcard3 .col:nth-child(2) .pcard3 {
+  background: #9A59FF !important;
 }
-
-.cpricing3 .card-price .price {
-  font-size: 50px;
-  font-weight: 900;
-  letter-spacing: -2px;
-}
-
-.cpricing3 .card-price .symbol {
-  font-size: 16px;
-  left: -14px;
-  top: 11px;
-}
-
-.cpricing3 .card-price .period {
-  right: -26px;
-  bottom: 10px;
-}
-
-.cpricing3 .btn {
-  font-size: 14px;
+.pricing_cards .pcard3 .col:nth-child(3) .pcard3 {
+  background: #FE005A !important;
 }
 
 /* Pricing Table 4 */

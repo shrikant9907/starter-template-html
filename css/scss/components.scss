@@ -801,83 +801,59 @@ section.banner-section {
 }
 
 /* Pricing Table 3 */
-.pricing_cards .cpricing3 {
-    background: #B10031;
-    border:none;
-}
+.pricing_cards .pcard3 {
+    background: #B10031 !important;
+    color: #ffffff;
+   
+    .card-title,
+    .card-body ul {
+        color: inherit !important;
+        li strong {
+            color: inherit !important;
+        }
+    }
+    .popular {
+        position: absolute;
+        background: #ffc107;
+        color: #000;
+        padding: 6px 27px;
+        font-size: 14px;
+        left: -4%;
+        top: -30px;
+        width: 108%;
+        z-index: 99;
 
-.pricing_cards .col:nth-child(2) .cpricing3{
-    background: #9A59FF;
-    /*top:-10px;*/
-}
+        &:before {
+            display: block;
+            content: '';
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            border-left: 20px solid #ffffff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
-.pricing_cards .col:nth-child(3) .cpricing3{
-    background: #FE005A;
-}
+        &:after {
+            display: block;
+            content: '';
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            border-right: 20px solid #ffffff;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 
-.cpricing3 .card-title {
-    font-size: 14px;
-}
+    .col:nth-child(2) .pcard3{
+        background: #9A59FF  !important;
+    }
 
-.cpricing3 .popular {
-    position: absolute;
-    background: #ffc107;
-    color: #000;
-    padding: 6px 27px;
-    font-size: 14px;
-    left: -4%;
-    top: -30px;
-    width: 108%;
-    z-index: 99;
+    .col:nth-child(3) .pcard3{
+        background: #FE005A  !important;
+    }
 }
-
-.cpricing3 .popular:before {
-    display: block;
-    content: '';
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-left: 20px solid #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.cpricing3 .popular:after {
-    display: block;
-    content: '';
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-right: 20px solid #ffffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.cpricing3 .card-price {
-    display: inline-block;
-}
-
-.cpricing3 .card-price .price {
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: -2px;
-}
-
-.cpricing3 .card-price .symbol {
-    font-size: 16px;
-    left: -14px;
-    top: 11px;
-}
-
-.cpricing3 .card-price .period {
-    right: -26px;
-    bottom: 10px;
-}
-
-.cpricing3 .btn {
-    font-size: 14px;
-}
-
 /* Pricing Table 4 */
 
 .pricing_cards .cpricing4 {
