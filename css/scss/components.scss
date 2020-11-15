@@ -774,77 +774,76 @@ section.banner-section {
 
 }
 
-/* Pricing Table 2 */
-.pricing_cards .pcard2 {
-    background: rgba(183,233,255, 0.2) !important;
-    overflow: hidden;
-   
-    .popular {
-        position: absolute;
-        background: $primaryColor;
-        color: #fff;
-        padding: 1px 27px;
-        font-size: 14px;
-        transform: rotate(-45deg);
-        left: -32px;
-        top: 25px;
+/* Pricing Table */
+.pricing_cards {
+    
+    // pricing card 2
+    .pcard2 {
+        background: rgba(183,233,255, 0.2) !important;
+        overflow: hidden;
+        .popular {
+            position: absolute;
+            background: $primaryColor;
+            color: #fff;
+            padding: 1px 27px;
+            font-size: 14px;
+            transform: rotate(-45deg);
+            left: -32px;
+            top: 25px;
+        }
     }
-
     .col:nth-child(2) .pcard2{
-        background: rgba(183,233,255, 0.6);
+        background: rgba(183,233,255, 0.6) !important;
         top:-10px;
     }
-
-    .col:nth-child(3) .pcard2{
-        background: rgba(183,233,255, 0.2);
-    }
-}
-
-/* Pricing Table 3 */
-.pricing_cards .pcard3 {
-    background: #B10031 !important;
-    color: #ffffff;
-   
-    .card-title,
-    .card-body ul {
-        color: inherit !important;
-        li strong {
+ 
+    
+    // pricing card 3
+    .pcard3 {
+        background: #B10031 !important;
+        color: #ffffff;
+       
+        .card-title,
+        .card-body ul {
             color: inherit !important;
+            li strong {
+                color: inherit !important;
+            }
         }
-    }
-    .popular {
-        position: absolute;
-        background: #ffc107;
-        color: #000;
-        padding: 6px 27px;
-        font-size: 14px;
-        left: -4%;
-        top: -30px;
-        width: 108%;
-        z-index: 99;
-
-        &:before {
-            display: block;
-            content: '';
-            border-top: 17px solid transparent;
-            border-bottom: 17px solid transparent;
-            border-left: 20px solid #ffffff;
+        .popular {
             position: absolute;
-            top: 0;
-            left: 0;
+            background: #ffc107;
+            color: #000;
+            padding: 6px 27px;
+            font-size: 14px;
+            left: -4%;
+            top: -30px;
+            width: 108%;
+            z-index: 99;
+    
+            &:before {
+                display: block;
+                content: '';
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+                border-left: 20px solid #ffffff;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+    
+            &:after {
+                display: block;
+                content: '';
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+                border-right: 20px solid #ffffff;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
-
-        &:after {
-            display: block;
-            content: '';
-            border-top: 17px solid transparent;
-            border-bottom: 17px solid transparent;
-            border-right: 20px solid #ffffff;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
+    }    
 
     .col:nth-child(2) .pcard3{
         background: #9A59FF  !important;
@@ -853,152 +852,98 @@ section.banner-section {
     .col:nth-child(3) .pcard3{
         background: #FE005A  !important;
     }
-}
-/* Pricing Table 4 */
 
-.pricing_cards .cpricing4 {
-    background: #FF917E;
-    box-shadow: 0 0 14px -6px #FF917E;
-    border: none;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.pricing_cards .col:nth-child(2) .cpricing4{
-    background: #FFC65F;
-    box-shadow: 0 0 14px -6px #FFC65F;
-}
-
-.pricing_cards .col:nth-child(3) .cpricing4{
-    background: #cac9ff;
-    box-shadow: 0 0 14px -6px #cac9ff;
-}
-
-.pricing_cards .col:nth-child(4) .cpricing4{
-    background: #c7de68;
-    box-shadow: 0 0 14px -6px #c7de68;
-}
-
-.pricing_cards .cpricing4:hover {
-    box-shadow: unset;
-    -moz-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03); 
-}
-
-.cpricing4 .card-title {
-    font-size: 14px;
-}
-
-.cpricing4 .popular {
-    position: absolute;
-    background: #ffc107;
-    color: #000;
-    padding: 6px 27px;
-    font-size: 14px;
-    left: -4%;
-    top: -30px;
-    width: 108%;
-    z-index: 99;
-    box-shadow: 1px 4px 3px -4px #b38601;
-}
-
-.cpricing4 .popular:before {
-    display: block;
-    content: '';
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-left: 20px solid #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.cpricing4 .popular:after {
-    display: block;
-    content: '';
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-right: 20px solid #ffffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.cpricing4 .card-price {
-    display: inline-block;
-}
-
-.cpricing4 .card-price .price {
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: -2px;
-}
-
-.cpricing4 .card-price .symbol {
-    font-size: 16px;
-    left: -14px;
-    top: 11px;
-}
-
-.cpricing4 .card-price .period {
-    right: -26px;
-    bottom: 10px;
-}
-
-.cpricing4 .btn {
-    font-size: 14px;
-} 
-
-/* Pricing Card 5 */
-.pricing_table5 {
-    background: #ffffff;
+    //  pricing card 4
+    .pcard4 {
+        background: #FF917E !important;
+        box-shadow: 0 0 14px -6px #FF917E !important;
+        border: none;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        color: #212529 !important;
+        .card-title {
+            background: #fff;
+            display: inline-block;
+            width: 100%;
+            font-weight: normal;
+            color: inherit !important;
+            padding: 10px;
+            border-radius: 6px;
+        }
     
+        .card-body ul li {
+            color: #212529 !important;
+            & strong {
+                color: inherit !important;
+            }
+        }
+        &:hover {
+            box-shadow: unset;
+            -moz-transform: scale(1.03);
+            -webkit-transform: scale(1.03);
+            -o-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+            transform: scale(1.03); 
+        }
+        .popular {
+            position: absolute;
+            background: inherit;
+            color: inherit;
+            padding: 6px 27px;
+            font-size: 14px;
+            left: -4%;
+            top: -30px;
+            width: 108%;
+            z-index: 99;
+            box-shadow: 1px 4px 3px -4px #b38601;
+            &:after {
+                display: block;
+                content: '';
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+                border-right: 20px solid #ffffff;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }    
+            &:before {
+                display: block;
+                content: '';
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+                border-left: 20px solid #ffffff;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .col:nth-child(2) .pcard4{
+        background: #FFC65F !important;
+        box-shadow: 0 0 14px -6px #FFC65F !important;
+    }
+    .col:nth-child(3) .pcard4{
+        background: #cac9ff !important;
+        box-shadow: 0 0 14px -6px #cac9ff !important;
+    }
+    .col:nth-child(4) .pcard4{
+        background: #c7de68 !important;
+        box-shadow: 0 0 14px -6px #c7de68 !important;
+    }
+
+    // pricing card 5
+    .pcard5 {
+        background: #ffffff;
+    }
+
+    .col:nth-child(2n) .pcard5{
+        background: rgba(0, 0, 0, 0.02) !important;
+    }
 }
 
-.pricing_table5 .card-title {
-    font-size: 14px;
-}
-
-.pricing_table5 .card-price {
-    display: inline-block;
-}
-
-.pricing_table5 .card-price .price {
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: -2px;
-}
-
-.pricing_table5 .card-price .symbol {
-    font-size: 16px;
-    left: -14px;
-    top: 11px;
-}
-
-.pricing_table5 .card-price .period {
-    right: -26px;
-    bottom: 10px;
-}
-
-.pricing_table5 .btn {
-    font-size: 14px;
-}
-
-.pricing_table5 i {
-    color: red;
-    font-size: 10px;
-    margin-right: 5px;
-    margin-right: 5px;
-}
-.pricing_table5 li {
-    font-size: 14px;
-}
 
 /* Team Card */
 .card_team1{
