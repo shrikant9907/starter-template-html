@@ -195,6 +195,7 @@ section.banner-section .banner-card:before {
   transition: all 0.3s ease;
   margin-bottom: 20px;
   background-color: #ffffff;
+  /* Pricing Cards */
 }
 .card .nobg {
   background: transparent !important;
@@ -443,6 +444,51 @@ section.banner-section .banner-card:before {
 .card.ctestimonial .ciconbgl {
   left: 15px;
 }
+.card.cpricing .card-title {
+  font-size: 14px;
+  color: #6c757d !important;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.card.cpricing .card-body {
+  padding: 40px 20px;
+}
+.card.cpricing .card-body ul {
+  font-size: 16px;
+  color: #6c757d !important;
+  list-style: none;
+  padding: 0px;
+}
+.card.cpricing .card-body ul li {
+  padding: 11px 0 16px 0;
+}
+.card.cpricing .card-body ul li strong {
+  color: #343a40 !important;
+}
+.card.cpricing .card-price {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.card.cpricing .card-price .price {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+.card.cpricing .card-price .symbol {
+  font-size: 16px;
+  left: -14px;
+  top: 11px;
+  position: absolute;
+}
+.card.cpricing .card-price .period {
+  right: -26px;
+  bottom: 10px;
+}
+.card.cpricing .btn {
+  font-size: 14px;
+  padding: 15px;
+}
 
 .button,
 .btn {
@@ -623,62 +669,27 @@ section.banner-section .banner-card:before {
   color: inherit;
 }
 
-/* Pricing Tables */
-.pricing_card1 {
-  background: #ffffff;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.04);
-}
-
-.pricing_card1 .card-title {
-  font-size: 14px;
-}
-
-.pricing_card1 .card-price {
-  display: inline-block;
-}
-
-.pricing_card1 .card-price .price {
-  font-size: 50px;
-  font-weight: 900;
-  letter-spacing: -2px;
-}
-
-.pricing_card1 .card-price .symbol {
-  font-size: 16px;
-  left: -14px;
-  top: 11px;
-}
-
-.pricing_card1 .card-price .period {
-  right: -26px;
-  bottom: 10px;
-}
-
-.pricing_card1 .btn {
-  font-size: 14px;
-}
-
 /* Pricing Table 2 */
-.price_tables_wr .pricing_card2 {
+.price_tables_wr .cpricing2 {
   background: rgba(183, 233, 255, 0.2);
   border: none;
   overflow: hidden;
 }
 
-.price_tables_wr .col:nth-child(2) .pricing_card2 {
+.price_tables_wr .col:nth-child(2) .cpricing2 {
   background: rgba(183, 233, 255, 0.6);
   top: -10px;
 }
 
-.price_tables_wr .col:nth-child(3) .pricing_card2 {
+.price_tables_wr .col:nth-child(3) .cpricing2 {
   background: rgba(183, 233, 255, 0.2);
 }
 
-.pricing_card2 .card-title {
+.cpricing2 .card-title {
   font-size: 14px;
 }
 
-.pricing_card2 .popular {
+.cpricing2 .popular {
   position: absolute;
   background: #007bff;
   color: #fff;
@@ -689,51 +700,51 @@ section.banner-section .banner-card:before {
   top: 25px;
 }
 
-.pricing_card2 .card-price {
+.cpricing2 .card-price {
   display: inline-block;
 }
 
-.pricing_card2 .card-price .price {
+.cpricing2 .card-price .price {
   font-size: 50px;
   font-weight: 900;
   letter-spacing: -2px;
 }
 
-.pricing_card2 .card-price .symbol {
+.cpricing2 .card-price .symbol {
   font-size: 16px;
   left: -14px;
   top: 11px;
 }
 
-.pricing_card2 .card-price .period {
+.cpricing2 .card-price .period {
   right: -26px;
   bottom: 10px;
 }
 
-.pricing_card2 .btn {
+.cpricing2 .btn {
   font-size: 14px;
 }
 
 /* Pricing Table 3 */
-.price_tables_wr .pricing_card3 {
+.price_tables_wr .cpricing3 {
   background: #B10031;
   border: none;
 }
 
-.price_tables_wr .col:nth-child(2) .pricing_card3 {
+.price_tables_wr .col:nth-child(2) .cpricing3 {
   background: #9A59FF;
   /*top:-10px;*/
 }
 
-.price_tables_wr .col:nth-child(3) .pricing_card3 {
+.price_tables_wr .col:nth-child(3) .cpricing3 {
   background: #FE005A;
 }
 
-.pricing_card3 .card-title {
+.cpricing3 .card-title {
   font-size: 14px;
 }
 
-.pricing_card3 .popular {
+.cpricing3 .popular {
   position: absolute;
   background: #ffc107;
   color: #000;
@@ -745,7 +756,7 @@ section.banner-section .banner-card:before {
   z-index: 99;
 }
 
-.pricing_card3 .popular:before {
+.cpricing3 .popular:before {
   display: block;
   content: "";
   border-top: 17px solid transparent;
@@ -756,7 +767,7 @@ section.banner-section .banner-card:before {
   left: 0;
 }
 
-.pricing_card3 .popular:after {
+.cpricing3 .popular:after {
   display: block;
   content: "";
   border-top: 17px solid transparent;
@@ -767,33 +778,33 @@ section.banner-section .banner-card:before {
   right: 0;
 }
 
-.pricing_card3 .card-price {
+.cpricing3 .card-price {
   display: inline-block;
 }
 
-.pricing_card3 .card-price .price {
+.cpricing3 .card-price .price {
   font-size: 50px;
   font-weight: 900;
   letter-spacing: -2px;
 }
 
-.pricing_card3 .card-price .symbol {
+.cpricing3 .card-price .symbol {
   font-size: 16px;
   left: -14px;
   top: 11px;
 }
 
-.pricing_card3 .card-price .period {
+.cpricing3 .card-price .period {
   right: -26px;
   bottom: 10px;
 }
 
-.pricing_card3 .btn {
+.cpricing3 .btn {
   font-size: 14px;
 }
 
 /* Pricing Table 4 */
-.price_tables_wr .pricing_card4 {
+.price_tables_wr .cpricing4 {
   background: #FF917E;
   box-shadow: 0 0 14px -6px #FF917E;
   border: none;
@@ -804,22 +815,22 @@ section.banner-section .banner-card:before {
   transition: all 0.3s ease-in-out;
 }
 
-.price_tables_wr .col:nth-child(2) .pricing_card4 {
+.price_tables_wr .col:nth-child(2) .cpricing4 {
   background: #FFC65F;
   box-shadow: 0 0 14px -6px #FFC65F;
 }
 
-.price_tables_wr .col:nth-child(3) .pricing_card4 {
+.price_tables_wr .col:nth-child(3) .cpricing4 {
   background: #cac9ff;
   box-shadow: 0 0 14px -6px #cac9ff;
 }
 
-.price_tables_wr .col:nth-child(4) .pricing_card4 {
+.price_tables_wr .col:nth-child(4) .cpricing4 {
   background: #c7de68;
   box-shadow: 0 0 14px -6px #c7de68;
 }
 
-.price_tables_wr .pricing_card4:hover {
+.price_tables_wr .cpricing4:hover {
   box-shadow: unset;
   -moz-transform: scale(1.03);
   -webkit-transform: scale(1.03);
@@ -828,11 +839,11 @@ section.banner-section .banner-card:before {
   transform: scale(1.03);
 }
 
-.pricing_card4 .card-title {
+.cpricing4 .card-title {
   font-size: 14px;
 }
 
-.pricing_card4 .popular {
+.cpricing4 .popular {
   position: absolute;
   background: #ffc107;
   color: #000;
@@ -845,7 +856,7 @@ section.banner-section .banner-card:before {
   box-shadow: 1px 4px 3px -4px #b38601;
 }
 
-.pricing_card4 .popular:before {
+.cpricing4 .popular:before {
   display: block;
   content: "";
   border-top: 17px solid transparent;
@@ -856,7 +867,7 @@ section.banner-section .banner-card:before {
   left: 0;
 }
 
-.pricing_card4 .popular:after {
+.cpricing4 .popular:after {
   display: block;
   content: "";
   border-top: 17px solid transparent;
@@ -867,28 +878,28 @@ section.banner-section .banner-card:before {
   right: 0;
 }
 
-.pricing_card4 .card-price {
+.cpricing4 .card-price {
   display: inline-block;
 }
 
-.pricing_card4 .card-price .price {
+.cpricing4 .card-price .price {
   font-size: 50px;
   font-weight: 900;
   letter-spacing: -2px;
 }
 
-.pricing_card4 .card-price .symbol {
+.cpricing4 .card-price .symbol {
   font-size: 16px;
   left: -14px;
   top: 11px;
 }
 
-.pricing_card4 .card-price .period {
+.cpricing4 .card-price .period {
   right: -26px;
   bottom: 10px;
 }
 
-.pricing_card4 .btn {
+.cpricing4 .btn {
   font-size: 14px;
 }
 
