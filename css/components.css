@@ -1069,6 +1069,26 @@ section.banner-section .banner-card:before {
   justify-content: center;
 }
 
+.gotoparrow {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 34px;
+  z-index: 999;
+  background: #ffffff;
+  color: #007bff;
+  text-decoration: none !important;
+  font-size: 24px;
+  flex-direction: column;
+}
+
 /* Scroll Down */
 .mouse_scroll_down {
   position: absolute;
