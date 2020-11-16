@@ -852,7 +852,8 @@ section.banner-section .banner-card:before {
   margin: 0px auto 12px auto;
 }
 
-.card_team1 .card_team1 .card_team1 .card_team1 .card.widget_card {
+/*Sidebar Widget*/
+.card.widget_card {
   margin: 0 0 20px 0;
 }
 
@@ -1029,6 +1030,43 @@ section.banner-section .banner-card:before {
   border-left: unset !important;
   border-right: unset !important;
   padding: 11px 0px;
+}
+
+.mui {
+  padding: 28px 20px 20px 20px;
+  border: none;
+  margin: auto;
+  max-width: 100%;
+}
+.mui .close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+.mui .mheader, .mui .modal-header {
+  padding-top: 0px;
+}
+.mui .mfooter, .mui .modal-footer {
+  justify-content: center;
+}
+.mui .mbody p:last-child, .mui .modal-body p:last-child {
+  margin-bottom: 0;
+}
+.mui.muis {
+  box-shadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
+}
+.mui.mui2 {
+  border-radius: 0;
+  border: none;
+}
+.mui.mui2 .mfooter, .mui.mui2 .modal-footer,
+.mui.mui2 .mheader, .mui.mui2 .modal-header {
+  border: none;
+}
+.mui.muic .mfooter, .mui.muic .modal-footer,
+.mui.muic .mheader, .mui.muic .modal-header {
+  text-align: center;
+  justify-content: center;
 }
 
 /* Scroll Down */

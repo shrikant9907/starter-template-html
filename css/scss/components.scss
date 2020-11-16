@@ -975,14 +975,6 @@ section.banner-section {
     } 
 }
 
-.card_team1 
-
-.card_team1 
-
-.card_team1 
-
-.card_team1 
-
 /*Sidebar Widget*/
 .card.widget_card {
     margin: 0 0 20px 0;
@@ -1184,6 +1176,56 @@ section.banner-section {
         border-right:unset !important;
         padding: 11px 0px;
     }
+}
+
+// Modal UI
+.mui {
+    padding: 28px 20px 20px 20px;
+    border: none;
+    margin: auto;
+    max-width: 100%;
+
+    .close {
+        position: absolute;
+        right: 14px;
+        top: 10px;
+    }
+
+    .mheader, .modal-header {
+        padding-top: 0px;
+    }
+    .mfooter, .modal-footer {
+        justify-content: center;
+    }
+    
+    .mbody, .modal-body {
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.muis {
+        box-shadow: $cardShadow;
+    }
+
+    &.mui2 {
+        border-radius: 0;
+        border: none;
+
+        .mfooter, .modal-footer,
+        .mheader, .modal-header {
+            border: none;
+        }   
+    }
+
+    &.muic {
+        .mfooter, .modal-footer,
+        .mheader, .modal-header {
+            text-align: center;
+            justify-content: center;
+        }  
+    }
+    
 }
     
 /* Scroll Down */ 
