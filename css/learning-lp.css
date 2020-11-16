@@ -43,8 +43,17 @@ section.banner-section .banner-card:before {
 }
 
 .main_heading {
-    font-family: Open Sans Condensed;
-    letter-spacing: 1px;
+    font-family: roboto;
+    text-transform: uppercase;
+}
+.main_heading span:nth-child(1) {
+    color: #00ff3a;
+    font-weight: bold;
+}
+
+.main_heading span:nth-child(3) {
+    color: #fffb00;
+    font-weight: bold;
 }
 
 section.banner-section:before {
