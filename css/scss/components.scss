@@ -1129,6 +1129,62 @@ section.banner-section {
         }
     }
 }
+
+// form ui
+.fui,
+.fui1 {
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input:not([type='submit']), textarea, select,
+    .form-control {
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 0;
+        padding: 11px 12px;
+        font-size: inherit;
+        min-height: 45px;
+    }
+
+}
+
+.fui2p,
+.fui2r,
+.fui2 {
+    input:not([type='submit']), textarea, select,
+    .form-control {
+        border-radius: unset;
+        background: rgba(0,0,0,0.06);
+        border: unset;
+    }
+}
+
+.fui2r,
+.fui1r {
+    input:not([type='submit']), textarea, select,
+    .form-control {
+       border-radius: 6px; 
+    }
+}
+
+.fui2p,
+.fui1p {
+    input:not([type='submit']), textarea, select,
+    .form-control {
+       border-radius: 45px; 
+       padding: 11px 20px;
+    }
+}
+
+.fui3 {
+    input:not([type='submit']), textarea, select,
+    .form-control {
+        border-top:unset !important;
+        border-left:unset !important;
+        border-right:unset !important;
+        padding: 11px 0px;
+    }
+}
     
 /* Scroll Down */ 
 .mouse_scroll_down {

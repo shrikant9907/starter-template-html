@@ -972,6 +972,65 @@ section.banner-section .banner-card:before {
   text-align: center;
 }
 
+.fui .form-group,
+.fui1 .form-group {
+  margin-bottom: 20px;
+}
+.fui input:not([type=submit]), .fui textarea, .fui select,
+.fui .form-control,
+.fui1 input:not([type=submit]),
+.fui1 textarea,
+.fui1 select,
+.fui1 .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding: 11px 12px;
+  font-size: inherit;
+  min-height: 45px;
+}
+
+.fui2p input:not([type=submit]), .fui2p textarea, .fui2p select,
+.fui2p .form-control,
+.fui2r input:not([type=submit]),
+.fui2r textarea,
+.fui2r select,
+.fui2r .form-control,
+.fui2 input:not([type=submit]),
+.fui2 textarea,
+.fui2 select,
+.fui2 .form-control {
+  border-radius: unset;
+  background: rgba(0, 0, 0, 0.06);
+  border: unset;
+}
+
+.fui2r input:not([type=submit]), .fui2r textarea, .fui2r select,
+.fui2r .form-control,
+.fui1r input:not([type=submit]),
+.fui1r textarea,
+.fui1r select,
+.fui1r .form-control {
+  border-radius: 6px;
+}
+
+.fui2p input:not([type=submit]), .fui2p textarea, .fui2p select,
+.fui2p .form-control,
+.fui1p input:not([type=submit]),
+.fui1p textarea,
+.fui1p select,
+.fui1p .form-control {
+  border-radius: 45px;
+  padding: 11px 20px;
+}
+
+.fui3 input:not([type=submit]), .fui3 textarea, .fui3 select,
+.fui3 .form-control {
+  border-top: unset !important;
+  border-left: unset !important;
+  border-right: unset !important;
+  padding: 11px 0px;
+}
+
 /* Scroll Down */
 .mouse_scroll_down {
   position: absolute;
