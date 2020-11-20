@@ -50,39 +50,6 @@ img.blur {
     margin-top: 131px;
 }
 
-/*Slick Slider*/
-.slick-prev:before,
-.slick-next:before {
-    font-family: "slick";
-    font-size: 40px;
-    line-height: 1;
-    opacity: 0.75;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev:before {
-    content: "‹";
-}
-
-[dir="rtl"] .slick-prev:before {
-    content: "›";
-}
-
-[dir="rtl"] .slick-next {
-    left: -10px;
-    top: 70px;
-    right: auto;
-}
-
-.slick-next:before {
-    content: "›";
-}
-
-[dir="rtl"] .slick-next:before {
-    content: "‹";
-}
-
 /*About Section*/
 .section-about img.position-absolute {
     left: 0;

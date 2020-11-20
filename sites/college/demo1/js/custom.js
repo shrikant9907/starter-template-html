@@ -18,6 +18,7 @@ jQuery('document').ready(function(){
 	  centerMode: false,
 	  centerPadding: '0',
 	  slidesToShow: 1,
+	  arrows: true,
 	  responsive: [
 	    {
 	      breakpoint: 768, 

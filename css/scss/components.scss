@@ -1336,6 +1336,64 @@ header {
         padding: 15px 0;
     }
 }
+
+.slicksliderui {
+
+    &.arrowsin {
+        .slick-prev {
+            left: 25px;
+        }
+
+        .slick-next {
+            right: 50px;
+        }
+    }
+
+    .slick-arrow {
+        z-index: 99;
+
+        &.slick-prev,
+        &.slick-next {
+            background: rgba(0,0,0,0.5);
+            color: #ffffff;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            display: inline-block;        
+        }
+
+        &.slick-prev:before,
+        &.slick-next:before {
+            font-family: "slick";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "‹";
+            font-size: 44px;
+            height: 25px;
+            display: inline-block;
+            width: 25px;
+            line-height: 6px;       
+        }
+
+        &.slick-next:before {
+            content: "›";
+        }
+    }
+
+    [dir="rtl"] .slick-prev:before {
+        content: "›";
+    }
+
+    [dir="rtl"] .slick-next {
+        left: -10px;
+        top: 70px;
+        right: auto;
+    }
+
+    [dir="rtl"] .slick-next:before {
+        content: "‹";
+    }
+}
     
 /* Scroll Down */ 
 .mouse_scroll_down {

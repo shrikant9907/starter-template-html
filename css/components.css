@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /************************** Components ***************************/
 .site_logo {
   font-size: 34px;
@@ -1172,6 +1173,49 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .notify-bar .nb-text,
 .notify-bar marquee {
   padding: 15px 0;
+}
+
+.slicksliderui.arrowsin .slick-prev {
+  left: 25px;
+}
+.slicksliderui.arrowsin .slick-next {
+  right: 50px;
+}
+.slicksliderui .slick-arrow {
+  z-index: 99;
+}
+.slicksliderui .slick-arrow.slick-prev, .slicksliderui .slick-arrow.slick-next {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: inline-block;
+}
+.slicksliderui .slick-arrow.slick-prev:before, .slicksliderui .slick-arrow.slick-next:before {
+  font-family: "slick";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "‹";
+  font-size: 44px;
+  height: 25px;
+  display: inline-block;
+  width: 25px;
+  line-height: 6px;
+}
+.slicksliderui .slick-arrow.slick-next:before {
+  content: "›";
+}
+.slicksliderui [dir=rtl] .slick-prev:before {
+  content: "›";
+}
+.slicksliderui [dir=rtl] .slick-next {
+  left: -10px;
+  top: 70px;
+  right: auto;
+}
+.slicksliderui [dir=rtl] .slick-next:before {
+  content: "‹";
 }
 
 /* Scroll Down */
