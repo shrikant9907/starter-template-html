@@ -124,12 +124,12 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
         &:before {
             display: block;
             content: "";
-            border-top: 2px solid $primaryColor;
+            border-top: 3px solid $primaryColor;
             border-bottom: none;
             position: absolute;
             z-index: 0;
             width: 100%;
-            max-width: 36px;
+            max-width: 50px;
             top: unset;
             margin-top: -2px;
             height: 0;
@@ -1347,6 +1347,7 @@ header {
         align-items: center;
         width: 100%;
 
+        .overlay,
         &::before {
             background: rgba(0, 0, 0, 0.1);
             position: fixed;

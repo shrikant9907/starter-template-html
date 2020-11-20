@@ -105,12 +105,12 @@
 .heading_style.type2:before {
   display: block;
   content: "";
-  border-top: 2px solid #007bff;
+  border-top: 3px solid #007bff;
   border-bottom: none;
   position: absolute;
   z-index: 0;
   width: 100%;
-  max-width: 36px;
+  max-width: 50px;
   top: unset;
   margin-top: -2px;
   height: 0;
@@ -1176,16 +1176,16 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 .slicksliderui {
-  max-height: 500px;
+  max-height: 460px;
 }
 .slicksliderui .slider-item {
-  max-height: 500px;
+  max-height: 460px;
   overflow: hidden;
   display: inline-flex;
   align-items: center;
   width: 100%;
 }
-.slicksliderui .slider-item::before {
+.slicksliderui .slider-item .overlay, .slicksliderui .slider-item::before {
   background: rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0px;

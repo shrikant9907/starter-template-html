@@ -51,6 +51,7 @@ jQuery('document').ready(function(){
 	jQuery('.four_col_carosusel').slick({
 		infinite: false,
 		autoplay: true,
+		autoSlide: true,
 		speed: 300,
 		slidesToShow: 4,
 		slidesToScroll: 1,
