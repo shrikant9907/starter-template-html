@@ -276,6 +276,69 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   background: #007bff;
   top: 0px;
 }
+.banner_section.bannerui2,
+.banner-section.bannerui2 {
+  background: #000;
+  min-height: 539px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner_section.bannerui2 .container,
+.banner-section.bannerui2 .container {
+  position: relative;
+}
+.banner_section.bannerui2 .overlay_b,
+.banner-section.bannerui2 .overlay_b {
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+.banner_section.bannerui2 .section-bg-video,
+.banner-section.bannerui2 .section-bg-video {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  right: 0;
+}
+.banner_section.bannerui2 iframe.section-bg-video,
+.banner-section.bannerui2 iframe.section-bg-video {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner_section.bannerui2 .banner-heading,
+.banner-section.bannerui2 .banner-heading {
+  color: #D7138B;
+  font-size: 192px;
+  font-weight: 500;
+  line-height: 194px;
+  margin-bottom: 23px;
+  word-break: break-all;
+}
+.banner_section.bannerui2 .banner-title-before,
+.banner-section.bannerui2 .banner-title-before {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 10px;
+  position: relative;
+  top: -1px;
+}
+.banner_section.bannerui2 .banner-description,
+.banner-section.bannerui2 .banner-description {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 82px;
+}
 
 .card {
   -moz-transition: all 0.3s ease;
@@ -1544,64 +1607,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   font-weight: 400;
   color: #7a7a7a;
   padding: 15px;
-}
-
-.section-banner {
-  background: #000;
-  min-height: 539px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-banner .container {
-  position: relative;
-}
-.section-banner .overlay_b {
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 0;
-}
-.section-banner .section-bg-video {
-  position: absolute;
-  top: -20%;
-  left: 0;
-  right: 0;
-}
-.section-banner iframe.section-bg-video {
-  width: 100vw;
-  height: 56.25vw;
-  min-height: 100vh;
-  min-width: 177.77vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.section-banner .banner-heading {
-  color: #D7138B;
-  font-family: "Rock Salt", Sans-serif;
-  font-size: 192px;
-  font-weight: 500;
-  text-shadow: 0px 0px 9px #FFFFFF;
-  mix-blend-mode: lighten;
-  line-height: 194px;
-  margin-bottom: 23px;
-  word-break: break-all;
-}
-.section-banner .banner-title-before {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5em;
-  letter-spacing: 10px;
-  position: relative;
-  top: -1px;
-}
-.section-banner .banner-description {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.5em;
-  margin-bottom: 82px;
 }
 
 .section-carousel .container-fluid {
