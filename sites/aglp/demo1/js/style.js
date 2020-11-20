@@ -126,10 +126,10 @@ jQuery('document').ready(function() {
     });
 
     // Five Item Slider
-    jQuery('.slickFiveItems').slick({
+    jQuery('.slickFourItems').slick({
         infinite: true,
         speed: 300,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -137,7 +137,7 @@ jQuery('document').ready(function() {
         {
           breakpoint: 1366,
           settings: {
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
           }
         },

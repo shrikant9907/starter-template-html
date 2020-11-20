@@ -2,8 +2,38 @@ body {
   overflow-x: hidden;
 }
 
+/* #ea2c62
+#ff9a8c
+#fad5ad
+#adb36e */
+
 .bg-light-pink {
-  background-color: #FFEEFB;
+  background-color: #fad5ad;
 }
 
-/*# sourceMappingURL=style.css.map */
+.btn-primary:hover,
+.btn-primary {
+  background-color: #ea2c62;
+
+}
+
+.btn-primary:hover,
+.btn-primary,
+.heading_style.type2:before {
+  border-color: #ea2c62;
+}
+
+.section-carousel.three-carousel .img-card h3,
+.section-cardicons .card .numbers, .section-cardlisting .card .numbers,
+.banner_section.bannerui2 .banner-heading, .banner-section.bannerui2 .banner-heading {
+  color: #ea2c62; 
+}
+
+.section-cardicons .card .card-icon, .section-cardlisting .card .card-icon {
+  background-image: linear-gradient(210deg, #ea2c62 0%, #fbbc0c 100%);
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+}
