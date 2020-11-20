@@ -1,6 +1,14 @@
 $primaryColor: #007bff;
 $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 
+* {
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s0 ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
 /************************** Components ***************************/
 
 // Site Logo UI
@@ -20,6 +28,11 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
             flex-direction: row;
             img {
               height: 70px;
+              -moz-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
             }  
         }
     }
@@ -79,6 +92,10 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
     text-align: center;
     width: 100%;
     display: block;
+    line-height: 1.4em;
+    letter-spacing: 0;
+    position: relative;
+    margin-bottom: 20px;
 
     &.text-center {
         text-align: center;
@@ -120,6 +137,7 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
         position: relative;
         margin-bottom: 40px;
         text-align: left;
+        padding-bottom: 10px;
 
         &:before {
             display: block;
@@ -164,7 +182,7 @@ header {
         bottom: unset !important;
         left: 0px;
         right: 0px;
-        z-index: 9999;
+        z-index: 999;
     }
     .navbar {
         &.navbar-expand-lg {
@@ -175,6 +193,11 @@ header {
                         padding: 15px !important;
                         margin: 14px 0 !important;
                         color: #333333;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
                     }
 
                     &.show,    
@@ -234,6 +257,11 @@ header {
         margin: 0px !important;
         padding: 5px 15px !important;
     }
+    
+    .navbar.navbar-expand-lg .navbar-nav .nav-item a.nav-link.btn {
+        padding: 8px 0 !important;
+        margin: 11px 0 11px 8px !important;
+    }
 }
 
 /*Banner*/
@@ -265,6 +293,7 @@ header {
             display: flex;
             align-items: center;
             font-size: 16px;
+            z-index: 9;
         }
     }
 
@@ -621,10 +650,12 @@ header {
     -ms-user-select: none;
     user-select: none;
     font-size: 14px;
-    padding: 10px;
+    padding: 14px 30px;
     max-width: 100%;
     width: auto;
     min-width: 150px;
+    box-shadow: none !important;
+    line-height: 1;
     
     &.btnui1s,
     &.btnui1 {
@@ -646,6 +677,12 @@ header {
     &.btnui1s {
         box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
     }
+
+    &.btn-sm {
+		padding: 6px 15px;
+		line-height: 16px;
+		font-size: 12px
+	}
 }
 
 
@@ -1341,6 +1378,10 @@ header {
 
 .slicksliderui {
     max-height: 500px;
+
+    .slick-dots li:only-child {
+        display: none;
+    }
     
     .slider-item {
         max-height: 500px;
@@ -1575,22 +1616,336 @@ header {
 .common-section-ui {
     padding: 80px 0 60px 0;
     position: relative;
+    .section-description {
+        color: rgba(0,0,0,0.5);
+        font-size: 18px;
+        line-height: 1.5em;
+    }    
+}
+
+// Parallex Ui
+.site-footer, 
+.section-parallax  {
+	// background-image: url('');
+	background-attachment: fixed;
+	background-color: #000000;
+	background-repeat: repeat;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+
+	.overlay_b {
+		background-color: rgba(0,0,0,.6);
+		z-index: 0;
+	}
 }
 
 /*Footer*/
 .footer_style1 ul {
     padding: 0;
     list-style: none;
+    li {
+        padding: 5px 0;
+        a {
+            text-decoration: none;
+            color: #212121;
+        }
+    }
 }
 
-.footer_style1 ul li {
-    padding: 5px 0;
+// Footer
+.site-footer {
+	color: rgba(255, 255, 255, 0.78);
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+
+	h3 {
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: rgba(255, 255, 255, 0.78);
+	}
+
+	ul {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		li {
+			a {
+				color: rgba(255, 255, 255, 0.78);
+				text-decoration: none;
+			}
+		}
+	}
+
+	.copyright {
+		border-color: rgba(255, 255, 255, 0.2) !important;
+	}
 }
 
-.footer_style1 ul li a {
-    text-decoration: none;
-    color: #212121;
+// Sections 
+
+.accordion_design1 {
+	margin-bottom: 50px;
+	.card {
+		border: none;
+	
+		.card-header {
+			padding: 15px;
+			border-radius: 4px;
+			border: none;
+			background: transparent;
+
+			.card-title {
+				font-weight: 400;
+			}
+
+			h2 {
+				font-size: 21px;
+				font-weight: 600;
+				color: #666460;
+				cursor: pointer;
+
+				.fa-chevron-down {
+					display: none;
+				}
+
+				&.collapsed {
+					.fa-minus {
+						display: none;
+					}
+
+					.fa-chevron-down {
+						display: inline-block;
+					}
+				}
+			}
+		}
+
+		.card-body {
+			font-size: 16px;
+			line-height: 1.4em;
+			font-weight: 400;
+			color: #7a7a7a;
+			padding: 15px;
+		}
+
+	}
 }
+ 
+
+// Home Banner
+.section-banner {
+
+	background: #000;
+	min-height: 539px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+	.container {
+		position: relative;
+	}
+
+	.overlay_b {
+		background: rgba(0,0,0,.3);
+		z-index:0;
+	}
+
+	.section-bg-video {
+		position: absolute;
+		top: -20%;
+		left: 0;
+		right: 0;
+	}
+
+	iframe.section-bg-video {
+		width: 100vw;
+		height: 56.25vw; 
+		min-height: 100vh;
+		min-width: 177.77vh; 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.banner-heading {
+		color: #D7138B;
+		font-family: "Rock Salt", Sans-serif;
+		font-size: 192px;
+		font-weight: 500;
+		text-shadow: 0px 0px 9px #FFFFFF;
+		mix-blend-mode: lighten;
+	    line-height: 194px;
+		margin-bottom: 23px;	
+		word-break: break-all;
+	}
+
+	.banner-title-before {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.5em;
+		letter-spacing: 10px;
+		position: relative;
+		top: -1px;
+	}
+
+	.banner-description {
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 1.5em;
+		margin-bottom: 82px;
+	}
+
+} 
+
+// Carousel
+.section-carousel {
+
+	.container-fluid {
+		padding-left: 7.5px;
+		padding-right: 7.5px;
+	}
+
+	.carousel-ui{
+		.img-card {
+			padding-left: 7.5px;
+			padding-right: 7.5px;
+			p {
+				font-size: 16px;
+				font-weight: 200;
+				font-style: italic;
+				margin-bottom: 10px;
+				color: #222;
+				line-height: 1.4;
+			}
+		}	
+	}
+
+	&.three-carousel {
+		.main-heading-ui {
+			margin-bottom: 50px;
+		}
+
+		.img-card {
+			h3 {
+				font-size: 29px;
+				font-weight: 500;
+				font-style: normal;
+				color: #0F77B7;
+				margin-bottom: 18px;
+			}
+
+			p {
+				font-style:normal;;
+				font-size: 17px;
+				font-weight: 100;
+				line-height: 1.5em;
+				color: #54595F;
+				margin-bottom: 25px;
+			}
+		}
+
+		// .slick-slide img {
+		// 	max-width: 270px;
+		// 	margin-bottom: 30px;
+		// }
+
+	}
+
+	.card-image {
+		width: 100%;
+		position: relative;
+		height: 250px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		img {
+			margin-bottom: 0;
+			max-width: unset;
+			width: 100% !important;
+			height: auto;
+		}
+	}
+}
+
+// Card Listing
+.section-cardicons, 
+.section-cardlisting {
+	.card {
+		padding: 0 5px;
+
+		img {
+			margin-bottom: 40px;
+		}
+
+		.card-image {
+			width: 100%;
+			position: relative;
+			height: 280px;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 40px;
+			img {
+				margin-bottom: 0;
+				max-width: unset;
+				width: 100% !important;
+				height: auto;
+			}
+		}
+
+		h3 {
+			color: #000000;
+			font-size: 29px;
+			font-weight: 600;
+			line-height: 1.3em;
+		}
+
+		.numbers {
+			color: #FF009C;
+			font-family: "bebas-neue", Sans-serif;
+			font-size: 85px;
+			font-weight: 100;
+		}
+
+		.description {
+			color: #54595F;
+			font-size: 17px;
+			font-weight: 100;
+			line-height: 1.5em;
+		}
+
+		.card-icon {
+			height: 70px;
+			width: 70px;
+			font-size: 33px;
+			padding: 13px 15px 15px 15px;
+			background-color: transparent;
+			background-image: linear-gradient(210deg, #CE04F4 0%, #FDB600 100%);
+			border-radius: 50%;
+			color: #ffffff;
+		    line-height: 45px;
+		    margin-bottom: 10px;
+		}
+	}
+}
+
+
+
+ 
+ 
 
 
 /*Responsive*/

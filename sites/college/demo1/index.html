@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-12 col-md-3"> 
           <div class="site_logo with_image">
-            <a class="logo_link" target="_blank" href="#logoLink">
+            <a class="logo_link" href="#logoLink">
               <img class="logo_image"  src="images/college-logo.png" alt="" />
               <!-- <span class="logo_text"><strong>College Logo</strong></span>  -->
             </a>
@@ -67,7 +67,7 @@
                   <a class="nav-link text-dark" href="#">Alumni Registration</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link btn btn-primary btnui3s" href="#">Login</a>
+                  <a class="nav-link btn btn-primary btnui3s" data-toggle="modal" data-target="#basicLoginFromModal" href="#">Login</a>
                 </li>
               </ul>
             </div>
@@ -85,7 +85,7 @@
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto text-uppercase d-flex">
+                <ul class="navbar-nav mx-auto text-uppercase d-flex">
                   <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
                   <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
                   <li class="nav-item"><a class="nav-link text-white" href="#">Admission</a></li>
@@ -388,7 +388,7 @@
 	 				 	<p class="f12 lh18 mb_10">&copy; 2019 All Rights Reserved.</p>
 	 				 </div>
 	 				 <div class="col">
-	 				 	<p class="f12 lh18 mb_10 text-right">Design By: <a target="_blank" href="http://shrikantyadav.com">Shrikant Yadav</a></p>
+	 				 	<p class="f12 lh18 mb_10 text-right">Design By: <a target="_blank" class="link" href="#">Shrikant Yadav</a></p>
 	 				 </div>
 	 			</div>
 	 		</div>
@@ -397,13 +397,52 @@
  	</footer>
 
  	<a href="#" class="gotoparrow"><i class="fas fa-arrow-up"></i></a>
-	
+  
+  <!-- Modal -->
+  <div class="modal fade" id="basicLoginFromModal" tabindex="-1" role="dialog" aria-labelledby="basicLoginFromModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form class="fui fui1p w-100" action="" method="post" enctype="multipart/form-data">
+      <div class="mui muic mui2 muis modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="basicLoginFromModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-success alertrcs dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="form-group">
+            <input name="email" value="" type="text" class="form-control" placeholder="Enter your email" /> 
+          </div>
+          <div class="form-group">
+            <input name="password" value="" type="password" class="form-control" placeholder="Enter your password" />
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="rememberme m-0">
+              <label for="rememberme" class="d-flex align-items-center"><input class="mr_5 min_h_0" id="rememberme" name="rememberme" value="yes" type="checkbox" /> Remember me</label>
+            </div>
+            <a href="#" class="link">Forgot Password?</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btnui3" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btnui3">Sign in</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
 
-	<!-- Script -->
-	<!-- jQuery -->
+
+  <!-- jQuery -->
 	<script src="../../../js/jquery.min.js" type="text/javascript"></script> 
 
-    <!-- Popper JS -->
+  <!-- Popper JS -->
 	<script src="../../../js/popper.min.js" type="text/javascript"></script>
 
 	<!-- Bootstrap -->

@@ -43,6 +43,7 @@ p {
   display: none;
 }
 
+.d-flex.hide,
 .hidei,
 .d_nonei {
   display: none !important;
