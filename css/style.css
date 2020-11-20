@@ -7323,6 +7323,10 @@ input[type=button] {
   background-color: #343a40 !important;
 }
 
+.bg_black {
+  background-color: #000000 !important;
+}
+
 /*Overlay*/
 .mask_w,
 .overlay_w {

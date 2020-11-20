@@ -513,7 +513,9 @@ input[type='button'] {
     background-color: #343a40 !important;
 }
  
-
+.bg_black {
+    background-color: #000000 !important;
+}
 
 /*Overlay*/
 .mask_w,
@@ -750,3 +752,13 @@ input[type='button'] {
 .border_0 {
     border: none !important;
 } 
+
+/* Opacity */
+@for $i from 0 through 10 {
+    $value: 0;
+    $newvalue: ($i) / 10;
+    $finalvalue: $value + $newvalue;
+
+    .op#{$i} { opacity: $finalvalue; }
+    .opi#{$i} { opacity: $finalvalue !important }
+}

@@ -274,6 +274,27 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 66px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-attachment:fixed;
+
+    .overlay,
+    .overlay_w,
+    .overlay_b {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
+        display: inline-block;
+        content: '';
+    }
+    
+    .container {
+        position: relative;
+    }
 
     &.with_slider {
         display: block;

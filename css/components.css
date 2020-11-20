@@ -234,6 +234,29 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   align-items: center;
   justify-content: center;
   margin-top: 66px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.banner_section .overlay,
+.banner_section .overlay_w,
+.banner_section .overlay_b,
+.banner-section .overlay,
+.banner-section .overlay_w,
+.banner-section .overlay_b {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+  display: inline-block;
+  content: "";
+}
+.banner_section .container,
+.banner-section .container {
+  position: relative;
 }
 .banner_section.with_slider,
 .banner-section.with_slider {
