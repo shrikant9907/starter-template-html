@@ -1338,7 +1338,28 @@ header {
 }
 
 .slicksliderui {
+    max-height: 500px;
+    
+    .slider-item {
+        max-height: 500px;
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
 
+        &::before {
+            background: rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+            display: inline-block;
+            content: '';
+        }
+    }
+     
     &.arrowsin {
         .slick-prev {
             left: 25px;
@@ -1347,6 +1368,10 @@ header {
         .slick-next {
             right: 50px;
         }
+    }
+
+    .slick-slide img {
+        width: 100%;
     }
 
     .slick-arrow {
