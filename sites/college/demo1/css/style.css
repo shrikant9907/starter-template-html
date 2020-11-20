@@ -11,8 +11,9 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
     color: #1ea69a;
 }
 
-.primary_color,
-.primary-color {
+.gotoparrow,
+.text-primary,
+.text_primary {
     color: #1ea69a !important;
 }
 

@@ -397,6 +397,8 @@ header {
         background: #ffffff !important;
         border: none !important;
         box-shadow:0 5px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius:10px;
+        overflow: hidden;
 
         .cheader,
         .card-header {
@@ -1308,7 +1310,7 @@ header {
     background: #ffffff;
     color: $primaryColor;
     text-decoration: none !important;
-    font-size: 24px;
+    font-size: 16px;
     flex-direction: column;
 }
 
