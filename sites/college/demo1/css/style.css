@@ -1,0 +1,271 @@
+
+/*Extra CSS*/
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: #1ea69a;
+}
+
+.primary_color,
+.primary-color {
+    color: #1ea69a !important;
+}
+
+.bg_primary,
+.bg-primary {
+    background-color: #1ea69a !important;
+}
+
+.line_right {
+    position: relative;
+}
+
+.line_right:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 34px;
+    background: #fff;
+    position: absolute;
+    right: -20px;
+    top: 1px;
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+img.blur {
+    top:-10px;
+}
+
+/* header */
+.banner_section, .banner-section {
+    margin-top: 131px;
+}
+
+/*Slick Slider*/
+.slick-prev:before,
+.slick-next:before {
+    font-family: "slick";
+    font-size: 40px;
+    line-height: 1;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+    content: "‹";
+}
+
+[dir="rtl"] .slick-prev:before {
+    content: "›";
+}
+
+[dir="rtl"] .slick-next {
+    left: -10px;
+    top: 70px;
+    right: auto;
+}
+
+.slick-next:before {
+    content: "›";
+}
+
+[dir="rtl"] .slick-next:before {
+    content: "‹";
+}
+
+/*About Section*/
+.section-about img.position-absolute {
+    left: 0;
+    top: 0;
+}
+
+/*Tools Section*/
+.section-tools .pricing_card1 {
+    box-shadow: 0px 5px 14px 0px rgba(0,0,0,0.2);
+    margin-right: 60px;
+}
+
+.section-tools  .pricing_card1 .card-title {
+    font-size: 12px;
+}
+
+.section-tools .pricing_card1 .card-price .price {
+    font-size: 60px;
+}
+
+.section-tools ul li svg.fa-info,
+.section-tools ul li i.fa-info {
+    border: 1px solid #a2a2a2;
+    color: #a2a2a2;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px 0 0 0;
+    font-size: 10px;
+    position: relative;
+    left: 8px;
+    top: 0px;
+}
+
+.section-tools  .go_ahead_box {
+    bottom: -8px;
+    left: 96px;
+}
+
+.section-tools .go_ahead_box .card-body {
+    padding: 40px 30px;
+}
+
+/*Testimonials*/
+.section-testionials .img-thumbnail {
+    background: transparent;
+    padding: 6px;
+}
+
+.testimonials_card1 .card-icon {
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+.section-testionials .slick-prev, .section-testionials .slick-next {
+    top: unset;
+    bottom: 15px;
+    left: 50%;
+}
+
+.section-testionials .slick-prev {
+    margin-left: -20px;
+}
+
+.section-testionials .slick-next {
+    margin-left: 20px;
+}
+
+/*Subcription*/
+.section-subscription .form-control {
+    border-color: #ffffff;
+}
+
+.section-subscription input::placeholder {
+    color:#fff;
+}
+
+/*Footer CSS*/
+.footer_style1 ul li a {
+    color: #494949;
+}
+
+.footer_style1 ul li .social_links a {
+    background: #E6E6E6;
+    padding: 8px 0;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.footer_style1 ul li .social_links a:hover {
+    background: #d6d4d4;
+}
+
+.footer_style1 ul.address li {
+    padding-left: 34px;
+    position: relative;
+}
+
+.footer_style1 ul.address li svg,
+.footer_style1 ul.address li i {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    font-size: 16px;
+}
+
+.go_top_arrow {
+    display: none;
+}
+
+.notification-section span {
+    z-index: 999;
+}
+
+/*Responsive*/
+@media all and (max-width: 786px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    .line_right:after {
+        height: 26px;
+        top: 2px;
+    }
+
+    img.bg_image_full {
+        height: 100%;
+        width: auto;
+        max-width: initial;
+    }
+
+    /*About Section*/
+    .section-about img.position-absolute {
+        width: 100%;
+        position: static !important;
+        max-width: 500px;
+    }
+
+    .section-services .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /*Tools Section*/
+    .section-tools .go_ahead_box {
+        position: static !important;
+        margin: auto;
+    }
+
+    .section-tools .pricing_card1 {
+        margin: 0 auto;
+        float: none !important;
+    }
+
+}
+
+/*Mobile Devices*/
+@media all and (max-width: 580px) {
+
+    .tab_bar_design li {
+        margin: -8px 2% -4px 2%;
+    }
+
+    /*About Section*/
+    .section-about img.position-absolute {
+        width: 100%;
+        position: static !important;
+    }
+
+    .section-about.ptb_140_130 {
+        padding: 0 0px 30px 0;
+    }
+
+
+    /*Footer*/
+    .section-footer .col-6 {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+}
