@@ -50,6 +50,13 @@ img.blur {
     top:-10px;
 }
 
+header .navbar.navbar-expand-lg .navbar-nav .nav-item a.nav-link.btn.btn-primary.btnui3s {
+    padding: 11px 0 !important;
+    color: #fff !important;
+    margin: 18px 0 18px 8px !important;
+    text-transform: uppercase;
+}
+
 /* Banner section */
 .banner_section, .banner-section {
     margin-top: 131px;
