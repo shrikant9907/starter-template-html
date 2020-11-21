@@ -691,7 +691,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   max-width: 100%;
   width: auto;
   min-width: 150px;
-  box-shadow: none !important;
   line-height: 1;
 }
 .button.btnui1s, .button.btnui1,

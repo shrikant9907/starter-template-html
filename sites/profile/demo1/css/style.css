@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
 }
 
 .btn-primary,
+.badge-primary,
 .bg_primary,
 .bg-primary {
     background-color: #fd3a69 !important;
