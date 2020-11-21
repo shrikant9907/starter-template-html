@@ -1261,6 +1261,10 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   justify-content: center;
 }
 
+.gotoparrow {
+  display: none;
+}
+
 .scrolled .gotoparrow {
   position: fixed;
   right: 14px;
@@ -1279,6 +1283,9 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   text-decoration: none !important;
   font-size: 16px;
   flex-direction: column;
+}
+.scrolled .gotoparrow.style2 {
+  border-radius: 100%;
 }
 
 .notify-bar {
@@ -1375,6 +1382,68 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   content: "‹";
 }
 
+.listing {
+  padding: 5px 0;
+  list-style: none;
+  margin: 0;
+  background-color: #ffffff;
+}
+.listing a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.listing a, .listing li, .listing .list-item {
+  padding: 5px 15px;
+}
+.listing a a, .listing li a, .listing .list-item a {
+  padding: 0 !important;
+  border: unset !important;
+}
+.listing.type4, .listing.type3, .listing.type2 {
+  padding: 0px;
+}
+.listing.type4 a, .listing.type4 li, .listing.type4 .list-item, .listing.type3 a, .listing.type3 li, .listing.type3 .list-item, .listing.type2 a, .listing.type2 li, .listing.type2 .list-item {
+  border-top: 1px solid #cccccc;
+  padding: 10px 15px;
+}
+.listing.type4 a:first-child, .listing.type4 li:first-child, .listing.type4 .list-item:first-child, .listing.type3 a:first-child, .listing.type3 li:first-child, .listing.type3 .list-item:first-child, .listing.type2 a:first-child, .listing.type2 li:first-child, .listing.type2 .list-item:first-child {
+  border: unset !important;
+}
+.listing.type4 a:first-child, .listing.type4 li:first-child, .listing.type4 .list-item:first-child,
+.listing.type4 a, .listing.type4 li, .listing.type4 .list-item, .listing.type3 a:first-child, .listing.type3 li:first-child, .listing.type3 .list-item:first-child,
+.listing.type3 a, .listing.type3 li, .listing.type3 .list-item {
+  border: 1px solid #cccccc !important;
+  margin-top: -1px;
+}
+.listing.type4 a:first-child a, .listing.type4 li:first-child a, .listing.type4 .list-item:first-child a,
+.listing.type4 a a, .listing.type4 li a, .listing.type4 .list-item a, .listing.type3 a:first-child a, .listing.type3 li:first-child a, .listing.type3 .list-item:first-child a,
+.listing.type3 a a, .listing.type3 li a, .listing.type3 .list-item a {
+  border: unset !important;
+}
+.listing.licons a, .listing.licons li, .listing.licons .list-item {
+  padding: 10px 5px 10px 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.listing.licons a a, .listing.licons li a, .listing.licons .list-item a {
+  position: static;
+}
+.listing.licons a .alicon,
+.listing.licons a i, .listing.licons li .alicon,
+.listing.licons li i, .listing.licons .list-item .alicon,
+.listing.licons .list-item i {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  align-items: center;
+}
+
 /* Scroll Down */
 .mouse_scroll_down {
   position: absolute;
@@ -1435,13 +1504,11 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   margin-bottom: 0;
   top: -2px;
 }
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .switch .slider {
   position: absolute;
   cursor: pointer;
@@ -1453,7 +1520,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .switch .slider:before {
   position: absolute;
   content: "";
@@ -1484,7 +1550,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .switch .slider.round {
   border-radius: 34px;
 }
-
 .switch .slider.round:before {
   border-radius: 50%;
 }
@@ -1493,35 +1558,30 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .tab_bar_design {
   padding: 0px;
 }
-
-.tab_bar_design li a {
-  background: #ccc;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-}
-
 .tab_bar_design li {
   display: inline-block;
   text-align: center;
   width: 34px;
   margin: -8px 11px -4px 12px;
 }
-
-.tab_bar_design li:first-child {
-  margin-left: 0;
+.tab_bar_design li a {
+  background: #ccc;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
 }
-
-.tab_bar_design li:last-child {
-  margin-right: 0;
-}
-
 .tab_bar_design li a.active {
   width: 30px;
   height: 30px;
   background: #007bff;
   border: 12px solid #fff;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.tab_bar_design li:first-child {
+  margin-left: 0;
+}
+.tab_bar_design li:last-child {
+  margin-right: 0;
 }
 
 /*Background Full Image*/
