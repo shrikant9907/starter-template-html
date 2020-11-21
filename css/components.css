@@ -379,6 +379,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .card.noshadow {
   box-shadow: unset !important;
 }
+.card .ciconb,
 .card .cicons,
 .card .ciconr,
 .card .ciconc,
@@ -386,6 +387,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .card .cicon {
   margin-bottom: 20px;
 }
+.card .ciconb i,
 .card .cicons i,
 .card .ciconr i,
 .card .ciconc i,
@@ -393,6 +395,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .card .cicon i {
   font-size: 30px;
 }
+.card .ciconb,
 .card .ciconrc,
 .card .ciconr,
 .card .cicons,
@@ -413,6 +416,10 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 .card .ciconr {
   width: 100px;
+}
+.card .ciconb {
+  border: 1px solid #ddd;
+  background-color: transparent;
 }
 .card.cui1c, .card.cui1 {
   margin-bottom: 30px;

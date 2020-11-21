@@ -421,6 +421,7 @@ header {
         box-shadow: unset !important;
     }
 
+    .ciconb,
     .cicons,
     .ciconr,
     .ciconc,
@@ -432,6 +433,7 @@ header {
         }    
     }
 
+    .ciconb,
     .ciconrc,
     .ciconr,
     .cicons,
@@ -455,6 +457,11 @@ header {
 
     .ciconr {
         width: 100px;
+    }
+
+    .ciconb {
+        border: 1px solid #ddd;
+        background-color:transparent;
     }
 
     &.cui1c,

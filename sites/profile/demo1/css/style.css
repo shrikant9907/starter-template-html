@@ -1,5 +1,3 @@
-
-/*Extra CSS*/
 /* #120078 */
 /* #fd3a69 */
 /* #ffa62b */
@@ -12,45 +10,70 @@ body {
     background: #ffffff;
 }
 
-.font_normal {
-    font-weight: 300;
-}
-
 h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
     font-weight: 700;
 }
 
+.myservice .card-title,
+.text-black,
+.heading_style {
+    color: #000000;
+}
+
 .text-secondary {
-    color: #fd3a69 !important;
+    color: #120078 !important;
 }
 
 .btn-secondary:hover,
 .btn-secondary,
 .bg-secondary {
-    background-color:  #fd3a69;
+    background-color:  #120078;
 }
 
 .btn-secondary:hover,
 .btn-secondary {
-    border-color:  #fd3a69;
+    border-color:  #120078;
 }
 
 .link,
 .gotoparrow,
 .text-primary,
+.btn-outline-primary,
+.myservice .card .ciconrc,
 .text_primary {
-    color: #9d0191 !important;
+    color: #fd3a69 !important;
 }
 
 .btn-primary,
 .bg_primary,
 .bg-primary {
-    background-color: #9d0191 !important;
+    background-color: #fd3a69 !important;
 }
 
 .btn-primary,
+.myservice .card .ciconrc,
 .heading_style.type2:before {
-    border-color:  #9d0191 !important;
+    border-color:  #fd3a69 !important;
+}
+
+.myservice .card .ciconrc {
+    width: 70px;
+    height: 70px;
+}
+
+.myservice .card:hover {
+    background-color: #ffeaef !important;
+    border-radius: 0 !important;
+    box-shadow: unset !important;
+}
+
+.myservice .card:hover .ciconrc {
+    border-radius:100%;
+}
+
+.btn-outline-primary {
+    background-color: #ffffff !important;
+    border-color:  #ffffff !important;
 }
 
 .bannerbg {

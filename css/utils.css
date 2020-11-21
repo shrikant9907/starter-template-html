@@ -7521,6 +7521,16 @@ input[type=button] {
 }
 
 /*Text Styles*/
+.text_light,
+.font_light {
+  font-weight: 300;
+}
+
+.text_normal,
+.font_normal {
+  font-weight: normal;
+}
+
 .text_bold,
 .font_bold {
   font-weight: bold;
