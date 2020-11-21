@@ -77,8 +77,22 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 
 // Sidebar Menus
 .sidebar {
-    width: 275px;
-    font-family: 'Poppins',sans-serif;
+
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  position: fixed;
+  content: "";
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  transition:unset !important;
+  display: none;
+
+  .slisting {
+    width: 0px;
+    font-family: "Poppins", sans-serif;
     display: block !important;
     position: fixed;
     left: 0;
@@ -86,19 +100,62 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
     bottom: 0;
     height: 100%;
     height: 100vh;
-    padding: 50px 0 0 0;
-    &:before {
-        background: linear-gradient(214.63deg,#0affff,#14adb0 8.15%,#220849 109.12%);
-        mix-blend-mode: normal;
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
+    padding: 80px 0 0 0;
+    z-index: 999;
+    background: #ffffff;
+    overflow: hidden;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li a{
+        color: inherit;
+        position: relative;
+        width: 275px;
+        padding: 15px 15px 15px 50px;
         display: inline-block;
-        top: 0;
-        opacity: .92;
-        width: 100%;
+        text-decoration: none;
+
+        .icon,
+        svg,
+        i {
+          position: absolute;
+          width: 50px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 0;
+          top: 0;
+        }
+
+        &:hover {
+          background: rgba(0,0,0,0.05);
+        }
+      }
     }
+  }
+
+  &.active {
+    display:block;
+    .slisting {
+      width: 275px;
+    }
+  }
+
+  &.sright {
+    .slisting{
+      left: unset;
+      right: 0px;
+    }
+  }
+
+  &.inverse {
+    color: #ffffff;
+  }
+
 }
 
 // Site Logo UI

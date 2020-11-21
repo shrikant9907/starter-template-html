@@ -1,5 +1,13 @@
 jQuery('document').ready(function(){
 
+	jQuery('.hamburger').click(function(e){
+        e.preventDefault(); 
+        jQuery(this).toggleClass('active');
+        jQuery('.sidebar').fadeToggle();   
+        jQuery('.sidebar').toggleClass('active');   
+        jQuery('body').toggleClass('noscroll');   
+    });
+
 	jQuery('.testimonials_slick').slick();
 	jQuery('.banner_slider_slick').slick();
 

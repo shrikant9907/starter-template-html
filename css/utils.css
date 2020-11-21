@@ -7380,6 +7380,7 @@ input[type=button] {
 }
 
 /*Over Flow*/
+.noscroll,
 .overflow_hidden {
   overflow: hidden;
 }
