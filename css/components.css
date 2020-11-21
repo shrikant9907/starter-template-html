@@ -467,7 +467,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .card.cui4, .card.cui3, .card.cui3c, .card.cui2c, .card.cui2 {
   margin-bottom: 30px;
   background: #ffffff !important;
-  border: none !important;
+  border: none;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
@@ -1267,14 +1267,14 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 
 .scrolled .gotoparrow {
   position: fixed;
-  right: 14px;
-  bottom: 14px;
+  right: 16px;
+  bottom: 20px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   width: 34px;
   z-index: 999;
@@ -1284,8 +1284,10 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   flex-direction: column;
 }
-.scrolled .gotoparrow.style2 {
+.scrolled .gotoparrow.type2, .scrolled .gotoparrow.style2 {
   border-radius: 100%;
+  height: 45px;
+  width: 45px;
 }
 
 .notify-bar {

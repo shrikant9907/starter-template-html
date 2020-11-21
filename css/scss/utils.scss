@@ -1,7 +1,7 @@
 /*      Created By      : Shrikant Yadav                                                    */  
 /*      Contact         : shrikant9907@gmail.com                                            */
 /*      Web Developer and Desinger                                                          */ 
-/*      Version         : 2.0                                                               */
+/*      Version         : 3.0                                                               */
 
 
 $body_color: #494949;
@@ -416,107 +416,6 @@ input[type='button'] {
     font-size: 14px;
 }
 
-/*Background Colors*/
-.bg_grey {
-    background-color: #F1F1F1 !important;
-}
-
-.bg_grey2 {
-    background-color: #F2F2F2 !important;
-}
-
-.bg_purple {
-    background-color: #eb3941 !important;
-}
-
-.bg_green {
-    background-color: #69b76d !important; 
-}
-
-.bg_blue {
-    background-color: #007bff !important; 
-}
-
-.bg_indigo {
-    background-color: #6610f2 !important; 
-}
-
-.bg_purple {
-    background-color: #6f42c1 !important; 
-}
-
-.bg_pink {
-    background-color: #e83e8c !important; 
-}
-
-.bg_red {
-    background-color: #dc3545 !important; 
-}
-
-.bg_orange {
-    background-color: #fd7e14 !important;
-}
-
-.bg_yellow {
-    background-color: #ffc107 !important;
-}
-
-.bg_green {
-    background-color: #28a745 !important; 
-}
-
-.bg_teal {
-    background-color: #20c997 !important;
-}
-
-.bg_cyan {
-    background-color: #17a2b8 !important;
-}
-
-.bg_gray {
-    background-color: #6c757d !important;
-}
-
-.bg_gray_dark {
-    background-color: #343a40 !important;
-}
-
-.bg_primary {
-    background-color: #007bff !important;
-}
-
-.bg_secondary {
-    background-color: #6c757d !important;
-}
-
-.bg_success {
-    background-color: #28a745 !important; 
-}
-
-.bg_info {
-    background-color: #17a2b8 !important;
-}
-
-.bg_warning {
-    background-color: #ffc107 !important; 
-}
-
-.bg_danger {
-    background-color: #dc3545 !important;
-}
-
-.bg_light{
-    background-color: #f8f9fa !important;
-}
-
-.bg_dark{
-    background-color: #343a40 !important;
-}
- 
-.bg_black {
-    background-color: #000000 !important;
-}
-
 /*Overlay*/
 .mask_w,
 .overlay_w {
@@ -735,31 +634,34 @@ input[type='button'] {
 
 
 /*Border*/
-.border_t_1 {
-    border-top: 1px solid rgba(0,0,0,.125) !important;
+@for $i from 0 through 5 {
+    .bt#{$i} { 
+        border-top: #{$i}px solid rgba(0,0,0,.125) !important; 
+    }
+    .bb#{$i} { 
+        border-bottom: #{$i}px solid rgba(0,0,0,.125) !important; 
+    }
+    .bl#{$i} {
+        border-left: #{$i}px solid rgba(0,0,0,.125) !important;  
+    }
+    .br#{$i} {
+        border-right: #{$i}px solid rgba(0,0,0,.125) !important; 
+    }
+    .btb#{$i} { 
+        border-top: #{$i}px solid rgba(0,0,0,.125) !important; 
+        border-bottom: #{$i}px solid rgba(0,0,0,.125) !important; 
+    }
+    .blr#{$i} { 
+        border-left: #{$i}px solid rgba(0,0,0,.125) !important; 
+        border-right: #{$i}px solid rgba(0,0,0,.125) !important; 
+    }
+    .border#{$i} { 
+        border: #{$i}px solid rgba(0,0,0,.125) !important; 
+    }
 }
 
-.border_b_1 {
-    border-bottom: 1px solid rgba(0,0,0,.125) !important;
-}
-
-.border_t_2 {
-    border-top: 2px solid rgba(0,0,0,.125) !important;
-}
-
-.border_b_2 {
-    border-bottom: 2px solid rgba(0,0,0,.125) !important;
-}
-
-.border_t_0 {
-    border-top: none !important;
-}
-
-.border_b_0 {
-    border-bottom: none !important;
-}
-
-.border_0 {
+.border_0,
+.border0 {
     border: none !important;
 } 
 
@@ -772,3 +674,306 @@ input[type='button'] {
     .op#{$i} { opacity: $finalvalue; }
     .opi#{$i} { opacity: $finalvalue !important }
 }
+
+
+/*Background Colors*/
+.bg_grey {
+    background-color: #F1F1F1 !important;
+}
+
+.bg_grey2 {
+    background-color: #F2F2F2 !important;
+}
+
+.bg_purple {
+    background-color: #eb3941 !important;
+}
+
+.bg_green {
+    background-color: #69b76d !important; 
+}
+
+.bg_blue {
+    background-color: #007bff !important; 
+}
+
+.bg_indigo {
+    background-color: #6610f2 !important; 
+}
+
+.bg_purple {
+    background-color: #6f42c1 !important; 
+}
+
+.bg_pink {
+    background-color: #e83e8c !important; 
+}
+
+.bg_red {
+    background-color: #dc3545 !important; 
+}
+
+.bg_orange {
+    background-color: #fd7e14 !important;
+}
+
+.bg_yellow {
+    background-color: #ffc107 !important;
+}
+
+.bg_green {
+    background-color: #28a745 !important; 
+}
+
+.bg_teal {
+    background-color: #20c997 !important;
+}
+
+.bg_cyan {
+    background-color: #17a2b8 !important;
+}
+
+.bg_gray {
+    background-color: #6c757d !important;
+}
+
+.bg_gray_dark {
+    background-color: #343a40 !important;
+}
+
+.bg_primary {
+    background-color: #007bff !important;
+}
+
+.bg_secondary {
+    background-color: #6c757d !important;
+}
+
+.bg_success {
+    background-color: #28a745 !important; 
+}
+
+.bg_info {
+    background-color: #17a2b8 !important;
+}
+
+.bg_warning {
+    background-color: #ffc107 !important; 
+}
+
+.bg_danger {
+    background-color: #dc3545 !important;
+}
+
+.bg_light{
+    background-color: #f8f9fa !important;
+}
+
+.bg_dark{
+    background-color: #343a40 !important;
+}
+ 
+.bg_black {
+    background-color: #000000 !important;
+}
+
+  /*Border Colors*/
+  .bc_grey {
+    border-color: #F1F1F1 !important;
+  }
+  
+  .bc_grey2 {
+    border-color: #F2F2F2 !important;
+  }
+  
+  .bc_purple {
+    border-color: #eb3941 !important;
+  }
+  
+  .bc_green {
+    border-color: #69b76d !important;
+  }
+  
+  .bc_blue {
+    border-color: #007bff !important;
+  }
+  
+  .bc_indigo {
+    border-color: #6610f2 !important;
+  }
+  
+  .bc_purple {
+    border-color: #6f42c1 !important;
+  }
+  
+  .bc_pink {
+    border-color: #e83e8c !important;
+  }
+  
+  .bc_red {
+    border-color: #dc3545 !important;
+  }
+  
+  .bc_orange {
+    border-color: #fd7e14 !important;
+  }
+  
+  .bc_yellow {
+    border-color: #ffc107 !important;
+  }
+  
+  .bc_green {
+    border-color: #28a745 !important;
+  }
+  
+  .bc_teal {
+    border-color: #20c997 !important;
+  }
+  
+  .bc_cyan {
+    border-color: #17a2b8 !important;
+  }
+  
+  .bc_gray {
+    border-color: #6c757d !important;
+  }
+  
+  .bc_gray_dark {
+    border-color: #343a40 !important;
+  }
+  
+  .bc_primary {
+    border-color: #007bff !important;
+  }
+  
+  .bc_secondary {
+    border-color: #6c757d !important;
+  }
+  
+  .bc_success {
+    border-color: #28a745 !important;
+  }
+  
+  .bc_info {
+    border-color: #17a2b8 !important;
+  }
+  
+  .bc_warning {
+    border-color: #ffc107 !important;
+  }
+  
+  .bc_danger {
+    border-color: #dc3545 !important;
+  }
+  
+  .bc_light {
+    border-color: #f8f9fa !important;
+  }
+  
+  .bc_dark {
+    border-color: #343a40 !important;
+  }
+  
+  .bc_black {
+    border-color: #000000 !important;
+  }
+  /*Text Colors*/
+  .text_grey {
+    color: #F1F1F1 !important;
+  }
+  
+  .text_grey2 {
+    color: #F2F2F2 !important;
+  }
+  
+  .text_purple {
+    color: #eb3941 !important;
+  }
+  
+  .text_green {
+    color: #69b76d !important;
+  }
+  
+  .text_blue {
+    color: #007bff !important;
+  }
+  
+  .text_indigo {
+    color: #6610f2 !important;
+  }
+  
+  .text_purple {
+    color: #6f42c1 !important;
+  }
+  
+  .text_pink {
+    color: #e83e8c !important;
+  }
+  
+  .text_red {
+    color: #dc3545 !important;
+  }
+  
+  .text_orange {
+    color: #fd7e14 !important;
+  }
+  
+  .text_yellow {
+    color: #ffc107 !important;
+  }
+  
+  .text_green {
+    color: #28a745 !important;
+  }
+  
+  .text_teal {
+    color: #20c997 !important;
+  }
+  
+  .text_cyan {
+    color: #17a2b8 !important;
+  }
+  
+  .text_gray {
+    color: #6c757d !important;
+  }
+  
+  .text_gray_dark {
+    color: #343a40 !important;
+  }
+  
+  .text_primary {
+    color: #007bff !important;
+  }
+  
+  .text_secondary {
+    color: #6c757d !important;
+  }
+  
+  .text_success {
+    color: #28a745 !important;
+  }
+  
+  .text_info {
+    color: #17a2b8 !important;
+  }
+  
+  .text_warning {
+    color: #ffc107 !important;
+  }
+  
+  .text_danger {
+    color: #dc3545 !important;
+  }
+  
+  .text_light {
+    color: #f8f9fa !important;
+  }
+  
+  .text_dark {
+    color: #343a40 !important;
+  }
+  
+  .text_black {
+    color: #000000 !important;
+  }
