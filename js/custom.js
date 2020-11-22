@@ -128,9 +128,7 @@ jQuery('.start_rating .far').click(function(){
 });
 
 
-
 });
-
 
 // Selected
 function selected_stars() {

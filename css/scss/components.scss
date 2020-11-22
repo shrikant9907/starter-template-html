@@ -9,6 +9,14 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
     transition: all 0.2s ease-in-out;
 }
 
+html, body {
+    -moz-transition: unset !important;
+    -o-transition: unset !important;
+    -webkit-transition: unset !important;
+    -ms-transition: unset !important;
+    transition: unset !important;
+}
+
 /************************** Components ***************************/
 // Sidebar Trigger
 .hamburger {

@@ -7,6 +7,14 @@
   transition: all 0.2s ease-in-out;
 }
 
+html, body {
+  -moz-transition: unset !important;
+  -o-transition: unset !important;
+  -webkit-transition: unset !important;
+  -ms-transition: unset !important;
+  transition: unset !important;
+}
+
 /************************** Components ***************************/
 .hamburger {
   width: 30px;
