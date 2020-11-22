@@ -588,7 +588,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 .card.cui4, .card.cui3, .card.cui3c, .card.cui2c, .card.cui2 {
   margin-bottom: 30px;
-  background: #ffffff !important;
+  background: #ffffff;
   border: none;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
