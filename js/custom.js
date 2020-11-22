@@ -1,5 +1,31 @@
 jQuery('document').ready(function(){
 
+	// Hamburger 
+	jQuery('.hamburger').click(function(e){
+        e.preventDefault(); 
+        jQuery(this).toggleClass('active');
+        jQuery('.sidebar').fadeToggle();   
+        jQuery('.sidebar').toggleClass('active');   
+        jQuery('body').toggleClass('noscroll');   
+        jQuery('body').toggleClass('sidebaractive');   
+	});
+	
+	// Active Sidebar
+	jQuery('.sidebar.active').click(function(e){
+		e.preventDefault();
+	
+		if (e.target !== this)
+    		return;
+	
+		jQuery('.hamburger').click();
+	});
+
+	// Load HTML 
+	jQuery('.actionloadhtml li a').click(function(){
+		var pid = jQuery(this).attr('href').replace('#', '');
+	 	jQuery( "#loadresult" ).attr('src', pid);
+	});
+
 	jQuery('.testimonials_slick').slick();
 
 	jQuery('.hamburger_sign').on('click',function(){

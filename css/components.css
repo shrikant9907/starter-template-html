@@ -60,6 +60,10 @@
   top: -8px;
 }
 
+.sidebaractive {
+  padding-left: 290px;
+}
+
 .sidebar {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -72,6 +76,10 @@
   z-index: 99;
   transition: unset !important;
   display: none;
+}
+.sidebar.nooverlay {
+  width: 275px;
+  background: transparent;
 }
 .sidebar .slisting {
   width: 0px;
@@ -115,6 +123,9 @@
 }
 .sidebar .slisting ul li a:hover {
   background: rgba(0, 0, 0, 0.05);
+}
+.sidebar .slisting.slistingsm li a {
+  padding: 10px 10px 10px 50px;
 }
 .sidebar.active {
   display: block;
@@ -281,7 +292,7 @@ header.sticky, header.fixed {
   bottom: unset !important;
   left: 0px;
   right: 0px;
-  z-index: 999;
+  z-index: 998;
 }
 header .navbar.navbar-expand-lg {
   padding: 0;

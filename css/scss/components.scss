@@ -76,6 +76,9 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 }
 
 // Sidebar Menus
+.sidebaractive {
+    padding-left: 290px;
+}
 .sidebar {
 
   background: rgba(0,0,0,0.5);
@@ -89,6 +92,11 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
   z-index: 99;
   transition:unset !important;
   display: none;
+
+  &.nooverlay {
+      width: 275px;
+      background: transparent;
+  }
 
   .slisting {
     width: 0px;
@@ -135,6 +143,12 @@ $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
           background: rgba(0,0,0,0.05);
         }
       }
+    }
+
+    &.slistingsm {
+        li a{
+        padding: 10px 10px 10px 50px
+        }
     }
   }
 
@@ -329,7 +343,7 @@ header {
         bottom: unset !important;
         left: 0px;
         right: 0px;
-        z-index: 999;
+        z-index: 998;
     }
     .navbar {
         &.navbar-expand-lg {
