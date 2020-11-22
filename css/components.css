@@ -676,7 +676,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   margin: 0px;
 }
 .card.cui4b, .card.cui3c, .card.cui3 {
-  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .card.cui4b, .card.cui4 {
   display: flex;
