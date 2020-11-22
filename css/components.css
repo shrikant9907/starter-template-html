@@ -1295,11 +1295,13 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .fui1 .search-box {
   position: relative;
 }
+.fui .search-box .icon,
 .fui .search-box .button,
 .fui .search-box .btn,
 .fui .search-box input[type=submit],
 .fui .search-box input[type=button],
 .fui .search-box button,
+.fui1 .search-box .icon,
 .fui1 .search-box .button,
 .fui1 .search-box .btn,
 .fui1 .search-box input[type=submit],
@@ -1317,6 +1319,14 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   border-bottom-left-radius: 0px !important;
   width: 45px;
   font-size: 18px;
+}
+.fui .search-box .icon,
+.fui1 .search-box .icon {
+  color: rgba(0, 0, 0, 0.3);
+}
+.fui .search-box input[type=text],
+.fui1 .search-box input[type=text] {
+  padding-right: 74px !important;
 }
 .fui input:not([type=submit]), .fui textarea, .fui select,
 .fui .form-control,
@@ -1355,11 +1365,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   border-radius: 6px;
 }
 
-.fui3p input:not([type=submit]), .fui3p textarea, .fui3p select,
-.fui3p .form-control,
-.fui2p input:not([type=submit]),
-.fui2p textarea,
-.fui2p select,
+.fui2p input:not([type=submit]), .fui2p textarea, .fui2p select,
 .fui2p .form-control,
 .fui1p input:not([type=submit]),
 .fui1p textarea,
@@ -1369,11 +1375,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 11px 20px;
 }
 
-.fui3p input:not([type=submit]), .fui3p textarea, .fui3p select,
-.fui3p .form-control,
-.fui3 input:not([type=submit]),
-.fui3 textarea,
-.fui3 select,
+.fui3 input:not([type=submit]), .fui3 textarea, .fui3 select,
 .fui3 .form-control {
   border-top: unset !important;
   border-left: unset !important;

@@ -1472,6 +1472,7 @@ header {
     .search-box {
         position: relative;
 
+        .icon,
         .button,
         .btn,
         input[type="submit"],
@@ -1490,6 +1491,14 @@ header {
             width: 45px;
             font-size: 18px;
         } 
+
+        .icon {
+            color: rgba(0,0,0,0.3);
+        }
+
+        input[type="text"] {
+            padding-right: 74px !important;
+        }
     }
 
     input:not([type='submit']), textarea, select,
