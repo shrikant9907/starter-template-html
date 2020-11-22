@@ -911,7 +911,7 @@ header {
     -ms-user-select: none;
     user-select: none;
     font-size: 14px;
-    padding: 14px 30px;
+    padding: 18px 30px;
     max-width: 100%;
     width: auto;
     min-width: 150px;
@@ -1489,6 +1489,10 @@ header {
 .fui1 {
     .form-group {
         margin-bottom: 20px;
+
+        label {
+            margin-bottom:5px;
+        }
     }
     
     .search-box {
@@ -1531,6 +1535,11 @@ header {
         font-size: inherit;
         min-height: 45px;
     }
+
+    input[type="checkbox"], 
+    input[type="radio"] {
+        min-height: 0px;
+    } 
 
 }
 

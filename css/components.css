@@ -828,7 +828,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   -ms-user-select: none;
   user-select: none;
   font-size: 14px;
-  padding: 14px 30px;
+  padding: 18px 30px;
   max-width: 100%;
   width: auto;
   min-width: 150px;
@@ -1310,6 +1310,10 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .fui1 .form-group {
   margin-bottom: 20px;
 }
+.fui .form-group label,
+.fui1 .form-group label {
+  margin-bottom: 5px;
+}
 .fui .search-box,
 .fui1 .search-box {
   position: relative;
@@ -1358,6 +1362,12 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 11px 12px;
   font-size: inherit;
   min-height: 45px;
+}
+.fui input[type=checkbox],
+.fui input[type=radio],
+.fui1 input[type=checkbox],
+.fui1 input[type=radio] {
+  min-height: 0px;
 }
 
 .fui2p input:not([type=submit]), .fui2p textarea, .fui2p select,
