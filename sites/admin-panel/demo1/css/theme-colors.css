@@ -1,0 +1,95 @@
+
+
+/*Updates Page*/ 
+.latest_update_page .right_sidebar_wr h2,
+.latest_update_page .page-main-heading{
+    background-image: linear-gradient(to bottom, #0b256d, #0c2e87, #0e38a2, #1241be, #174bda);
+}
+
+.latest_update_page .posts_update_box .update_box .uploaders_details img {
+    background: #174BDA;
+}
+
+.latest_update_page .posts_update_box .update_box .uploaders_activity a {
+    color:#174BDA;
+}
+
+
+ /*Jobs Page*/
+
+.jobs_page .right_sidebar_wr h2,
+.jobs_page .page-main-heading{
+     background-image: linear-gradient(to bottom, #440c59, #5d0e7a, #770f9d, #910fc2, #ad0de8);
+}
+
+.jobs_page .job_search_wr .left_side .update_box_footer img.img-fluid,
+.jobs_page .posts_update_box .update_box .uploaders_details img {
+    background: #ad0de8;
+}
+
+.jobs_page .left_side .posts_update_box strong,
+.module1 .jobs_page .job_search_wr .left_side h3,  
+.jobs_page .posts_update_box .update_box .uploaders_activity a {
+    color:#ad0de8;
+}
+
+.module1 .jobs_page .job_search_wr .left_side a {
+     color:#ad0de8 !important;
+}
+ 
+.module1 .jobs_page .btn-primary {
+    background-image: linear-gradient(to right, #440c59, #5d0e7a, #770f9d, #910fc2, #ad0de8);
+}
+
+.module1 .jobs_page  .btn-primary:focus, 
+.module1 .jobs_page  .btn-primary:hover {
+    background-image: linear-gradient(to left, #440c59, #5d0e7a, #770f9d, #910fc2, #ad0de8);
+}
+
+/*FAQ Page*/
+
+.faqs_page .page-main-heading{
+     background-image: linear-gradient(to bottom, #1d590c, #277311, #318f17, #3cac1c, #47c922);
+}
+
+.faqs_page .accordion .card-header i, 
+.faqs_page .accordion .card-header svg {
+    color:#1d590c; 
+}
+
+.faqs_page .faq_vertical_menus.nav-pills .nav-link {
+    background: #318f17;
+}
+
+.faqs_page .faq_vertical_menus.nav-pills .nav-link.active, 
+.faqs_page .faq_vertical_menus.nav-pills .show > .nav-link {
+    background: #277311;
+}
+
+.faqs_page .accordion .card-header,
+.faqs_page .faq_vertical_menus.nav-pills .nav-link:hover {
+    background-color: #47c922;
+}
+
+.faqs_page .accordion .btn   {
+    color:#ffffff !important;
+}
+
+/*Contact*/
+.contact_page .page-main-heading{
+     background-image: linear-gradient(to bottom, #008369, #00997b, #00af8d, #00c69f, #00deb2);
+}
+.contact_page .form_contant h2,
+.contact_page form.form_contant .form-group svg {
+    color: #00997b;
+}
+
+.module1 .contact_page .btn-primary {
+    background: #00deb2;
+    background-image: linear-gradient(to right, #008369, #00997b, #00af8d, #00c69f, #00deb2);
+}
+
+.module1 .contact_page  .btn-primary:focus, 
+.module1 .contact_page  .btn-primary:hover {
+   background-image: linear-gradient(to left, #008369, #00997b, #00af8d, #00c69f, #00deb2);
+}
