@@ -1,5 +1,30 @@
 jQuery('document').ready(function(){
 
+	// Star Rating https://codepen.io/shrikant9907/pen/oKLdmB
+	// Default selection 
+	selected_stars();
+	var starIcon = jQuery('.star_rating .far');
+	// On hover
+	starIcon.hover(function(){
+		jQuery(this).addClass('fas').prevAll().addClass('fas').removeClass('far');
+		jQuery(this).nextAll().addClass('far').removeClass('fas');
+	}, function(){
+		selected_stars();
+	});
+
+	// OnClick
+	starIcon.click(function(){
+		jQuery(this).addClass('selected').siblings().removeClass('selected');
+		jQuery('.rate_success').remove();
+		jQuery(this).parent().after('<div class="text-success rate_success">Thank you for your rating..</div>');
+	});
+
+	// Selected
+	function selected_stars() {
+		jQuery('i.selected').addClass('fas').prevAll().addClass('fas').removeClass('far');
+	}
+
+
 	// Hamburger 
 	jQuery('.hamburger').click(function(e){
         e.preventDefault(); 

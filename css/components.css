@@ -1634,6 +1634,17 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   align-items: center;
 }
 
+.star_rating {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.star_rating i.far {
+  color: #ccc;
+}
+.star_rating i.fas {
+  color: #ffaa00;
+}
+
 /* Scroll Down */
 .mouse_scroll_down {
   position: absolute;
