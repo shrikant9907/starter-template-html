@@ -1594,6 +1594,7 @@ header {
             left: 13px;
             font-size: 12px;
             top: 5px;
+            z-index: 1;
         }
 
         input:not([type='submit']), textarea, select,
