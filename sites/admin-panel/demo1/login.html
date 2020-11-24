@@ -26,36 +26,36 @@
 
 <body class="bg-light">
     <section class="auth-form-section vh_100 d-flex justify-content-center align-items-center">
-     <div class="card Form_card cui1 px_20">
+     <div class="card cui1 px_20">
      <div class="w_400 max_w_100p">
        <div class="card-header text-center">
           <div class="f30 mb_10">Admin Login</div>
        </div>
        <div class="card-body">
-        <form  class="fui fui4" action="index.html" method="post" enctype="multipart/form-data">
+        <form  class="fui fui4r" action="index.html" method="post" enctype="multipart/form-data">
         <div class="text-center text-info mb-4">
           <span>Sign in to your account</span>
         </div>
         <div class="form-group">
           <label>Email</label>
-          <input autofocus="" required="required" type="text" name="name" placeholder="Enter your email." class=" pl-3 input_form position-relative ">
+          <input autofocus="" required="required" type="email" name="email" placeholder="Enter your email." class="form-control">
         </div>
         <div class="form-group">
           <label>Password</label>
-          <input type="password" required="required" name="name" placeholder="Enter your password." class=" pl-3 input_form position-relative "><i class="far fa-eye-slash text-muted"></i>
+          <input type="password" required="required" name="password" placeholder="Enter your password." class="form-control"><i class="far fa-eye-slash text-muted"></i>
         </div>
           
         <div class="row">
-         <div class="col-12 col-md-6">
-            <a href="#" class="Rememeber  mb-3 d-inline-block">Rememeber</a><input type="checkbox" name="checkbox" class="ml-2">
+         <div class="col-6">
+            <a href="#" class="Remember mb-3 d-inline-block">Remember</a><input type="checkbox" name="checkbox" class="ml-2">
          </div>
-         <div class="col-12 col-md-6">
-            <a href="forgot-password.html" class="float-right forget_pass mb-3 d-inline-block text-decoration-none">Forgot Password?</a>
+         <div class="col-6">
+            <a href="#" class="float-right forget_pass mb-3 d-inline-block text-decoration-none">Forgot Password?</a>
          </div>
          </div>
 
          <div class="btn_wr">
-            <button type="submit" class="btn btn-primary btn-signin sign-marg-no border-0 w-100 mb-5" >Sign In</button>
+            <button type="submit" class="btn btn-primary btn-signin w-100" >Sign In</button>
          </div>
         </form>
        </div>  

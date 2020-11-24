@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/webstyle.css" />
+        <link rel="stylesheet" href="../../../css/components.css" />
+        <link rel="stylesheet" href="../../../css/utils.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
  
@@ -75,23 +77,15 @@
                 <p>Upload a .csv file and click on Import Now button to upload the records.</p>  
                   <form action="" class="mb-4" >
                     <!-- Card Start -->
-                    <div class="card m_b_30 dashed_border">
-                           
-                           <div class="card-body text-center p_y_40">
-                                
-                                <!-- TODO -->
-                                <!-- Add Import Form Here -->
-                                <p class="f_24_28">Drag and Drop a file</p>
-                                <p>OR</p>
-                                <div class="row">
-                                    <div class="col-12"> 
-                                        <input type="file" name="upload_csv" class="upload_csv_input"  /id="upload_file_input">
-                                        <label class="btn btn-primary btn-inline-block" for="upload_file_input">Upload CSV</label>
-                                        </div> 
-                                </div>
-
-                           </div>
-                    
+                    <div class="card cdraganddrop">
+                        <div class="card-body">
+                            <p class="f_24_28">Drag and Drop a file</p>
+                            <p>OR</p>
+                            <div class="btn-wr"> 
+                                <input type="file" name="upload_csv" class="upload_csv_input" id="upload_file_input">
+                                <label class="btn btn-primary btn-inline-block" for="upload_file_input">Upload CSV</label>
+                            </div> 
+                        </div>
                     </div> 
                     <!-- Card End     -->
 

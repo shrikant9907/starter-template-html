@@ -896,6 +896,19 @@ header {
         }
     }
 
+    // Drag and Drop Card
+    &.cdraganddrop {
+        border: 3px dashed #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 200px;
+        flex-direction: column;
+        .card-body {
+            flex:unset;
+        }
+    }
 }
 
 .button,
@@ -1600,6 +1613,12 @@ header {
         input:not([type='submit']), textarea, select,
         .form-control {
             padding: 24px 12px 11px 12px;
+        }
+
+        i.far.fa-eye-slash {
+            position: absolute;
+            right: 17px;
+            top: calc(50% - 18px);
         }
     }
 }

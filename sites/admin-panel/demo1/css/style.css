@@ -2124,32 +2124,6 @@ table.dataTable thead th, table.dataTable thead td {
     color: #ffffff;
 }
 
-/*Login page design start*/
- 
-.Form_card label.form_label {
-    z-index: 1000;
-    margin: 7px 0 0 0;
-    left: 17px;
-    font-size: 12px;
-}
-.Form_card .card-body input.input_form{
-    padding: 28px 0px 10px 0px;
-    width: 100%;
-    border: 1px solid silver;
-    border-radius: 5px;
-    margin-bottom: 22px;
-}
-.Form_card .card-body label.form_label-1 {
-    margin-top: 95px!important;
-    left: 126px;
-    z-index: 2;
-}
-.Form_card .card-body i.far.fa-eye-slash {
-    position: absolute;
-    right: 17px;
-    top: calc(50% - 18px);
-}
-
 .admin_logo{
   height: 80px;
   width: 80px;

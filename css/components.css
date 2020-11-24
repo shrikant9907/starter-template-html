@@ -815,6 +815,18 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   font-size: 14px;
   padding: 15px;
 }
+.card.cdraganddrop {
+  border: 3px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 200px;
+  flex-direction: column;
+}
+.card.cdraganddrop .card-body {
+  flex: unset;
+}
 
 .button,
 .btn {
@@ -1432,6 +1444,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   left: 13px;
   font-size: 12px;
   top: 5px;
+  z-index: 1;
 }
 .fui4p .form-group input:not([type=submit]), .fui4p .form-group textarea, .fui4p .form-group select,
 .fui4p .form-group .form-control,
@@ -1445,13 +1458,12 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .fui4 .form-group .form-control {
   padding: 24px 12px 11px 12px;
 }
-
-.fui4p .form-group label {
-  left: 24px;
-}
-.fui4p .form-group input:not([type=submit]), .fui4p .form-group textarea, .fui4p .form-group select,
-.fui4p .form-group .form-control {
-  padding: 24px;
+.fui4p .form-group i.far.fa-eye-slash,
+.fui4r .form-group i.far.fa-eye-slash,
+.fui4 .form-group i.far.fa-eye-slash {
+  position: absolute;
+  right: 17px;
+  top: calc(50% - 18px);
 }
 
 .mui {
