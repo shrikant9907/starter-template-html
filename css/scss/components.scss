@@ -1554,6 +1554,7 @@ header {
     }
 }
 
+.fui4r,
 .fui2r,
 .fui1r {
     input:not([type='submit']), textarea, select,
@@ -1562,6 +1563,7 @@ header {
     }
 }
 
+.fui4p,
 .fui2p,
 .fui1p {
     input:not([type='submit']), textarea, select,
@@ -1578,6 +1580,26 @@ header {
         border-left:unset !important;
         border-right:unset !important;
         padding: 11px 0px;
+    }
+}
+
+.fui4p,
+.fui4r,
+.fui4 {
+    .form-group {
+        position: relative;
+
+        label {
+            position: absolute;
+            left: 13px;
+            font-size: 12px;
+            top: 5px;
+        }
+
+        input:not([type='submit']), textarea, select,
+        .form-control {
+            padding: 24px 12px 11px 12px;
+        }
     }
 }
 
