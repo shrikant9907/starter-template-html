@@ -869,7 +869,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 .button.btn-sm,
 .btn.btn-sm {
-  padding: 6px 15px;
+  padding: 10px 15px;
   line-height: 16px;
   font-size: 12px;
 }
@@ -2381,6 +2381,39 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     left: 0;
     margin-bottom: 15px;
   }
+}
+.repeaterContainer {
+  padding-bottom: 40px;
+  position: relative;
+}
+.repeaterContainer .items {
+  position: relative;
+  padding-right: 30px;
+}
+.repeaterContainer .items button,
+.repeaterContainer .items .btn {
+  position: absolute;
+  color: #dc3545;
+  border: 0px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  background: transparent;
+}
+.repeaterContainer .items button:disabled,
+.repeaterContainer .items .btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.repeaterContainer .repeaterActions {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  bottom: 0px;
+}
+.repeaterContainer .repeaterActions .btn:first-child {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=components.css.map */

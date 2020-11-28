@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Repeaters</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<meta name="site-icon" content="" />
+	
+	<meta name="google-site-verification" content="" />
+	<meta name="robots" content="noindex, nofollow" />
+	
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png"/> -->
+	<!-- <link rel="shortcut icon" href="images/favicon.png" /> -->
+
+    <!-- required Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- required CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/learning-lp.css" />
+	
+	<!-- background-image: linear-gradient(to right bottom, #0064cb, #007ed2, #0091c5, #00a0ad, #00ac94); -->
+
+</head>
+<body class="bg-light">
+<section class="py_30">
+ 
+<div class="container">
+	<!-- Row Start -->
+	<div class="row">
+		<div class="col-12"><h2 class="text-center mb-5">Repeaters</h2></div>
+	 
+		<div class="col-12">
+			<p>Repeater Fields</p>
+			<div class="card cui2">
+				<div class="card-body pri_30 pli_30">
+					 <div class="text_bold f18 mb_10 text-primary">Your Basic Details</div>
+					 <form action="" class="fui1 w-100">
+						<div id="repeater" class="repeaterContainer">
+							<div class="items" data-group="fg1">
+								<div class="item-content">
+									<div class="form-row">
+										<div class="col">
+											<div class="form-group">
+												<input type="text" class="form-control" id="inputName" placeholder="Name" data-name="name">
+											</div>
+										</div>
+										<div class="col">
+											<div class="form-group">
+												<input type="text" class="form-control" id="inputEmail" placeholder="Email" data-name="email">
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="remove-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+							</div>
+							<div class="repeaterActions">
+								<button type="button" class="btn btn-sm btn-primary repeater-add-btn">Add new</button>
+								<button type="button" class="btn btn-primary btn-sm repeater-clone-btn">Duplicate Last Field</button>
+							</div>
+						</div>
+						<!-- Repeater End -->
+
+						<hr>
+
+						<div id="repeater2" class="repeaterContainer">
+							<div class="items" data-group="fg2">
+								<div class="item-content">
+									<div class="form-row">
+										<div class="col">
+											<div class="form-group">
+												<input type="text" class="form-control" id="inputName" placeholder="Name" data-name="name">
+											</div>
+										</div>
+										<div class="col">
+											<div class="form-group">
+												<input type="text" class="form-control" id="inputEmail" placeholder="Email" data-name="email">
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="remove-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+							</div>
+							<div class="repeaterActions">
+								<button type="button" class="btn btn-sm btn-primary repeater-add-btn">Add new</button>
+								<button type="button" class="btn btn-primary btn-sm repeater-clone-btn">Duplicate Last Field</button>
+							</div>
+						</div>
+					 </form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Row End --> 
+
+</div>
+</section>
+
+	<!-- Script -->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js" type="text/javascript"></script> 
+
+		<!-- Popper JS -->
+	<script src="js/popper.min.js" type="text/javascript"></script>
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!-- Custom Script -->
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+	<!-- Repeater Js -->
+	<script type="text/javascript" src="js/repeater.js"></script>
+	
+	<script>
+		jQuery("#repeater").createRepeater({
+            showFirstItemToDefault: true,
+		});
+		
+		jQuery("#repeater2").createRepeater({
+            showFirstItemToDefault: true,
+        });
+    </script>
+
+</body>
+</html>  

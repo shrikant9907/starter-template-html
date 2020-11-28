@@ -2633,3 +2633,43 @@ header {
     
     
 }
+
+
+// Repeater UI
+.repeaterContainer {
+    padding-bottom: 40px;
+    position: relative;
+    .items {
+        position: relative;
+        padding-right:30px;
+
+        button,
+        .btn  {
+            position: absolute;
+            color: #dc3545;
+            border: 0px;
+            top:0px;
+            right: 0px;
+            cursor:pointer;
+            background:transparent;
+
+            &:disabled {
+                opacity: 0.3;
+                cursor: default;
+            }
+        }
+    }
+
+    .repeaterActions {
+        display:flex;
+        position: absolute; 
+        width: 100%;
+        // justify-content:space-between;
+        align-items: center;
+        bottom: 0px;    
+        
+        .btn:first-child {
+            margin-right: 5px;
+        }
+    }
+}
