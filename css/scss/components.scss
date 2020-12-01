@@ -147,6 +147,7 @@ html, body {
           top: 0;
         }
 
+        &.active,
         &:hover {
           background: rgba(0,0,0,0.05);
         }
