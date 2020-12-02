@@ -494,7 +494,6 @@ header {
 
     .banner-card {
         padding: 15px 0 20px 15px;
-
         &:before {
             content: "";
             display: block;
@@ -504,6 +503,9 @@ header {
             left: 0px;
             background: $primaryColor;
             top: 0px;
+        }
+        &.nobefore:before {
+            display: none;
         }
     }
 

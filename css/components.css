@@ -440,6 +440,10 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   background: #007bff;
   top: 0px;
 }
+.banner_section .banner-card.nobefore:before,
+.banner-section .banner-card.nobefore:before {
+  display: none;
+}
 .banner_section.bannerui2,
 .banner-section.bannerui2 {
   background: #000;
