@@ -1040,6 +1040,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .pricing_cards .pcard3 {
   background: #B10031 !important;
   color: #ffffff;
+  overflow: visible !important;
 }
 .pricing_cards .pcard3 .card-title,
 .pricing_cards .pcard3 .card-body ul {
@@ -1087,6 +1088,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   background: #FE005A !important;
 }
 .pricing_cards .pcard4 {
+  overflow: visible !important;
   background: #FF917E !important;
   box-shadow: 0 0 14px -6px #FF917E !important;
   border: none;
@@ -1669,8 +1671,23 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .listing.type3 a a, .listing.type3 li a, .listing.type3 .list-item a {
   border: unset !important;
 }
+.listing.type4 {
+  background: transparent;
+}
+.listing.type4 a:first-child, .listing.type4 li:first-child, .listing.type4 .list-item:first-child,
+.listing.type4 a, .listing.type4 li, .listing.type4 .list-item {
+  background: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: unset !important;
+}
+.listing.type4 a:hover,
+.listing.type4 .list-item:hover,
+.listing.type4 li:hover {
+  background: rgba(248, 196, 52, 0.2);
+}
 .listing.licons a, .listing.licons li, .listing.licons .list-item {
-  padding: 10px 5px 10px 40px;
+  padding: 10px 10px 10px 50px;
   position: relative;
   display: flex;
   align-items: center;
@@ -1682,7 +1699,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .listing.licons a i, .listing.licons li .alicon,
 .listing.licons li i, .listing.licons .list-item .alicon,
 .listing.licons .list-item i {
-  width: 40px;
+  width: 50px;
   display: flex;
   justify-content: center;
   position: absolute;

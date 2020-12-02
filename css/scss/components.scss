@@ -1180,6 +1180,7 @@ header {
     .pcard3 {
         background: #B10031 !important;
         color: #ffffff;
+        overflow: visible !important;
        
         .card-title,
         .card-body ul {
@@ -1233,6 +1234,7 @@ header {
 
     //  pricing card 4
     .pcard4 {
+        overflow: visible !important;
         background: #FF917E !important;
         box-shadow: 0 0 14px -6px #FF917E !important;
         border: none;
@@ -1866,9 +1868,26 @@ header {
         }
     }
 
+    &.type4 {
+        background: transparent;
+        a:first-child, li:first-child, .list-item:first-child,
+        a, li, .list-item {
+            background: #fafafa;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: unset !important;
+        }
+
+        a:hover,
+        .list-item:hover,
+        li:hover {
+            background: rgba(248, 196, 52, 0.2);
+        }
+    }
+
     &.licons {
         a, li, .list-item {
-            padding: 10px 5px 10px 40px;
+            padding: 10px 10px 10px 50px;
             position: relative;
             display: flex;
             align-items: center;
@@ -1877,7 +1896,7 @@ header {
             }
             .alicon,
             i {
-                width: 40px;
+                width: 50px;
                 display: flex;
                 justify-content: center;
                 position: absolute;
