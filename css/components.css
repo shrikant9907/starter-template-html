@@ -1,12 +1,4 @@
 @charset "UTF-8";
-* {
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s0 ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
 html, body {
   -moz-transition: unset !important;
   -o-transition: unset !important;

@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
     color: #c87941 !important;
 }
 
+.slisting.bg-primary,
+.bg_gred_primary {
+    background-image: linear-gradient(to bottom, #c87941, #87431d) !important;
+}
+
 .btn-secondary:hover,
 .btn-secondary,
 .bg-secondary {
