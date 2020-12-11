@@ -1,9 +1,15 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #777777;
     background: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.site_logo.with_image a img {
+    height: auto;
+    max-width: unset;
 }
 
 .hamburger {
@@ -118,8 +124,12 @@ img.blur {
 header .navbar.navbar-expand-lg .navbar-nav .nav-item a.nav-link.btn {
     padding: 11px 0 !important;
     color: #fff !important;
-    margin: 18px 0 18px 8px !important;
+    margin: 14px 0 14px 8px !important;
     text-transform: uppercase;
+}
+
+header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    margin: 7px 0 !important;
 }
 
 .rememberme input{
