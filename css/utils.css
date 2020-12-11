@@ -1,7 +1,7 @@
 /*      Created By      : Shrikant Yadav                                                    */
 /*      Contact         : shrikant9907@gmail.com                                            */
 /*      Web Developer and Desinger                                                          */
-/*      Version         : 2.0                                                               */
+/*      Version         : 3.0                                                               */
 * {
   outline: none !important;
 }
@@ -31,6 +31,16 @@ p {
 /*Text Decoration*/
 .tdn {
   text-decoration: none !important;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+
+.pointer-none {
+  pointer-events: none;
 }
 
 /*Display*/
@@ -7380,7 +7390,6 @@ input[type=button] {
 }
 
 /*Over Flow*/
-.noscroll,
 .overflow_hidden {
   overflow: hidden;
 }

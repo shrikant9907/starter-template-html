@@ -38,6 +38,16 @@ p {
     text-decoration: none !important;
 }
 
+// disabled
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
+.pointer-none {
+    pointer-events: none;
+}
 
 /*Display*/
 .d_block {
