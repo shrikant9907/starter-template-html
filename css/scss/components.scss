@@ -1918,34 +1918,36 @@ header {
     bottom: 20px;
     left: 50%;
     margin-left: -20px;
-}
-.mouse_scroll_down .mouse {
-    width: 40px;
-    padding: 6px 16px;
-    height: 60px;
-    border: 2px solid rgba(0,0,0,0.8);
-    border-radius: 25px;
-    background: rgba(0,0,0,0.1);
-}
 
-.mouse_scroll_down .mouse.light {
-    border: 2px solid rgba(255,255,255,0.8);
-    background: rgba(255,255,255,0.1);
-}
+    .scroller {
+        width: 4px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: #000;
+        animation-name: scroll;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+    }
 
-.mouse_scroll_down .scroller {
-    width: 4px;
-    height: 12px;
-    border-radius: 100%;
-    background-color: #000;
-    animation-name: scroll;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-}
+    .mouse {
+        width: 40px;
+        padding: 6px 16px;
+        height: 60px;
+        border: 2px solid rgba(0,0,0,0.8);
+        border-radius: 25px;
+        background: rgba(0,0,0,0.1);
 
-.mouse_scroll_down .mouse.light .scroller {
-   background: rgba(255,255,255);
+        &.light {
+            border: 2px solid rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.1);
+
+            &.scroller {
+                background: rgba(255,255,255);
+            }
+        }
+    }
+
 }
 
 @keyframes scroll {
@@ -2054,6 +2056,7 @@ header {
     bottom: 0;
     width: 100%;
     z-index: 0;
+    left:0px;
 } 
 
 // Sections UI
@@ -2313,10 +2316,21 @@ header {
 	}
 }
 
+// Loaders
+.loader {
+    position: absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
- 
- 
+    &.loader-col {
+        flex-direction: column;
+    }
+}
 
 
 /*Responsive*/
