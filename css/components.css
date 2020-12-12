@@ -1315,6 +1315,18 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   width: 45px;
   text-align: center;
 }
+.socialicons.withtext {
+  display: block;
+}
+.socialicons.withtext li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.socialicons.withtext li a {
+  margin: 0 12px 0 0;
+}
 
 .fui .form-group,
 .fui1 .form-group {

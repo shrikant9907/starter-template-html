@@ -1403,6 +1403,7 @@ header {
     list-style: none;
     margin: 0 -3px;
     width: 100%;
+
     a {
         height: 45px;
         color: inherit;
@@ -1489,6 +1490,19 @@ header {
             i {
                 width: 45px;
                 text-align: center;
+            }
+        }
+    }
+
+    &.withtext {
+        display: block;
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 0px;
+            a {
+                margin: 0 12px 0 0;
             }
         }
     }

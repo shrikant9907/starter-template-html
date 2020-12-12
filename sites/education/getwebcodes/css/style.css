@@ -1,10 +1,33 @@
+.bg_cream {
+    background-color: #ffd57e;
+}
+
+.bg_light_cream {
+    background-color: #ffefa0;
+}
+
+.bg_brown {
+    color: #ac4b1c;   
+}
+
+.bg_orange {
+    color: #fca652;   
+}
+
+.font_roboto,
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    color: #777777;
-    background: #ffffff;
-    letter-spacing: 0.5px;
+    line-height: 26px;
+    color: #555;
+}
+
+.font_montserrat,
+.font_montserrat,
+h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .site_logo.with_image a img {
@@ -17,9 +40,6 @@ body {
     top: 24px;
  }
 
-h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
-    font-weight: 700;
-}
 
 .ourtutorials .card-title,
 .text-black,
@@ -28,22 +48,29 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
 }
 
 .text-secondary {
-    color: #c87941 !important;
+    color: #fca652 !important;
 }
 
 .slisting.bg-primary,
 .bg_gred_primary {
-    background-image: linear-gradient(to bottom, #c87941, #87431d) !important;
+    background-image: linear-gradient(to bottom, #fca652, #ac4b1c) !important;
 }
 
 .btn-secondary:hover,
 .btn-secondary,
+.bg_secondary,
 .bg-secondary {
-    background-color:  #c87941;
+    background-color:  #fca652;
 }
+
+.bg_secondary,
+.bg-secondary {
+    background-color:  #fca652 !important;
+}
+
 .btn-secondary:hover,
 .btn-secondary {
-    border-color:  #c87941;
+    border-color:  #fca652;
 }
 
 .link,
@@ -52,7 +79,7 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
 .btn-outline-primary,
 .ourtutorials .card .ciconrc,
 .text_primary {
-    color: #87431d !important;
+    color: #ac4b1c !important;
 }
 
 .socialicons.bg_dark, .socialicons.bg-dark,
@@ -60,13 +87,13 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
 .badge-primary,
 .bg_primary,
 .bg-primary {
-    background-color: #87431d !important;
+    background-color: #ac4b1c !important;
 }
 
 .btn-primary,
 .ourtutorials .card .ciconrc,
 .heading_style.type2:before {
-    border-color:  #87431d !important;
+    border-color:  #ac4b1c !important;
 }
 
 .ourtutorials .card .ciconrc {
@@ -77,7 +104,7 @@ h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
 .ourtutorials .card:hover {
     box-shadow: 0 0 5px 5px rgba(200, 121, 65, 0.2) !important;
     border-radius: 10px !important;
-    background-color: #ffc107 !important;
+    background-color: #ffefa0 !important;
 }
 
 .ourtutorials .card:hover .ciconrc {
@@ -137,13 +164,13 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 /* Banner section */
-.banner_section, .banner-section {
+/* .banner_section, .banner-section {
     background-image: url('../images/shrikant_yadav_full.jpg');
-}
+} */
 
 .contact_details {
-    background-color: #87431d;
-    background-image: linear-gradient(to bottom, #c87941, #87431d);
+    background-color: #ac4b1c;
+    background-image: linear-gradient(to bottom, #fca652, #ac4b1c);
 }
 
 .card-contact-details {
@@ -161,7 +188,7 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 #categories .bg-secondary {
-    background-color: #c87941 !important;
+    background-color: #fca652 !important;
     border-radius: 50px;
     max-width: 1080px;
 }
@@ -172,16 +199,16 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 #myfacts {
-    background: #c87941;
+    background: #fca652;
 }
 
 #myfacts .ciconc.bg-primary {
-    box-shadow: 0 0 6px 4px #ffc107;
-    color: #ffc107;
+    box-shadow: 0 0 6px 4px #ffefa0;
+    color: #ffefa0;
 }
 
 #myfacts .card-title {
-    color: #ffc107;
+    color: #ffefa0;
 }
  
 /*Testimonials*/
