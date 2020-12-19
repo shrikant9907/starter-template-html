@@ -1,32 +1,13 @@
-.bg_cream {
-    background-color: #ffd57e;
-}
-
-.bg_light_cream {
-    background-color: #ffefa0;
-}
-
-.bg_brown {
-    color: #ac4b1c;   
-}
-
-.bg_orange {
-    color: #fd7e14;   
-}
-
-.font_roboto,
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    color: #555;
+    letter-spacing: 0.4px;
 }
 
 .font_montserrat,
-.font_montserrat,
 h1, h2, h3, h4, h5, h6 .heading, .title, .main_heading {
-    font-weight: 200;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -53,30 +34,27 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     color: #290001;
 }
 
+.text_secondary,
 .text-secondary {
-    color: #fd7e14 !important;
-}
-
-.slisting.bg-primary,
-.bg_gred_primary {
-    background-image: linear-gradient(to bottom, #fd7e14, #ac4b1c) !important;
+    color: #009EFA !important;
 }
 
 .btn-secondary:hover,
 .btn-secondary,
 .bg_secondary,
 .bg-secondary {
-    background-color:  #fd7e14;
+    background-color:  #009EFA;
 }
 
 .bg_secondary,
 .bg-secondary {
-    background-color:  #fd7e14 !important;
+    background-color:  #009EFA !important;
 }
 
+.border-secondary,
 .btn-secondary:hover,
 .btn-secondary {
-    border-color:  #fd7e14;
+    border-color:  #009EFA !important; 
 }
 
 .link,
@@ -85,7 +63,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .btn-outline-primary,
 .ourtutorials .card .ciconrc,
 .text_primary {
-    color: #ac4b1c !important;
+    color: #FA6C39 !important;
 }
 
 .socialicons.bg_dark, .socialicons.bg-dark,
@@ -93,13 +71,14 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .badge-primary,
 .bg_primary,
 .bg-primary {
-    background-color: #ac4b1c !important;
+    background-color: #FA6C39 !important;
 }
 
+.border-primary,
 .btn-primary,
 .ourtutorials .card .ciconrc,
 .heading_style.type2:before {
-    border-color:  #ac4b1c !important;
+    border-color:  #FA6C39 !important;
 }
 
 .ourtutorials .card .ciconrc {
@@ -110,7 +89,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .ourtutorials .card:hover {
     box-shadow: 0 0 5px 5px rgba(200, 121, 65, 0.2) !important;
     border-radius: 10px !important;
-    background-color: #ffefa0 !important;
 }
 
 .ourtutorials .card:hover .ciconrc {
@@ -121,11 +99,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     background-color: #ffffff !important;
     border-color:  #ffffff !important;
 }
-
-.bannerbg {
-    background-color: #AE7550;
-}
-
+ 
 .hamburger div {
     background-color:#fff;
 }
@@ -170,10 +144,11 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 /* Banner section */
-
-.contact_details {
-    background-color: #ac4b1c;
-    background-image: linear-gradient(to bottom, #fd7e14, #ac4b1c);
+.banner-description,
+.pre-banner-heading,
+.banner-heading {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-contact-details {
@@ -191,7 +166,7 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 #categories .bg-secondary {
-    background-color: #fd7e14 !important;
+    background-color: #009EFA !important;
     border-radius: 50px;
     max-width: 1080px;
 }
@@ -202,7 +177,7 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 
 #myfacts {
-    background: #fd7e14;
+    background: #009EFA;
 }
 
 #myfacts .ciconc.bg-primary {
