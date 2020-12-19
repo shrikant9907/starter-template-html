@@ -1927,6 +1927,75 @@ header {
     }
 }
 
+.fonticon-listing {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+    li {
+        display: inline-flex;
+        width: 43px;
+        height: 43px;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: #666;
+        
+        i, svg {
+            margin: 0;
+        }
+
+        span {
+            font-size: 0;
+        }
+
+        &:hover {
+            background-color: #efefef;
+            cursor:pointer;
+            color: #000;
+            
+            span {
+                position: absolute;
+                font-size: 12px;
+                z-index: 99;
+                background: #fff;
+                border: 1px solid #ccc;
+                padding: 5px 8px;
+                border-radius: 4px;
+                top: 100%;
+                text-align: center;
+                min-width:100px;
+            }
+        }
+    }
+}
+
+.btn-group {
+    &.btn-ficon {
+        .bficon {
+            display: flex;
+            border: 1px solid #ccc;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            background: #fff;
+            font-size: 20px;
+        }
+        
+        .btn,
+        button {
+            min-width: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+        }        
+    }
+}
+
 .star_rating {
     cursor: pointer;
     margin-bottom: 5px;

@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Modals/Popups</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<meta name="site-icon" content="" />
+	
+	<meta name="google-site-verification" content="" />
+	<meta name="robots" content="noindex, nofollow" />
+	
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png"/> -->
+	<!-- <link rel="shortcut icon" href="images/favicon.png" /> -->
+
+    <!-- required Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- required CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/learning-lp.css" />
+	
+	<!-- background-image: linear-gradient(to right bottom, #0064cb, #007ed2, #0091c5, #00a0ad, #00ac94); -->
+
+</head>
+<body class="bg-light">
+	<section class="common-section-ui">
+ 
+<div class="container">
+	<!-- Row Start -->
+	<div class="row">
+		<div class="col-12"><h2 class="text-center mb-5">Modals/Popups</h2></div>
+		<div class="col">
+		 
+		<!-- Button trigger modal -->
+		<!-- Example single danger button -->
+		<div class="btn-group btn-ficon">
+			<input type="hidden" name="myicon" />
+			<span id="fontIconInput" class="bficon"><i class="fas fa-star"></i></span>
+			<button type="button" data-ftarget="fontIconInput" type="button" data-toggle="modal" data-target="#loginFormModal" class="btn btn-primary text-white r_0 openFaModal">Select Icon <i class="fas fa-caret-down ml_5"></i></button>
+		</div>
+		<!-- <button data-ftarget="fontIconBtn3" id="fontIconBtn3" type="button" class="btn btn-primary openFaModal" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#loginFormModal">Icon</button>	 -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="loginFormModal" tabindex="-1" role="dialog" aria-labelledby="loginFormModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<form class="fui fui1 w-100" action="" method="get" enctype="multipart/form-data" autocomplete="off">
+				<div class="mui muic mui2 muis modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="loginFormModalLabel">Choose Font Awesome Icon</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<div class="search-box">
+								<input id="searchFaIcons" name="search" type="text" class="form-control" placeholder="Search icon by keywords...">
+								<i class="fa fa-search icon" aria-hidden="true"></i>
+							</div>
+						</div>
+						<ul class="fonticon-listing">
+							<li data-icon="fab fa-accessible-icon"><i class="fab fa-accessible-icon mr_10"></i><span>accessible-icon</span></li>
+							<li data-icon="fab fa-accusoft"><i class="fab fa-accusoft mr_10"></i><span>accusoft</span></li>
+							<li data-icon="fas fa-address-book"><i class="fas fa-address-book mr_10"></i><span>address-book</span></li>
+							<li data-icon="far fa-address-book"><i class="far fa-address-book mr_10"></i><span>address-book</span></li>
+							<li data-icon="fas fa-address-card"><i class="fas fa-address-card mr_10"></i><span>address-card</span></li>
+							<li data-icon="far fa-address-card"><i class="far fa-address-card mr_10"></i><span>address-card</span></li>
+							<li data-icon="fas fa-adjust"><i class="fas fa-adjust mr_10"></i><span>adjust</span></li>
+							<li data-icon="fab fa-adn"><i class="fab fa-adn mr_10"></i><span>adn</span></li>
+							<li data-icon="fab fa-adversal"><i class="fab fa-adversal mr_10"></i><span>adversal</span></li>
+							<li data-icon="fab fa-affiliatetheme"><i class="fab fa-affiliatetheme mr_10"></i><span>affiliatetheme</span></li>
+							<li data-icon="fab fa-algolia"><i class="fab fa-algolia mr_10"></i><span>algolia</span></li>
+							<li data-icon="fas fa-align-center"><i class="fas fa-align-center mr_10"></i><span>align-center</span></li>
+							<li data-icon="fas fa-align-justify"><i class="fas fa-align-justify mr_10"></i><span>align-justify</span></li>
+							<li data-icon="fas fa-align-left"><i class="fas fa-align-left mr_10"></i><span>align-left</span></li>
+							<li data-icon="fas fa-align-right"><i class="fas fa-align-right mr_10"></i><span>align-right</span></li>
+							<li data-icon="fas fa-allergies"><i class="fas fa-allergies mr_10"></i><span>allergies</span></li>
+							<li data-icon="fab fa-amazon"><i class="fab fa-amazon mr_10"></i><span>amazon</span></li>
+							<li data-icon="fab fa-amazon-pay"><i class="fab fa-amazon-pay mr_10"></i><span>amazon-pay</span></li>
+							<li data-icon="fas fa-ambulance"><i class="fas fa-ambulance mr_10"></i><span>ambulance</span></li>
+							<li data-icon="fas fa-american-sign-language-interpreting"><i class="fas fa-american-sign-language-interpreting mr_10"></i><span>american-sign-language-interpreting</span></li>
+							<li data-icon="fab fa-amilia"><i class="fab fa-amilia mr_10"></i><span>amilia</span></li>
+							<li data-icon="fas fa-anchor"><i class="fas fa-anchor mr_10"></i><span>anchor</span></li>
+							<li data-icon="fab fa-android"><i class="fab fa-android mr_10"></i><span>android</span></li>
+							<li data-icon="fab fa-angellist"><i class="fab fa-angellist mr_10"></i><span>angellist</span></li>
+							<li data-icon="fas fa-angle-double-down"><i class="fas fa-angle-double-down mr_10"></i><span>angle-double-down</span></li>
+							<li data-icon="fas fa-angle-double-left"><i class="fas fa-angle-double-left mr_10"></i><span>angle-double-left</span></li>
+							<li data-icon="fas fa-angle-double-right"><i class="fas fa-angle-double-right mr_10"></i><span>angle-double-right</span></li>
+							<li data-icon="fas fa-angle-double-up"><i class="fas fa-angle-double-up mr_10"></i><span>angle-double-up</span></li>
+							<li data-icon="fas fa-angle-down"><i class="fas fa-angle-down mr_10"></i><span>angle-down</span></li>
+							<li data-icon="fas fa-angle-left"><i class="fas fa-angle-left mr_10"></i><span>angle-left</span></li>
+							<li data-icon="fas fa-angle-right"><i class="fas fa-angle-right mr_10"></i><span>angle-right</span></li>
+							<li data-icon="fas fa-angle-up"><i class="fas fa-angle-up mr_10"></i><span>angle-up</span></li>
+							<li data-icon="fab fa-angrycreative"><i class="fab fa-angrycreative mr_10"></i><span>angrycreative</span></li>
+							<li data-icon="fab fa-angular"><i class="fab fa-angular mr_10"></i><span>angular</span></li>
+							<li data-icon="fab fa-app-store"><i class="fab fa-app-store mr_10"></i><span>app-store</span></li>
+							<li data-icon="fab fa-app-store-ios"><i class="fab fa-app-store-ios mr_10"></i><span>app-store-ios</span></li>
+							<li data-icon="fab fa-apper"><i class="fab fa-apper mr_10"></i><span>apper</span></li>
+							<li data-icon="fab fa-apple"><i class="fab fa-apple mr_10"></i><span>apple</span></li>
+							<li data-icon="fab fa-apple-pay"><i class="fab fa-apple-pay mr_10"></i><span>apple-pay</span></li>
+							<li data-icon="fas fa-archive"><i class="fas fa-archive mr_10"></i><span>archive</span></li>
+							<li data-icon="fas fa-arrow-alt-circle-down"><i class="fas fa-arrow-alt-circle-down mr_10"></i><span>arrow-alt-circle-down</span></li>
+							<li data-icon="far fa-arrow-alt-circle-down"><i class="far fa-arrow-alt-circle-down mr_10"></i><span>arrow-alt-circle-down</span></li>
+							<li data-icon="fas fa-arrow-alt-circle-left"><i class="fas fa-arrow-alt-circle-left mr_10"></i><span>arrow-alt-circle-left</span></li>
+							<li data-icon="far fa-arrow-alt-circle-left"><i class="far fa-arrow-alt-circle-left mr_10"></i><span>arrow-alt-circle-left</span></li>
+							<li data-icon="fas fa-arrow-alt-circle-right"><i class="fas fa-arrow-alt-circle-right mr_10"></i><span>arrow-alt-circle-right</span></li>
+							<li data-icon="far fa-arrow-alt-circle-right"><i class="far fa-arrow-alt-circle-right mr_10"></i><span>arrow-alt-circle-right</span></li>
+							<li data-icon="fas fa-arrow-alt-circle-up"><i class="fas fa-arrow-alt-circle-up mr_10"></i><span>arrow-alt-circle-up</span></li>
+							<li data-icon="far fa-arrow-alt-circle-up"><i class="far fa-arrow-alt-circle-up mr_10"></i><span>arrow-alt-circle-up</span></li>
+							<li data-icon="fas fa-arrow-circle-down"><i class="fas fa-arrow-circle-down mr_10"></i><span>arrow-circle-down</span></li>
+							<li data-icon="fas fa-arrow-circle-left"><i class="fas fa-arrow-circle-left mr_10"></i><span>arrow-circle-left</span></li>
+							<li data-icon="fas fa-arrow-circle-right"><i class="fas fa-arrow-circle-right mr_10"></i><span>arrow-circle-right</span></li>
+							<li data-icon="fas fa-arrow-circle-up"><i class="fas fa-arrow-circle-up mr_10"></i><span>arrow-circle-up</span></li>
+							<li data-icon="fas fa-arrow-down"><i class="fas fa-arrow-down mr_10"></i><span>arrow-down</span></li>
+							<li data-icon="fas fa-arrow-left"><i class="fas fa-arrow-left mr_10"></i><span>arrow-left</span></li>
+							<li data-icon="fas fa-arrow-right"><i class="fas fa-arrow-right mr_10"></i><span>arrow-right</span></li>
+							<li data-icon="fas fa-arrow-up"><i class="fas fa-arrow-up mr_10"></i><span>arrow-up</span></li>
+							<li data-icon="fas fa-arrows-alt"><i class="fas fa-arrows-alt mr_10"></i><span>arrows-alt</span></li>
+							<li data-icon="fas fa-arrows-alt-h"><i class="fas fa-arrows-alt-h mr_10"></i><span>arrows-alt-h</span></li>
+							<li data-icon="fas fa-arrows-alt-v"><i class="fas fa-arrows-alt-v mr_10"></i><span>arrows-alt-v</span></li>
+							<li data-icon="fas fa-assistive-listening-systems"><i class="fas fa-assistive-listening-systems mr_10"></i><span>assistive-listening-systems</span></li>
+							<li data-icon="fas fa-asterisk"><i class="fas fa-asterisk mr_10"></i><span>asterisk</span></li>
+							<li data-icon="fab fa-asymmetrik"><i class="fab fa-asymmetrik mr_10"></i><span>asymmetrik</span></li>
+							<li data-icon="fas fa-at"><i class="fas fa-at mr_10"></i><span>at</span></li>
+							<li data-icon="fab fa-audible"><i class="fab fa-audible mr_10"></i><span>audible</span></li>
+							<li data-icon="fas fa-audio-description"><i class="fas fa-audio-description mr_10"></i><span>audio-description</span></li>
+							<li data-icon="fab fa-autoprefixer"><i class="fab fa-autoprefixer mr_10"></i><span>autoprefixer</span></li>
+							<li data-icon="fab fa-avianex"><i class="fab fa-avianex mr_10"></i><span>avianex</span></li>
+							<li data-icon="fab fa-aviato"><i class="fab fa-aviato mr_10"></i><span>aviato</span></li>
+							<li data-icon="fab fa-aws"><i class="fab fa-aws mr_10"></i><span>aws</span></li>
+							<li data-icon="fas fa-backward"><i class="fas fa-backward mr_10"></i><span>backward</span></li>
+							<li data-icon="fas fa-balance-scale"><i class="fas fa-balance-scale mr_10"></i><span>balance-scale</span></li>
+							<li data-icon="fas fa-ban"><i class="fas fa-ban mr_10"></i><span>ban</span></li>
+							<li data-icon="fas fa-band-aid"><i class="fas fa-band-aid mr_10"></i><span>band-aid</span></li>
+							<li data-icon="fab fa-bandcamp"><i class="fab fa-bandcamp mr_10"></i><span>bandcamp</span></li>
+							<li data-icon="fas fa-barcode"><i class="fas fa-barcode mr_10"></i><span>barcode</span></li>
+							<li data-icon="fas fa-bars"><i class="fas fa-bars mr_10"></i><span>bars</span></li>
+							<li data-icon="fas fa-baseball-ball"><i class="fas fa-baseball-ball mr_10"></i><span>baseball-ball</span></li>
+							<li data-icon="fas fa-basketball-ball"><i class="fas fa-basketball-ball mr_10"></i><span>basketball-ball</span></li>
+							<li data-icon="fas fa-bath"><i class="fas fa-bath mr_10"></i><span>bath</span></li>
+							<li data-icon="fas fa-battery-empty"><i class="fas fa-battery-empty mr_10"></i><span>battery-empty</span></li>
+							<li data-icon="fas fa-battery-full"><i class="fas fa-battery-full mr_10"></i><span>battery-full</span></li>
+							<li data-icon="fas fa-battery-half"><i class="fas fa-battery-half mr_10"></i><span>battery-half</span></li>
+							<li data-icon="fas fa-battery-quarter"><i class="fas fa-battery-quarter mr_10"></i><span>battery-quarter</span></li>
+							<li data-icon="fas fa-battery-three-quarters"><i class="fas fa-battery-three-quarters mr_10"></i><span>battery-three-quarters</span></li>
+							<li data-icon="fas fa-bed"><i class="fas fa-bed mr_10"></i><span>bed</span></li>
+							<li data-icon="fas fa-beer"><i class="fas fa-beer mr_10"></i><span>beer</span></li>
+							<li data-icon="fab fa-behance"><i class="fab fa-behance mr_10"></i><span>behance</span></li>
+							<li data-icon="fab fa-behance-square"><i class="fab fa-behance-square mr_10"></i><span>behance-square</span></li>
+							<li data-icon="fas fa-bell"><i class="fas fa-bell mr_10"></i><span>bell</span></li>
+							<li data-icon="far fa-bell"><i class="far fa-bell mr_10"></i><span>bell</span></li>
+							<li data-icon="fas fa-bell-slash"><i class="fas fa-bell-slash mr_10"></i><span>bell-slash</span></li>
+							<li data-icon="far fa-bell-slash"><i class="far fa-bell-slash mr_10"></i><span>bell-slash</span></li>
+							<li data-icon="fas fa-bicycle"><i class="fas fa-bicycle mr_10"></i><span>bicycle</span></li>
+							<li data-icon="fab fa-bimobject"><i class="fab fa-bimobject mr_10"></i><span>bimobject</span></li>
+							<li data-icon="fas fa-binoculars"><i class="fas fa-binoculars mr_10"></i><span>binoculars</span></li>
+							<li data-icon="fas fa-birthday-cake"><i class="fas fa-birthday-cake mr_10"></i><span>birthday-cake</span></li>
+							<li data-icon="fab fa-bitbucket"><i class="fab fa-bitbucket mr_10"></i><span>bitbucket</span></li>
+							<li data-icon="fab fa-bitcoin"><i class="fab fa-bitcoin mr_10"></i><span>bitcoin</span></li>
+							<li data-icon="fab fa-bity"><i class="fab fa-bity mr_10"></i><span>bity</span></li>
+							<li data-icon="fab fa-black-tie"><i class="fab fa-black-tie mr_10"></i><span>black-tie</span></li>
+							<li data-icon="fab fa-blackberry"><i class="fab fa-blackberry mr_10"></i><span>blackberry</span></li>
+							<li data-icon="fas fa-blind"><i class="fas fa-blind mr_10"></i><span>blind</span></li>
+							<li data-icon="fab fa-blogger"><i class="fab fa-blogger mr_10"></i><span>blogger</span></li>
+							<li data-icon="fab fa-blogger-b"><i class="fab fa-blogger-b mr_10"></i><span>blogger-b</span></li>
+							<li data-icon="fab fa-bluetooth"><i class="fab fa-bluetooth mr_10"></i><span>bluetooth</span></li>
+							<li data-icon="fab fa-bluetooth-b"><i class="fab fa-bluetooth-b mr_10"></i><span>bluetooth-b</span></li>
+							<li data-icon="fas fa-bold"><i class="fas fa-bold mr_10"></i><span>bold</span></li>
+							<li data-icon="fas fa-bolt"><i class="fas fa-bolt mr_10"></i><span>bolt</span></li>
+							<li data-icon="fas fa-bomb"><i class="fas fa-bomb mr_10"></i><span>bomb</span></li>
+							<li data-icon="fas fa-book"><i class="fas fa-book mr_10"></i><span>book</span></li>
+							<li data-icon="fas fa-bookmark"><i class="fas fa-bookmark mr_10"></i><span>bookmark</span></li>
+							<li data-icon="far fa-bookmark"><i class="far fa-bookmark mr_10"></i><span>bookmark</span></li>
+							<li data-icon="fas fa-bowling-ball"><i class="fas fa-bowling-ball mr_10"></i><span>bowling-ball</span></li>
+							<li data-icon="fas fa-box"><i class="fas fa-box mr_10"></i><span>box</span></li>
+							<li data-icon="fas fa-box-open"><i class="fas fa-box-open mr_10"></i><span>box-open</span></li>
+							<li data-icon="fas fa-boxes"><i class="fas fa-boxes mr_10"></i><span>boxes</span></li>
+							<li data-icon="fas fa-braille"><i class="fas fa-braille mr_10"></i><span>braille</span></li>
+							<li data-icon="fas fa-briefcase"><i class="fas fa-briefcase mr_10"></i><span>briefcase</span></li>
+							<li data-icon="fas fa-briefcase-medical"><i class="fas fa-briefcase-medical mr_10"></i><span>briefcase-medical</span></li>
+							<li data-icon="fab fa-btc"><i class="fab fa-btc mr_10"></i><span>btc</span></li>
+							<li data-icon="fas fa-bug"><i class="fas fa-bug mr_10"></i><span>bug</span></li>
+							<li data-icon="fas fa-building"><i class="fas fa-building mr_10"></i><span>building</span></li>
+							<li data-icon="far fa-building"><i class="far fa-building mr_10"></i><span>building</span></li>
+							<li data-icon="fas fa-bullhorn"><i class="fas fa-bullhorn mr_10"></i><span>bullhorn</span></li>
+							<li data-icon="fas fa-bullseye"><i class="fas fa-bullseye mr_10"></i><span>bullseye</span></li>
+							<li data-icon="fas fa-burn"><i class="fas fa-burn mr_10"></i><span>burn</span></li>
+							<li data-icon="fab fa-buromobelexperte"><i class="fab fa-buromobelexperte mr_10"></i><span>buromobelexperte</span></li>
+							<li data-icon="fas fa-bus"><i class="fas fa-bus mr_10"></i><span>bus</span></li>
+							<li data-icon="fab fa-buysellads"><i class="fab fa-buysellads mr_10"></i><span>buysellads</span></li>
+							<li data-icon="fas fa-calculator"><i class="fas fa-calculator mr_10"></i><span>calculator</span></li>
+							<li data-icon="fas fa-calendar"><i class="fas fa-calendar mr_10"></i><span>calendar</span></li>
+							<li data-icon="far fa-calendar"><i class="far fa-calendar mr_10"></i><span>calendar</span></li>
+							<li data-icon="fas fa-calendar-alt"><i class="fas fa-calendar-alt mr_10"></i><span>calendar-alt</span></li>
+							<li data-icon="far fa-calendar-alt"><i class="far fa-calendar-alt mr_10"></i><span>calendar-alt</span></li>
+							<li data-icon="fas fa-calendar-check"><i class="fas fa-calendar-check mr_10"></i><span>calendar-check</span></li>
+							<li data-icon="far fa-calendar-check"><i class="far fa-calendar-check mr_10"></i><span>calendar-check</span></li>
+							<li data-icon="fas fa-calendar-minus"><i class="fas fa-calendar-minus mr_10"></i><span>calendar-minus</span></li>
+							<li data-icon="far fa-calendar-minus"><i class="far fa-calendar-minus mr_10"></i><span>calendar-minus</span></li>
+							<li data-icon="fas fa-calendar-plus"><i class="fas fa-calendar-plus mr_10"></i><span>calendar-plus</span></li>
+							<li data-icon="far fa-calendar-plus"><i class="far fa-calendar-plus mr_10"></i><span>calendar-plus</span></li>
+							<li data-icon="fas fa-calendar-times"><i class="fas fa-calendar-times mr_10"></i><span>calendar-times</span></li>
+							<li data-icon="far fa-calendar-times"><i class="far fa-calendar-times mr_10"></i><span>calendar-times</span></li>
+							<li data-icon="fas fa-camera"><i class="fas fa-camera mr_10"></i><span>camera</span></li>
+							<li data-icon="fas fa-camera-retro"><i class="fas fa-camera-retro mr_10"></i><span>camera-retro</span></li>
+							<li data-icon="fas fa-capsules"><i class="fas fa-capsules mr_10"></i><span>capsules</span></li>
+							<li data-icon="fas fa-car"><i class="fas fa-car mr_10"></i><span>car</span></li>
+							<li data-icon="fas fa-caret-down"><i class="fas fa-caret-down mr_10"></i><span>caret-down</span></li>
+							<li data-icon="fas fa-caret-left"><i class="fas fa-caret-left mr_10"></i><span>caret-left</span></li>
+							<li data-icon="fas fa-caret-right"><i class="fas fa-caret-right mr_10"></i><span>caret-right</span></li>
+							<li data-icon="fas fa-caret-square-down"><i class="fas fa-caret-square-down mr_10"></i><span>caret-square-down</span></li>
+							<li data-icon="far fa-caret-square-down"><i class="far fa-caret-square-down mr_10"></i><span>caret-square-down</span></li>
+							<li data-icon="fas fa-caret-square-left"><i class="fas fa-caret-square-left mr_10"></i><span>caret-square-left</span></li>
+							<li data-icon="far fa-caret-square-left"><i class="far fa-caret-square-left mr_10"></i><span>caret-square-left</span></li>
+							<li data-icon="fas fa-caret-square-right"><i class="fas fa-caret-square-right mr_10"></i><span>caret-square-right</span></li>
+							<li data-icon="far fa-caret-square-right"><i class="far fa-caret-square-right mr_10"></i><span>caret-square-right</span></li>
+							<li data-icon="fas fa-caret-square-up"><i class="fas fa-caret-square-up mr_10"></i><span>caret-square-up</span></li>
+							<li data-icon="far fa-caret-square-up"><i class="far fa-caret-square-up mr_10"></i><span>caret-square-up</span></li>
+							<li data-icon="fas fa-caret-up"><i class="fas fa-caret-up mr_10"></i><span>caret-up</span></li>
+							<li data-icon="fas fa-cart-arrow-down"><i class="fas fa-cart-arrow-down mr_10"></i><span>cart-arrow-down</span></li>
+							<li data-icon="fas fa-cart-plus"><i class="fas fa-cart-plus mr_10"></i><span>cart-plus</span></li>
+							<li data-icon="fab fa-cc-amazon-pay"><i class="fab fa-cc-amazon-pay mr_10"></i><span>cc-amazon-pay</span></li>
+							<li data-icon="fab fa-cc-amex"><i class="fab fa-cc-amex mr_10"></i><span>cc-amex</span></li>
+							<li data-icon="fab fa-cc-apple-pay"><i class="fab fa-cc-apple-pay mr_10"></i><span>cc-apple-pay</span></li>
+							<li data-icon="fab fa-cc-diners-club"><i class="fab fa-cc-diners-club mr_10"></i><span>cc-diners-club</span></li>
+							<li data-icon="fab fa-cc-discover"><i class="fab fa-cc-discover mr_10"></i><span>cc-discover</span></li>
+							<li data-icon="fab fa-cc-jcb"><i class="fab fa-cc-jcb mr_10"></i><span>cc-jcb</span></li>
+							<li data-icon="fab fa-cc-mastercard"><i class="fab fa-cc-mastercard mr_10"></i><span>cc-mastercard</span></li>
+							<li data-icon="fab fa-cc-paypal"><i class="fab fa-cc-paypal mr_10"></i><span>cc-paypal</span></li>
+							<li data-icon="fab fa-cc-stripe"><i class="fab fa-cc-stripe mr_10"></i><span>cc-stripe</span></li>
+							<li data-icon="fab fa-cc-visa"><i class="fab fa-cc-visa mr_10"></i><span>cc-visa</span></li>
+							<li data-icon="fab fa-centercode"><i class="fab fa-centercode mr_10"></i><span>centercode</span></li>
+							<li data-icon="fas fa-certificate"><i class="fas fa-certificate mr_10"></i><span>certificate</span></li>
+							<li data-icon="fas fa-chart-area"><i class="fas fa-chart-area mr_10"></i><span>chart-area</span></li>
+							<li data-icon="fas fa-chart-bar"><i class="fas fa-chart-bar mr_10"></i><span>chart-bar</span></li>
+							<li data-icon="far fa-chart-bar"><i class="far fa-chart-bar mr_10"></i><span>chart-bar</span></li>
+							<li data-icon="fas fa-chart-line"><i class="fas fa-chart-line mr_10"></i><span>chart-line</span></li>
+							<li data-icon="fas fa-chart-pie"><i class="fas fa-chart-pie mr_10"></i><span>chart-pie</span></li>
+							<li data-icon="fas fa-check"><i class="fas fa-check mr_10"></i><span>check</span></li>
+							<li data-icon="fas fa-check-circle"><i class="fas fa-check-circle mr_10"></i><span>check-circle</span></li>
+							<li data-icon="far fa-check-circle"><i class="far fa-check-circle mr_10"></i><span>check-circle</span></li>
+							<li data-icon="fas fa-check-square"><i class="fas fa-check-square mr_10"></i><span>check-square</span></li>
+							<li data-icon="far fa-check-square"><i class="far fa-check-square mr_10"></i><span>check-square</span></li>
+							<li data-icon="fas fa-chess"><i class="fas fa-chess mr_10"></i><span>chess</span></li>
+							<li data-icon="fas fa-chess-bishop"><i class="fas fa-chess-bishop mr_10"></i><span>chess-bishop</span></li>
+							<li data-icon="fas fa-chess-board"><i class="fas fa-chess-board mr_10"></i><span>chess-board</span></li>
+							<li data-icon="fas fa-chess-king"><i class="fas fa-chess-king mr_10"></i><span>chess-king</span></li>
+							<li data-icon="fas fa-chess-knight"><i class="fas fa-chess-knight mr_10"></i><span>chess-knight</span></li>
+							<li data-icon="fas fa-chess-pawn"><i class="fas fa-chess-pawn mr_10"></i><span>chess-pawn</span></li>
+							<li data-icon="fas fa-chess-queen"><i class="fas fa-chess-queen mr_10"></i><span>chess-queen</span></li>
+							<li data-icon="fas fa-chess-rook"><i class="fas fa-chess-rook mr_10"></i><span>chess-rook</span></li>
+							<li data-icon="fas fa-chevron-circle-down"><i class="fas fa-chevron-circle-down mr_10"></i><span>chevron-circle-down</span></li>
+							<li data-icon="fas fa-chevron-circle-left"><i class="fas fa-chevron-circle-left mr_10"></i><span>chevron-circle-left</span></li>
+							<li data-icon="fas fa-chevron-circle-right"><i class="fas fa-chevron-circle-right mr_10"></i><span>chevron-circle-right</span></li>
+							<li data-icon="fas fa-chevron-circle-up"><i class="fas fa-chevron-circle-up mr_10"></i><span>chevron-circle-up</span></li>
+							<li data-icon="fas fa-chevron-down"><i class="fas fa-chevron-down mr_10"></i><span>chevron-down</span></li>
+							<li data-icon="fas fa-chevron-left"><i class="fas fa-chevron-left mr_10"></i><span>chevron-left</span></li>
+							<li data-icon="fas fa-chevron-right"><i class="fas fa-chevron-right mr_10"></i><span>chevron-right</span></li>
+							<li data-icon="fas fa-chevron-up"><i class="fas fa-chevron-up mr_10"></i><span>chevron-up</span></li>
+							<li data-icon="fas fa-child"><i class="fas fa-child mr_10"></i><span>child</span></li>
+							<li data-icon="fab fa-chrome"><i class="fab fa-chrome mr_10"></i><span>chrome</span></li>
+							<li data-icon="fas fa-circle"><i class="fas fa-circle mr_10"></i><span>circle</span></li>
+							<li data-icon="far fa-circle"><i class="far fa-circle mr_10"></i><span>circle</span></li>
+							<li data-icon="fas fa-circle-notch"><i class="fas fa-circle-notch mr_10"></i><span>circle-notch</span></li>
+							<li data-icon="fas fa-clipboard"><i class="fas fa-clipboard mr_10"></i><span>clipboard</span></li>
+							<li data-icon="far fa-clipboard"><i class="far fa-clipboard mr_10"></i><span>clipboard</span></li>
+							<li data-icon="fas fa-clipboard-check"><i class="fas fa-clipboard-check mr_10"></i><span>clipboard-check</span></li>
+							<li data-icon="fas fa-clipboard-list"><i class="fas fa-clipboard-list mr_10"></i><span>clipboard-list</span></li>
+							<li data-icon="fas fa-clock"><i class="fas fa-clock mr_10"></i><span>clock</span></li>
+							<li data-icon="far fa-clock"><i class="far fa-clock mr_10"></i><span>clock</span></li>
+							<li data-icon="fas fa-clone"><i class="fas fa-clone mr_10"></i><span>clone</span></li>
+							<li data-icon="far fa-clone"><i class="far fa-clone mr_10"></i><span>clone</span></li>
+							<li data-icon="fas fa-closed-captioning"><i class="fas fa-closed-captioning mr_10"></i><span>closed-captioning</span></li>
+							<li data-icon="far fa-closed-captioning"><i class="far fa-closed-captioning mr_10"></i><span>closed-captioning</span></li>
+							<li data-icon="fas fa-cloud"><i class="fas fa-cloud mr_10"></i><span>cloud</span></li>
+							<li data-icon="fas fa-cloud-download-alt"><i class="fas fa-cloud-download-alt mr_10"></i><span>cloud-download-alt</span></li>
+							<li data-icon="fas fa-cloud-upload-alt"><i class="fas fa-cloud-upload-alt mr_10"></i><span>cloud-upload-alt</span></li>
+							<li data-icon="fab fa-cloudscale"><i class="fab fa-cloudscale mr_10"></i><span>cloudscale</span></li>
+							<li data-icon="fab fa-cloudsmith"><i class="fab fa-cloudsmith mr_10"></i><span>cloudsmith</span></li>
+							<li data-icon="fab fa-cloudversify"><i class="fab fa-cloudversify mr_10"></i><span>cloudversify</span></li>
+							<li data-icon="fas fa-code"><i class="fas fa-code mr_10"></i><span>code</span></li>
+							<li data-icon="fas fa-code-branch"><i class="fas fa-code-branch mr_10"></i><span>code-branch</span></li>
+							<li data-icon="fab fa-codepen"><i class="fab fa-codepen mr_10"></i><span>codepen</span></li>
+							<li data-icon="fab fa-codiepie"><i class="fab fa-codiepie mr_10"></i><span>codiepie</span></li>
+							<li data-icon="fas fa-coffee"><i class="fas fa-coffee mr_10"></i><span>coffee</span></li>
+							<li data-icon="fas fa-cog"><i class="fas fa-cog mr_10"></i><span>cog</span></li>
+							<li data-icon="fas fa-cogs"><i class="fas fa-cogs mr_10"></i><span>cogs</span></li>
+							<li data-icon="fas fa-columns"><i class="fas fa-columns mr_10"></i><span>columns</span></li>
+							<li data-icon="fas fa-comment"><i class="fas fa-comment mr_10"></i><span>comment</span></li>
+							<li data-icon="far fa-comment"><i class="far fa-comment mr_10"></i><span>comment</span></li>
+							<li data-icon="fas fa-comment-alt"><i class="fas fa-comment-alt mr_10"></i><span>comment-alt</span></li>
+							<li data-icon="far fa-comment-alt"><i class="far fa-comment-alt mr_10"></i><span>comment-alt</span></li>
+							<li data-icon="fas fa-comment-dots"><i class="fas fa-comment-dots mr_10"></i><span>comment-dots</span></li>
+							<li data-icon="fas fa-comment-slash"><i class="fas fa-comment-slash mr_10"></i><span>comment-slash</span></li>
+							<li data-icon="fas fa-comments"><i class="fas fa-comments mr_10"></i><span>comments</span></li>
+							<li data-icon="far fa-comments"><i class="far fa-comments mr_10"></i><span>comments</span></li>
+							<li data-icon="fas fa-compass"><i class="fas fa-compass mr_10"></i><span>compass</span></li>
+							<li data-icon="far fa-compass"><i class="far fa-compass mr_10"></i><span>compass</span></li>
+							<li data-icon="fas fa-compress"><i class="fas fa-compress mr_10"></i><span>compress</span></li>
+							<li data-icon="fab fa-connectdevelop"><i class="fab fa-connectdevelop mr_10"></i><span>connectdevelop</span></li>
+							<li data-icon="fab fa-contao"><i class="fab fa-contao mr_10"></i><span>contao</span></li>
+							<li data-icon="fas fa-copy"><i class="fas fa-copy mr_10"></i><span>copy</span></li>
+							<li data-icon="far fa-copy"><i class="far fa-copy mr_10"></i><span>copy</span></li>
+							<li data-icon="fas fa-copyright"><i class="fas fa-copyright mr_10"></i><span>copyright</span></li>
+							<li data-icon="far fa-copyright"><i class="far fa-copyright mr_10"></i><span>copyright</span></li>
+							<li data-icon="fas fa-couch"><i class="fas fa-couch mr_10"></i><span>couch</span></li>
+							<li data-icon="fab fa-cpanel"><i class="fab fa-cpanel mr_10"></i><span>cpanel</span></li>
+							<li data-icon="fab fa-creative-commons"><i class="fab fa-creative-commons mr_10"></i><span>creative-commons</span></li>
+							<li data-icon="fas fa-credit-card"><i class="fas fa-credit-card mr_10"></i><span>credit-card</span></li>
+							<li data-icon="far fa-credit-card"><i class="far fa-credit-card mr_10"></i><span>credit-card</span></li>
+							<li data-icon="fas fa-crop"><i class="fas fa-crop mr_10"></i><span>crop</span></li>
+							<li data-icon="fas fa-crosshairs"><i class="fas fa-crosshairs mr_10"></i><span>crosshairs</span></li>
+							<li data-icon="fab fa-css3"><i class="fab fa-css3 mr_10"></i><span>css3</span></li>
+							<li data-icon="fab fa-css3-alt"><i class="fab fa-css3-alt mr_10"></i><span>css3-alt</span></li>
+							<li data-icon="fas fa-cube"><i class="fas fa-cube mr_10"></i><span>cube</span></li>
+							<li data-icon="fas fa-cubes"><i class="fas fa-cubes mr_10"></i><span>cubes</span></li>
+							<li data-icon="fas fa-cut"><i class="fas fa-cut mr_10"></i><span>cut</span></li>
+							<li data-icon="fab fa-cuttlefish"><i class="fab fa-cuttlefish mr_10"></i><span>cuttlefish</span></li>
+							<li data-icon="fab fa-d-and-d"><i class="fab fa-d-and-d mr_10"></i><span>d-and-d</span></li>
+							<li data-icon="fab fa-dashcube"><i class="fab fa-dashcube mr_10"></i><span>dashcube</span></li>
+							<li data-icon="fas fa-database"><i class="fas fa-database mr_10"></i><span>database</span></li>
+							<li data-icon="fas fa-deaf"><i class="fas fa-deaf mr_10"></i><span>deaf</span></li>
+							<li data-icon="fab fa-delicious"><i class="fab fa-delicious mr_10"></i><span>delicious</span></li>
+							<li data-icon="fab fa-deploydog"><i class="fab fa-deploydog mr_10"></i><span>deploydog</span></li>
+							<li data-icon="fab fa-deskpro"><i class="fab fa-deskpro mr_10"></i><span>deskpro</span></li>
+							<li data-icon="fas fa-desktop"><i class="fas fa-desktop mr_10"></i><span>desktop</span></li>
+							<li data-icon="fab fa-deviantart"><i class="fab fa-deviantart mr_10"></i><span>deviantart</span></li>
+							<li data-icon="fas fa-diagnoses"><i class="fas fa-diagnoses mr_10"></i><span>diagnoses</span></li>
+							<li data-icon="fab fa-digg"><i class="fab fa-digg mr_10"></i><span>digg</span></li>
+							<li data-icon="fab fa-digital-ocean"><i class="fab fa-digital-ocean mr_10"></i><span>digital-ocean</span></li>
+							<li data-icon="fab fa-discord"><i class="fab fa-discord mr_10"></i><span>discord</span></li>
+							<li data-icon="fab fa-discourse"><i class="fab fa-discourse mr_10"></i><span>discourse</span></li>
+							<li data-icon="fas fa-dna"><i class="fas fa-dna mr_10"></i><span>dna</span></li>
+							<li data-icon="fab fa-dochub"><i class="fab fa-dochub mr_10"></i><span>dochub</span></li>
+							<li data-icon="fab fa-docker"><i class="fab fa-docker mr_10"></i><span>docker</span></li>
+							<li data-icon="fas fa-dollar-sign"><i class="fas fa-dollar-sign mr_10"></i><span>dollar-sign</span></li>
+							<li data-icon="fas fa-dolly"><i class="fas fa-dolly mr_10"></i><span>dolly</span></li>
+							<li data-icon="fas fa-dolly-flatbed"><i class="fas fa-dolly-flatbed mr_10"></i><span>dolly-flatbed</span></li>
+							<li data-icon="fas fa-donate"><i class="fas fa-donate mr_10"></i><span>donate</span></li>
+							<li data-icon="fas fa-dot-circle"><i class="fas fa-dot-circle mr_10"></i><span>dot-circle</span></li>
+							<li data-icon="far fa-dot-circle"><i class="far fa-dot-circle mr_10"></i><span>dot-circle</span></li>
+							<li data-icon="fas fa-dove"><i class="fas fa-dove mr_10"></i><span>dove</span></li>
+							<li data-icon="fas fa-download"><i class="fas fa-download mr_10"></i><span>download</span></li>
+							<li data-icon="fab fa-draft2digital"><i class="fab fa-draft2digital mr_10"></i><span>draft2digital</span></li>
+							<li data-icon="fab fa-dribbble"><i class="fab fa-dribbble mr_10"></i><span>dribbble</span></li>
+							<li data-icon="fab fa-dribbble-square"><i class="fab fa-dribbble-square mr_10"></i><span>dribbble-square</span></li>
+							<li data-icon="fab fa-dropbox"><i class="fab fa-dropbox mr_10"></i><span>dropbox</span></li>
+							<li data-icon="fab fa-drupal"><i class="fab fa-drupal mr_10"></i><span>drupal</span></li>
+							<li data-icon="fab fa-dyalog"><i class="fab fa-dyalog mr_10"></i><span>dyalog</span></li>
+							<li data-icon="fab fa-earlybirds"><i class="fab fa-earlybirds mr_10"></i><span>earlybirds</span></li>
+							<li data-icon="fab fa-edge"><i class="fab fa-edge mr_10"></i><span>edge</span></li>
+							<li data-icon="fas fa-edit"><i class="fas fa-edit mr_10"></i><span>edit</span></li>
+							<li data-icon="far fa-edit"><i class="far fa-edit mr_10"></i><span>edit</span></li>
+							<li data-icon="fas fa-eject"><i class="fas fa-eject mr_10"></i><span>eject</span></li>
+							<li data-icon="fab fa-elementor"><i class="fab fa-elementor mr_10"></i><span>elementor</span></li>
+							<li data-icon="fas fa-ellipsis-h"><i class="fas fa-ellipsis-h mr_10"></i><span>ellipsis-h</span></li>
+							<li data-icon="fas fa-ellipsis-v"><i class="fas fa-ellipsis-v mr_10"></i><span>ellipsis-v</span></li>
+							<li data-icon="fab fa-ember"><i class="fab fa-ember mr_10"></i><span>ember</span></li>
+							<li data-icon="fab fa-empire"><i class="fab fa-empire mr_10"></i><span>empire</span></li>
+							<li data-icon="fas fa-envelope"><i class="fas fa-envelope mr_10"></i><span>envelope</span></li>
+							<li data-icon="far fa-envelope"><i class="far fa-envelope mr_10"></i><span>envelope</span></li>
+							<li data-icon="fas fa-envelope-open"><i class="fas fa-envelope-open mr_10"></i><span>envelope-open</span></li>
+							<li data-icon="far fa-envelope-open"><i class="far fa-envelope-open mr_10"></i><span>envelope-open</span></li>
+							<li data-icon="fas fa-envelope-square"><i class="fas fa-envelope-square mr_10"></i><span>envelope-square</span></li>
+							<li data-icon="fab fa-envira"><i class="fab fa-envira mr_10"></i><span>envira</span></li>
+							<li data-icon="fas fa-eraser"><i class="fas fa-eraser mr_10"></i><span>eraser</span></li>
+							<li data-icon="fab fa-erlang"><i class="fab fa-erlang mr_10"></i><span>erlang</span></li>
+							<li data-icon="fab fa-ethereum"><i class="fab fa-ethereum mr_10"></i><span>ethereum</span></li>
+							<li data-icon="fab fa-etsy"><i class="fab fa-etsy mr_10"></i><span>etsy</span></li>
+							<li data-icon="fas fa-euro-sign"><i class="fas fa-euro-sign mr_10"></i><span>euro-sign</span></li>
+							<li data-icon="fas fa-exchange-alt"><i class="fas fa-exchange-alt mr_10"></i><span>exchange-alt</span></li>
+							<li data-icon="fas fa-exclamation"><i class="fas fa-exclamation mr_10"></i><span>exclamation</span></li>
+							<li data-icon="fas fa-exclamation-circle"><i class="fas fa-exclamation-circle mr_10"></i><span>exclamation-circle</span></li>
+							<li data-icon="fas fa-exclamation-triangle"><i class="fas fa-exclamation-triangle mr_10"></i><span>exclamation-triangle</span></li>
+							<li data-icon="fas fa-expand"><i class="fas fa-expand mr_10"></i><span>expand</span></li>
+							<li data-icon="fas fa-expand-arrows-alt"><i class="fas fa-expand-arrows-alt mr_10"></i><span>expand-arrows-alt</span></li>
+							<li data-icon="fab fa-expeditedssl"><i class="fab fa-expeditedssl mr_10"></i><span>expeditedssl</span></li>
+							<li data-icon="fas fa-external-link-alt"><i class="fas fa-external-link-alt mr_10"></i><span>external-link-alt</span></li>
+							<li data-icon="fas fa-external-link-square-alt"><i class="fas fa-external-link-square-alt mr_10"></i><span>external-link-square-alt</span></li>
+							<li data-icon="fas fa-eye"><i class="fas fa-eye mr_10"></i><span>eye</span></li>
+							<li data-icon="fas fa-eye-dropper"><i class="fas fa-eye-dropper mr_10"></i><span>eye-dropper</span></li>
+							<li data-icon="fas fa-eye-slash"><i class="fas fa-eye-slash mr_10"></i><span>eye-slash</span></li>
+							<li data-icon="far fa-eye-slash"><i class="far fa-eye-slash mr_10"></i><span>eye-slash</span></li>
+							<li data-icon="fab fa-facebook"><i class="fab fa-facebook mr_10"></i><span>facebook</span></li>
+							<li data-icon="fab fa-facebook-f"><i class="fab fa-facebook-f mr_10"></i><span>facebook-f</span></li>
+							<li data-icon="fab fa-facebook-messenger"><i class="fab fa-facebook-messenger mr_10"></i><span>facebook-messenger</span></li>
+							<li data-icon="fab fa-facebook-square"><i class="fab fa-facebook-square mr_10"></i><span>facebook-square</span></li>
+							<li data-icon="fas fa-fast-backward"><i class="fas fa-fast-backward mr_10"></i><span>fast-backward</span></li>
+							<li data-icon="fas fa-fast-forward"><i class="fas fa-fast-forward mr_10"></i><span>fast-forward</span></li>
+							<li data-icon="fas fa-fax"><i class="fas fa-fax mr_10"></i><span>fax</span></li>
+							<li data-icon="fas fa-female"><i class="fas fa-female mr_10"></i><span>female</span></li>
+							<li data-icon="fas fa-fighter-jet"><i class="fas fa-fighter-jet mr_10"></i><span>fighter-jet</span></li>
+							<li data-icon="fas fa-file"><i class="fas fa-file mr_10"></i><span>file</span></li>
+							<li data-icon="far fa-file"><i class="far fa-file mr_10"></i><span>file</span></li>
+							<li data-icon="fas fa-file-alt"><i class="fas fa-file-alt mr_10"></i><span>file-alt</span></li>
+							<li data-icon="far fa-file-alt"><i class="far fa-file-alt mr_10"></i><span>file-alt</span></li>
+							<li data-icon="fas fa-file-archive"><i class="fas fa-file-archive mr_10"></i><span>file-archive</span></li>
+							<li data-icon="far fa-file-archive"><i class="far fa-file-archive mr_10"></i><span>file-archive</span></li>
+							<li data-icon="fas fa-file-audio"><i class="fas fa-file-audio mr_10"></i><span>file-audio</span></li>
+							<li data-icon="far fa-file-audio"><i class="far fa-file-audio mr_10"></i><span>file-audio</span></li>
+							<li data-icon="fas fa-file-code"><i class="fas fa-file-code mr_10"></i><span>file-code</span></li>
+							<li data-icon="far fa-file-code"><i class="far fa-file-code mr_10"></i><span>file-code</span></li>
+							<li data-icon="fas fa-file-excel"><i class="fas fa-file-excel mr_10"></i><span>file-excel</span></li>
+							<li data-icon="far fa-file-excel"><i class="far fa-file-excel mr_10"></i><span>file-excel</span></li>
+							<li data-icon="fas fa-file-image"><i class="fas fa-file-image mr_10"></i><span>file-image</span></li>
+							<li data-icon="far fa-file-image"><i class="far fa-file-image mr_10"></i><span>file-image</span></li>
+							<li data-icon="fas fa-file-medical"><i class="fas fa-file-medical mr_10"></i><span>file-medical</span></li>
+							<li data-icon="fas fa-file-medical-alt"><i class="fas fa-file-medical-alt mr_10"></i><span>file-medical-alt</span></li>
+							<li data-icon="fas fa-file-pdf"><i class="fas fa-file-pdf mr_10"></i><span>file-pdf</span></li>
+							<li data-icon="far fa-file-pdf"><i class="far fa-file-pdf mr_10"></i><span>file-pdf</span></li>
+							<li data-icon="fas fa-file-powerpoint"><i class="fas fa-file-powerpoint mr_10"></i><span>file-powerpoint</span></li>
+							<li data-icon="far fa-file-powerpoint"><i class="far fa-file-powerpoint mr_10"></i><span>file-powerpoint</span></li>
+							<li data-icon="fas fa-file-video"><i class="fas fa-file-video mr_10"></i><span>file-video</span></li>
+							<li data-icon="far fa-file-video"><i class="far fa-file-video mr_10"></i><span>file-video</span></li>
+							<li data-icon="fas fa-file-word"><i class="fas fa-file-word mr_10"></i><span>file-word</span></li>
+							<li data-icon="far fa-file-word"><i class="far fa-file-word mr_10"></i><span>file-word</span></li>
+							<li data-icon="fas fa-film"><i class="fas fa-film mr_10"></i><span>film</span></li>
+							<li data-icon="fas fa-filter"><i class="fas fa-filter mr_10"></i><span>filter</span></li>
+							<li data-icon="fas fa-fire"><i class="fas fa-fire mr_10"></i><span>fire</span></li>
+							<li data-icon="fas fa-fire-extinguisher"><i class="fas fa-fire-extinguisher mr_10"></i><span>fire-extinguisher</span></li>
+							<li data-icon="fab fa-firefox"><i class="fab fa-firefox mr_10"></i><span>firefox</span></li>
+							<li data-icon="fas fa-first-aid"><i class="fas fa-first-aid mr_10"></i><span>first-aid</span></li>
+							<li data-icon="fab fa-first-order"><i class="fab fa-first-order mr_10"></i><span>first-order</span></li>
+							<li data-icon="fab fa-firstdraft"><i class="fab fa-firstdraft mr_10"></i><span>firstdraft</span></li>
+							<li data-icon="fas fa-flag"><i class="fas fa-flag mr_10"></i><span>flag</span></li>
+							<li data-icon="far fa-flag"><i class="far fa-flag mr_10"></i><span>flag</span></li>
+							<li data-icon="fas fa-flag-checkered"><i class="fas fa-flag-checkered mr_10"></i><span>flag-checkered</span></li>
+							<li data-icon="fas fa-flask"><i class="fas fa-flask mr_10"></i><span>flask</span></li>
+							<li data-icon="fab fa-flickr"><i class="fab fa-flickr mr_10"></i><span>flickr</span></li>
+							<li data-icon="fab fa-flipboard"><i class="fab fa-flipboard mr_10"></i><span>flipboard</span></li>
+							<li data-icon="fab fa-fly"><i class="fab fa-fly mr_10"></i><span>fly</span></li>
+							<li data-icon="fas fa-folder"><i class="fas fa-folder mr_10"></i><span>folder</span></li>
+							<li data-icon="far fa-folder"><i class="far fa-folder mr_10"></i><span>folder</span></li>
+							<li data-icon="fas fa-folder-open"><i class="fas fa-folder-open mr_10"></i><span>folder-open</span></li>
+							<li data-icon="far fa-folder-open"><i class="far fa-folder-open mr_10"></i><span>folder-open</span></li>
+							<li data-icon="fas fa-font"><i class="fas fa-font mr_10"></i><span>font</span></li>
+							<li data-icon="fab fa-font-awesome"><i class="fab fa-font-awesome mr_10"></i><span>font-awesome</span></li>
+							<li data-icon="fab fa-font-awesome-alt"><i class="fab fa-font-awesome-alt mr_10"></i><span>font-awesome-alt</span></li>
+							<li data-icon="fab fa-font-awesome-flag"><i class="fab fa-font-awesome-flag mr_10"></i><span>font-awesome-flag</span></li>
+							<li data-icon="fab fa-fonticons"><i class="fab fa-fonticons mr_10"></i><span>fonticons</span></li>
+							<li data-icon="fab fa-fonticons-fi"><i class="fab fa-fonticons-fi mr_10"></i><span>fonticons-fi</span></li>
+							<li data-icon="fas fa-football-ball"><i class="fas fa-football-ball mr_10"></i><span>football-ball</span></li>
+							<li data-icon="fab fa-fort-awesome"><i class="fab fa-fort-awesome mr_10"></i><span>fort-awesome</span></li>
+							<li data-icon="fab fa-fort-awesome-alt"><i class="fab fa-fort-awesome-alt mr_10"></i><span>fort-awesome-alt</span></li>
+							<li data-icon="fab fa-forumbee"><i class="fab fa-forumbee mr_10"></i><span>forumbee</span></li>
+							<li data-icon="fas fa-forward"><i class="fas fa-forward mr_10"></i><span>forward</span></li>
+							<li data-icon="fab fa-foursquare"><i class="fab fa-foursquare mr_10"></i><span>foursquare</span></li>
+							<li data-icon="fab fa-free-code-camp"><i class="fab fa-free-code-camp mr_10"></i><span>free-code-camp</span></li>
+							<li data-icon="fab fa-freebsd"><i class="fab fa-freebsd mr_10"></i><span>freebsd</span></li>
+							<li data-icon="fas fa-frown"><i class="fas fa-frown mr_10"></i><span>frown</span></li>
+							<li data-icon="far fa-frown"><i class="far fa-frown mr_10"></i><span>frown</span></li>
+							<li data-icon="fas fa-futbol"><i class="fas fa-futbol mr_10"></i><span>futbol</span></li>
+							<li data-icon="far fa-futbol"><i class="far fa-futbol mr_10"></i><span>futbol</span></li>
+							<li data-icon="fas fa-gamepad"><i class="fas fa-gamepad mr_10"></i><span>gamepad</span></li>
+							<li data-icon="fas fa-gavel"><i class="fas fa-gavel mr_10"></i><span>gavel</span></li>
+							<li data-icon="fas fa-gem"><i class="fas fa-gem mr_10"></i><span>gem</span></li>
+							<li data-icon="far fa-gem"><i class="far fa-gem mr_10"></i><span>gem</span></li>
+							<li data-icon="fas fa-genderless"><i class="fas fa-genderless mr_10"></i><span>genderless</span></li>
+							<li data-icon="fab fa-get-pocket"><i class="fab fa-get-pocket mr_10"></i><span>get-pocket</span></li>
+							<li data-icon="fab fa-gg"><i class="fab fa-gg mr_10"></i><span>gg</span></li>
+							<li data-icon="fab fa-gg-circle"><i class="fab fa-gg-circle mr_10"></i><span>gg-circle</span></li>
+							<li data-icon="fas fa-gift"><i class="fas fa-gift mr_10"></i><span>gift</span></li>
+							<li data-icon="fab fa-git"><i class="fab fa-git mr_10"></i><span>git</span></li>
+							<li data-icon="fab fa-git-square"><i class="fab fa-git-square mr_10"></i><span>git-square</span></li>
+							<li data-icon="fab fa-github"><i class="fab fa-github mr_10"></i><span>github</span></li>
+							<li data-icon="fab fa-github-alt"><i class="fab fa-github-alt mr_10"></i><span>github-alt</span></li>
+							<li data-icon="fab fa-github-square"><i class="fab fa-github-square mr_10"></i><span>github-square</span></li>
+							<li data-icon="fab fa-gitkraken"><i class="fab fa-gitkraken mr_10"></i><span>gitkraken</span></li>
+							<li data-icon="fab fa-gitlab"><i class="fab fa-gitlab mr_10"></i><span>gitlab</span></li>
+							<li data-icon="fab fa-gitter"><i class="fab fa-gitter mr_10"></i><span>gitter</span></li>
+							<li data-icon="fas fa-glass-martini"><i class="fas fa-glass-martini mr_10"></i><span>glass-martini</span></li>
+							<li data-icon="fab fa-glide"><i class="fab fa-glide mr_10"></i><span>glide</span></li>
+							<li data-icon="fab fa-glide-g"><i class="fab fa-glide-g mr_10"></i><span>glide-g</span></li>
+							<li data-icon="fas fa-globe"><i class="fas fa-globe mr_10"></i><span>globe</span></li>
+							<li data-icon="fab fa-gofore"><i class="fab fa-gofore mr_10"></i><span>gofore</span></li>
+							<li data-icon="fas fa-golf-ball"><i class="fas fa-golf-ball mr_10"></i><span>golf-ball</span></li>
+							<li data-icon="fab fa-goodreads"><i class="fab fa-goodreads mr_10"></i><span>goodreads</span></li>
+							<li data-icon="fab fa-goodreads-g"><i class="fab fa-goodreads-g mr_10"></i><span>goodreads-g</span></li>
+							<li data-icon="fab fa-google"><i class="fab fa-google mr_10"></i><span>google</span></li>
+							<li data-icon="fab fa-google-drive"><i class="fab fa-google-drive mr_10"></i><span>google-drive</span></li>
+							<li data-icon="fab fa-google-play"><i class="fab fa-google-play mr_10"></i><span>google-play</span></li>
+							<li data-icon="fab fa-google-plus"><i class="fab fa-google-plus mr_10"></i><span>google-plus</span></li>
+							<li data-icon="fab fa-google-plus-g"><i class="fab fa-google-plus-g mr_10"></i><span>google-plus-g</span></li>
+							<li data-icon="fab fa-google-plus-square"><i class="fab fa-google-plus-square mr_10"></i><span>google-plus-square</span></li>
+							<li data-icon="fab fa-google-wallet"><i class="fab fa-google-wallet mr_10"></i><span>google-wallet</span></li>
+							<li data-icon="fas fa-graduation-cap"><i class="fas fa-graduation-cap mr_10"></i><span>graduation-cap</span></li>
+							<li data-icon="fab fa-gratipay"><i class="fab fa-gratipay mr_10"></i><span>gratipay</span></li>
+							<li data-icon="fab fa-grav"><i class="fab fa-grav mr_10"></i><span>grav</span></li>
+							<li data-icon="fab fa-gripfire"><i class="fab fa-gripfire mr_10"></i><span>gripfire</span></li>
+							<li data-icon="fab fa-grunt"><i class="fab fa-grunt mr_10"></i><span>grunt</span></li>
+							<li data-icon="fab fa-gulp"><i class="fab fa-gulp mr_10"></i><span>gulp</span></li>
+							<li data-icon="fas fa-h-square"><i class="fas fa-h-square mr_10"></i><span>h-square</span></li>
+							<li data-icon="fab fa-hacker-news"><i class="fab fa-hacker-news mr_10"></i><span>hacker-news</span></li>
+							<li data-icon="fab fa-hacker-news-square"><i class="fab fa-hacker-news-square mr_10"></i><span>hacker-news-square</span></li>
+							<li data-icon="fas fa-hand-holding"><i class="fas fa-hand-holding mr_10"></i><span>hand-holding</span></li>
+							<li data-icon="fas fa-hand-holding-heart"><i class="fas fa-hand-holding-heart mr_10"></i><span>hand-holding-heart</span></li>
+							<li data-icon="fas fa-hand-holding-usd"><i class="fas fa-hand-holding-usd mr_10"></i><span>hand-holding-usd</span></li>
+							<li data-icon="fas fa-hand-lizard"><i class="fas fa-hand-lizard mr_10"></i><span>hand-lizard</span></li>
+							<li data-icon="far fa-hand-lizard"><i class="far fa-hand-lizard mr_10"></i><span>hand-lizard</span></li>
+							<li data-icon="fas fa-hand-paper"><i class="fas fa-hand-paper mr_10"></i><span>hand-paper</span></li>
+							<li data-icon="far fa-hand-paper"><i class="far fa-hand-paper mr_10"></i><span>hand-paper</span></li>
+							<li data-icon="fas fa-hand-peace"><i class="fas fa-hand-peace mr_10"></i><span>hand-peace</span></li>
+							<li data-icon="far fa-hand-peace"><i class="far fa-hand-peace mr_10"></i><span>hand-peace</span></li>
+							<li data-icon="fas fa-hand-point-down"><i class="fas fa-hand-point-down mr_10"></i><span>hand-point-down</span></li>
+							<li data-icon="far fa-hand-point-down"><i class="far fa-hand-point-down mr_10"></i><span>hand-point-down</span></li>
+							<li data-icon="fas fa-hand-point-left"><i class="fas fa-hand-point-left mr_10"></i><span>hand-point-left</span></li>
+							<li data-icon="far fa-hand-point-left"><i class="far fa-hand-point-left mr_10"></i><span>hand-point-left</span></li>
+							<li data-icon="fas fa-hand-point-right"><i class="fas fa-hand-point-right mr_10"></i><span>hand-point-right</span></li>
+							<li data-icon="far fa-hand-point-right"><i class="far fa-hand-point-right mr_10"></i><span>hand-point-right</span></li>
+							<li data-icon="fas fa-hand-point-up"><i class="fas fa-hand-point-up mr_10"></i><span>hand-point-up</span></li>
+							<li data-icon="far fa-hand-point-up"><i class="far fa-hand-point-up mr_10"></i><span>hand-point-up</span></li>
+							<li data-icon="fas fa-hand-pointer"><i class="fas fa-hand-pointer mr_10"></i><span>hand-pointer</span></li>
+							<li data-icon="far fa-hand-pointer"><i class="far fa-hand-pointer mr_10"></i><span>hand-pointer</span></li>
+							<li data-icon="fas fa-hand-rock"><i class="fas fa-hand-rock mr_10"></i><span>hand-rock</span></li>
+							<li data-icon="far fa-hand-rock"><i class="far fa-hand-rock mr_10"></i><span>hand-rock</span></li>
+							<li data-icon="fas fa-hand-scissors"><i class="fas fa-hand-scissors mr_10"></i><span>hand-scissors</span></li>
+							<li data-icon="far fa-hand-scissors"><i class="far fa-hand-scissors mr_10"></i><span>hand-scissors</span></li>
+							<li data-icon="fas fa-hand-spock"><i class="fas fa-hand-spock mr_10"></i><span>hand-spock</span></li>
+							<li data-icon="far fa-hand-spock"><i class="far fa-hand-spock mr_10"></i><span>hand-spock</span></li>
+							<li data-icon="fas fa-hands"><i class="fas fa-hands mr_10"></i><span>hands</span></li>
+							<li data-icon="fas fa-hands-helping"><i class="fas fa-hands-helping mr_10"></i><span>hands-helping</span></li>
+							<li data-icon="fas fa-handshake"><i class="fas fa-handshake mr_10"></i><span>handshake</span></li>
+							<li data-icon="far fa-handshake"><i class="far fa-handshake mr_10"></i><span>handshake</span></li>
+							<li data-icon="fas fa-hashtag"><i class="fas fa-hashtag mr_10"></i><span>hashtag</span></li>
+							<li data-icon="fas fa-hdd"><i class="fas fa-hdd mr_10"></i><span>hdd</span></li>
+							<li data-icon="far fa-hdd"><i class="far fa-hdd mr_10"></i><span>hdd</span></li>
+							<li data-icon="fas fa-heading"><i class="fas fa-heading mr_10"></i><span>heading</span></li>
+							<li data-icon="fas fa-headphones"><i class="fas fa-headphones mr_10"></i><span>headphones</span></li>
+							<li data-icon="fas fa-heart"><i class="fas fa-heart mr_10"></i><span>heart</span></li>
+							<li data-icon="far fa-heart"><i class="far fa-heart mr_10"></i><span>heart</span></li>
+							<li data-icon="fas fa-heartbeat"><i class="fas fa-heartbeat mr_10"></i><span>heartbeat</span></li>
+							<li data-icon="fab fa-hips"><i class="fab fa-hips mr_10"></i><span>hips</span></li>
+							<li data-icon="fab fa-hire-a-helper"><i class="fab fa-hire-a-helper mr_10"></i><span>hire-a-helper</span></li>
+							<li data-icon="fas fa-history"><i class="fas fa-history mr_10"></i><span>history</span></li>
+							<li data-icon="fas fa-hockey-puck"><i class="fas fa-hockey-puck mr_10"></i><span>hockey-puck</span></li>
+							<li data-icon="fas fa-home"><i class="fas fa-home mr_10"></i><span>home</span></li>
+							<li data-icon="fab fa-hooli"><i class="fab fa-hooli mr_10"></i><span>hooli</span></li>
+							<li data-icon="fas fa-hospital"><i class="fas fa-hospital mr_10"></i><span>hospital</span></li>
+							<li data-icon="far fa-hospital"><i class="far fa-hospital mr_10"></i><span>hospital</span></li>
+							<li data-icon="fas fa-hospital-alt"><i class="fas fa-hospital-alt mr_10"></i><span>hospital-alt</span></li>
+							<li data-icon="fas fa-hospital-symbol"><i class="fas fa-hospital-symbol mr_10"></i><span>hospital-symbol</span></li>
+							<li data-icon="fab fa-hotjar"><i class="fab fa-hotjar mr_10"></i><span>hotjar</span></li>
+							<li data-icon="fas fa-hourglass"><i class="fas fa-hourglass mr_10"></i><span>hourglass</span></li>
+							<li data-icon="far fa-hourglass"><i class="far fa-hourglass mr_10"></i><span>hourglass</span></li>
+							<li data-icon="fas fa-hourglass-end"><i class="fas fa-hourglass-end mr_10"></i><span>hourglass-end</span></li>
+							<li data-icon="fas fa-hourglass-half"><i class="fas fa-hourglass-half mr_10"></i><span>hourglass-half</span></li>
+							<li data-icon="fas fa-hourglass-start"><i class="fas fa-hourglass-start mr_10"></i><span>hourglass-start</span></li>
+							<li data-icon="fab fa-houzz"><i class="fab fa-houzz mr_10"></i><span>houzz</span></li>
+							<li data-icon="fab fa-html5"><i class="fab fa-html5 mr_10"></i><span>html5</span></li>
+							<li data-icon="fab fa-hubspot"><i class="fab fa-hubspot mr_10"></i><span>hubspot</span></li>
+							<li data-icon="fas fa-i-cursor"><i class="fas fa-i-cursor mr_10"></i><span>i-cursor</span></li>
+							<li data-icon="fas fa-id-badge"><i class="fas fa-id-badge mr_10"></i><span>id-badge</span></li>
+							<li data-icon="far fa-id-badge"><i class="far fa-id-badge mr_10"></i><span>id-badge</span></li>
+							<li data-icon="fas fa-id-card"><i class="fas fa-id-card mr_10"></i><span>id-card</span></li>
+							<li data-icon="far fa-id-card"><i class="far fa-id-card mr_10"></i><span>id-card</span></li>
+							<li data-icon="fas fa-id-card-alt"><i class="fas fa-id-card-alt mr_10"></i><span>id-card-alt</span></li>
+							<li data-icon="fas fa-image"><i class="fas fa-image mr_10"></i><span>image</span></li>
+							<li data-icon="far fa-image"><i class="far fa-image mr_10"></i><span>image</span></li>
+							<li data-icon="fas fa-images"><i class="fas fa-images mr_10"></i><span>images</span></li>
+							<li data-icon="far fa-images"><i class="far fa-images mr_10"></i><span>images</span></li>
+							<li data-icon="fab fa-imdb"><i class="fab fa-imdb mr_10"></i><span>imdb</span></li>
+							<li data-icon="fas fa-inbox"><i class="fas fa-inbox mr_10"></i><span>inbox</span></li>
+							<li data-icon="fas fa-indent"><i class="fas fa-indent mr_10"></i><span>indent</span></li>
+							<li data-icon="fas fa-industry"><i class="fas fa-industry mr_10"></i><span>industry</span></li>
+							<li data-icon="fas fa-info"><i class="fas fa-info mr_10"></i><span>info</span></li>
+							<li data-icon="fas fa-info-circle"><i class="fas fa-info-circle mr_10"></i><span>info-circle</span></li>
+							<li data-icon="fab fa-instagram"><i class="fab fa-instagram mr_10"></i><span>instagram</span></li>
+							<li data-icon="fab fa-internet-explorer"><i class="fab fa-internet-explorer mr_10"></i><span>internet-explorer</span></li>
+							<li data-icon="fab fa-ioxhost"><i class="fab fa-ioxhost mr_10"></i><span>ioxhost</span></li>
+							<li data-icon="fas fa-italic"><i class="fas fa-italic mr_10"></i><span>italic</span></li>
+							<li data-icon="fab fa-itunes"><i class="fab fa-itunes mr_10"></i><span>itunes</span></li>
+							<li data-icon="fab fa-itunes-note"><i class="fab fa-itunes-note mr_10"></i><span>itunes-note</span></li>
+							<li data-icon="fab fa-java"><i class="fab fa-java mr_10"></i><span>java</span></li>
+							<li data-icon="fab fa-jenkins"><i class="fab fa-jenkins mr_10"></i><span>jenkins</span></li>
+							<li data-icon="fab fa-joget"><i class="fab fa-joget mr_10"></i><span>joget</span></li>
+							<li data-icon="fab fa-joomla"><i class="fab fa-joomla mr_10"></i><span>joomla</span></li>
+							<li data-icon="fab fa-js"><i class="fab fa-js mr_10"></i><span>js</span></li>
+							<li data-icon="fab fa-js-square"><i class="fab fa-js-square mr_10"></i><span>js-square</span></li>
+							<li data-icon="fab fa-jsfiddle"><i class="fab fa-jsfiddle mr_10"></i><span>jsfiddle</span></li>
+							<li data-icon="fas fa-key"><i class="fas fa-key mr_10"></i><span>key</span></li>
+							<li data-icon="fas fa-keyboard"><i class="fas fa-keyboard mr_10"></i><span>keyboard</span></li>
+							<li data-icon="far fa-keyboard"><i class="far fa-keyboard mr_10"></i><span>keyboard</span></li>
+							<li data-icon="fab fa-keycdn"><i class="fab fa-keycdn mr_10"></i><span>keycdn</span></li>
+							<li data-icon="fab fa-kickstarter"><i class="fab fa-kickstarter mr_10"></i><span>kickstarter</span></li>
+							<li data-icon="fab fa-kickstarter-k"><i class="fab fa-kickstarter-k mr_10"></i><span>kickstarter-k</span></li>
+							<li data-icon="fab fa-korvue"><i class="fab fa-korvue mr_10"></i><span>korvue</span></li>
+							<li data-icon="fas fa-language"><i class="fas fa-language mr_10"></i><span>language</span></li>
+							<li data-icon="fas fa-laptop"><i class="fas fa-laptop mr_10"></i><span>laptop</span></li>
+							<li data-icon="fab fa-laravel"><i class="fab fa-laravel mr_10"></i><span>laravel</span></li>
+							<li data-icon="fab fa-lastfm"><i class="fab fa-lastfm mr_10"></i><span>lastfm</span></li>
+							<li data-icon="fab fa-lastfm-square"><i class="fab fa-lastfm-square mr_10"></i><span>lastfm-square</span></li>
+							<li data-icon="fas fa-leaf"><i class="fas fa-leaf mr_10"></i><span>leaf</span></li>
+							<li data-icon="fab fa-leanpub"><i class="fab fa-leanpub mr_10"></i><span>leanpub</span></li>
+							<li data-icon="fas fa-lemon"><i class="fas fa-lemon mr_10"></i><span>lemon</span></li>
+							<li data-icon="far fa-lemon"><i class="far fa-lemon mr_10"></i><span>lemon</span></li>
+							<li data-icon="fab fa-less"><i class="fab fa-less mr_10"></i><span>less</span></li>
+							<li data-icon="fas fa-level-down-alt"><i class="fas fa-level-down-alt mr_10"></i><span>level-down-alt</span></li>
+							<li data-icon="fas fa-level-up-alt"><i class="fas fa-level-up-alt mr_10"></i><span>level-up-alt</span></li>
+							<li data-icon="fas fa-life-ring"><i class="fas fa-life-ring mr_10"></i><span>life-ring</span></li>
+							<li data-icon="far fa-life-ring"><i class="far fa-life-ring mr_10"></i><span>life-ring</span></li>
+							<li data-icon="fas fa-lightbulb"><i class="fas fa-lightbulb mr_10"></i><span>lightbulb</span></li>
+							<li data-icon="far fa-lightbulb"><i class="far fa-lightbulb mr_10"></i><span>lightbulb</span></li>
+							<li data-icon="fab fa-line"><i class="fab fa-line mr_10"></i><span>line</span></li>
+							<li data-icon="fas fa-link"><i class="fas fa-link mr_10"></i><span>link</span></li>
+							<li data-icon="fab fa-linkedin"><i class="fab fa-linkedin mr_10"></i><span>linkedin</span></li>
+							<li data-icon="fab fa-linkedin-in"><i class="fab fa-linkedin-in mr_10"></i><span>linkedin-in</span></li>
+							<li data-icon="fab fa-linode"><i class="fab fa-linode mr_10"></i><span>linode</span></li>
+							<li data-icon="fab fa-linux"><i class="fab fa-linux mr_10"></i><span>linux</span></li>
+							<li data-icon="fas fa-lira-sign"><i class="fas fa-lira-sign mr_10"></i><span>lira-sign</span></li>
+							<li data-icon="fas fa-list"><i class="fas fa-list mr_10"></i><span>list</span></li>
+							<li data-icon="fas fa-list-alt"><i class="fas fa-list-alt mr_10"></i><span>list-alt</span></li>
+							<li data-icon="far fa-list-alt"><i class="far fa-list-alt mr_10"></i><span>list-alt</span></li>
+							<li data-icon="fas fa-list-ol"><i class="fas fa-list-ol mr_10"></i><span>list-ol</span></li>
+							<li data-icon="fas fa-list-ul"><i class="fas fa-list-ul mr_10"></i><span>list-ul</span></li>
+							<li data-icon="fas fa-location-arrow"><i class="fas fa-location-arrow mr_10"></i><span>location-arrow</span></li>
+							<li data-icon="fas fa-lock"><i class="fas fa-lock mr_10"></i><span>lock</span></li>
+							<li data-icon="fas fa-lock-open"><i class="fas fa-lock-open mr_10"></i><span>lock-open</span></li>
+							<li data-icon="fas fa-long-arrow-alt-down"><i class="fas fa-long-arrow-alt-down mr_10"></i><span>long-arrow-alt-down</span></li>
+							<li data-icon="fas fa-long-arrow-alt-left"><i class="fas fa-long-arrow-alt-left mr_10"></i><span>long-arrow-alt-left</span></li>
+							<li data-icon="fas fa-long-arrow-alt-right"><i class="fas fa-long-arrow-alt-right mr_10"></i><span>long-arrow-alt-right</span></li>
+							<li data-icon="fas fa-long-arrow-alt-up"><i class="fas fa-long-arrow-alt-up mr_10"></i><span>long-arrow-alt-up</span></li>
+							<li data-icon="fas fa-low-vision"><i class="fas fa-low-vision mr_10"></i><span>low-vision</span></li>
+							<li data-icon="fab fa-lyft"><i class="fab fa-lyft mr_10"></i><span>lyft</span></li>
+							<li data-icon="fab fa-magento"><i class="fab fa-magento mr_10"></i><span>magento</span></li>
+							<li data-icon="fas fa-magic"><i class="fas fa-magic mr_10"></i><span>magic</span></li>
+							<li data-icon="fas fa-magnet"><i class="fas fa-magnet mr_10"></i><span>magnet</span></li>
+							<li data-icon="fas fa-male"><i class="fas fa-male mr_10"></i><span>male</span></li>
+							<li data-icon="fas fa-map"><i class="fas fa-map mr_10"></i><span>map</span></li>
+							<li data-icon="far fa-map"><i class="far fa-map mr_10"></i><span>map</span></li>
+							<li data-icon="fas fa-map-marker"><i class="fas fa-map-marker mr_10"></i><span>map-marker</span></li>
+							<li data-icon="fas fa-map-marker-alt"><i class="fas fa-map-marker-alt mr_10"></i><span>map-marker-alt</span></li>
+							<li data-icon="fas fa-map-pin"><i class="fas fa-map-pin mr_10"></i><span>map-pin</span></li>
+							<li data-icon="fas fa-map-signs"><i class="fas fa-map-signs mr_10"></i><span>map-signs</span></li>
+							<li data-icon="fas fa-mars"><i class="fas fa-mars mr_10"></i><span>mars</span></li>
+							<li data-icon="fas fa-mars-double"><i class="fas fa-mars-double mr_10"></i><span>mars-double</span></li>
+							<li data-icon="fas fa-mars-stroke"><i class="fas fa-mars-stroke mr_10"></i><span>mars-stroke</span></li>
+							<li data-icon="fas fa-mars-stroke-h"><i class="fas fa-mars-stroke-h mr_10"></i><span>mars-stroke-h</span></li>
+							<li data-icon="fas fa-mars-stroke-v"><i class="fas fa-mars-stroke-v mr_10"></i><span>mars-stroke-v</span></li>
+							<li data-icon="fab fa-maxcdn"><i class="fab fa-maxcdn mr_10"></i><span>maxcdn</span></li>
+							<li data-icon="fab fa-medapps"><i class="fab fa-medapps mr_10"></i><span>medapps</span></li>
+							<li data-icon="fab fa-medium"><i class="fab fa-medium mr_10"></i><span>medium</span></li>
+							<li data-icon="fab fa-medium-m"><i class="fab fa-medium-m mr_10"></i><span>medium-m</span></li>
+							<li data-icon="fas fa-medkit"><i class="fas fa-medkit mr_10"></i><span>medkit</span></li>
+							<li data-icon="fab fa-medrt"><i class="fab fa-medrt mr_10"></i><span>medrt</span></li>
+							<li data-icon="fab fa-meetup"><i class="fab fa-meetup mr_10"></i><span>meetup</span></li>
+							<li data-icon="fas fa-meh"><i class="fas fa-meh mr_10"></i><span>meh</span></li>
+							<li data-icon="far fa-meh"><i class="far fa-meh mr_10"></i><span>meh</span></li>
+							<li data-icon="fas fa-mercury"><i class="fas fa-mercury mr_10"></i><span>mercury</span></li>
+							<li data-icon="fas fa-microchip"><i class="fas fa-microchip mr_10"></i><span>microchip</span></li>
+							<li data-icon="fas fa-microphone"><i class="fas fa-microphone mr_10"></i><span>microphone</span></li>
+							<li data-icon="fas fa-microphone-slash"><i class="fas fa-microphone-slash mr_10"></i><span>microphone-slash</span></li>
+							<li data-icon="fab fa-microsoft"><i class="fab fa-microsoft mr_10"></i><span>microsoft</span></li>
+							<li data-icon="fas fa-minus"><i class="fas fa-minus mr_10"></i><span>minus</span></li>
+							<li data-icon="fas fa-minus-circle"><i class="fas fa-minus-circle mr_10"></i><span>minus-circle</span></li>
+							<li data-icon="fas fa-minus-square"><i class="fas fa-minus-square mr_10"></i><span>minus-square</span></li>
+							<li data-icon="far fa-minus-square"><i class="far fa-minus-square mr_10"></i><span>minus-square</span></li>
+							<li data-icon="fab fa-mix"><i class="fab fa-mix mr_10"></i><span>mix</span></li>
+							<li data-icon="fab fa-mixcloud"><i class="fab fa-mixcloud mr_10"></i><span>mixcloud</span></li>
+							<li data-icon="fab fa-mizuni"><i class="fab fa-mizuni mr_10"></i><span>mizuni</span></li>
+							<li data-icon="fas fa-mobile"><i class="fas fa-mobile mr_10"></i><span>mobile</span></li>
+							<li data-icon="fas fa-mobile-alt"><i class="fas fa-mobile-alt mr_10"></i><span>mobile-alt</span></li>
+							<li data-icon="fab fa-modx"><i class="fab fa-modx mr_10"></i><span>modx</span></li>
+							<li data-icon="fab fa-monero"><i class="fab fa-monero mr_10"></i><span>monero</span></li>
+							<li data-icon="fas fa-money-bill-alt"><i class="fas fa-money-bill-alt mr_10"></i><span>money-bill-alt</span></li>
+							<li data-icon="far fa-money-bill-alt"><i class="far fa-money-bill-alt mr_10"></i><span>money-bill-alt</span></li>
+							<li data-icon="fas fa-moon"><i class="fas fa-moon mr_10"></i><span>moon</span></li>
+							<li data-icon="far fa-moon"><i class="far fa-moon mr_10"></i><span>moon</span></li>
+							<li data-icon="fas fa-motorcycle"><i class="fas fa-motorcycle mr_10"></i><span>motorcycle</span></li>
+							<li data-icon="fas fa-mouse-pointer"><i class="fas fa-mouse-pointer mr_10"></i><span>mouse-pointer</span></li>
+							<li data-icon="fas fa-music"><i class="fas fa-music mr_10"></i><span>music</span></li>
+							<li data-icon="fab fa-napster"><i class="fab fa-napster mr_10"></i><span>napster</span></li>
+							<li data-icon="fas fa-neuter"><i class="fas fa-neuter mr_10"></i><span>neuter</span></li>
+							<li data-icon="fas fa-newspaper"><i class="fas fa-newspaper mr_10"></i><span>newspaper</span></li>
+							<li data-icon="far fa-newspaper"><i class="far fa-newspaper mr_10"></i><span>newspaper</span></li>
+							<li data-icon="fab fa-nintendo-switch"><i class="fab fa-nintendo-switch mr_10"></i><span>nintendo-switch</span></li>
+							<li data-icon="fab fa-node"><i class="fab fa-node mr_10"></i><span>node</span></li>
+							<li data-icon="fab fa-node-js"><i class="fab fa-node-js mr_10"></i><span>node-js</span></li>
+							<li data-icon="fas fa-notes-medical"><i class="fas fa-notes-medical mr_10"></i><span>notes-medical</span></li>
+							<li data-icon="fab fa-npm"><i class="fab fa-npm mr_10"></i><span>npm</span></li>
+							<li data-icon="fab fa-ns8"><i class="fab fa-ns8 mr_10"></i><span>ns8</span></li>
+							<li data-icon="fab fa-nutritionix"><i class="fab fa-nutritionix mr_10"></i><span>nutritionix</span></li>
+							<li data-icon="fas fa-object-group"><i class="fas fa-object-group mr_10"></i><span>object-group</span></li>
+							<li data-icon="far fa-object-group"><i class="far fa-object-group mr_10"></i><span>object-group</span></li>
+							<li data-icon="fas fa-object-ungroup"><i class="fas fa-object-ungroup mr_10"></i><span>object-ungroup</span></li>
+							<li data-icon="far fa-object-ungroup"><i class="far fa-object-ungroup mr_10"></i><span>object-ungroup</span></li>
+							<li data-icon="fab fa-odnoklassniki"><i class="fab fa-odnoklassniki mr_10"></i><span>odnoklassniki</span></li>
+							<li data-icon="fab fa-odnoklassniki-square"><i class="fab fa-odnoklassniki-square mr_10"></i><span>odnoklassniki-square</span></li>
+							<li data-icon="fab fa-opencart"><i class="fab fa-opencart mr_10"></i><span>opencart</span></li>
+							<li data-icon="fab fa-openid"><i class="fab fa-openid mr_10"></i><span>openid</span></li>
+							<li data-icon="fab fa-opera"><i class="fab fa-opera mr_10"></i><span>opera</span></li>
+							<li data-icon="fab fa-optin-monster"><i class="fab fa-optin-monster mr_10"></i><span>optin-monster</span></li>
+							<li data-icon="fab fa-osi"><i class="fab fa-osi mr_10"></i><span>osi</span></li>
+							<li data-icon="fas fa-outdent"><i class="fas fa-outdent mr_10"></i><span>outdent</span></li>
+							<li data-icon="fab fa-page4"><i class="fab fa-page4 mr_10"></i><span>page4</span></li>
+							<li data-icon="fab fa-pagelines"><i class="fab fa-pagelines mr_10"></i><span>pagelines</span></li>
+							<li data-icon="fas fa-paint-brush"><i class="fas fa-paint-brush mr_10"></i><span>paint-brush</span></li>
+							<li data-icon="fab fa-palfed"><i class="fab fa-palfed mr_10"></i><span>palfed</span></li>
+							<li data-icon="fas fa-pallet"><i class="fas fa-pallet mr_10"></i><span>pallet</span></li>
+							<li data-icon="fas fa-paper-plane"><i class="fas fa-paper-plane mr_10"></i><span>paper-plane</span></li>
+							<li data-icon="far fa-paper-plane"><i class="far fa-paper-plane mr_10"></i><span>paper-plane</span></li>
+							<li data-icon="fas fa-paperclip"><i class="fas fa-paperclip mr_10"></i><span>paperclip</span></li>
+							<li data-icon="fas fa-parachute-box"><i class="fas fa-parachute-box mr_10"></i><span>parachute-box</span></li>
+							<li data-icon="fas fa-paragraph"><i class="fas fa-paragraph mr_10"></i><span>paragraph</span></li>
+							<li data-icon="fas fa-paste"><i class="fas fa-paste mr_10"></i><span>paste</span></li>
+							<li data-icon="fab fa-patreon"><i class="fab fa-patreon mr_10"></i><span>patreon</span></li>
+							<li data-icon="fas fa-pause"><i class="fas fa-pause mr_10"></i><span>pause</span></li>
+							<li data-icon="fas fa-pause-circle"><i class="fas fa-pause-circle mr_10"></i><span>pause-circle</span></li>
+							<li data-icon="far fa-pause-circle"><i class="far fa-pause-circle mr_10"></i><span>pause-circle</span></li>
+							<li data-icon="fas fa-paw"><i class="fas fa-paw mr_10"></i><span>paw</span></li>
+							<li data-icon="fab fa-paypal"><i class="fab fa-paypal mr_10"></i><span>paypal</span></li>
+							<li data-icon="fas fa-pen-square"><i class="fas fa-pen-square mr_10"></i><span>pen-square</span></li>
+							<li data-icon="fas fa-pencil-alt"><i class="fas fa-pencil-alt mr_10"></i><span>pencil-alt</span></li>
+							<li data-icon="fas fa-people-carry"><i class="fas fa-people-carry mr_10"></i><span>people-carry</span></li>
+							<li data-icon="fas fa-percent"><i class="fas fa-percent mr_10"></i><span>percent</span></li>
+							<li data-icon="fab fa-periscope"><i class="fab fa-periscope mr_10"></i><span>periscope</span></li>
+							<li data-icon="fab fa-phabricator"><i class="fab fa-phabricator mr_10"></i><span>phabricator</span></li>
+							<li data-icon="fab fa-phoenix-framework"><i class="fab fa-phoenix-framework mr_10"></i><span>phoenix-framework</span></li>
+							<li data-icon="fas fa-phone"><i class="fas fa-phone mr_10"></i><span>phone</span></li>
+							<li data-icon="fas fa-phone-slash"><i class="fas fa-phone-slash mr_10"></i><span>phone-slash</span></li>
+							<li data-icon="fas fa-phone-square"><i class="fas fa-phone-square mr_10"></i><span>phone-square</span></li>
+							<li data-icon="fas fa-phone-volume"><i class="fas fa-phone-volume mr_10"></i><span>phone-volume</span></li>
+							<li data-icon="fab fa-php"><i class="fab fa-php mr_10"></i><span>php</span></li>
+							<li data-icon="fab fa-pied-piper"><i class="fab fa-pied-piper mr_10"></i><span>pied-piper</span></li>
+							<li data-icon="fab fa-pied-piper-alt"><i class="fab fa-pied-piper-alt mr_10"></i><span>pied-piper-alt</span></li>
+							<li data-icon="fab fa-pied-piper-hat"><i class="fab fa-pied-piper-hat mr_10"></i><span>pied-piper-hat</span></li>
+							<li data-icon="fab fa-pied-piper-pp"><i class="fab fa-pied-piper-pp mr_10"></i><span>pied-piper-pp</span></li>
+							<li data-icon="fas fa-piggy-bank"><i class="fas fa-piggy-bank mr_10"></i><span>piggy-bank</span></li>
+							<li data-icon="fas fa-pills"><i class="fas fa-pills mr_10"></i><span>pills</span></li>
+							<li data-icon="fab fa-pinterest"><i class="fab fa-pinterest mr_10"></i><span>pinterest</span></li>
+							<li data-icon="fab fa-pinterest-p"><i class="fab fa-pinterest-p mr_10"></i><span>pinterest-p</span></li>
+							<li data-icon="fab fa-pinterest-square"><i class="fab fa-pinterest-square mr_10"></i><span>pinterest-square</span></li>
+							<li data-icon="fas fa-plane"><i class="fas fa-plane mr_10"></i><span>plane</span></li>
+							<li data-icon="fas fa-play"><i class="fas fa-play mr_10"></i><span>play</span></li>
+							<li data-icon="fas fa-play-circle"><i class="fas fa-play-circle mr_10"></i><span>play-circle</span></li>
+							<li data-icon="far fa-play-circle"><i class="far fa-play-circle mr_10"></i><span>play-circle</span></li>
+							<li data-icon="fab fa-playstation"><i class="fab fa-playstation mr_10"></i><span>playstation</span></li>
+							<li data-icon="fas fa-plug"><i class="fas fa-plug mr_10"></i><span>plug</span></li>
+							<li data-icon="fas fa-plus"><i class="fas fa-plus mr_10"></i><span>plus</span></li>
+							<li data-icon="fas fa-plus-circle"><i class="fas fa-plus-circle mr_10"></i><span>plus-circle</span></li>
+							<li data-icon="fas fa-plus-square"><i class="fas fa-plus-square mr_10"></i><span>plus-square</span></li>
+							<li data-icon="far fa-plus-square"><i class="far fa-plus-square mr_10"></i><span>plus-square</span></li>
+							<li data-icon="fas fa-podcast"><i class="fas fa-podcast mr_10"></i><span>podcast</span></li>
+							<li data-icon="fas fa-poo"><i class="fas fa-poo mr_10"></i><span>poo</span></li>
+							<li data-icon="fas fa-pound-sign"><i class="fas fa-pound-sign mr_10"></i><span>pound-sign</span></li>
+							<li data-icon="fas fa-power-off"><i class="fas fa-power-off mr_10"></i><span>power-off</span></li>
+							<li data-icon="fas fa-prescription-bottle"><i class="fas fa-prescription-bottle mr_10"></i><span>prescription-bottle</span></li>
+							<li data-icon="fas fa-prescription-bottle-alt"><i class="fas fa-prescription-bottle-alt mr_10"></i><span>prescription-bottle-alt</span></li>
+							<li data-icon="fas fa-print"><i class="fas fa-print mr_10"></i><span>print</span></li>
+							<li data-icon="fas fa-procedures"><i class="fas fa-procedures mr_10"></i><span>procedures</span></li>
+							<li data-icon="fab fa-product-hunt"><i class="fab fa-product-hunt mr_10"></i><span>product-hunt</span></li>
+							<li data-icon="fab fa-pushed"><i class="fab fa-pushed mr_10"></i><span>pushed</span></li>
+							<li data-icon="fas fa-puzzle-piece"><i class="fas fa-puzzle-piece mr_10"></i><span>puzzle-piece</span></li>
+							<li data-icon="fab fa-python"><i class="fab fa-python mr_10"></i><span>python</span></li>
+							<li data-icon="fab fa-qq"><i class="fab fa-qq mr_10"></i><span>qq</span></li>
+							<li data-icon="fas fa-qrcode"><i class="fas fa-qrcode mr_10"></i><span>qrcode</span></li>
+							<li data-icon="fas fa-question"><i class="fas fa-question mr_10"></i><span>question</span></li>
+							<li data-icon="fas fa-question-circle"><i class="fas fa-question-circle mr_10"></i><span>question-circle</span></li>
+							<li data-icon="far fa-question-circle"><i class="far fa-question-circle mr_10"></i><span>question-circle</span></li>
+							<li data-icon="fas fa-quidditch"><i class="fas fa-quidditch mr_10"></i><span>quidditch</span></li>
+							<li data-icon="fab fa-quinscape"><i class="fab fa-quinscape mr_10"></i><span>quinscape</span></li>
+							<li data-icon="fab fa-quora"><i class="fab fa-quora mr_10"></i><span>quora</span></li>
+							<li data-icon="fas fa-quote-left"><i class="fas fa-quote-left mr_10"></i><span>quote-left</span></li>
+							<li data-icon="fas fa-quote-right"><i class="fas fa-quote-right mr_10"></i><span>quote-right</span></li>
+							<li data-icon="fas fa-random"><i class="fas fa-random mr_10"></i><span>random</span></li>
+							<li data-icon="fab fa-ravelry"><i class="fab fa-ravelry mr_10"></i><span>ravelry</span></li>
+							<li data-icon="fab fa-react"><i class="fab fa-react mr_10"></i><span>react</span></li>
+							<li data-icon="fab fa-readme"><i class="fab fa-readme mr_10"></i><span>readme</span></li>
+							<li data-icon="fab fa-rebel"><i class="fab fa-rebel mr_10"></i><span>rebel</span></li>
+							<li data-icon="fas fa-recycle"><i class="fas fa-recycle mr_10"></i><span>recycle</span></li>
+							<li data-icon="fab fa-red-river"><i class="fab fa-red-river mr_10"></i><span>red-river</span></li>
+							<li data-icon="fab fa-reddit"><i class="fab fa-reddit mr_10"></i><span>reddit</span></li>
+							<li data-icon="fab fa-reddit-alien"><i class="fab fa-reddit-alien mr_10"></i><span>reddit-alien</span></li>
+							<li data-icon="fab fa-reddit-square"><i class="fab fa-reddit-square mr_10"></i><span>reddit-square</span></li>
+							<li data-icon="fas fa-redo"><i class="fas fa-redo mr_10"></i><span>redo</span></li>
+							<li data-icon="fas fa-redo-alt"><i class="fas fa-redo-alt mr_10"></i><span>redo-alt</span></li>
+							<li data-icon="fas fa-registered"><i class="fas fa-registered mr_10"></i><span>registered</span></li>
+							<li data-icon="far fa-registered"><i class="far fa-registered mr_10"></i><span>registered</span></li>
+							<li data-icon="fab fa-rendact"><i class="fab fa-rendact mr_10"></i><span>rendact</span></li>
+							<li data-icon="fab fa-renren"><i class="fab fa-renren mr_10"></i><span>renren</span></li>
+							<li data-icon="fas fa-reply"><i class="fas fa-reply mr_10"></i><span>reply</span></li>
+							<li data-icon="fas fa-reply-all"><i class="fas fa-reply-all mr_10"></i><span>reply-all</span></li>
+							<li data-icon="fab fa-replyd"><i class="fab fa-replyd mr_10"></i><span>replyd</span></li>
+							<li data-icon="fab fa-resolving"><i class="fab fa-resolving mr_10"></i><span>resolving</span></li>
+							<li data-icon="fas fa-retweet"><i class="fas fa-retweet mr_10"></i><span>retweet</span></li>
+							<li data-icon="fas fa-ribbon"><i class="fas fa-ribbon mr_10"></i><span>ribbon</span></li>
+							<li data-icon="fas fa-road"><i class="fas fa-road mr_10"></i><span>road</span></li>
+							<li data-icon="fas fa-rocket"><i class="fas fa-rocket mr_10"></i><span>rocket</span></li>
+							<li data-icon="fab fa-rocketchat"><i class="fab fa-rocketchat mr_10"></i><span>rocketchat</span></li>
+							<li data-icon="fab fa-rockrms"><i class="fab fa-rockrms mr_10"></i><span>rockrms</span></li>
+							<li data-icon="fas fa-rss"><i class="fas fa-rss mr_10"></i><span>rss</span></li>
+							<li data-icon="fas fa-rss-square"><i class="fas fa-rss-square mr_10"></i><span>rss-square</span></li>
+							<li data-icon="fas fa-ruble-sign"><i class="fas fa-ruble-sign mr_10"></i><span>ruble-sign</span></li>
+							<li data-icon="fas fa-rupee-sign"><i class="fas fa-rupee-sign mr_10"></i><span>rupee-sign</span></li>
+							<li data-icon="fab fa-safari"><i class="fab fa-safari mr_10"></i><span>safari</span></li>
+							<li data-icon="fab fa-sass"><i class="fab fa-sass mr_10"></i><span>sass</span></li>
+							<li data-icon="fas fa-save"><i class="fas fa-save mr_10"></i><span>save</span></li>
+							<li data-icon="far fa-save"><i class="far fa-save mr_10"></i><span>save</span></li>
+							<li data-icon="fab fa-schlix"><i class="fab fa-schlix mr_10"></i><span>schlix</span></li>
+							<li data-icon="fab fa-scribd"><i class="fab fa-scribd mr_10"></i><span>scribd</span></li>
+							<li data-icon="fas fa-search"><i class="fas fa-search mr_10"></i><span>search</span></li>
+							<li data-icon="fas fa-search-minus"><i class="fas fa-search-minus mr_10"></i><span>search-minus</span></li>
+							<li data-icon="fas fa-search-plus"><i class="fas fa-search-plus mr_10"></i><span>search-plus</span></li>
+							<li data-icon="fab fa-searchengin"><i class="fab fa-searchengin mr_10"></i><span>searchengin</span></li>
+							<li data-icon="fas fa-seedling"><i class="fas fa-seedling mr_10"></i><span>seedling</span></li>
+							<li data-icon="fab fa-sellcast"><i class="fab fa-sellcast mr_10"></i><span>sellcast</span></li>
+							<li data-icon="fab fa-sellsy"><i class="fab fa-sellsy mr_10"></i><span>sellsy</span></li>
+							<li data-icon="fas fa-server"><i class="fas fa-server mr_10"></i><span>server</span></li>
+							<li data-icon="fab fa-servicestack"><i class="fab fa-servicestack mr_10"></i><span>servicestack</span></li>
+							<li data-icon="fas fa-share"><i class="fas fa-share mr_10"></i><span>share</span></li>
+							<li data-icon="fas fa-share-alt"><i class="fas fa-share-alt mr_10"></i><span>share-alt</span></li>
+							<li data-icon="fas fa-share-alt-square"><i class="fas fa-share-alt-square mr_10"></i><span>share-alt-square</span></li>
+							<li data-icon="fas fa-share-square"><i class="fas fa-share-square mr_10"></i><span>share-square</span></li>
+							<li data-icon="far fa-share-square"><i class="far fa-share-square mr_10"></i><span>share-square</span></li>
+							<li data-icon="fas fa-shekel-sign"><i class="fas fa-shekel-sign mr_10"></i><span>shekel-sign</span></li>
+							<li data-icon="fas fa-shield-alt"><i class="fas fa-shield-alt mr_10"></i><span>shield-alt</span></li>
+							<li data-icon="fas fa-ship"><i class="fas fa-ship mr_10"></i><span>ship</span></li>
+							<li data-icon="fas fa-shipping-fast"><i class="fas fa-shipping-fast mr_10"></i><span>shipping-fast</span></li>
+							<li data-icon="fab fa-shirtsinbulk"><i class="fab fa-shirtsinbulk mr_10"></i><span>shirtsinbulk</span></li>
+							<li data-icon="fas fa-shopping-bag"><i class="fas fa-shopping-bag mr_10"></i><span>shopping-bag</span></li>
+							<li data-icon="fas fa-shopping-basket"><i class="fas fa-shopping-basket mr_10"></i><span>shopping-basket</span></li>
+							<li data-icon="fas fa-shopping-cart"><i class="fas fa-shopping-cart mr_10"></i><span>shopping-cart</span></li>
+							<li data-icon="fas fa-shower"><i class="fas fa-shower mr_10"></i><span>shower</span></li>
+							<li data-icon="fas fa-sign"><i class="fas fa-sign mr_10"></i><span>sign</span></li>
+							<li data-icon="fas fa-sign-in-alt"><i class="fas fa-sign-in-alt mr_10"></i><span>sign-in-alt</span></li>
+							<li data-icon="fas fa-sign-language"><i class="fas fa-sign-language mr_10"></i><span>sign-language</span></li>
+							<li data-icon="fas fa-sign-out-alt"><i class="fas fa-sign-out-alt mr_10"></i><span>sign-out-alt</span></li>
+							<li data-icon="fas fa-signal"><i class="fas fa-signal mr_10"></i><span>signal</span></li>
+							<li data-icon="fab fa-simplybuilt"><i class="fab fa-simplybuilt mr_10"></i><span>simplybuilt</span></li>
+							<li data-icon="fab fa-sistrix"><i class="fab fa-sistrix mr_10"></i><span>sistrix</span></li>
+							<li data-icon="fas fa-sitemap"><i class="fas fa-sitemap mr_10"></i><span>sitemap</span></li>
+							<li data-icon="fab fa-skyatlas"><i class="fab fa-skyatlas mr_10"></i><span>skyatlas</span></li>
+							<li data-icon="fab fa-skype"><i class="fab fa-skype mr_10"></i><span>skype</span></li>
+							<li data-icon="fab fa-slack"><i class="fab fa-slack mr_10"></i><span>slack</span></li>
+							<li data-icon="fab fa-slack-hash"><i class="fab fa-slack-hash mr_10"></i><span>slack-hash</span></li>
+							<li data-icon="fas fa-sliders-h"><i class="fas fa-sliders-h mr_10"></i><span>sliders-h</span></li>
+							<li data-icon="fab fa-slideshare"><i class="fab fa-slideshare mr_10"></i><span>slideshare</span></li>
+							<li data-icon="fas fa-smile"><i class="fas fa-smile mr_10"></i><span>smile</span></li>
+							<li data-icon="far fa-smile"><i class="far fa-smile mr_10"></i><span>smile</span></li>
+							<li data-icon="fas fa-smoking"><i class="fas fa-smoking mr_10"></i><span>smoking</span></li>
+							<li data-icon="fab fa-snapchat"><i class="fab fa-snapchat mr_10"></i><span>snapchat</span></li>
+							<li data-icon="fab fa-snapchat-ghost"><i class="fab fa-snapchat-ghost mr_10"></i><span>snapchat-ghost</span></li>
+							<li data-icon="fab fa-snapchat-square"><i class="fab fa-snapchat-square mr_10"></i><span>snapchat-square</span></li>
+							<li data-icon="fas fa-snowflake"><i class="fas fa-snowflake mr_10"></i><span>snowflake</span></li>
+							<li data-icon="far fa-snowflake"><i class="far fa-snowflake mr_10"></i><span>snowflake</span></li>
+							<li data-icon="fas fa-sort"><i class="fas fa-sort mr_10"></i><span>sort</span></li>
+							<li data-icon="fas fa-sort-alpha-down"><i class="fas fa-sort-alpha-down mr_10"></i><span>sort-alpha-down</span></li>
+							<li data-icon="fas fa-sort-alpha-up"><i class="fas fa-sort-alpha-up mr_10"></i><span>sort-alpha-up</span></li>
+							<li data-icon="fas fa-sort-amount-down"><i class="fas fa-sort-amount-down mr_10"></i><span>sort-amount-down</span></li>
+							<li data-icon="fas fa-sort-amount-up"><i class="fas fa-sort-amount-up mr_10"></i><span>sort-amount-up</span></li>
+							<li data-icon="fas fa-sort-down"><i class="fas fa-sort-down mr_10"></i><span>sort-down</span></li>
+							<li data-icon="fas fa-sort-numeric-down"><i class="fas fa-sort-numeric-down mr_10"></i><span>sort-numeric-down</span></li>
+							<li data-icon="fas fa-sort-numeric-up"><i class="fas fa-sort-numeric-up mr_10"></i><span>sort-numeric-up</span></li>
+							<li data-icon="fas fa-sort-up"><i class="fas fa-sort-up mr_10"></i><span>sort-up</span></li>
+							<li data-icon="fab fa-soundcloud"><i class="fab fa-soundcloud mr_10"></i><span>soundcloud</span></li>
+							<li data-icon="fas fa-space-shuttle"><i class="fas fa-space-shuttle mr_10"></i><span>space-shuttle</span></li>
+							<li data-icon="fab fa-speakap"><i class="fab fa-speakap mr_10"></i><span>speakap</span></li>
+							<li data-icon="fas fa-spinner"><i class="fas fa-spinner mr_10"></i><span>spinner</span></li>
+							<li data-icon="fab fa-spotify"><i class="fab fa-spotify mr_10"></i><span>spotify</span></li>
+							<li data-icon="fas fa-square"><i class="fas fa-square mr_10"></i><span>square</span></li>
+							<li data-icon="far fa-square"><i class="far fa-square mr_10"></i><span>square</span></li>
+							<li data-icon="fas fa-square-full"><i class="fas fa-square-full mr_10"></i><span>square-full</span></li>
+							<li data-icon="fab fa-stack-exchange"><i class="fab fa-stack-exchange mr_10"></i><span>stack-exchange</span></li>
+							<li data-icon="fab fa-stack-overflow"><i class="fab fa-stack-overflow mr_10"></i><span>stack-overflow</span></li>
+							<li data-icon="fas fa-star"><i class="fas fa-star mr_10"></i><span>star</span></li>
+							<li data-icon="far fa-star"><i class="far fa-star mr_10"></i><span>star</span></li>
+							<li data-icon="fas fa-star-half"><i class="fas fa-star-half mr_10"></i><span>star-half</span></li>
+							<li data-icon="far fa-star-half"><i class="far fa-star-half mr_10"></i><span>star-half</span></li>
+							<li data-icon="fab fa-staylinked"><i class="fab fa-staylinked mr_10"></i><span>staylinked</span></li>
+							<li data-icon="fab fa-steam"><i class="fab fa-steam mr_10"></i><span>steam</span></li>
+							<li data-icon="fab fa-steam-square"><i class="fab fa-steam-square mr_10"></i><span>steam-square</span></li>
+							<li data-icon="fab fa-steam-symbol"><i class="fab fa-steam-symbol mr_10"></i><span>steam-symbol</span></li>
+							<li data-icon="fas fa-step-backward"><i class="fas fa-step-backward mr_10"></i><span>step-backward</span></li>
+							<li data-icon="fas fa-step-forward"><i class="fas fa-step-forward mr_10"></i><span>step-forward</span></li>
+							<li data-icon="fas fa-stethoscope"><i class="fas fa-stethoscope mr_10"></i><span>stethoscope</span></li>
+							<li data-icon="fab fa-sticker-mule"><i class="fab fa-sticker-mule mr_10"></i><span>sticker-mule</span></li>
+							<li data-icon="fas fa-sticky-note"><i class="fas fa-sticky-note mr_10"></i><span>sticky-note</span></li>
+							<li data-icon="far fa-sticky-note"><i class="far fa-sticky-note mr_10"></i><span>sticky-note</span></li>
+							<li data-icon="fas fa-stop"><i class="fas fa-stop mr_10"></i><span>stop</span></li>
+							<li data-icon="fas fa-stop-circle"><i class="fas fa-stop-circle mr_10"></i><span>stop-circle</span></li>
+							<li data-icon="far fa-stop-circle"><i class="far fa-stop-circle mr_10"></i><span>stop-circle</span></li>
+							<li data-icon="fas fa-stopwatch"><i class="fas fa-stopwatch mr_10"></i><span>stopwatch</span></li>
+							<li data-icon="fab fa-strava"><i class="fab fa-strava mr_10"></i><span>strava</span></li>
+							<li data-icon="fas fa-street-view"><i class="fas fa-street-view mr_10"></i><span>street-view</span></li>
+							<li data-icon="fas fa-strikethrough"><i class="fas fa-strikethrough mr_10"></i><span>strikethrough</span></li>
+							<li data-icon="fab fa-stripe"><i class="fab fa-stripe mr_10"></i><span>stripe</span></li>
+							<li data-icon="fab fa-stripe-s"><i class="fab fa-stripe-s mr_10"></i><span>stripe-s</span></li>
+							<li data-icon="fab fa-studiovinari"><i class="fab fa-studiovinari mr_10"></i><span>studiovinari</span></li>
+							<li data-icon="fab fa-stumbleupon"><i class="fab fa-stumbleupon mr_10"></i><span>stumbleupon</span></li>
+							<li data-icon="fab fa-stumbleupon-circle"><i class="fab fa-stumbleupon-circle mr_10"></i><span>stumbleupon-circle</span></li>
+							<li data-icon="fas fa-subscript"><i class="fas fa-subscript mr_10"></i><span>subscript</span></li>
+							<li data-icon="fas fa-subway"><i class="fas fa-subway mr_10"></i><span>subway</span></li>
+							<li data-icon="fas fa-suitcase"><i class="fas fa-suitcase mr_10"></i><span>suitcase</span></li>
+							<li data-icon="fas fa-sun"><i class="fas fa-sun mr_10"></i><span>sun</span></li>
+							<li data-icon="far fa-sun"><i class="far fa-sun mr_10"></i><span>sun</span></li>
+							<li data-icon="fab fa-superpowers"><i class="fab fa-superpowers mr_10"></i><span>superpowers</span></li>
+							<li data-icon="fas fa-superscript"><i class="fas fa-superscript mr_10"></i><span>superscript</span></li>
+							<li data-icon="fab fa-supple"><i class="fab fa-supple mr_10"></i><span>supple</span></li>
+							<li data-icon="fas fa-sync"><i class="fas fa-sync mr_10"></i><span>sync</span></li>
+							<li data-icon="fas fa-sync-alt"><i class="fas fa-sync-alt mr_10"></i><span>sync-alt</span></li>
+							<li data-icon="fas fa-syringe"><i class="fas fa-syringe mr_10"></i><span>syringe</span></li>
+							<li data-icon="fas fa-table"><i class="fas fa-table mr_10"></i><span>table</span></li>
+							<li data-icon="fas fa-table-tennis"><i class="fas fa-table-tennis mr_10"></i><span>table-tennis</span></li>
+							<li data-icon="fas fa-tablet"><i class="fas fa-tablet mr_10"></i><span>tablet</span></li>
+							<li data-icon="fas fa-tablet-alt"><i class="fas fa-tablet-alt mr_10"></i><span>tablet-alt</span></li>
+							<li data-icon="fas fa-tablets"><i class="fas fa-tablets mr_10"></i><span>tablets</span></li>
+							<li data-icon="fas fa-tachometer-alt"><i class="fas fa-tachometer-alt mr_10"></i><span>tachometer-alt</span></li>
+							<li data-icon="fas fa-tag"><i class="fas fa-tag mr_10"></i><span>tag</span></li>
+							<li data-icon="fas fa-tags"><i class="fas fa-tags mr_10"></i><span>tags</span></li>
+							<li data-icon="fas fa-tape"><i class="fas fa-tape mr_10"></i><span>tape</span></li>
+							<li data-icon="fas fa-tasks"><i class="fas fa-tasks mr_10"></i><span>tasks</span></li>
+							<li data-icon="fas fa-taxi"><i class="fas fa-taxi mr_10"></i><span>taxi</span></li>
+							<li data-icon="fab fa-telegram"><i class="fab fa-telegram mr_10"></i><span>telegram</span></li>
+							<li data-icon="fab fa-telegram-plane"><i class="fab fa-telegram-plane mr_10"></i><span>telegram-plane</span></li>
+							<li data-icon="fab fa-tencent-weibo"><i class="fab fa-tencent-weibo mr_10"></i><span>tencent-weibo</span></li>
+							<li data-icon="fas fa-terminal"><i class="fas fa-terminal mr_10"></i><span>terminal</span></li>
+							<li data-icon="fas fa-text-height"><i class="fas fa-text-height mr_10"></i><span>text-height</span></li>
+							<li data-icon="fas fa-text-width"><i class="fas fa-text-width mr_10"></i><span>text-width</span></li>
+							<li data-icon="fas fa-th"><i class="fas fa-th mr_10"></i><span>th</span></li>
+							<li data-icon="fas fa-th-large"><i class="fas fa-th-large mr_10"></i><span>th-large</span></li>
+							<li data-icon="fas fa-th-list"><i class="fas fa-th-list mr_10"></i><span>th-list</span></li>
+							<li data-icon="fab fa-themeisle"><i class="fab fa-themeisle mr_10"></i><span>themeisle</span></li>
+							<li data-icon="fas fa-thermometer"><i class="fas fa-thermometer mr_10"></i><span>thermometer</span></li>
+							<li data-icon="fas fa-thermometer-empty"><i class="fas fa-thermometer-empty mr_10"></i><span>thermometer-empty</span></li>
+							<li data-icon="fas fa-thermometer-full"><i class="fas fa-thermometer-full mr_10"></i><span>thermometer-full</span></li>
+							<li data-icon="fas fa-thermometer-half"><i class="fas fa-thermometer-half mr_10"></i><span>thermometer-half</span></li>
+							<li data-icon="fas fa-thermometer-quarter"><i class="fas fa-thermometer-quarter mr_10"></i><span>thermometer-quarter</span></li>
+							<li data-icon="fas fa-thermometer-three-quarters"><i class="fas fa-thermometer-three-quarters mr_10"></i><span>thermometer-three-quarters</span></li>
+							<li data-icon="fas fa-thumbs-down"><i class="fas fa-thumbs-down mr_10"></i><span>thumbs-down</span></li>
+							<li data-icon="far fa-thumbs-down"><i class="far fa-thumbs-down mr_10"></i><span>thumbs-down</span></li>
+							<li data-icon="fas fa-thumbs-up"><i class="fas fa-thumbs-up mr_10"></i><span>thumbs-up</span></li>
+							<li data-icon="far fa-thumbs-up"><i class="far fa-thumbs-up mr_10"></i><span>thumbs-up</span></li>
+							<li data-icon="fas fa-thumbtack"><i class="fas fa-thumbtack mr_10"></i><span>thumbtack</span></li>
+							<li data-icon="fas fa-ticket-alt"><i class="fas fa-ticket-alt mr_10"></i><span>ticket-alt</span></li>
+							<li data-icon="fas fa-times"><i class="fas fa-times mr_10"></i><span>times</span></li>
+							<li data-icon="fas fa-times-circle"><i class="fas fa-times-circle mr_10"></i><span>times-circle</span></li>
+							<li data-icon="far fa-times-circle"><i class="far fa-times-circle mr_10"></i><span>times-circle</span></li>
+							<li data-icon="fas fa-tint"><i class="fas fa-tint mr_10"></i><span>tint</span></li>
+							<li data-icon="fas fa-toggle-off"><i class="fas fa-toggle-off mr_10"></i><span>toggle-off</span></li>
+							<li data-icon="fas fa-toggle-on"><i class="fas fa-toggle-on mr_10"></i><span>toggle-on</span></li>
+							<li data-icon="fas fa-trademark"><i class="fas fa-trademark mr_10"></i><span>trademark</span></li>
+							<li data-icon="fas fa-train"><i class="fas fa-train mr_10"></i><span>train</span></li>
+							<li data-icon="fas fa-transgender"><i class="fas fa-transgender mr_10"></i><span>transgender</span></li>
+							<li data-icon="fas fa-transgender-alt"><i class="fas fa-transgender-alt mr_10"></i><span>transgender-alt</span></li>
+							<li data-icon="fas fa-trash"><i class="fas fa-trash mr_10"></i><span>trash</span></li>
+							<li data-icon="fas fa-trash-alt"><i class="fas fa-trash-alt mr_10"></i><span>trash-alt</span></li>
+							<li data-icon="far fa-trash-alt"><i class="far fa-trash-alt mr_10"></i><span>trash-alt</span></li>
+							<li data-icon="fas fa-tree"><i class="fas fa-tree mr_10"></i><span>tree</span></li>
+							<li data-icon="fab fa-trello"><i class="fab fa-trello mr_10"></i><span>trello</span></li>
+							<li data-icon="fab fa-tripadvisor"><i class="fab fa-tripadvisor mr_10"></i><span>tripadvisor</span></li>
+							<li data-icon="fas fa-trophy"><i class="fas fa-trophy mr_10"></i><span>trophy</span></li>
+							<li data-icon="fas fa-truck"><i class="fas fa-truck mr_10"></i><span>truck</span></li>
+							<li data-icon="fas fa-truck-loading"><i class="fas fa-truck-loading mr_10"></i><span>truck-loading</span></li>
+							<li data-icon="fas fa-truck-moving"><i class="fas fa-truck-moving mr_10"></i><span>truck-moving</span></li>
+							<li data-icon="fas fa-tty"><i class="fas fa-tty mr_10"></i><span>tty</span></li>
+							<li data-icon="fab fa-tumblr"><i class="fab fa-tumblr mr_10"></i><span>tumblr</span></li>
+							<li data-icon="fab fa-tumblr-square"><i class="fab fa-tumblr-square mr_10"></i><span>tumblr-square</span></li>
+							<li data-icon="fas fa-tv"><i class="fas fa-tv mr_10"></i><span>tv</span></li>
+							<li data-icon="fab fa-twitch"><i class="fab fa-twitch mr_10"></i><span>twitch</span></li>
+							<li data-icon="fab fa-twitter"><i class="fab fa-twitter mr_10"></i><span>twitter</span></li>
+							<li data-icon="fab fa-twitter-square"><i class="fab fa-twitter-square mr_10"></i><span>twitter-square</span></li>
+							<li data-icon="fab fa-typo3"><i class="fab fa-typo3 mr_10"></i><span>typo3</span></li>
+							<li data-icon="fab fa-uber"><i class="fab fa-uber mr_10"></i><span>uber</span></li>
+							<li data-icon="fab fa-uikit"><i class="fab fa-uikit mr_10"></i><span>uikit</span></li>
+							<li data-icon="fas fa-umbrella"><i class="fas fa-umbrella mr_10"></i><span>umbrella</span></li>
+							<li data-icon="fas fa-underline"><i class="fas fa-underline mr_10"></i><span>underline</span></li>
+							<li data-icon="fas fa-undo"><i class="fas fa-undo mr_10"></i><span>undo</span></li>
+							<li data-icon="fas fa-undo-alt"><i class="fas fa-undo-alt mr_10"></i><span>undo-alt</span></li>
+							<li data-icon="fab fa-uniregistry"><i class="fab fa-uniregistry mr_10"></i><span>uniregistry</span></li>
+							<li data-icon="fas fa-universal-access"><i class="fas fa-universal-access mr_10"></i><span>universal-access</span></li>
+							<li data-icon="fas fa-university"><i class="fas fa-university mr_10"></i><span>university</span></li>
+							<li data-icon="fas fa-unlink"><i class="fas fa-unlink mr_10"></i><span>unlink</span></li>
+							<li data-icon="fas fa-unlock"><i class="fas fa-unlock mr_10"></i><span>unlock</span></li>
+							<li data-icon="fas fa-unlock-alt"><i class="fas fa-unlock-alt mr_10"></i><span>unlock-alt</span></li>
+							<li data-icon="fab fa-untappd"><i class="fab fa-untappd mr_10"></i><span>untappd</span></li>
+							<li data-icon="fas fa-upload"><i class="fas fa-upload mr_10"></i><span>upload</span></li>
+							<li data-icon="fab fa-usb"><i class="fab fa-usb mr_10"></i><span>usb</span></li>
+							<li data-icon="fas fa-user"><i class="fas fa-user mr_10"></i><span>user</span></li>
+							<li data-icon="far fa-user"><i class="far fa-user mr_10"></i><span>user</span></li>
+							<li data-icon="fas fa-user-circle"><i class="fas fa-user-circle mr_10"></i><span>user-circle</span></li>
+							<li data-icon="far fa-user-circle"><i class="far fa-user-circle mr_10"></i><span>user-circle</span></li>
+							<li data-icon="fas fa-user-md"><i class="fas fa-user-md mr_10"></i><span>user-md</span></li>
+							<li data-icon="fas fa-user-plus"><i class="fas fa-user-plus mr_10"></i><span>user-plus</span></li>
+							<li data-icon="fas fa-user-secret"><i class="fas fa-user-secret mr_10"></i><span>user-secret</span></li>
+							<li data-icon="fas fa-user-times"><i class="fas fa-user-times mr_10"></i><span>user-times</span></li>
+							<li data-icon="fas fa-users"><i class="fas fa-users mr_10"></i><span>users</span></li>
+							<li data-icon="fab fa-ussunnah"><i class="fab fa-ussunnah mr_10"></i><span>ussunnah</span></li>
+							<li data-icon="fas fa-utensil-spoon"><i class="fas fa-utensil-spoon mr_10"></i><span>utensil-spoon</span></li>
+							<li data-icon="fas fa-utensils"><i class="fas fa-utensils mr_10"></i><span>utensils</span></li>
+							<li data-icon="fab fa-vaadin"><i class="fab fa-vaadin mr_10"></i><span>vaadin</span></li>
+							<li data-icon="fas fa-venus"><i class="fas fa-venus mr_10"></i><span>venus</span></li>
+							<li data-icon="fas fa-venus-double"><i class="fas fa-venus-double mr_10"></i><span>venus-double</span></li>
+							<li data-icon="fas fa-venus-mars"><i class="fas fa-venus-mars mr_10"></i><span>venus-mars</span></li>
+							<li data-icon="fab fa-viacoin"><i class="fab fa-viacoin mr_10"></i><span>viacoin</span></li>
+							<li data-icon="fab fa-viadeo"><i class="fab fa-viadeo mr_10"></i><span>viadeo</span></li>
+							<li data-icon="fab fa-viadeo-square"><i class="fab fa-viadeo-square mr_10"></i><span>viadeo-square</span></li>
+							<li data-icon="fas fa-vial"><i class="fas fa-vial mr_10"></i><span>vial</span></li>
+							<li data-icon="fas fa-vials"><i class="fas fa-vials mr_10"></i><span>vials</span></li>
+							<li data-icon="fab fa-viber"><i class="fab fa-viber mr_10"></i><span>viber</span></li>
+							<li data-icon="fas fa-video"><i class="fas fa-video mr_10"></i><span>video</span></li>
+							<li data-icon="fas fa-video-slash"><i class="fas fa-video-slash mr_10"></i><span>video-slash</span></li>
+							<li data-icon="fab fa-vimeo"><i class="fab fa-vimeo mr_10"></i><span>vimeo</span></li>
+							<li data-icon="fab fa-vimeo-square"><i class="fab fa-vimeo-square mr_10"></i><span>vimeo-square</span></li>
+							<li data-icon="fab fa-vimeo-v"><i class="fab fa-vimeo-v mr_10"></i><span>vimeo-v</span></li>
+							<li data-icon="fab fa-vine"><i class="fab fa-vine mr_10"></i><span>vine</span></li>
+							<li data-icon="fab fa-vk"><i class="fab fa-vk mr_10"></i><span>vk</span></li>
+							<li data-icon="fab fa-vnv"><i class="fab fa-vnv mr_10"></i><span>vnv</span></li>
+							<li data-icon="fas fa-volleyball-ball"><i class="fas fa-volleyball-ball mr_10"></i><span>volleyball-ball</span></li>
+							<li data-icon="fas fa-volume-down"><i class="fas fa-volume-down mr_10"></i><span>volume-down</span></li>
+							<li data-icon="fas fa-volume-off"><i class="fas fa-volume-off mr_10"></i><span>volume-off</span></li>
+							<li data-icon="fas fa-volume-up"><i class="fas fa-volume-up mr_10"></i><span>volume-up</span></li>
+							<li data-icon="fab fa-vuejs"><i class="fab fa-vuejs mr_10"></i><span>vuejs</span></li>
+							<li data-icon="fas fa-warehouse"><i class="fas fa-warehouse mr_10"></i><span>warehouse</span></li>
+							<li data-icon="fab fa-weibo"><i class="fab fa-weibo mr_10"></i><span>weibo</span></li>
+							<li data-icon="fas fa-weight"><i class="fas fa-weight mr_10"></i><span>weight</span></li>
+							<li data-icon="fab fa-weixin"><i class="fab fa-weixin mr_10"></i><span>weixin</span></li>
+							<li data-icon="fab fa-whatsapp"><i class="fab fa-whatsapp mr_10"></i><span>whatsapp</span></li>
+							<li data-icon="fab fa-whatsapp-square"><i class="fab fa-whatsapp-square mr_10"></i><span>whatsapp-square</span></li>
+							<li data-icon="fas fa-wheelchair"><i class="fas fa-wheelchair mr_10"></i><span>wheelchair</span></li>
+							<li data-icon="fab fa-whmcs"><i class="fab fa-whmcs mr_10"></i><span>whmcs</span></li>
+							<li data-icon="fas fa-wifi"><i class="fas fa-wifi mr_10"></i><span>wifi</span></li>
+							<li data-icon="fab fa-wikipedia-w"><i class="fab fa-wikipedia-w mr_10"></i><span>wikipedia-w</span></li>
+							<li data-icon="fas fa-window-close"><i class="fas fa-window-close mr_10"></i><span>window-close</span></li>
+							<li data-icon="far fa-window-close"><i class="far fa-window-close mr_10"></i><span>window-close</span></li>
+							<li data-icon="fas fa-window-maximize"><i class="fas fa-window-maximize mr_10"></i><span>window-maximize</span></li>
+							<li data-icon="far fa-window-maximize"><i class="far fa-window-maximize mr_10"></i><span>window-maximize</span></li>
+							<li data-icon="fas fa-window-minimize"><i class="fas fa-window-minimize mr_10"></i><span>window-minimize</span></li>
+							<li data-icon="far fa-window-minimize"><i class="far fa-window-minimize mr_10"></i><span>window-minimize</span></li>
+							<li data-icon="fas fa-window-restore"><i class="fas fa-window-restore mr_10"></i><span>window-restore</span></li>
+							<li data-icon="far fa-window-restore"><i class="far fa-window-restore mr_10"></i><span>window-restore</span></li>
+							<li data-icon="fab fa-windows"><i class="fab fa-windows mr_10"></i><span>windows</span></li>
+							<li data-icon="fas fa-wine-glass"><i class="fas fa-wine-glass mr_10"></i><span>wine-glass</span></li>
+							<li data-icon="fas fa-won-sign"><i class="fas fa-won-sign mr_10"></i><span>won-sign</span></li>
+							<li data-icon="fab fa-wordpress"><i class="fab fa-wordpress mr_10"></i><span>wordpress</span></li>
+							<li data-icon="fab fa-wordpress-simple"><i class="fab fa-wordpress-simple mr_10"></i><span>wordpress-simple</span></li>
+							<li data-icon="fab fa-wpbeginner"><i class="fab fa-wpbeginner mr_10"></i><span>wpbeginner</span></li>
+							<li data-icon="fab fa-wpexplorer"><i class="fab fa-wpexplorer mr_10"></i><span>wpexplorer</span></li>
+							<li data-icon="fab fa-wpforms"><i class="fab fa-wpforms mr_10"></i><span>wpforms</span></li>
+							<li data-icon="fas fa-wrench"><i class="fas fa-wrench mr_10"></i><span>wrench</span></li>
+							<li data-icon="fas fa-x-ray"><i class="fas fa-x-ray mr_10"></i><span>x-ray</span></li>
+							<li data-icon="fab fa-xbox"><i class="fab fa-xbox mr_10"></i><span>xbox</span></li>
+							<li data-icon="fab fa-xing"><i class="fab fa-xing mr_10"></i><span>xing</span></li>
+							<li data-icon="fab fa-xing-square"><i class="fab fa-xing-square mr_10"></i><span>xing-square</span></li>
+							<li data-icon="fab fa-y-combinator"><i class="fab fa-y-combinator mr_10"></i><span>y-combinator</span></li>
+							<li data-icon="fab fa-yahoo"><i class="fab fa-yahoo mr_10"></i><span>yahoo</span></li>
+							<li data-icon="fab fa-yandex"><i class="fab fa-yandex mr_10"></i><span>yandex</span></li>
+							<li data-icon="fab fa-yandex-international"><i class="fab fa-yandex-international mr_10"></i><span>yandex-international</span></li>
+							<li data-icon="fab fa-yelp"><i class="fab fa-yelp mr_10"></i><span>yelp</span></li>
+							<li data-icon="fas fa-yen-sign"><i class="fas fa-yen-sign mr_10"></i><span>yen-sign</span></li>
+							<li data-icon="fab fa-yoast"><i class="fab fa-yoast mr_10"></i><span>yoast</span></li>
+							<li data-icon="fab fa-youtube"><i class="fab fa-youtube mr_10"></i><span>youtube</span></li>
+							<li data-icon="fab fa-youtube-square"><i class="fab fa-youtube-square mr_10"></i><span>youtube-square</span></li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btnui3 add-ficon" data-dismiss="modal" >Add Icon</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Row End --> 
+</div>
+</section>
+
+	<!-- Script -->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js" type="text/javascript"></script> 
+
+		<!-- Popper JS -->
+	<script src="js/popper.min.js" type="text/javascript"></script>
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!-- Custom Script -->
+	<script type="text/javascript" src="js/custom.js"></script>
+
+
+	<script>
+		jQuery(document).on("click", ".openFaModal", function() {
+			jQuery('.add-ficon').data('ticon', jQuery(this).data('ftarget'));
+		});
+
+		// Search Icon
+		jQuery("#searchFaIcons").on("keyup", function() {
+			var searchIcon = jQuery(this).val();
+			var icon = searchIcon.toLowerCase().trim();
+			if (icon.length >= 3) {
+				jQuery(".fonticon-listing li").filter(function() {
+					jQuery(this).toggle(jQuery(this).text().toLowerCase().indexOf(icon) > -1);
+				});
+			} else {
+				jQuery(".fonticon-listing li").show();
+			}
+		});
+
+		// Select Icon
+		jQuery(".fonticon-listing li").on('click', function(){
+			jQuery(this).siblings().removeClass('text-primary');
+			jQuery(this).addClass('text-primary');
+			jQuery(".add-ficon").data('icon',jQuery(this).data('icon'));
+		});
+
+		// Add Icon
+		jQuery('.add-ficon').on('click', function(){
+			jQuery("#searchFaIcons").val('');
+			jQuery(".fonticon-listing li").show().removeClass('text-primary');
+			jQuery('#'+jQuery(this).data('ticon')).html('<i class="'+jQuery(this).data('icon')+'"></i>');
+			jQuery('#'+jQuery(this).data('ticon')).siblings('input').val(jQuery(this).data('icon'));
+		});
+	</script>
+
+</body>
+</html>  
