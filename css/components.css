@@ -1336,6 +1336,19 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .fui1 .form-group label {
   margin-bottom: 5px;
 }
+.fui .form-group.otpGroup,
+.fui1 .form-group.otpGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fui .form-group.otpGroup input,
+.fui1 .form-group.otpGroup input {
+  margin: 0 5px;
+  padding: 0 0;
+  width: 30px;
+  text-align: center;
+}
 .fui .search-box,
 .fui1 .search-box {
   position: relative;

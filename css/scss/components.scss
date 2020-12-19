@@ -1517,6 +1517,18 @@ header {
         label {
             margin-bottom:5px;
         }
+
+        &.otpGroup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+                margin: 0 5px;
+                padding: 0 0;
+                width: 30px;
+                text-align: center;
+            }
+        }
     }
     
     .search-box {
