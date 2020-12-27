@@ -2190,6 +2190,70 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   z-index: -1;
 }
 
+.quiz-ui {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 30px;
+}
+.quiz-ui .qf-status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 11px;
+  text-align: right;
+}
+.quiz-ui .qf-group {
+  margin-bottom: 24px;
+}
+.quiz-ui .qf-question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.quiz-ui .qf-options {
+  margin-bottom: 10px;
+}
+.quiz-ui .qf-options label {
+  background: #f3f3f3;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0px;
+  padding: 10px 15px;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #f3f3f3;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.quiz-ui .qf-options label input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.quiz-ui .qf-options label:hover {
+  border: 1px solid #16c79a;
+  background: #fff;
+}
+.quiz-ui .qf-options label.active {
+  border: 1px solid #16c79a;
+  background: #16c79a;
+}
+.quiz-ui .qf-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.quiz-ui .qf-actions .btn {
+  height: 43px;
+  padding: 5px;
+  font-size: 14px;
+}
+
 /*Responsive*/
 @media all and (min-width: 787px) {
   .scrolled header {
