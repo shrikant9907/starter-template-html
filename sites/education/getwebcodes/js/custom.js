@@ -63,11 +63,11 @@ jQuery('document').ready(function(){
 
 
 	jQuery('.four_col_carosusel').slick({
-		infinite: false,
+		infinite: true,
 		autoplay: true,
 		autoSlide: true,
 		speed: 300,
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		responsive: [ 
 		{
