@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Free online tutorials and codes for students and beginners - getwebcodes.in</title>
+  <title>Listing</title>
 
   <!-- Required meta tags -->
   <meta charset="UTF-8">
@@ -94,73 +94,17 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-8">
                     <div class="card cui2 noshadow r_0 w-100 typography">
-                    <div class="card-body pri_30 pli_30 pbi_30">
-                        <h1 class='text-primary'>How to pass data from child to parent component in Angular 7/8/9?</h1>
+                    <div class="card-body pri_30 pri_30 pli_30 pbi_30">
+                        <h2 class='text-primary'>How to pass data from child to parent component in Angular 7/8/9?</h2>
                         <a href="#" class="d-inline-block w-100"><img class="card-img-top mb_20" src="https://picsum.photos/300/150" alt=""></a>
                         <div class="text-dark px_5 py_5 mb_10 f14 d-flex justify-content-between">
                             <span><i class="fa fa-tag mr_5" aria-hidden="true"></i> Angular</span> 
                             <span><i class="fa fa-calendar mr_5" aria-hidden="true"></i> 1 Dec 2020</span>
                         </div>
                         <div class="f16">
-                        <p>Angular uses the @Output() decorator and an EventEmitter property to share the information from the child component to the parent component.</p>
-                        <p>In the program, We will emit an event whenever some change happens in the child component. In the parent, we are going to bind an event handler that will accept the information or data from the child component.</p>
-                        <h3>Create parent and child components (Skip if already have components)</h3>    
-                        <p>Creating a component with the name parent and child.</p>
-                        <p><code>Parent component: ng g c parent</code></p>
-                        <p><code>Child component: ng g c child</code></p>
-                        
-                        <h4>The above commands will create new components inside app directory of your application.</h4>
-                        
-                        Use of @output() decorator and EventEmitter in child component
-                        Open the child.component.ts file of the child component.
-                        
-                        1. Import the Input
-                        import { Component, OnInit, Output, EventEmitter } from '@angular/core'; 
-                        
-                        <h5>2. Create a variable/property</h5>
-                        
-                        counts = 0;
-                        <pre>@Output() incrementCounter = new EventEmitter();</pre>
-                        
-                        3. Create a method/function with the name incrementCountsOnClick
-                        
-                        Inside the incrementCountsOnClick function. Increase the value of counts by 1.
-                        
-                        this.counts = this.counts + 1
-                        
-                        Then pass the increment value to the emitter.
-                        
-                        this.incrementCounter.emit(this.counts);
-                        
-                        Open the child.component.html file and add the following code.
-                        
-                        <button (click)="incrementCountsOnClick()">Click here</button>
-                        
-                        Now, When you will click on the click here button. It will call the incrementCountsOnClick function. Then it will increase the value of counts the variable by 1. Then emits the incremented value to incrementCounter the emitter.
-                        
-                        Using the event binding to accept the value from child emitter.
-                        Open the parent.component.ts file.
-                        
-                        Create a variable/property.
-                        
-                        countsValue = 0;
-                        
-                        Create a function/method.
-                        
-                        getCountsValue(counts) { this.countsValue = counts; }
-                        
-                        Open the parent.component.html file and add the child component
-                        
-                        <app-child (incrementCounter)="getCountsValue($event)"></app-child>
-                        
-                        Display the countsValue using following line
-                        
-                        <p>Counts = {{ countsValue }}</p>
-                        
-                        
-
+                        <p>Angular uses the @Output() decorator and an EventEmitter property to share the informationAngular uses the @Output() decorator and an EventEmitter property to share the information from the child component to the parent component...</p>
+                        <a class="btn btn-primary btnui3s w-100 text-white text_bold">Continue Reading <i class="ml_5 fas fa-angle-double-right"></i></a>
                         </div>
-                        <!-- <a class="btn btn-primary btn-sm  btnui1 w-100 text-white">View Code <i class="ml_5 fas fa-angle-double-right    "></i></a> -->
                     </div>
                 </div>                        
             </div>
