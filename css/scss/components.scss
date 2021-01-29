@@ -2520,6 +2520,21 @@ header {
         
 }
 
+.table-ui {
+    table.dataTable tbody tr {
+        background-color: transparent !important;
+    }
+
+    table.dataTable thead th, table.dataTable thead td,
+    table.dataTable tfoot th, table.dataTable tfoot td {
+        border:none;
+    }
+
+    &.table-ui1 {
+        
+    }
+}
+
 /*Responsive*/
 @media all and (min-width: 787px) {
 

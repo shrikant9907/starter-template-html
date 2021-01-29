@@ -2254,6 +2254,13 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   font-size: 14px;
 }
 
+.table-ui table.dataTable tbody tr {
+  background-color: transparent !important;
+}
+.table-ui table.dataTable thead th, .table-ui table.dataTable thead td,
+.table-ui table.dataTable tfoot th, .table-ui table.dataTable tfoot td {
+  border: none;
+}
 /*Responsive*/
 @media all and (min-width: 787px) {
   .scrolled header {
