@@ -2588,6 +2588,30 @@ header {
         float: right;
     }
 
+    &.table-ui1 {
+        color: #000;
+        font-size: 14px;
+        .dataTables_wrapper .dataTables_length,
+        .dataTables_wrapper .dataTables_filter {
+            select,
+            input {
+                border-radius: 8px;
+                padding: 5px 15px;
+                height: 45px;
+                border:2px solid rgba(0, 0, 0, 0.2);
+                font-size: inherit;
+            }
+
+            select {
+                margin-left: 10px;
+            }
+
+            input {
+                min-width: 300px;
+            }
+        }           
+    }
+
 }
 
 /*Responsive*/
