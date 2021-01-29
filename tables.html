@@ -22,10 +22,10 @@
  
 </head>
 <body>
-<section class="py_30 bg-light">
+<section class="py_30">
 <div class="container">
 	<div class="table-ui table-ui1">
-	<table id="example" class="" style="width:100%">
+	<table id="example" class="">
         <thead>
             <tr>
                 <th>Name</th>
@@ -530,7 +530,24 @@
 			jQuery('#example').DataTable({
 				// "searching": false,
 				// "paging":   false,
-				// "info":     false,
+                // "info":     false,
+                "pageLength": 10,
+                language: {
+                    paginate: {
+                        previous: '‹',
+                        next:     '›'
+                    },
+                    aria: {
+                        paginate: {
+                            previous: 'Previous',
+                            next:     'Next'
+                        }
+                    },
+                    "info": "Page: _PAGE_ / _PAGES_",
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search ....",
+                    "lengthMenu": "Rows Per Page _MENU_"
+                }
 			});
 		} );
 	</script>
