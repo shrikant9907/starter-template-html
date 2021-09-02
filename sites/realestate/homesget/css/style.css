@@ -1,0 +1,55 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-light-pink {
+  background-color: #fad5ad;
+}
+
+.btn-primary:hover,
+.btn-primary {
+  background-color: #008dd2;
+
+}
+
+.btn-primary:hover,
+.btn-primary,
+.heading_style.type2:before {
+  border-color: #008dd2;
+}
+
+.section-carousel.three-carousel .img-card h3,
+.section-cardicons .card .numbers, .section-cardlisting .card .numbers,
+.banner_section.bannerui2 .banner-heading, .banner-section.bannerui2 .banner-heading {
+  color: #008dd2; 
+}
+
+.section-cardicons .card .card-icon, .section-cardlisting .card .card-icon {
+  background-image: linear-gradient(210deg, #008dd2 0%, #fbbc0c 100%);
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+}
+
+.site-header .site-logo {
+  max-height: 60px;
+}
+.site-header .contact-info,
+.site-header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1;
+}
+
+.site-footer {
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+}
+
+.site-footer .site-logo {
+  filter: grayscale(1) invert(1);
+  max-height: 100px;
+}
