@@ -71,3 +71,14 @@ body {
   z-index: 9999999;
   font-size: 16px;
 }
+
+.slicksliderui .overlay {
+  max-width: 600px;
+  min-height: 250px;
+  max-height: 300px;
+  bottom: unset;  
+  z-index: 9;
+  left: calc(50% - 300px);
+  top: 100px;
+  position: absolute;
+}
