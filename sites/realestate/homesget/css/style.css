@@ -56,7 +56,7 @@ body {
 
 .floating-left.btn {
   position: fixed;
-  top: calc(50% - 30px);
+  top: calc(30% - 30px);
   left: -56px;
   text-align: center;
   -webkit-transform: rotate(
@@ -81,4 +81,8 @@ body {
   left: calc(50% - 300px);
   top: 100px;
   position: absolute;
+}
+
+.section-awards .card .overlay {
+  z-index: 0;
 }
