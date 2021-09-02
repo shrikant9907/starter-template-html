@@ -53,3 +53,21 @@ body {
   filter: grayscale(1) invert(1);
   max-height: 100px;
 }
+
+.floating-left.btn {
+  position: fixed;
+  top: calc(50% - 30px);
+  left: -56px;
+  text-align: center;
+  -webkit-transform: rotate(
+  -90deg
+  );
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(
+  -90deg
+  );
+  z-index: 9999999;
+  font-size: 16px;
+}
