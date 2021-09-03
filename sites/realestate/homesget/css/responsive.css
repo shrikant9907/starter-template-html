@@ -1,0 +1,39 @@
+@media all and (max-width: 1024px) {
+  .site-header .container-fluid.px_50 {
+    padding: 0 15px;
+  }
+
+  header .navbar.navbar-expand-lg {
+    height: 100%;
+  }
+
+  header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    padding: 10px !important;
+  }
+
+  .filter-items .card {
+    max-height: 170px;
+  }
+
+  .heading_style.f34 {
+    font-size: 28px;
+  }
+
+  .common-section-ui.pt_50,
+  .common-section-ui.pt_60 {
+    padding-top: 40px;
+  }
+
+  .common-section-ui.pb_50,
+  .common-section-ui.pb_60 {
+    padding-bottom: 40px;
+  }
+
+  .card.cui1c .ctitle, .card.cui1c .card-title, .card.cui1 .ctitle, .card.cui1 .card-title {
+    margin-bottom: 10px;
+  }
+  .section-cardicons .card img, .section-cardlisting .card img {
+    margin-bottom: 20px;
+  }
+
+}
