@@ -1,4 +1,6 @@
-jQuery(document).ready(function(e){    
+jQuery(document).ready(function(e){   
+  
+     jQuery('.site-loader').remove();
      // Home Slick Slider
      jQuery('.home-slider').slick({
         centerMode: false, 
