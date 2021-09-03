@@ -3,6 +3,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.pt_120 {
+  padding-top: 120px;
+}
+
 .bg-light-pink {
   background-color: #fad5ad;
 }
@@ -151,4 +155,17 @@ body {
 .section-brands .img-card:hover {
   filter: unset;
   opacity: 1;
+}
+
+
+.listing.licons .list-item svg {
+  width: 50px;
+  position: absolute;
+  left: 0;
+}
+
+.heading-bg {
+  background-image: url('../images/heading-bg.jpg');
+  background-attachment: fixed;
+  background-position:center center;
 }
