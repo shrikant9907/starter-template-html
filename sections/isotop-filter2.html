@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Isotop filter 1</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<meta name="site-icon" content="" />
+	
+	<meta name="google-site-verification" content="" />
+	<meta name="robots" content="noindex, nofollow" />
+	
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png"/> -->
+	<!-- <link rel="shortcut icon" href="images/favicon.png" /> -->
+
+
+    <!-- required CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/responsive.css" />
+	<link rel="stylesheet" href="../css/learning-lp.css" />
+
+  <style>
+ .grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; } 
+
+
+.filter-items {
+  float: left;
+  max-width: 25%;
+}
+
+.filter-items .card {
+  border:none;
+  border-radius: 0;
+}
+
+.filter-items .card .card-img {
+  border-radius: 0;
+}
+
+.filter-items .card .card-img-overlay,
+.filter-items .card .overlay {
+  display: none;
+}
+
+.filter-items .card:hover .overlay {
+  z-index: 0;
+  display: block;
+  background-color: rgba(0, 141, 210, 0.7);
+}
+.filter-items .card:hover .card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+  </style>
+	
+</head>
+<body>
+  
+    <!-- Isotop Filter -->
+    <div class="filters text-center">
+    <div class="button-group my_30">
+      <button class="btn btnui3 btn-primary all-project" data-filter="*">All Projects</button>
+      <button class="btn btnui3 btn-primary" data-filter=".hinjawadi">Hinjawadi</button>
+      <button class="btn btnui3 btn-primary" data-filter=".mahalunge">Mahalunge</button>
+      <button class="btn btnui3 btn-primary" data-filter=".tahawade">Tahawade</button>
+    </div>
+  </div>
+  
+  <div class="grid">
+    <div class="filter-items hinjawadi">
+      <div class="card cui2c f14 noshadow relative r_0 px_0 mbi_0">
+        <img class="card-img m-0" src="../images/project1.jpg" alt="">
+        <div class="overlay overlay_b absolute"></div>
+        <div class="pri_30 pli_30 pti_40 pbi_40 card-img-overlay text-white">
+          <div class="f22 mb_10  text-white text-uppercase">Inspired by nature and created comfortable</div>
+          <p class="">Mahalunge</p>
+        </div>
+      </div>
+    </div>
+    <div class="filter-items mahalunge">
+      <div class="card cui2c f14 noshadow relative r_0 px_0 mbi_0">
+        <img class="card-img m-0" src="../images/project1.jpg" alt="">
+        <div class="overlay overlay_b absolute"></div>
+        <div class="pri_30 pli_30 pti_40 pbi_40 card-img-overlay text-white">
+          <div class="f22 mb_10  text-white text-uppercase">GREEN DESIGN</div>
+          <p class="">Mahalunge</p>
+        </div>
+      </div>
+    </div>
+    <div class="filter-items tahawade">
+      <div class="card cui2c f14 noshadow relative r_0 px_0 mbi_0">
+        <img class="card-img m-0" src="../images/project1.jpg" alt="">
+        <div class="overlay overlay_b absolute"></div>
+        <div class="pri_30 pli_30 pti_40 pbi_40 card-img-overlay text-white">
+          <div class="f22 mb_10  text-white text-uppercase">GREEN DESIGN</div>
+          <p class="">Mahalunge</p>
+        </div>
+      </div>
+    </div>
+    <div class="filter-items tahawade">
+      <div class="card cui2c f14 noshadow relative r_0 px_0 mbi_0">
+        <img class="card-img m-0" src="../images/project1.jpg" alt="">
+        <div class="overlay overlay_b absolute"></div>
+        <div class="pri_30 pli_30 pti_40 pbi_40 card-img-overlay text-white">
+          <div class="f22 mb_10  text-white text-uppercase">GREEN DESIGN</div>
+          <p class="">Tahawade</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+	  <!-- jQuery -->
+    <script src="../js/jquery.min.js" type="text/javascript"></script> 
+    <script src="../js/isotope.pkgd.min.js"></script>
+	
+    <script>
+
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.filter-items'
+      });
+
+      $('.filters').on( 'click', 'button', function( event ) {
+        var $target = $( event.currentTarget );
+        $target.siblings().removeClass('is-checked');
+        $target.toggleClass('is-checked');
+        var isChecked = $target.hasClass('is-checked');
+        var filter = $target.attr('data-filter');
+        if (!isChecked)  {
+          filter = '*';
+        }
+        $grid.isotope({ filter: filter });
+      });
+      
+    </script>
+
+</body>
+</html>  
