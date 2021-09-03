@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Isotop filter 1</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<meta name="site-icon" content="" />
+	
+	<meta name="google-site-verification" content="" />
+	<meta name="robots" content="noindex, nofollow" />
+	
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png"/> -->
+	<!-- <link rel="shortcut icon" href="images/favicon.png" /> -->
+
+    <!-- required Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- required CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/responsive.css" />
+	<link rel="stylesheet" href="../css/learning-lp.css" />
+	
+	<!-- background-image: linear-gradient(to right bottom, #0064cb, #007ed2, #0091c5, #00a0ad, #00ac94); -->
+
+</head>
+<body>
+  
+    <!-- Isotop Filter -->
+   
+  <div class="button-group sort-by-button-group">
+    <button class="btn btn-primary is-checked" data-sort-value="original-order">original order</button>
+    <button class="btn" data-sort-value="name">name</button>
+    <button class="btn" data-sort-value="number">number</button>
+    <button class="btn" data-sort-value="category">category</button>
+  </div>
+  
+  <div class="grid">
+    <div class="element-item transition metal " data-category="transition">
+      <h3 class="name">Mercury</h3>
+      <p class="number">80</p>
+    </div>
+    <div class="element-item metalloid " data-category="metalloid">
+      <h3 class="name">Tellurium</h3>
+      <p class="number">52</p>
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+      <h3 class="name">Bismuth</h3>
+      <p class="number">83</p>
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+      <h3 class="name">Lead</h3>
+      <p class="number">82</p>
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+      <h3 class="name">Gold</h3>
+      <p class="number">79</p>
+    </div>
+    <div class="element-item alkali metal " data-category="alkali">
+      <h3 class="name">Potassium</h3>
+      <p class="number">19</p>
+    </div>
+    <div class="element-item alkali metal " data-category="alkali">
+      <h3 class="name">Sodium</h3>
+      <p class="number">11</p>
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+      <h3 class="name">Cadmium</h3>
+      <p class="number">48</p>
+    </div>
+    <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
+      <h3 class="name">Calcium</h3>
+      <p class="number">20</p>
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+      <h3 class="name">Rhenium</h3>
+      <p class="number">75</p>
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+      <h3 class="name">Thallium</h3>
+      <p class="number">81</p>
+    </div>
+  </div>
+  
+
+
+	<!-- jQuery -->
+    <script src="../js/jquery.min.js" type="text/javascript"></script> 
+    <script src="../js/isotope.pkgd.min.js"></script>
+	
+    <script>
+        // init Isotope
+        var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+        name: '.name',
+        symbol: '.symbol',
+        number: '.number parseInt',
+        category: '[data-category]',
+        weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+        }
+    });
+    
+    // bind sort button click
+    $('.sort-by-button-group').on( 'click', 'button', function() {
+        var sortValue = $(this).attr('data-sort-value');
+        $grid.isotope({ sortBy: sortValue });
+    });
+    
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+        });
+    });
+    </script>
+
+</body>
+</html>  

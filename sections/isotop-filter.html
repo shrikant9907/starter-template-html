@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Isotop filter 1</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<meta name="site-icon" content="" />
+	
+	<meta name="google-site-verification" content="" />
+	<meta name="robots" content="noindex, nofollow" />
+	
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png"/> -->
+	<!-- <link rel="shortcut icon" href="images/favicon.png" /> -->
+
+
+    <!-- required CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/responsive.css" />
+	<link rel="stylesheet" href="../css/learning-lp.css" />
+
+  <style>
+ 
+/* ---- button ---- */
+ 
+.btn:active,
+.btn.is-checked {
+  background-color: #28F;
+}
+
+.btn.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.btn:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.btn-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn-group .btn {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.btn-group .btn:first-child { border-radius: 0.5em 0 0 0.5em; }
+.btn-group .btn:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ui group */
+
+.ui-group {
+  display: inline-block;
+}
+
+.ui-group h3 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 32px;
+  margin-right: 0.2em;
+  font-size: 16px;
+}
+
+.ui-group .btn-group {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* filter-items */
+
+.filter-items {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  float: left;
+}
+ 
+.filter-items.round {
+  border-radius: 35px;
+}
+ 
+.filter-items.big.round {
+  border-radius: 75px;
+}
+ 
+.filter-items.red { background: red; }
+.filter-items.blue { background: blue; }
+.filter-items.yellow { background: yellow; }
+ 
+.filter-items.wide, .filter-items.big { width: 150px; }
+.filter-items.tall, .filter-items.big { height: 150px; }
+  </style>
+	
+</head>
+<body>
+  
+    <!-- Isotop Filter -->
+   
+    <div class="filters">
+      <div class="button-group my_30">
+        <button class="btn btnui3 btn-primary" data-filter="*">All</button>
+        <button class="btn btnui3 btn-primary" data-filter=".red">Red</button>
+        <button class="btn btnui3 btn-primary" data-filter=".blue">Blue</button>
+        <button class="btn btnui3 btn-primary" data-filter=".yellow">Yellow</button>
+      </div>
+    </div>
+    
+    <div class="grid">
+      <div class="filter-items red"></div>
+      <div class="filter-items blue"></div>
+      <div class="filter-items yellow"></div>
+      <div class="filter-items red"></div>
+      <div class="filter-items blue"></div>
+      <div class="filter-items yellow"></div>
+      <div class="filter-items red"></div>
+      <div class="filter-items blue"></div>
+      <div class="filter-items yellow"></div>
+      <div class="filter-items red"></div>
+      <div class="filter-items blue"></div>
+      <div class="filter-items yellow"></div>
+    </div>
+    
+  
+
+
+	<!-- jQuery -->
+    <script src="../js/jquery.min.js" type="text/javascript"></script> 
+    <script src="../js/isotope.pkgd.min.js"></script>
+	
+    <script>
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.filter-items'
+    });
+
+    $('.filters').on( 'click', 'button', function( event ) {
+      var $target = $( event.currentTarget );
+      $target.siblings().removeClass('is-checked');
+      $target.toggleClass('is-checked');
+      var isChecked = $target.hasClass('is-checked');
+      var filter = $target.attr('data-filter');
+      if (!isChecked)  {
+        filter = '*';
+      }
+      $grid.isotope({ filter: filter });
+    });
+    
+    </script>
+
+</body>
+</html>  

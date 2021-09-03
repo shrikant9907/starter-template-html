@@ -1,5 +1,5 @@
 jQuery(document).ready(function(e){    
-     // Home Slider
+     // Home Slick Slider
      jQuery('.home-slider').slick({
         centerMode: false, 
         centerPadding: '0',
@@ -23,4 +23,6 @@ jQuery(document).ready(function(e){
             }
         ]
     }); 
+  
+   
 });

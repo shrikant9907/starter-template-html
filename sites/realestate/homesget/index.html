@@ -14,10 +14,10 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
 
       <!-- Links -->
-      <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+      <!-- <link rel="icon" type="image/x-icon" href="images/favicon.png" /> -->
 
       <!-- Custom Style -->
-      <link href="../../../fonts/fonts.css" rel="stylesheet" />
+      <!-- <link href="../../../fonts/fonts.css" rel="stylesheet" /> -->
       <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
       <link rel="stylesheet" href="../../../css/all.min.css" />
       <link rel="stylesheet" href="../../../css/slick.css" />
@@ -25,7 +25,7 @@
       <link rel="stylesheet" href="../../../css/components.css" />
       <link rel="stylesheet" href="../../../css/utils.css" />
       <link rel="stylesheet" media="all" href="./css/style.css" />
-      <link rel="stylesheet" media="all" href="./css/responsive.css" />
+      <!-- <link rel="stylesheet" media="all" href="./css/responsive.css" /> -->
 
    </head>
 <body>
@@ -137,6 +137,63 @@
 
     <h2 class="heading_style type2 text-center f34 text-uppercase">Latest Projects</h2>
     <p class="section-description text-center">Debitis incidunt sed vitae nostrum, dolorem vel pariatur sequi.</p>
+    <div class="button-group sort-by-button-group">
+      <button class="button is-checked" data-filter="original-order">original order</button>
+      <button class="button" data-filter="name">name</button>
+      <button class="button" data-filter="symbol">symbol</button>
+      <button class="button" data-filter="number">number</button>
+      <button class="button" data-filter="weight">weight</button>
+      <button class="button" data-filter="category">category</button>
+    </div>
+    <div class="grid">
+      <div class="element-item transition metal" data-category="transition">
+        <p class="number">79</p>
+        <h3 class="symbol">Au</h3>
+        <h2 class="name">Gold</h2>
+        <p class="weight">196.966569</p>
+      </div>
+      <div class="element-item metalloid" data-category="metalloid">
+        <p class="number">51</p>
+        <h3 class="symbol">Sb</h3>
+        <h2 class="name">Antimony</h2>
+        <p class="weight">121.76</p>
+      </div>
+      <div class="element-item noble-gas nonmetal " data-category="noble-gas">
+        <h3 class="name">Argon</h3>
+        <p class="symbol">Ar</p>
+        <p class="number">18</p>
+        <p class="weight">39.948</p>
+      </div>
+      <div class="element-item diatomic nonmetal " data-category="diatomic">
+        <h3 class="name">Nitrogen</h3>
+        <p class="symbol">N</p>
+        <p class="number">7</p>
+        <p class="weight">14.007</p>
+      </div>
+      <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+        <h3 class="name">Uranium</h3>
+        <p class="symbol">U</p>
+        <p class="number">92</p>
+        <p class="weight">238.029</p>
+      </div>
+      <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+        <h3 class="name">Plutonium</h3>
+        <p class="symbol">Pu</p>
+        <p class="number">94</p>
+        <p class="weight">(244)</p>
+      </di
+      <!-- <div class="grid-item">
+        <div class="card cui2c f14 noshadow relative r_0 px_0 mbi_0">
+          <img class="card-img m-0" src="https://picsum.photos/300/150" alt="" />
+          <div class="overlay overlay_b absolute"></div>
+          <div class="pri_30 pli_30 pti_40 pbi_40 card-img-overlay text-white">
+             <div class="f22 mb_10  text-white text-uppercase">GREEN DESIGN</div>
+             <p class="">Inspired by nature and created comfortable space for your life</p>
+             <a class="btn btn-primary btn-sm  btnui3 text-white text-uppercase">View Services</a>
+          </div>
+        </div>    
+      </div> -->
+    </div>
     <p class="text-center"><a class="btn f16 btn-primary btnui3s" href="#">View All Projects</a></p> 
     </div>
  </section>
@@ -324,8 +381,10 @@
 
   <!-- Script -->
   
-  <script src="./js/main-min.js"  ></script>
-  <script src="./js/custom.js"  ></script>
 
+  <script src="./js/main-min.js"  ></script>
+  <script src="../../../js/isotope.pkgd.min.js"></script>
+  <script src="./js/custom.js"  ></script>
+  
 </body>
 </html>  
