@@ -101,6 +101,10 @@ body {
   border-radius: 0;
 }
 
+.filter-items .card .card-img {
+  border-radius: 0;
+}
+
 .filter-items .card .card-img-overlay,
 .filter-items .card .overlay {
   display: none;
