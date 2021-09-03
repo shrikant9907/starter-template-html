@@ -79,3 +79,14 @@ jQuery(document).ready(function(e){
         $grid.isotope({ filter: filter });
     });
 });
+
+jQuery(window).scroll(function() {    
+  if ($(window).width() > 767) {
+   var scroll = $(window).scrollTop();
+     if (scroll >= 400) {
+        $("body").addClass("scrolled");
+    } else {
+        $("body").removeClass("scrolled");
+    }
+}  
+}); 

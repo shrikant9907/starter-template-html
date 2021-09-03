@@ -114,6 +114,8 @@ body {
 .filter-items .card {
   border:none;
   border-radius: 0;
+  overflow: hidden;
+  max-height: 225px;
 }
 
 .filter-items .card .card-img {
