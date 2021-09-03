@@ -185,3 +185,7 @@ header.sticky, header.fixed {
   background-attachment: fixed;
   background-position:center center;
 }
+
+.filters .button-group button {
+  margin-bottom: 5px;
+}

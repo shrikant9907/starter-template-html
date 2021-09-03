@@ -7,8 +7,13 @@
     height: 100%;
   }
 
-  header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  .site-header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     padding: 10px !important;
+    font-size: 11px !important;
+  }
+
+  .site-header .contact-info {
+    font-size: 11px;
   }
 
   .filter-items .card {
@@ -46,6 +51,7 @@
 
   .navbar-toggler {
     top:20px;
+    border:unset;
   }
 
   header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -58,22 +64,53 @@
     right: 10px;
     z-index: 2;
   }
+
+  .scrolled .navbar-toggler {
+    top: 10px; 
+  } 
+
+  .scrolled .site-header .contact-info {
+    top:20px;
+  }
+}
+
+@media all and (max-width: 812px) { 
+  .home-slider.mt_80 {
+    margin-top: 67px;
+    height: auto;
+    min-height: 300px;
+  }
+  .site-header .contact-info {
+    top: 24px;
+  }
+  .navbar-toggler {
+    top: 15px;
+  }
 }
 
 @media all and (max-width: 768px) { 
+  .heading_style,
+  .heading_style.type2 {
+    font-size: 26px;
+  }
+
   .navbar-toggler {
     top:10px;
   }
 
   .home-slider.mt_80 {
-    margin-top: 63px;
+    margin-top: 60px;
   }
+
   .site-header .contact-info {
-    top: 23px;
+    top: 20px;
   }
 
   .site-header .site-logo {
     max-height: 40px;
+  }
+  .filter-items {
+    max-width: 33.33%;
   }
 }
 
@@ -86,5 +123,80 @@
     margin: 0;
     text-align: center;
     margin-left: -45px;
+  }
+
+  .heading_style, .heading_style.type2 {
+    font-size: 20px;
+  }
+
+  .button.btn-sm, .btn.btn-sm {
+    font-size: 12px;
+  } 
+  .button, .btn {
+    font-size: 14px !important;
+    padding: 14px 26px;
+  }
+  .view_offer_wr {
+    text-align: center;
+  }
+
+  .filter-items {
+    max-width: 50%;
+  }
+
+  .home-slider .slides p{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .home-slider .slides p.f34 {
+    font-size: 20px;
+  }
+  .slicksliderui .overlay {
+    top: 50px;
+    max-width: 500px;
+    left: calc(50% - 250px);
+  }
+
+  .filters.text-center {
+    text-align: left !important;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer .socialicons {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 400px) { 
+  .slicksliderui .overlay {
+    top: 10px;
+    max-width: 90%;
+    left: calc(5%);
+    min-height: 232px;
+  }
+
+  .home-slider.mt_80 {
+    min-height: 250px;
+  }
+
+  .floating-left.btn {
+    top: calc(50% - 30px);
+  }
+
+  .filters.text-center {
+    text-align: center !important;
+  }
+  .common-section-ui.pt_50, .common-section-ui.pt_60, .common-section-ui.pt_40 {
+    padding-top: 30px;
+  }
+  .common-section-ui.pb_60, .common-section-ui.pb_50, .common-section-ui.pb_40 {
+    padding-top: 30px;
+  }
+  .section-blog .card-body{
+    padding: 0px !important;
   }
 }
