@@ -76,7 +76,7 @@
     </div> 
   </header>
 
-  <a href="#" class="btn btn-primary btnui1 floating-left">Enquire Now</a>
+  <a href="#" class="btn btn-primary btnui1 floating-left" data-toggle="modal" data-target="#enquiryFormModal">Enquire Now</a>
  
   <!-- site header end -->
 
@@ -452,9 +452,39 @@
   </footer>
   <!-- Footer End -->
 
-  <!-- Script -->
-  
+	<div class="modal fade" id="enquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="enquiryFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <form class="fui fui1 w-100" action="" method="post" enctype="multipart/form-data">
+      <div class="mui muic mui2 muis modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary" id="enquiryFormModalLabel">Enquiry Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="">Name: <span class="text-danger">*</span></label>
+            <input required="required" name="text" value="" type="text" class="form-control" placeholder="Enter your name." maxlength="50" /> 
+          </div>
+          <div class="form-group">
+            <label for="">Email: <span class="text-danger">*</span></label>
+            <input required="required" name="email" value="" type="email" class="form-control" placeholder="Enter your email." maxlength="50" /> 
+          </div>
+          <div class="form-group">
+            <label for="">Phone: <span class="text-danger">*</span></label>
+            <input required="required" name="phone" value="" type="text" class="form-control" placeholder="Enter your phone." maxlength="50" />
+          </div>
+         </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary btnui2">Send</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
 
+  <!-- Script -->
   <script src="./js/main-min.js"  ></script>
   <script src="../../../js/isotope.pkgd.min.js"></script>
   <script src="./js/custom.js"  ></script>
