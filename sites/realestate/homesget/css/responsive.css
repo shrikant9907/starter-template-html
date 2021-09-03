@@ -37,3 +37,15 @@
   }
 
 }
+
+/* mega menus starts */
+@media all and (max-width: 991px) {
+  .navbar-dark .navbar-toggler {
+    background-color: #008dd2;
+  }
+  
+  .navbar-toggler {
+    left:unset;
+    right: 10px;
+  }
+}
