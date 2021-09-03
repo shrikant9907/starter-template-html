@@ -40,12 +40,22 @@ body {
 
 .site-header .site-logo {
   max-height: 60px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
+
 .site-header .contact-info,
 .site-header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 1;
+}
+
+.scrolled .site-header .site-logo {
+  max-height: 40px;
 }
 
 .contact-info a{
