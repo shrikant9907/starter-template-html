@@ -2346,10 +2346,9 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     right: 10px;
   }
 }
-/*Tablet*/
-@media all and (max-width: 786px) {
+@media all and (max-width: 991px) {
   .navbar-toggler {
-    background: #fff;
+    background: #008dd2 !important;
     border: 1px solid #ccc;
     padding: 2px 3px 3px 3px;
     left: 10px;
@@ -2414,7 +2413,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 
   .navbar.navbar-expand-lg .navbar-collapse::after {
     position: fixed;
-    display: block;
+    display: none;
     content: "";
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -2426,6 +2425,10 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   .navbar.navbar-expand-lg .navbar-collapse.show {
     width: 300px;
     overflow: visible;
+  }
+
+  .navbar.navbar-expand-lg .navbar-collapse.show::after {
+    display: block;
   }
 
   .header_mobile_control .navbar.navbar-expand-lg {
