@@ -24,6 +24,45 @@ jQuery(document).ready(function(e){
         ]
     }); 
   
+    jQuery('.slickFiveItems').slick({
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1366,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          }
+        },
+         {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
     // init Isotope
     var $grid = $('.grid').isotope({
         itemSelector: '.filter-items'
