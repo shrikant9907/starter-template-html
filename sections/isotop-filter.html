@@ -117,7 +117,6 @@
 <body>
   
     <!-- Isotop Filter -->
-   
     <div class="filters">
       <div class="button-group my_30">
         <button class="btn btnui3 btn-primary" data-filter="*">All</button>
@@ -141,33 +140,30 @@
       <div class="filter-items blue"></div>
       <div class="filter-items yellow"></div>
     </div>
-    
   
-
-
-	<!-- jQuery -->
+	  <!-- jQuery -->
     <script src="../js/jquery.min.js" type="text/javascript"></script> 
     <script src="../js/isotope.pkgd.min.js"></script>
 	
     <script>
 
-    // init Isotope
-    var $grid = $('.grid').isotope({
-      itemSelector: '.filter-items'
-    });
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.filter-items'
+      });
 
-    $('.filters').on( 'click', 'button', function( event ) {
-      var $target = $( event.currentTarget );
-      $target.siblings().removeClass('is-checked');
-      $target.toggleClass('is-checked');
-      var isChecked = $target.hasClass('is-checked');
-      var filter = $target.attr('data-filter');
-      if (!isChecked)  {
-        filter = '*';
-      }
-      $grid.isotope({ filter: filter });
-    });
-    
+      $('.filters').on( 'click', 'button', function( event ) {
+        var $target = $( event.currentTarget );
+        $target.siblings().removeClass('is-checked');
+        $target.toggleClass('is-checked');
+        var isChecked = $target.hasClass('is-checked');
+        var filter = $target.attr('data-filter');
+        if (!isChecked)  {
+          filter = '*';
+        }
+        $grid.isotope({ filter: filter });
+      });
+      
     </script>
 
 </body>
