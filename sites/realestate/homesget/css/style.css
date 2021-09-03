@@ -44,6 +44,12 @@ body {
   letter-spacing: 1;
 }
 
+.contact-info a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .site-footer {
   font-weight: 400;
   color: rgba(255,255,255,0.5);
