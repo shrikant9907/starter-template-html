@@ -87,6 +87,11 @@ body {
   z-index: 0;
 }
 
+.section-awards .card {
+  max-height: 250px;
+  overflow: hidden;
+}
+
 .grid-item { width: 25%; }
 .grid-item--width2 { width: 50%; } 
 
