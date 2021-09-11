@@ -137,6 +137,7 @@ p {
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
 
+    .p_#{$finalvalue} { padding: $finalvalue+px; }
     .pl_#{$finalvalue} { padding-left: $finalvalue+px; }
     .pr_#{$finalvalue} { padding-right: $finalvalue+px; }
     .pt_#{$finalvalue} { padding-top: $finalvalue+px; }
@@ -144,6 +145,7 @@ p {
     .plr_#{$finalvalue}, .px_#{$finalvalue} { padding-left: $finalvalue+px; padding-right: $finalvalue+px; }
     .ptb_#{$finalvalue}, .py_#{$finalvalue} { padding-top: $finalvalue+px; padding-bottom: $finalvalue+px; }
     
+    .pi_#{$finalvalue} { padding: $finalvalue+px; }
     .pli_#{$finalvalue} { padding-left: $finalvalue+px !important }
     .pri_#{$finalvalue} { padding-right: $finalvalue+px !important }
     .pti_#{$finalvalue} { padding-top: $finalvalue+px !important }
@@ -157,6 +159,7 @@ p {
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
 
+    .m_#{$finalvalue} { margin: $finalvalue+px; }
     .mt_#{$finalvalue} { margin-top: $finalvalue+px; }
     .ml_#{$finalvalue} { margin-left: $finalvalue+px; }
     .mr_#{$finalvalue} { margin-right: $finalvalue+px; }
@@ -168,6 +171,7 @@ p {
     .mlr_#{$finalvalue}, .mx_#{$finalvalue} { margin-left: $finalvalue+px; margin-right: $finalvalue+px; }
     .mtb_#{$finalvalue}, .my_#{$finalvalue} { margin-top: $finalvalue+px;  margin-bottom: $finalvalue+px; }
 
+    .mi_#{$finalvalue} { margin: $finalvalue+px !important; }
     .mti_#{$finalvalue} { margin-top: $finalvalue+px !important; }
     .mli_#{$finalvalue} { margin-left: $finalvalue+px !important; }
     .mri_#{$finalvalue} { margin-right: $finalvalue+px !important; }
@@ -220,7 +224,7 @@ p {
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
 
-    .w_#{$finalvalue}p { width:  percentage($finalvalue)/100; }
+    .w_#{$finalvalue}p { width:  percentage($finalvalue)*0.01; }
 
 }
 
@@ -243,7 +247,7 @@ p {
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
 
-    .min_w_#{$finalvalue}p { min-width:  percentage($finalvalue)/100; }
+    .min_w_#{$finalvalue}p { min-width:  percentage($finalvalue)*0.01; }
 
 }
 
@@ -265,7 +269,7 @@ p {
     $newvalue: $i*5;
     $finalvalue: $value + $newvalue;
 
-    .max_w_#{$finalvalue}p { max-width:  percentage($finalvalue)/100; }
+    .max_w_#{$finalvalue}p { max-width:  percentage($finalvalue)*0.01; }
 
 }
 
@@ -328,7 +332,7 @@ p {
 /*Background */
 @for $i from 0 through 10 {
 
-    $value: $i/10;
+    $value: $i*0.1;
         
     .bg_b_a_#{$i} { background: rgba(0,0,0,$value); }
     .bg_w_a_#{$i} { background: rgba(255,255,255,$value); }
@@ -339,7 +343,7 @@ p {
 /* Hover Scale */
 @for $i from 10 through 20 {
 
-    $value: $i/10;
+    $value: $i*0.1;
 
     .hover_scale_#{$i}:hover,
     .hs_#{$i}:hover {
@@ -358,7 +362,7 @@ p {
     }
 
     .r_#{$value}p {
-        border-radius: percentage($value)/100 !important;
+        border-radius: percentage($value)*0.01 !important;
     }
  
 }
@@ -367,7 +371,7 @@ p {
 /* Transition */
 @for $i from 0 through 20 {
 
-    $value: $i/10;
+    $value: $i*0.1;
 
     .trans_#{$i}{
         -webkit-transition: all $value+s ease;
@@ -687,7 +691,7 @@ input[type='button'] {
 /* Opacity */
 @for $i from 0 through 10 {
     $value: 0;
-    $newvalue: ($i) / 10;
+    $newvalue: ($i) * 0.1;
     $finalvalue: $value + $newvalue;
 
     .op#{$i} { opacity: $finalvalue; }
