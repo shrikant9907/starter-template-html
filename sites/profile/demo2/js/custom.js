@@ -7,13 +7,7 @@ jQuery('document').ready(function(){
         jQuery('.sidebar').toggleClass('active');   
 		jQuery('body').toggleClass('noscroll');   
     });
-	jQuery('.sidebar').on('click', function(event){
-		if (this != event.target) {
-			return false;
-		} 
-		jQuery('.hamburger').click();
-	});
-
+	
 	jQuery('.testimonials_slick').slick();
 	jQuery('.banner_slider_slick').slick();
 
