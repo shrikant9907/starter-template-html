@@ -1333,6 +1333,12 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   max-width: 20px;
   min-width: 20px;
 }
+.socialicons.small2 a {
+  width: 30px;
+  height: 30px;
+  max-width: 30px;
+  min-width: 30px;
+}
 
 .fui .form-group,
 .fui1 .form-group {
