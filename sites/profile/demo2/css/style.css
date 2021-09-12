@@ -25,12 +25,21 @@ h1, h2, h3, h4, h5, h6, .heading, .title, .main_heading {
 }
 
 .sidebar {
-    max-width: 275px;
+    max-width: 250px;
+}
+
+.sidebar .slisting ul li a {
+    padding: 5px 0px 5px 50px;
+    width: 250px;
 }
 
 .sidebaractive {
-    padding-left: 300px;
+    padding-left: 275px;
     padding-right: 25px;
+}
+
+.sidebar .slisting ul li a.active, .sidebar .slisting ul li a:hover {
+    background: rgba(0, 0, 0, 0.25);
 }
 
 header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
