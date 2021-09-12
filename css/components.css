@@ -1327,6 +1327,12 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .socialicons.withtext li a {
   margin: 0 12px 0 0;
 }
+.socialicons.small a {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  min-width: 20px;
+}
 
 .fui .form-group,
 .fui1 .form-group {
