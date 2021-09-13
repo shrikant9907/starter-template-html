@@ -355,6 +355,18 @@ header {
         right: 0px;
         z-index: 998;
     }
+
+    .hdrtop {
+        font-size: 14px;
+        padding: 5px 0;
+        a {
+            text-decoration: none;
+            color:inherit;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
     .navbar {
         &.navbar-expand-lg {
             padding: 0; 
@@ -378,6 +390,7 @@ header {
                             color:#0069d9; 
                         }
                     }
+
                     .dropdown-menu {
                         top: 80px !important;
                         padding: 5px 0;
@@ -394,16 +407,23 @@ header {
                             border-left: 10px solid transparent;
                             border-right: 10px solid transparent;
                             border-bottom: 10px solid #fff;
-                            top: -10px;
+                            top: -15px;
                             left: 15px;
                         }
 
                         .dropdown-item {
-                            padding: 7px 15px;
+                            padding: 8px 15px;
                             font-size: 14px;
                             line-height: 18px;
                         }
                     }
+
+                    &.dropdown:hover {
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+
                 }
             }
         }

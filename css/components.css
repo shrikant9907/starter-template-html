@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*      Created By      : Shrikant Yadav                                                    */
+/*      Contact         : shrikant9907@gmail.com                                            */
+/*      Full Stack Web Developer                                                            */
+/*      Version         : 3.0                                                               */
 html, body {
   -moz-transition: unset !important;
   -o-transition: unset !important;
@@ -7,7 +11,11 @@ html, body {
   transition: unset !important;
 }
 
-/************************** Components ***************************/
+/*
+************************            ************************** 
+************************ Components **************************
+************************            **************************
+*/
 .hamburger {
   width: 30px;
   position: fixed;
@@ -294,6 +302,17 @@ header.sticky, header.fixed {
   right: 0px;
   z-index: 998;
 }
+header .hdrtop {
+  font-size: 14px;
+  padding: 5px 0;
+}
+header .hdrtop a {
+  text-decoration: none;
+  color: inherit;
+}
+header .hdrtop a i {
+  margin-right: 5px;
+}
 header .navbar.navbar-expand-lg {
   padding: 0;
 }
@@ -334,6 +353,9 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu .dropdown-i
   padding: 7px 15px;
   font-size: 14px;
   line-height: 18px;
+}
+header .navbar.navbar-expand-lg .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
 }
 header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   margin: 0px !important;
