@@ -1,3 +1,8 @@
+/*      Created By      : Shrikant Yadav                                                    */  
+/*      Contact         : shrikant9907@gmail.com                                            */
+/*      Full Stack Web Developer                                                            */ 
+/*      Version         : 3.0                                                               */
+
 $primaryColor: #007bff;
 $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 
@@ -9,7 +14,11 @@ html, body {
     transition: unset !important;
 }
 
-/************************** Components ***************************/
+/*
+************************            ************************** 
+************************ Components **************************
+************************            **************************
+*/
 // Sidebar Trigger
 .hamburger {
   width: 30px;
