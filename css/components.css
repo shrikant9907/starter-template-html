@@ -326,6 +326,11 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media all and (max-width: 991px) {
+  header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    margin: 0 !important;
+  }
+}
 header .navbar.navbar-expand-lg .navbar-nav .nav-item.show a.nav-link, header .navbar.navbar-expand-lg .navbar-nav .nav-item:hover a.nav-link, header .navbar.navbar-expand-lg .navbar-nav .nav-item.active a.nav-link {
   color: #0069d9;
 }
@@ -346,11 +351,11 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu:after {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #fff;
-  top: -10px;
+  top: -15px;
   left: 15px;
 }
 header .navbar.navbar-expand-lg .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-  padding: 7px 15px;
+  padding: 8px 15px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -2382,18 +2387,44 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 @media all and (max-width: 991px) {
   .navbar-toggler {
-    background: #008dd2 !important;
-    border: 1px solid #ccc;
-    padding: 2px 3px 3px 3px;
-    left: 10px;
-    top: 10px;
+    width: 30px;
     position: fixed;
-    z-index: 99;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    padding: 0 5px;
+    border-color: #cccccc;
   }
-
-  .navbar-toggler-icon {
-    font-size: 20px;
-    padding: 6px 5px;
+  .navbar-toggler .navbar-toggler-icon {
+    width: 100%;
+    background: #cccccc;
+    height: 2px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+  }
+  .navbar-toggler .navbar-toggler-icon::before, .navbar-toggler .navbar-toggler-icon::after {
+    display: block;
+    width: 100%;
+    background: #cccccc;
+    height: 2px;
+    content: "";
+    position: relative;
+  }
+  .navbar-toggler .navbar-toggler-icon::before {
+    top: 6px;
+  }
+  .navbar-toggler .navbar-toggler-icon::after {
+    top: -8px;
   }
 
   .header_mobile_control {
