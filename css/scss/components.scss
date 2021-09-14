@@ -395,12 +395,13 @@ header {
                     }
 
                     .dropdown-menu {
-                        top: 80px !important;
+                        top: 70px !important;
                         padding: 5px 0;
-                        border-radius: 3px;
+                        border-radius: 0;
                         box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
                         border: none;
                         left: 20px;
+                        background-color: #efefef;
                         &:after {
                             display: block;
                             content: "";
@@ -409,9 +410,12 @@ header {
                             height: 0;
                             border-left: 10px solid transparent;
                             border-right: 10px solid transparent;
-                            border-bottom: 10px solid #fff;
-                            top: -15px;
+                            border-bottom: 10px solid #efefef;
+                            top: -10px;
                             left: 15px;
+                            @media all and (max-device-width: 991px) {
+                                top: 45px;
+                            }
                         }
 
                         .dropdown-item {
