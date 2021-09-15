@@ -549,6 +549,15 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .card.noshadow {
   box-shadow: unset !important;
 }
+.card .badge {
+  position: absolute;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 10px;
+  top: 5px;
+  z-index: 9;
+  right: 5px;
+}
 .card .ciconb,
 .card .cicons,
 .card .ciconr,
@@ -855,6 +864,25 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 }
 .card.cdraganddrop .card-body {
   flex: unset;
+}
+.card.cfeatured {
+  position: relative;
+}
+.card.cfeatured .cimgwr {
+  position: relative;
+}
+.card.cfeatured .cimgwr .cheading {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  line-height: 1;
+  padding: 10px;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+}
+.card.cfeatured .cimgwr .cheading a {
+  color: #fff;
 }
 
 .button,

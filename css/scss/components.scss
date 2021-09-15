@@ -621,6 +621,16 @@ header {
         box-shadow: unset !important;
     }
 
+    .badge {
+        position: absolute;
+        padding: 5px;
+        color: #ffffff;
+        font-size: 10px;
+        top: 5px;
+        z-index: 9;
+        right: 5px;
+    }
+   
     .ciconb,
     .cicons,
     .ciconr,
@@ -938,6 +948,26 @@ header {
         flex-direction: column;
         .card-body {
             flex:unset;
+        }
+    }
+
+    &.cfeatured {
+        position: relative;
+        .cimgwr {
+            position: relative;
+            .cheading  {
+                position: absolute;
+                bottom: 0;
+                background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.5));
+                line-height: 1;
+                padding: 10px;
+                color: #fff;
+                margin: 0;
+                width: 100%;
+                a {
+                    color: #fff;
+                }
+            }
         }
     }
 }
