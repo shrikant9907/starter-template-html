@@ -2706,9 +2706,16 @@ header {
     justify-content: left;
     align-items: center;
     margin-bottom: 20px; 
-    a {
+    ul {
+        list-style: none;
         display: inline-flex;
-        padding: 5px 10px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    li,
+    & > a {
+        display: inline-flex;
         font-size: 14px;
         border: 1px solid #efefef;
         color: inherit;
@@ -2718,6 +2725,19 @@ header {
         align-items: center;
         text-decoration: none;
         overflow: hidden;
+        position: relative;
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            position: absolute;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
         &.pcurrent,
         &:hover {
             background-color: $primaryColor;
