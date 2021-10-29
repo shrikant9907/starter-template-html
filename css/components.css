@@ -393,6 +393,17 @@ header .hdrtop a i {
 header .navbar.navbar-expand-lg {
   padding: 0;
 }
+@media all and (max-width: 991px) {
+  .site-header .navbar.navbar-expand-lg .navbar-collapse .search-form,
+header .navbar.navbar-expand-lg .navbar-collapse .search-form {
+    position: absolute;
+    top: -6px;
+  }
+  .site-header .navbar.navbar-expand-lg .navbar-collapse .search-form .search-box,
+header .navbar.navbar-expand-lg .navbar-collapse .search-form .search-box {
+    margin: 15px;
+  }
+}
 .site-header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link,
 header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 23px 10px;
@@ -2661,6 +2672,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
     min-height: 100vh;
     padding: 57px 0 0 0 !important;
     height: 100%;
+    overflow-y: auto;
   }
 
   .navbar.navbar-expand-lg .navbar-collapse::after {

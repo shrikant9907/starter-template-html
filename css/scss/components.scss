@@ -444,6 +444,17 @@ header {
   .navbar {
     &.navbar-expand-lg {
       padding: 0; 
+      .navbar-collapse {
+        @media all and (max-width:991px) {
+          .search-form {
+            position: absolute;
+            top: -6px;
+            .search-box {
+              margin: 15px;
+            }
+          }
+        }
+      }
       .navbar-nav {
         .nav-item {
           .nav-link {
@@ -2938,10 +2949,11 @@ header {
     }
 
     .navbar.navbar-expand-lg .navbar-collapse ul.navbar-nav {
-        background: #fff;
-        min-height: 100vh;
-        padding: 57px 0 0 0 !important;
-        height: 100%;
+      background: #fff;
+      min-height: 100vh;
+      padding: 57px 0 0 0 !important;
+      height: 100%;
+      overflow-y: auto;
     }
 
     .navbar.navbar-expand-lg .navbar-collapse::after {
