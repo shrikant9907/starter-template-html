@@ -2468,15 +2468,21 @@ button,
 
 /*Footer*/
 .footer_style1 ul {
-    padding: 0;
-    list-style: none;
-    li {
-        padding: 5px 0;
-        a {
-            text-decoration: none;
-            color: #212121;
-        }
+  padding: 0;
+  list-style: none;
+  li {
+    padding: 5px 0;
+    a {
+      text-decoration: none;
+      color: #212121;
     }
+  }
+  @media all and (max-width: 786px) {
+    &.menu {
+      display: block !important;
+      text-align: center;
+    }
+  }
 }
 
 // Footer
@@ -3133,7 +3139,6 @@ button,
     
 }
 
-
 // Repeater UI
 .repeaterContainer {
     padding-bottom: 40px;
@@ -3171,4 +3176,21 @@ button,
             margin-right: 5px;
         }
     }
+}
+
+// WP Styles
+.wp-block-tag-cloud a {
+  background-color: $primaryLightColor;
+  padding: 2px 10px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+@media (max-width: 786px) {
+  .metatags {
+    display: block !important;
+  }
 }

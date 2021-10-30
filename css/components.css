@@ -2378,6 +2378,12 @@ button.btn_small,
   text-decoration: none;
   color: #212121;
 }
+@media all and (max-width: 786px) {
+  .footer_style1 ul.menu {
+    display: block !important;
+    text-align: center;
+  }
+}
 
 .site-footer {
   color: rgba(255, 255, 255, 0.78);
@@ -2978,6 +2984,22 @@ button.btn_small,
 }
 .repeaterContainer .repeaterActions .btn:first-child {
   margin-right: 5px;
+}
+
+.wp-block-tag-cloud a {
+  background-color: #ffeeee;
+  padding: 2px 10px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #f34423;
+}
+
+@media (max-width: 786px) {
+  .metatags {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=components.css.map */
