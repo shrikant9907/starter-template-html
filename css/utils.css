@@ -1,6 +1,6 @@
 /*      Created By      : Shrikant Yadav                                                    */
 /*      Contact         : shrikant9907@gmail.com                                            */
-/*      Web Developer and Desinger                                                          */
+/*      Full Stack Web Developer                                                            */
 /*      Version         : 3.0                                                               */
 * {
   outline: none !important;
@@ -201,7 +201,7 @@ p {
 }
 
 .pi_0 {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .pli_0 {
@@ -251,7 +251,7 @@ p {
 }
 
 .pi_5 {
-  padding: 5px;
+  padding: 5px !important;
 }
 
 .pli_5 {
@@ -301,7 +301,7 @@ p {
 }
 
 .pi_10 {
-  padding: 10px;
+  padding: 10px !important;
 }
 
 .pli_10 {
@@ -351,7 +351,7 @@ p {
 }
 
 .pi_15 {
-  padding: 15px;
+  padding: 15px !important;
 }
 
 .pli_15 {
@@ -401,7 +401,7 @@ p {
 }
 
 .pi_20 {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .pli_20 {
@@ -451,7 +451,7 @@ p {
 }
 
 .pi_25 {
-  padding: 25px;
+  padding: 25px !important;
 }
 
 .pli_25 {
@@ -501,7 +501,7 @@ p {
 }
 
 .pi_30 {
-  padding: 30px;
+  padding: 30px !important;
 }
 
 .pli_30 {
@@ -551,7 +551,7 @@ p {
 }
 
 .pi_35 {
-  padding: 35px;
+  padding: 35px !important;
 }
 
 .pli_35 {
@@ -601,7 +601,7 @@ p {
 }
 
 .pi_40 {
-  padding: 40px;
+  padding: 40px !important;
 }
 
 .pli_40 {
@@ -651,7 +651,7 @@ p {
 }
 
 .pi_45 {
-  padding: 45px;
+  padding: 45px !important;
 }
 
 .pli_45 {
@@ -701,7 +701,7 @@ p {
 }
 
 .pi_50 {
-  padding: 50px;
+  padding: 50px !important;
 }
 
 .pli_50 {
@@ -751,7 +751,7 @@ p {
 }
 
 .pi_55 {
-  padding: 55px;
+  padding: 55px !important;
 }
 
 .pli_55 {
@@ -801,7 +801,7 @@ p {
 }
 
 .pi_60 {
-  padding: 60px;
+  padding: 60px !important;
 }
 
 .pli_60 {
@@ -851,7 +851,7 @@ p {
 }
 
 .pi_65 {
-  padding: 65px;
+  padding: 65px !important;
 }
 
 .pli_65 {
@@ -901,7 +901,7 @@ p {
 }
 
 .pi_70 {
-  padding: 70px;
+  padding: 70px !important;
 }
 
 .pli_70 {
@@ -951,7 +951,7 @@ p {
 }
 
 .pi_75 {
-  padding: 75px;
+  padding: 75px !important;
 }
 
 .pli_75 {
@@ -1001,7 +1001,7 @@ p {
 }
 
 .pi_80 {
-  padding: 80px;
+  padding: 80px !important;
 }
 
 .pli_80 {
@@ -1051,7 +1051,7 @@ p {
 }
 
 .pi_85 {
-  padding: 85px;
+  padding: 85px !important;
 }
 
 .pli_85 {
@@ -1101,7 +1101,7 @@ p {
 }
 
 .pi_90 {
-  padding: 90px;
+  padding: 90px !important;
 }
 
 .pli_90 {
@@ -1151,7 +1151,7 @@ p {
 }
 
 .pi_95 {
-  padding: 95px;
+  padding: 95px !important;
 }
 
 .pli_95 {
@@ -1201,7 +1201,7 @@ p {
 }
 
 .pi_100 {
-  padding: 100px;
+  padding: 100px !important;
 }
 
 .pli_100 {
@@ -7544,36 +7544,6 @@ p {
 }
 
 /*Extras*/
-/*Buttons */
-.btn-primary.focus,
-.btn-primary:focus {
-  box-shadow: none;
-}
-
-.btn,
-.button,
-button,
-input[type=submit],
-input[type=button] {
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-/*Button Sizes*/
-.btn_lg,
-.btn_large {
-  padding: 12px 30px !important;
-  font-size: 16px !important;
-}
-
-.btn_sm,
-.btn_small {
-  padding: 10px 20px !important;
-  font-size: 12px !important;
-}
-
 /*Alerts*/
 .alert {
   padding: 5px 10px;
@@ -8135,12 +8105,14 @@ input[type=button] {
   background-color: #343a40 !important;
 }
 
+.bg-primary,
 .bg_primary {
-  background-color: #007bff !important;
+  background-color: #f34423 !important;
 }
 
+.bg-secondary,
 .bg_secondary {
-  background-color: #6c757d !important;
+  background-color: #007bff !important;
 }
 
 .bg_success {
@@ -8237,11 +8209,11 @@ input[type=button] {
 }
 
 .bc_primary {
-  border-color: #007bff !important;
+  border-color: #f34423 !important;
 }
 
 .bc_secondary {
-  border-color: #6c757d !important;
+  border-color: #007bff !important;
 }
 
 .bc_success {
@@ -8337,12 +8309,14 @@ input[type=button] {
   color: #17a2b8 !important;
 }
 
+.text-primary,
 .text_primary {
-  color: #007bff !important;
+  color: #f34423 !important;
 }
 
+.text-secondary,
 .text_secondary {
-  color: #6c757d !important;
+  color: #007bff !important;
 }
 
 .text_success {

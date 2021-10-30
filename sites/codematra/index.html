@@ -10,9 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
   <!-- Favicon -->
-  <link rel='icon' href='https://www.codematra.com/wp-content/themes/codematra-tuts/images/codematra-favicon.png' type='image/x-icon' />
+  <!-- <link rel='icon' href='https://www.codematra.com/wp-content/themes/codematra-tuts/images/codematra-favicon.png' type='image/x-icon' />
   <meta name="site-icon" content="https://www.codematra.com/wp-content/themes/codematra-tuts/images/codematra-favicon.png" />
-  <link rel="shortcut icon" href="https://www.codematra.com/wp-content/themes/codematra-tuts/images/codematra-favicon.png" />
+  <link rel="shortcut icon" href="https://www.codematra.com/wp-content/themes/codematra-tuts/images/codematra-favicon.png" /> -->
 
   <!-- required Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +25,676 @@
   <link rel="stylesheet" href="../../css/components.css" />
   <link rel="stylesheet" href="../../css/utils.css" />
   <link rel="stylesheet" href="css/style.css" />
-
+  <link rel="stylesheet" href="../../assets/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
  
+<!-- Header Start -->
+<header id="main_header" class="site-header sticky">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-12 col-md-3 col-xl-3"> 
+        <div class="site_logo with_image">
+          <a title="Code Matra" class="logo_link" href="https://codematra.com/">
+            <img class="max_h_45 logo_image img-fluid"  src="https://codematra.com/wp-content/themes/codematra-tuts/images/site-logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-9 col-xl-9">
+        <nav class="navbar navbar-expand-lg">
+          <span class="d-lg-none hamburger toggleMenu collapsed" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+          </span>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <form class="cbody fui search-form fui1 w-100" action="https://codematra.com" method="get" enctype="multipart/form-data" autocomplete="off">
+              <div class="search-box mr_10">
+                <input value="" name="s" type="text" class="form-control w-100" required="required" placeholder="Search...">
+                <button type="submit" class="btn">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div> 
+            </form>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a title="Home" class="nav-link" href="https://codematra.com/"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void('0');">Learn</a>
+                <div class="dropdown-menu ddmfull"> 
+                  <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-3">
+                      <div class="card cui1"> 
+                        <h4 class="ncheading">Learn To Code</h4>
+                        <a class="ahpri" href="https://codematra.com/category/bootstrap/">Bootstrap</a><a class="ahpri" href="https://codematra.com/category/css/">CSS</a><a class="ahpri" href="https://codematra.com/category/git-commands/">Git Commands</a><a class="ahpri" href="https://codematra.com/category/html/">HTML</a><a class="ahpri" href="https://codematra.com/category/php/">PHP</a><a class="ahpri" href="https://codematra.com/category/react-js/">React Js</a><a class="ahpri" href="https://codematra.com/category/wordpress/">WordPress</a> 
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <div class="card cui1"> 
+                        <h4 class="ncheading">Programs for Practice</h4>
+                        <a class="ahpri" href="https://codematra.com/programs-category/php/">PHP Programs</a><a class="ahpri" href="https://codematra.com/programs-category/python/">Python Programs</a> 
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <div class="card cui1"> 
+                        <h4 class="ncheading">MCQs - Test your skills</h4>
+                          <a class="ahpri" href="https://codematra.com/mcqs-category/react-js-multiple-choice-questions/">React JS Multiple Choice Questions</a> 
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <div class="card cui1"> 
+                        <h4 class="ncheading">Interview Questions</h4>
+                        <a class="ahpri" href="https://codematra.com/interview-questions-category/html-interview-questions/">HTML Interview Questions</a><a class="ahpri" href="https://codematra.com/interview-questions-category/php/">PHP Interview Questions</a><a class="ahpri" href="https://codematra.com/interview-questions-category/react-js/">React JS Interview Questions</a><a class="ahpri" href="https://codematra.com/interview-questions-category/woocommerce-interview-questions/">WooCommerce Interview Questions</a><a class="ahpri" href="https://codematra.com/interview-questions-category/wordpress/">WordPress Interview Questions</a> 
+                      </div>
+                    </div>
+                    
+                  </div>
+                  </div>
+                </div>
+              </li>
+       
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void('0');">Templates</a>
+                <div class="dropdown-menu"> 
+                  <a class="dropdown-item" href="https://codematra.com/templates/cm-blog-bootstrap/">CM Blog Template <span class="badge badge-secondary r_0 ">New!</span></a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void('0');">Projects</a>
+                <div class="dropdown-menu"> 
+                  <a class="dropdown-item" href="https://codematra.com/write-a-program-to-create-a-simple-calculator-using-php/">Simple Calculator</a>
+                  <a class="dropdown-item" href="https://codematra.com/learn-to-create-a-simple-contact-book-project-in-php/">Basic Contact Book<span class="badge badge-secondary r_0 ">New!</span></a>
+                  <a class="dropdown-item disabled" href="#">Portfolio<span class="badge badge-secondary r_0 ">Coming Soon!</span></a>
+                  <a class="dropdown-item disabled" href="#">Chat App<span class="badge badge-secondary r_0 ">Coming Soon!</span></a>
+                  <a class="dropdown-item disabled" href="#">Quiz App<span class="badge badge-secondary r_0 ">Coming Soon!</span></a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void('0');">Tools</a>
+                <div class="dropdown-menu"> 
+                  <a class="dropdown-item" href="https://codematra.com/base64-encode-and-decode/">Base64 Encoder</a>
+                  <a class="dropdown-item" href="https://codematra.com/base64-encode-and-decode/?tool=decode">Base64 Decoder</a>
+                  <a class="dropdown-item" href="https://codematra.com/list-to-array-Converter/">List to Array</a>
+                  <a class="dropdown-item" href="https://codematra.com/list-to-html-list-Converter/">List to HTML List</a>
+                  <a class="dropdown-item" href="https://codematra.com/minify-css/">Minify CSS</a>
+                  <a class="dropdown-item" href="https://codematra.com/minify-html/">Minify HTML</a>
+                  <a class="dropdown-item" href="https://codematra.com/minify-js/">Minify JS</a>
+                  <a class="dropdown-item" href="https://codematra.com/excel-to-array-Converter/">Excel To Array</a>
+                  <a class="dropdown-item" href="https://codematra.com/excel-to-json-Converter/">Excel To JSON</a>
+                  <a class="dropdown-item" href="https://codematra.com/excel-to-xml-Converter/">Excel To XML</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" title="Offers and Deals" href="javascript:void('0');">Deals <span class="badge badge-secondary r_0 "></a>
+                <div class="dropdown-menu deals-dropdown"> 
+                  <a class="dropdown-item" href="https://codematra.com/deals/cheap-web-hosting/">Cheap Web Hosting</a>
+                  <a class="dropdown-item" href="https://codematra.com/deals/best-wordpress-theme/">Best WordPress Theme</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 
+</header>  
+<!-- Header End --> 
+ 
+<!-- Banner UI 1 -->
+<div class="banner-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="banner-card card cui2 nobefore noshadow bg-light relative px_30 py_40">
+          <p class="pre-banner-heading text-primary f14 text-uppercase mb_20 ">Welcome to codematra.com</p>
+          <h1 class="banner-heading f40 lh44 mb_20 text_black">Learn Code From The Basics</h1>
+          <p class="banner-description mb_30 f16">
+            Learn with free online articles on latest technologies, Programs, Interview Questions and MCQs.<br />
+            Basic projects and templates to get an understanding of the flow and file structures.
+          </p>
+          <div class="banner-actions">
+              <a href="#ourTutorials" class="btn mb_10 btn-primary btnhs text-uppercase btnui2 d-inline-flex flex center_center">
+                Learn Coding 
+                <i class="f16 bi bi-chevron-right ml_10"></i>
+              </a>
+              <a href="#ourTutorials" class="btn mb_10 btn-outline-primary btnhs text-uppercase btnui2 d-inline-flex flex center_center">
+                Learn Coding 
+                <i class="f16 bi bi-chevron-right ml_10"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-none d-md-block">
+        <p class="pre-banner-heading f16 mb_20">Technologies you will learning here.</p>
+        <div class="banner-icons mb_20 d-flex">
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-css3"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-php"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-wordpress"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-python"></i>
+          </div>
+          <!-- <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-angular"></i>
+          </div> -->
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="card cbody noshadow flex center_center w_60 h_60">
+            <i class="fab fa-js"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="single-page common-section-ui">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-8">
+                                          <div class="card cui2 noshadow r_0 w-100 typography">
+                <div class="card-body pri_30 pri_30 pli_30 pbi_30">
+                    <h2 class='text-primary'><a class="text-primary tdn d-block" href="https://codematra.com/how-to-improve-wordpress-website-security/" >How to improve WordPress website security?</a></h2>
+                                          <a href="https://codematra.com/how-to-improve-wordpress-website-security/" class="d-inline-block mb_20 w-100"><img class="card-img-top img-fluid r_0 border" src="https://codematra.com/wp-content/uploads/2021/10/how-improve-wordpress-website-security-in-2021.png" alt="How to improve WordPress website security?" /></a>
+                                                            <div class="metatags text-dark px_5 py_5 mb_10 f14 d-flex justify-content-between">
+                      <span><i class="fa fa-eye mr_5 text-primary" title="Views" aria-hidden="true"></i>19</span>
+                      <span><i class="fa fa-clock mr_5 text-primary" aria-hidden="true"></i> 1 day ago</span>
+                      <span><i class="fa fa-user mr_5 text-primary" aria-hidden="true"></i> Code Matra</span>
+                      <span><i class="fa fa-tag mr_5 text-primary" aria-hidden="true"></i> 
+                      <a class="text-dark" href="https://codematra.com/category/wordpress/" alt="View all posts in WordPress">WordPress</a>                      </span> 
+                    </div>
+                    <div class="f16">
+                    <p>Are you running a WordPress website? and want to improve the security of your Website. If yes, then this article is for you.  In this article, we are going to&hellip;</p>
+                    <a href="https://codematra.com/how-to-improve-wordpress-website-security/" class="btn btn-primary btn-sm btnui3s text-white text_bold">Continue Reading <i class="ml_5 fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+              </div>                        
+                                          <div class="card cui2 noshadow r_0 w-100 typography">
+                <div class="card-body pri_30 pri_30 pli_30 pbi_30">
+                    <h2 class='text-primary'><a class="text-primary tdn d-block" href="https://codematra.com/most-common-git-commands-every-developer-must-know/" >Most Common Git Commands | Every Developer Must Know</a></h2>
+                                          <a href="https://codematra.com/most-common-git-commands-every-developer-must-know/" class="d-inline-block mb_20 w-100"><img class="card-img-top img-fluid r_0 border" src="https://codematra.com/wp-content/uploads/2021/10/most-common-git-commands-every-developer-must-know-in-2021.png" alt="Most Common Git Commands | Every Developer Must Know" /></a>
+                                                            <div class="metatags text-dark px_5 py_5 mb_10 f14 d-flex justify-content-between">
+                      <span><i class="fa fa-eye mr_5 text-primary" title="Views" aria-hidden="true"></i>54</span>
+                      <span><i class="fa fa-clock mr_5 text-primary" aria-hidden="true"></i> 1 week ago</span>
+                      <span><i class="fa fa-user mr_5 text-primary" aria-hidden="true"></i> Code Matra</span>
+                      <span><i class="fa fa-tag mr_5 text-primary" aria-hidden="true"></i> 
+                      <a class="text-dark" href="https://codematra.com/category/git-commands/" alt="View all posts in Git Commands">Git Commands</a>                      </span> 
+                    </div>
+                    <div class="f16">
+                    <p>In this article, We are going to discuss git commands. It plays an important role in the version control of a project or application. Some most common git commands that&hellip;</p>
+                    <a href="https://codematra.com/most-common-git-commands-every-developer-must-know/" class="btn btn-primary btn-sm btnui3s text-white text_bold">Continue Reading <i class="ml_5 fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+              </div>                        
+                                          <div class="card cui2 noshadow r_0 w-100 typography">
+                <div class="card-body pri_30 pri_30 pli_30 pbi_30">
+                    <h2 class='text-primary'><a class="text-primary tdn d-block" href="https://codematra.com/how-to-build-a-pricing-card-using-bootstrap-5/" >How to build a pricing card using Bootstrap 5?</a></h2>
+                                          <a href="https://codematra.com/how-to-build-a-pricing-card-using-bootstrap-5/" class="d-inline-block mb_20 w-100"><img class="card-img-top img-fluid r_0 border" src="https://codematra.com/wp-content/uploads/2021/10/how-to-build-a-pricing-card-using-bootstrap-5.png" alt="How to build a pricing card using Bootstrap 5?" /></a>
+                                                            <div class="metatags text-dark px_5 py_5 mb_10 f14 d-flex justify-content-between">
+                      <span><i class="fa fa-eye mr_5 text-primary" title="Views" aria-hidden="true"></i>14</span>
+                      <span><i class="fa fa-clock mr_5 text-primary" aria-hidden="true"></i> 1 week ago</span>
+                      <span><i class="fa fa-user mr_5 text-primary" aria-hidden="true"></i> Code Matra</span>
+                      <span><i class="fa fa-tag mr_5 text-primary" aria-hidden="true"></i> 
+                      <a class="text-dark" href="https://codematra.com/category/bootstrap/" alt="View all posts in Bootstrap">Bootstrap</a>                      </span> 
+                    </div>
+                    <div class="f16">
+                    <p>In this article, We will learn to create a pricing card using Bootstrap 5. Let's create a pricing card. To build a pricing card using bootstrap 5. We have to&hellip;</p>
+                    <a href="https://codematra.com/how-to-build-a-pricing-card-using-bootstrap-5/" class="btn btn-primary btn-sm btnui3s text-white text_bold">Continue Reading <i class="ml_5 fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+              </div>                        
+                                          <div class="card cui2 noshadow r_0 w-100 typography">
+                <div class="card-body pri_30 pri_30 pli_30 pbi_30">
+                    <h2 class='text-primary'><a class="text-primary tdn d-block" href="https://codematra.com/how-to-create-a-custom-login-modal-in-react-js/" >How to create a custom login modal in React JS?</a></h2>
+                                          <a href="https://codematra.com/how-to-create-a-custom-login-modal-in-react-js/" class="d-inline-block mb_20 w-100"><img class="card-img-top img-fluid r_0 border" src="https://codematra.com/wp-content/uploads/2021/10/how-to-create-a-login-modal-in-react-js.png" alt="How to create a custom login modal in React JS?" /></a>
+                                                            <div class="metatags text-dark px_5 py_5 mb_10 f14 d-flex justify-content-between">
+                      <span><i class="fa fa-eye mr_5 text-primary" title="Views" aria-hidden="true"></i>65</span>
+                      <span><i class="fa fa-clock mr_5 text-primary" aria-hidden="true"></i> 2 weeks ago</span>
+                      <span><i class="fa fa-user mr_5 text-primary" aria-hidden="true"></i> Code Matra</span>
+                      <span><i class="fa fa-tag mr_5 text-primary" aria-hidden="true"></i> 
+                      <a class="text-dark" href="https://codematra.com/category/react-js/" alt="View all posts in React Js">React Js</a>                      </span> 
+                    </div>
+                    <div class="f16">
+                    <p>In this article, We will learn to create a custom login modal in React JS with a very simple example. We have to create a basic LoginModal component and then&hellip;</p>
+                    <a href="https://codematra.com/how-to-create-a-custom-login-modal-in-react-js/" class="btn btn-primary btn-sm btnui3s text-white text_bold">Continue Reading <i class="ml_5 fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+              </div>                        
+                                          <div class="card cui2 noshadow r_0 w-100 typography">
+                <div class="card-body pri_30 pri_30 pli_30 pbi_30">
+                    <h2 class='text-primary'><a class="text-primary tdn d-block" href="https://codematra.com/how-to-add-date-time-picker-in-react-js/" >How to add Date Time Picker in React JS?</a></h2>
+                                          <a href="https://codematra.com/how-to-add-date-time-picker-in-react-js/" class="d-inline-block mb_20 w-100"><img class="card-img-top img-fluid r_0 border" src="https://codematra.com/wp-content/uploads/2021/10/how-to-add-date-time-picker-in-react-js.png" alt="How to add Date Time Picker in React JS?" /></a>
+                                                            <div class="metatags text-dark px_5 py_5 mb_10 f14 d-flex justify-content-between">
+                      <span><i class="fa fa-eye mr_5 text-primary" title="Views" aria-hidden="true"></i>75</span>
+                      <span><i class="fa fa-clock mr_5 text-primary" aria-hidden="true"></i> 2 weeks ago</span>
+                      <span><i class="fa fa-user mr_5 text-primary" aria-hidden="true"></i> Code Matra</span>
+                      <span><i class="fa fa-tag mr_5 text-primary" aria-hidden="true"></i> 
+                      <a class="text-dark" href="https://codematra.com/category/react-js/" alt="View all posts in React Js">React Js</a>                      </span> 
+                    </div>
+                    <div class="f16">
+                    <p>In this article, We will learn to add Date Time Picker in React Js input field using a package React Date Time. Steps to install and use the React date&hellip;</p>
+                    <a href="https://codematra.com/how-to-add-date-time-picker-in-react-js/" class="btn btn-primary btn-sm btnui3s text-white text_bold">Continue Reading <i class="ml_5 fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+              </div>                        
+                              <div class="text-center">
+                  <div class="custom_paginations pagination-ui"><ul><li><span>1 of 14</span></li><li><span aria-current="page" class="page-numbers current">1</span></li><li><a class="page-numbers" href="https://codematra.com/page/2/">2</a></li><li><a class="page-numbers" href="https://codematra.com/page/3/">3</a></li><li><span class="page-numbers dots">&hellip;</span></li><li><a class="page-numbers" href="https://codematra.com/page/14/">14</a></li><li><a class="next page-numbers" href="https://codematra.com/page/2/">Next &raquo;</a></li></ul></div>                </div>
+                   
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card cui2 sidebar-listing r_0 mb_20">
+  <h3 class="card-header rounded-0 py_15 px_15 border-bottom text-uppercase  text-secondary f16 mb_0 font_bold">
+    Featured Posts
+  </h3>
+  <div class="cbody p-0">
+    <ul class="listing type2">
+                  <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-use-react-js-navigation-learn-with-a-router-example/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/react-js-routing-with-navigation-example.png" alt="How to use Navigation or Routing in React JS?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-use-react-js-navigation-learn-with-a-router-example/" class="d-inline-block tdn text-primary" >
+                    How to use Navigation or Routing in React JS?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center" title="Categories">
+                  <i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/react-js/" alt="View all posts in React Js">React Js</a>,                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-setup-sass-or-scss-in-react-js-project/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/react-js-scss-setup.png" alt="How to setup SASS or SCSS in React JS project?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-setup-sass-or-scss-in-react-js-project/" class="d-inline-block tdn text-primary" >
+                    How to setup SASS or SCSS in React JS project?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center" title="Categories">
+                  <i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/react-js/" alt="View all posts in React Js">React Js</a>,                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/write-a-program-to-create-a-simple-calculator-using-php/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/simple-calculator-design-using-html-code-matra.png" alt="Learn to create a simple calculator in PHP?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/write-a-program-to-create-a-simple-calculator-using-php/" class="d-inline-block tdn text-primary" >
+                    Learn to create a simple calculator in PHP?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center" title="Categories">
+                  <i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/php/" alt="View all posts in PHP">PHP</a>, <a class="text-muted ml_5"  href="https://codematra.com/category/projects/" alt="View all posts in Projects">Projects</a>,                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-create-a-header-using-html-and-css-example-1/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/09/header-ui-1-codematra.png" alt="How to create a Header in HTML and CSS? &#8211; Example 1" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-create-a-header-using-html-and-css-example-1/" class="d-inline-block tdn text-primary" >
+                    How to create a Header in HTML and CSS? &#8211; Example 1                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center" title="Categories">
+                  <i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/css/" alt="View all posts in CSS">CSS</a>, <a class="text-muted ml_5"  href="https://codematra.com/category/html/" alt="View all posts in HTML">HTML</a>,                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-increase-file-upload-limit-in-wordpress/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                    </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-increase-file-upload-limit-in-wordpress/" class="d-inline-block tdn text-primary" >
+                    How to increase file upload limit in WordPress?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center" title="Categories">
+                  <i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/wordpress/" alt="View all posts in WordPress">WordPress</a>,                </div>
+              </div>
+            </li>
+            </ul>
+  </div>
+</div>  <div class="card cui2 sidebar-listing r_0 mb_20">
+  <h3 class="card-header rounded-0 py_15 px_15 border-bottom text-uppercase  text-secondary f16 mb_0 font_bold">
+    Popular Posts
+  </h3>
+  <div class="cbody p-0">
+    <ul class="listing type2">
+                  <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-create-a-contact-form-in-react-js-using-bootstrap-with-validation/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/how-to-create-a-contact-form-in-react-js.png" alt="How to Create a Contact Form in React?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-create-a-contact-form-in-react-js-using-bootstrap-with-validation/" class="d-inline-block tdn text-primary" >
+                    How to Create a Contact Form in React?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center justify-content-start w-100">
+                  <span class="mr_10" title="Views"><i class="text-muted fa fa-eye mr_5" aria-hidden="true"></i> 272</span>
+                  <span class="d-flex align-items-center" title="Categories"><i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/react-js/" alt="View all posts in React Js">React Js</a>,</span>
+                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-show-visitor-or-visit-counts-on-posts-and-pages-in-wordpress/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/09/how-to-add-visitor-count-in-wordpress.png" alt="How to add visitor count in WordPress?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-show-visitor-or-visit-counts-on-posts-and-pages-in-wordpress/" class="d-inline-block tdn text-primary" >
+                    How to add visitor count in WordPress?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center justify-content-start w-100">
+                  <span class="mr_10" title="Views"><i class="text-muted fa fa-eye mr_5" aria-hidden="true"></i> 255</span>
+                  <span class="d-flex align-items-center" title="Categories"><i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/wordpress/" alt="View all posts in WordPress">WordPress</a>,</span>
+                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/how-to-make-a-button-in-html-and-css/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/youtube-how-to-make-button-using-html-and-css.png" alt="How to make a button in HTML and CSS?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/how-to-make-a-button-in-html-and-css/" class="d-inline-block tdn text-primary" >
+                    How to make a button in HTML and CSS?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center justify-content-start w-100">
+                  <span class="mr_10" title="Views"><i class="text-muted fa fa-eye mr_5" aria-hidden="true"></i> 183</span>
+                  <span class="d-flex align-items-center" title="Categories"><i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/css/" alt="View all posts in CSS">CSS</a>, <a class="text-muted ml_5"  href="https://codematra.com/category/html/" alt="View all posts in HTML">HTML</a>,</span>
+                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/top-5-projects-for-web-designers-and-developers-as-a-beginner/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/top-5-web-programming-project-beginners-codematra-e1634140359848.png" alt="Top 5 Best Projects for beginners and new programmers." />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/top-5-projects-for-web-designers-and-developers-as-a-beginner/" class="d-inline-block tdn text-primary" >
+                    Top 5 Best Projects for beginners and new programmers.                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center justify-content-start w-100">
+                  <span class="mr_10" title="Views"><i class="text-muted fa fa-eye mr_5" aria-hidden="true"></i> 164</span>
+                  <span class="d-flex align-items-center" title="Categories"><i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/projects/" alt="View all posts in Projects">Projects</a>,</span>
+                </div>
+              </div>
+            </li>
+                    <li class="relative d-flex align-items-center">
+              <div class="cminleft mr_10 my_5">
+                <a href="https://codematra.com/write-a-program-to-create-a-simple-calculator-using-php/" class="d-inline-block tdn bg-light cimgwr w_50 h_50" >
+                                                        <img class="h_50 img-fluid border" src="https://codematra.com/wp-content/uploads/2021/10/simple-calculator-design-using-html-code-matra.png" alt="Learn to create a simple calculator in PHP?" />
+                                  </a>
+              </div>
+              <div class="cminright">
+                <h3 class="f14 mb_5 font_normal lh20">
+                  <a href="https://codematra.com/write-a-program-to-create-a-simple-calculator-using-php/" class="d-inline-block tdn text-primary" >
+                    Learn to create a simple calculator in PHP?                  </a>
+                </h3>
+                <div class="cmeta mb_0 text-muted f12 d-flex align-items-center justify-content-start w-100">
+                  <span class="mr_10" title="Views"><i class="text-muted fa fa-eye mr_5" aria-hidden="true"></i> 162</span>
+                  <span class="d-flex align-items-center" title="Categories"><i class="text-muted fa fa-tag" aria-hidden="true"></i> <a class="text-muted ml_5"  href="https://codematra.com/category/php/" alt="View all posts in PHP">PHP</a>, <a class="text-muted ml_5"  href="https://codematra.com/category/projects/" alt="View all posts in Projects">Projects</a>,</span>
+                </div>
+              </div>
+            </li>
+            </ul>
+  </div>
+</div>  <div class="card cui2 sidebar-listing r_0 mb_20">
+  <h3 class="card-header rounded-0 py_15 px_15 border-bottom text-uppercase  text-secondary f16 mb_0 font_bold">
+    Technologies to Learn...
+  </h3>
+  <div class="cbody p-0">
+    <div class="ourtutorials row no-gutters">
+        
+          <div class="col-12">
+            <div class="card cui1 r_0 noshadow relative mbi_0">
+              <a class="tdn overlay_w op0 absolute" href="https://codematra.com/category/bootstrap/"></a>
+              <div class="pb_10 pt_5 px_15 relative d-flex align-items-center">
+                <div class="ciconrc ciconb mri_15">
+                  <i class="fab fa-bootstrap f18 text-secondary"></i>
+                </div>
+                <div class="">
+                  <h3 class="card-title font_normal mbi_5"><a  class="text-primary f16 lh16 font_normal" href="https://codematra.com/category/bootstrap/">Bootstrap 5</a></h3>
+                  <p class="card-text text-muted lh20">Learn the latest library of Bootstrap to speed up web design work.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+                    
+          <div class="col-12">
+            <div class="card cui1 r_0 noshadow relative mbi_0">
+              <a class="tdn overlay_w op0 absolute" href="https://codematra.com/category/html/"></a>
+              <div class="pb_10 pt_5 px_15 relative d-flex align-items-center">
+                <div class="ciconrc ciconb mri_15">
+                  <i class="fab fa-html5 f18 text-secondary"></i>
+                </div>
+                <div class="">
+                  <h3 class="card-title font_normal mbi_5"><a  class="text-primary f16 lh16 font_normal" href="https://codematra.com/category/html/">HTML</a></h3>
+                  <p class="card-text text-muted lh20">Learn the basic of HTML to make a web page layout.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+                    
+          <div class="col-12">
+            <div class="card cui1 r_0 noshadow relative mbi_0">
+              <a class="tdn overlay_w op0 absolute" href="https://codematra.com/category/css/"></a>
+              <div class="pb_10 pt_5 px_15 relative d-flex align-items-center">
+                <div class="ciconrc ciconb mri_15">
+                  <i class="fab fa-css3 f18 text-secondary"></i>
+                </div>
+                <div class="">
+                  <h3 class="card-title font_normal mbi_5"><a  class="text-primary f16 lh16 font_normal" href="https://codematra.com/category/css/">CSS</a></h3>
+                  <p class="card-text text-muted lh20">Learn the CSS to make your HTML layout to a moderns and unique.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+                    
+          <div class="col-12">
+            <div class="card cui1 r_0 noshadow relative mbi_0">
+              <a class="tdn overlay_w op0 absolute" href="https://codematra.com/category/react-js/"></a>
+              <div class="pb_10 pt_5 px_15 relative d-flex align-items-center">
+                <div class="ciconrc ciconb mri_15">
+                  <i class="fab fa-react f18 text-secondary"></i>
+                </div>
+                <div class="">
+                  <h3 class="card-title font_normal mbi_5"><a  class="text-primary f16 lh16 font_normal" href="https://codematra.com/category/react-js/">React Js</a></h3>
+                  <p class="card-text text-muted lh20">Learn to make single page web application using React JS.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+                    
+          <div class="col-12">
+            <div class="card cui1 r_0 noshadow relative mbi_0">
+              <a class="tdn overlay_w op0 absolute" href="https://codematra.com/category/php/"></a>
+              <div class="pb_10 pt_5 px_15 relative d-flex align-items-center">
+                <div class="ciconrc ciconb mri_15">
+                  <i class="fab fa-php f18 text-secondary"></i>
+                </div>
+                <div class="">
+                  <h3 class="card-title font_normal mbi_5"><a  class="text-primary f16 lh16 font_normal" href="https://codematra.com/category/php/">PHP</a></h3>
+                  <p class="card-text text-muted lh20">Learn the all the basic of PHP to make a web application.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+                    
+          <div class="col-12">
+            <div class="card cui1 r_0 noshadow relative mbi_0">
+              <a class="tdn overlay_w op0 absolute" href="https://codematra.com/category/wordpress/"></a>
+              <div class="pb_10 pt_5 px_15 relative d-flex align-items-center">
+                <div class="ciconrc ciconb mri_15">
+                  <i class="fab fa-wordpress f18 text-secondary"></i>
+                </div>
+                <div class="">
+                  <h3 class="card-title font_normal mbi_5"><a  class="text-primary f16 lh16 font_normal" href="https://codematra.com/category/wordpress/">WordPress</a></h3>
+                  <p class="card-text text-muted lh20">Learn the most popular PHP CMS to make a web application.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+                                                                                            </div>
+  </div>
+</div>  <!-- Tags  -->
+<div class="card cui2 sidebar-listing r_0 mb_20 wp-block-tag-cloud">
+  <h3 class="card-header rounded-0 py_15 px_15 border-bottom text-uppercase  text-secondary f16 mb_0 font_bold">Popular Tags</h3>
+  <div class="cbody px_15">
+    <a href="https://codematra.com/tag/calculator/" class="tag-cloud-link tag-link-102 tag-link-position-1" style="font-size: 10pt;" aria-label="Calculator (2 items)">Calculator</a>
+<a href="https://codematra.com/tag/cards-design/" class="tag-cloud-link tag-link-62 tag-link-position-2" style="font-size: 17.460317460317pt;" aria-label="Cards Design (8 items)">Cards Design</a>
+<a href="https://codematra.com/tag/codes/" class="tag-cloud-link tag-link-60 tag-link-position-3" style="font-size: 18.888888888889pt;" aria-label="Codes (10 items)">Codes</a>
+<a href="https://codematra.com/tag/create-modal-in-react/" class="tag-cloud-link tag-link-164 tag-link-position-4" style="font-size: 10pt;" aria-label="Create modal in React (2 items)">Create modal in React</a>
+<a href="https://codematra.com/tag/curl/" class="tag-cloud-link tag-link-41 tag-link-position-5" style="font-size: 10pt;" aria-label="cURL (2 items)">cURL</a>
+<a href="https://codematra.com/tag/footer/" class="tag-cloud-link tag-link-67 tag-link-position-6" style="font-size: 10pt;" aria-label="footer (2 items)">footer</a>
+<a href="https://codematra.com/tag/header/" class="tag-cloud-link tag-link-68 tag-link-position-7" style="font-size: 11.904761904762pt;" aria-label="header (3 items)">header</a>
+<a href="https://codematra.com/tag/hide-modal-in-react/" class="tag-cloud-link tag-link-163 tag-link-position-8" style="font-size: 10pt;" aria-label="Hide Modal in React (2 items)">Hide Modal in React</a>
+<a href="https://codematra.com/tag/local-storage/" class="tag-cloud-link tag-link-42 tag-link-position-9" style="font-size: 11.904761904762pt;" aria-label="local storage (3 items)">local storage</a>
+<a href="https://codematra.com/tag/login-form-in-html/" class="tag-cloud-link tag-link-188 tag-link-position-10" style="font-size: 10pt;" aria-label="Login Form in HTML (2 items)">Login Form in HTML</a>
+<a href="https://codematra.com/tag/shortcode/" class="tag-cloud-link tag-link-54 tag-link-position-11" style="font-size: 10pt;" aria-label="shortcode (2 items)">shortcode</a>
+<a href="https://codematra.com/tag/show-and-hide-a-modal-in-react/" class="tag-cloud-link tag-link-165 tag-link-position-12" style="font-size: 10pt;" aria-label="Show and Hide a Modal in React (2 items)">Show and Hide a Modal in React</a>
+<a href="https://codematra.com/tag/show-modal-in-react/" class="tag-cloud-link tag-link-162 tag-link-position-13" style="font-size: 10pt;" aria-label="Show modal in React (2 items)">Show modal in React</a>
+<a href="https://codematra.com/tag/sidebar/" class="tag-cloud-link tag-link-53 tag-link-position-14" style="font-size: 10pt;" aria-label="sidebar (2 items)">sidebar</a>
+<a href="https://codematra.com/tag/simple-login-form/" class="tag-cloud-link tag-link-192 tag-link-position-15" style="font-size: 10pt;" aria-label="Simple Login Form (2 items)">Simple Login Form</a>
+<a href="https://codematra.com/tag/trigger-modal-in-react/" class="tag-cloud-link tag-link-161 tag-link-position-16" style="font-size: 10pt;" aria-label="Trigger Modal in React (2 items)">Trigger Modal in React</a>
+<a href="https://codematra.com/tag/user-role/" class="tag-cloud-link tag-link-52 tag-link-position-17" style="font-size: 13.492063492063pt;" aria-label="user role (4 items)">user role</a>
+<a href="https://codematra.com/tag/visitor-count/" class="tag-cloud-link tag-link-105 tag-link-position-18" style="font-size: 10pt;" aria-label="visitor count (2 items)">visitor count</a>
+<a href="https://codematra.com/tag/web-design/" class="tag-cloud-link tag-link-61 tag-link-position-19" style="font-size: 20pt;" aria-label="Web Design (12 items)">Web Design</a>
+<a href="https://codematra.com/tag/wordpress-body-class/" class="tag-cloud-link tag-link-55 tag-link-position-20" style="font-size: 10pt;" aria-label="WordPress Body Class (2 items)">WordPress Body Class</a>  </div>
+</div>            </div>
+        </div>
+    </div>
+</div>
+ 
 
+ 
+<!-- Modal -->
+<div class="modal fade" id="subscriptionModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="mui mui2 muis modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary w-100 text-center" id="subscriptionModalLabel">
+          Don't miss any new update!
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <p class="text-center"><i class="f100 text-secondary far fa-envelope-open"></i></p>
+        <i class="text-center d-block">Subscribe now! to get the latest tutorials, codes, mcqs, interview questions updates in your email.</i>
+        
+	<section id="yikes-mailchimp-container-1" class="yikes-mailchimp-container yikes-mailchimp-container-1 ">
+				<form id="subscribe-1" class="yikes-easy-mc-form yikes-easy-mc-form-1  " method="POST" data-attr-form-id="1">
+
+													<label for="yikes-easy-mc-form-1-EMAIL"  class="EMAIL-label yikes-mailchimp-field-required ">
+
+										<!-- dictate label visibility -->
+																					<span class="EMAIL-label">
+												Email Address											</span>
+										
+										<!-- Description Above -->
+										
+										<input id="yikes-easy-mc-form-1-EMAIL"  name="EMAIL"  placeholder="Email"  class="yikes-easy-mc-email "  required="required" type="email"  value="">
+
+										<!-- Description Below -->
+										<p class="form-field-description" id="form-field-description-EMAIL">Subscribe to our site for latest updates.</p>
+									</label>
+									
+				<!-- Honeypot Trap -->
+				<input type="hidden" name="yikes-mailchimp-honeypot" id="yikes-mailchimp-honeypot-1" value="">
+
+				<!-- List ID -->
+				<input type="hidden" name="yikes-mailchimp-associated-list-id" id="yikes-mailchimp-associated-list-id-1" value="198411b328">
+
+				<!-- The form that is being submitted! Used to display error/success messages above the correct form -->
+				<input type="hidden" name="yikes-mailchimp-submitted-form" id="yikes-mailchimp-submitted-form-1" value="1">
+
+				<!-- Submit Button -->
+				<button type="submit" class="yikes-easy-mc-submit-button yikes-easy-mc-submit-button-1 btn btn-primary  admin-logged-in"> <span class="yikes-mailchimp-submit-button-span-text">Subscribe Now</span></button>				<!-- Nonce Security Check -->
+				<input type="hidden" id="yikes_easy_mc_new_subscriber_1" name="yikes_easy_mc_new_subscriber" value="eac1bb9472">
+				<input type="hidden" name="_wp_http_referer" value="/" />				
+			</form>
+			<!-- Mailchimp Form generated by Easy Forms for Mailchimp v6.8.5 (https://wordpress.org/plugins/yikes-inc-easy-mailchimp-extender/) -->
+
+		<span class="edit-link"><a class="post-edit-link" href="https://codematra.com/wp-admin/admin.php?page=yikes-mailchimp-edit-form&#038;id=1" title="Edit Subscribe">Edit Form</a></span>	</section>
+	      </div>
+    </div>
+  </div>
+</div><footer class="section-footer footer_style1 f14 border-top bg-primary text-white">
+  <div class="footer_top pt_60 pb_20">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          
+          <!-- Social Links Start -->
+          <ul class="socialicons mbi_40 f30 d-flex justify-content-center siconsc"> 
+            <li class="facebook"><a href="https://www.facebook.com/codematra" title="Facebook Page - Code Matra" target="_blank"><i class="fab text-white fa-facebook-f"></i></a></li>
+            <li class="codepen"><a href="https://codepen.io/codematra" title="Code Pen - Code Matra" target="_blank"><i class="fab text-white fa-codepen"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/codematra/" title="Instagram - Code Matra" target="_blank"><i class="fab text-white fa-instagram"></i></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCbD6k-T54c8I-8UI0vqQ79Q" title="Youtube Channel - Code Matra" target="_blank"><i class="fab text-white fa-youtube"></i></a></li>
+          </ul>
+
+          <!-- Useful Links -->
+          <ul class="menu mbi_20 d-flex list-unstyled w-100 justify-content-center align-items-center">
+            <li><a href="https://codematra.com/about-code-matra">About Us</a></li>
+            <li><a href="https://codematra.com/contact-us">Contact Us</a></li>
+            <li><a href="https://codematra.com/sitemap_index.xml">Sitemap</a></li>
+            <li><a href="https://codematra.com/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://codematra.com/terms-and-conditions">Terms and Conditions</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom border-top py_15">
+    <p class="f12 lh18  mb-0 text-center">Copyright &copy; 2021 CodeMatra.com | All Rights Reserved.</p>
+  </div>
+  
+</footer>
+ 
+  <div class="text-center fixed_bottom px_20 py_5 cookienotice bg_black text-white">This website uses cookies to ensure you get the best user experience on our website. <a href="https://codematra.com/privacy-policy">Learn more</a> <button class="cookienotice-btn ml_5 btn btn-sm btn-secondary min_w_25">OK</button></div>
+
+ 	<a href="#" class="gotoparrow"><i class="fas fa-arrow-up"></i></a>
 	<!-- Script -->
-	<script src="../../assets/jquery/jquery.slim.min.js" type="text/javascript"></script> 
+	<script src="../../assets/jquery/jquery.min.js" type="text/javascript"></script> 
 	<script src="../../assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 	<script src="../../assets/smooth-scroll/jquery.smooth-scroll.min.js" type="text/javascript"></script>
 	<script src="js/scripts.js" type="text/javascript"></script>

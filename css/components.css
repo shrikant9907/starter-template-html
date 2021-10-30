@@ -2,7 +2,7 @@
 /*      Created By      : Shrikant Yadav                                                    */
 /*      Contact         : shrikant9907@gmail.com                                            */
 /*      Full Stack Web Developer                                                            */
-/*      Version         : 3.0                                                               */
+/*      Version         : 4.0                                                               */
 html, body {
   -moz-transition: unset !important;
   -o-transition: unset !important;
@@ -542,7 +542,7 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 66px;
+  margin-top: 40px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -592,10 +592,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
 .banner_section .main-heading,
 .banner-section .main-heading {
   font-size: 70px;
-}
-.banner_section .banner-card,
-.banner-section .banner-card {
-  padding: 15px 0 20px 15px;
 }
 .banner_section .banner-card:before,
 .banner-section .banner-card:before {
@@ -1029,8 +1025,15 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
 
+input[type=submit],
+input[type=button],
+button,
 .button,
 .btn {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -1041,38 +1044,208 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   -ms-user-select: none;
   user-select: none;
   font-size: 14px;
-  padding: 18px 30px;
+  padding: 12px 15px;
   max-width: 100%;
   width: auto;
   min-width: 150px;
   line-height: 1;
+  /*Button Sizes*/
 }
-.button.btnui1s, .button.btnui1,
+input[type=submit].btnui1s, input[type=submit].btnui1,
+input[type=button].btnui1s,
+input[type=button].btnui1,
+button.btnui1s,
+button.btnui1,
+.button.btnui1s,
+.button.btnui1,
 .btn.btnui1s,
 .btn.btnui1 {
   border-radius: 0px !important;
 }
-.button.btnui2s, .button.btnui2,
+input[type=submit].btnui2s, input[type=submit].btnui2,
+input[type=button].btnui2s,
+input[type=button].btnui2,
+button.btnui2s,
+button.btnui2,
+.button.btnui2s,
+.button.btnui2,
 .btn.btnui2s,
 .btn.btnui2 {
   border-radius: 4px !important;
 }
-.button.btnui3s, .button.btnui3,
+input[type=submit].btnui3s, input[type=submit].btnui3,
+input[type=button].btnui3s,
+input[type=button].btnui3,
+button.btnui3s,
+button.btnui3,
+.button.btnui3s,
+.button.btnui3,
 .btn.btnui3s,
 .btn.btnui3 {
   border-radius: 50px !important;
 }
-.button.btnui3s, .button.btnui2s, .button.btnui1s,
+input[type=submit].btnui3s, input[type=submit].btnui2s, input[type=submit].btnui1s,
+input[type=button].btnui3s,
+input[type=button].btnui2s,
+input[type=button].btnui1s,
+button.btnui3s,
+button.btnui2s,
+button.btnui1s,
+.button.btnui3s,
+.button.btnui2s,
+.button.btnui1s,
 .btn.btnui3s,
 .btn.btnui2s,
 .btn.btnui1s {
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
+input[type=submit].btn-primary, input[type=submit].btn_primary,
+input[type=button].btn-primary,
+input[type=button].btn_primary,
+button.btn-primary,
+button.btn_primary,
+.button.btn-primary,
+.button.btn_primary,
+.btn.btn-primary,
+.btn.btn_primary {
+  background-color: #f34423;
+  color: #ffffff;
+  border-color: #df2500;
+}
+input[type=submit].btn-primary:hover, input[type=submit].btn_primary:hover,
+input[type=button].btn-primary:hover,
+input[type=button].btn_primary:hover,
+button.btn-primary:hover,
+button.btn_primary:hover,
+.button.btn-primary:hover,
+.button.btn_primary:hover,
+.btn.btn-primary:hover,
+.btn.btn_primary:hover {
+  background-color: #df2500;
+}
+input[type=submit].btn-outline-primary, input[type=submit].btn_outline_primary,
+input[type=button].btn-outline-primary,
+input[type=button].btn_outline_primary,
+button.btn-outline-primary,
+button.btn_outline_primary,
+.button.btn-outline-primary,
+.button.btn_outline_primary,
+.btn.btn-outline-primary,
+.btn.btn_outline_primary {
+  background-color: transparent;
+  color: #f34423;
+  border-color: #df2500;
+}
+input[type=submit].btn-outline-primary:hover, input[type=submit].btn_outline_primary:hover,
+input[type=button].btn-outline-primary:hover,
+input[type=button].btn_outline_primary:hover,
+button.btn-outline-primary:hover,
+button.btn_outline_primary:hover,
+.button.btn-outline-primary:hover,
+.button.btn_outline_primary:hover,
+.btn.btn-outline-primary:hover,
+.btn.btn_outline_primary:hover {
+  background-color: #df2500;
+  color: #ffffff;
+}
+input[type=submit].btn-secondary, input[type=submit].btn_secondary,
+input[type=button].btn-secondary,
+input[type=button].btn_secondary,
+button.btn-secondary,
+button.btn_secondary,
+.button.btn-secondary,
+.button.btn_secondary,
+.btn.btn-secondary,
+.btn.btn_secondary {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #0067d4;
+}
+input[type=submit].btn-secondary:hover, input[type=submit].btn_secondary:hover,
+input[type=button].btn-secondary:hover,
+input[type=button].btn_secondary:hover,
+button.btn-secondary:hover,
+button.btn_secondary:hover,
+.button.btn-secondary:hover,
+.button.btn_secondary:hover,
+.btn.btn-secondary:hover,
+.btn.btn_secondary:hover {
+  background-color: #0067d4;
+}
+input[type=submit].btn-outline-secondary, input[type=submit].btn_outline_secondary,
+input[type=button].btn-outline-secondary,
+input[type=button].btn_outline_secondary,
+button.btn-outline-secondary,
+button.btn_outline_secondary,
+.button.btn-outline-secondary,
+.button.btn_outline_secondary,
+.btn.btn-outline-secondary,
+.btn.btn_outline_secondary {
+  background-color: transparent;
+  color: #f34423;
+  border-color: #0067d4;
+}
+input[type=submit].btn-outline-secondary:hover, input[type=submit].btn_outline_secondary:hover,
+input[type=button].btn-outline-secondary:hover,
+input[type=button].btn_outline_secondary:hover,
+button.btn-outline-secondary:hover,
+button.btn_outline_secondary:hover,
+.button.btn-outline-secondary:hover,
+.button.btn_outline_secondary:hover,
+.btn.btn-outline-secondary:hover,
+.btn.btn_outline_secondary:hover {
+  background-color: #0067d4;
+  color: #ffffff;
+}
+input[type=submit].focus, input[type=submit]:focus,
+input[type=button].focus,
+input[type=button]:focus,
+button.focus,
+button:focus,
+.button.focus,
+.button:focus,
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+input[type=submit].btnhs:hover,
+input[type=button].btnhs:hover,
+button.btnhs:hover,
+.button.btnhs:hover,
+.btn.btnhs:hover {
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+input[type=submit].btn-lg, input[type=submit].btn_lg, input[type=submit].btn_large,
+input[type=button].btn-lg,
+input[type=button].btn_lg,
+input[type=button].btn_large,
+button.btn-lg,
+button.btn_lg,
+button.btn_large,
+.button.btn-lg,
+.button.btn_lg,
+.button.btn_large,
+.btn.btn-lg,
+.btn.btn_lg,
+.btn.btn_large {
+  padding: 15px 30px !important;
+  font-size: 16px !important;
+}
+input[type=submit].btn-sm, input[type=submit].btn_sm, input[type=submit].btn_small,
+input[type=button].btn-sm,
+input[type=button].btn_sm,
+input[type=button].btn_small,
+button.btn-sm,
+button.btn_sm,
+button.btn_small,
 .button.btn-sm,
-.btn.btn-sm {
-  padding: 10px 15px;
-  line-height: 16px;
-  font-size: 12px;
+.button.btn_sm,
+.button.btn_small,
+.btn.btn-sm,
+.btn.btn_sm,
+.btn.btn_small {
+  padding: 10px 15px !important;
+  font-size: 12px !important;
 }
 
 /*Accordion CSS*/
