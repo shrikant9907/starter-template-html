@@ -4,8 +4,10 @@
 /*      Version         : 4.0                                                               */
 
 $primaryColor: #f34423;
+$primaryLightColor: #ffeeee;
 $primaryDarkColor: #df2500;
 $secondaryColor: #007bff;
+$secondaryLightColor: #ebf5ff;
 $secondaryDarkColor: #0067d4;
 $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 $fontFamilyText: "Open Sans", sans-serif; 
@@ -677,6 +679,14 @@ p {
 
 
 /*Background Colors*/
+.bg_light_primary{
+  background-color: $primaryLightColor !important;
+}
+
+.bg_light_secondary{
+  background-color: $secondaryLightColor !important;
+}
+
 .bg_grey {
     background-color: #F1F1F1 !important;
 }

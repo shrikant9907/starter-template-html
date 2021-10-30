@@ -360,6 +360,7 @@ html, body {
 header {
   width: 100%;
   font-size: 15px;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 .site-header.sticky, .site-header.fixed,
 header.sticky,

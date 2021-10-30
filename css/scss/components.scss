@@ -4,8 +4,10 @@
 /*      Version         : 4.0                                                               */
 
 $primaryColor: #f34423;
+$primaryLightColor: #ffeeee;
 $primaryDarkColor: #df2500;
 $secondaryColor: #007bff;
+$secondaryLightColor: #ebf5ff;
 $secondaryDarkColor: #0067d4;
 $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 $fontFamilyText: "Open Sans", sans-serif; 
@@ -415,10 +417,11 @@ html, body {
 }
 
 /*Nav Menus*/
-.site-header,
+.site-header, 
 header {
   width: 100%;
   font-size: 15px;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.05);
   &.sticky,
   &.fixed {
     position: fixed;

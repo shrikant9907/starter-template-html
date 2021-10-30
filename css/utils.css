@@ -1,7 +1,7 @@
 /*      Created By      : Shrikant Yadav                                                    */
 /*      Contact         : shrikant9907@gmail.com                                            */
 /*      Full Stack Web Developer                                                            */
-/*      Version         : 3.0                                                               */
+/*      Version         : 4.0                                                               */
 * {
   outline: none !important;
 }
@@ -8041,6 +8041,14 @@ p {
 }
 
 /*Background Colors*/
+.bg_light_primary {
+  background-color: #ffeeee !important;
+}
+
+.bg_light_secondary {
+  background-color: #ebf5ff !important;
+}
+
 .bg_grey {
   background-color: #F1F1F1 !important;
 }
