@@ -3,6 +3,10 @@
 /*      Contact         : shrikant9907@gmail.com                                            */
 /*      Full Stack Web Developer                                                            */
 /*      Version         : 4.0                                                               */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   -moz-transition: unset !important;
   -o-transition: unset !important;
@@ -414,6 +418,8 @@ header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
 }
 @media all and (max-width: 991px) {
   .site-header .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link,
@@ -543,7 +549,6 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -2784,6 +2789,35 @@ button.btn_small,
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+/* Custom Pagination for WP */
+.pagination-ui ul {
+  padding-left: 0;
+}
+.pagination-ui ul li {
+  background-color: #ffffff;
+}
+.pagination-ui ul li:first-child, .pagination-ui ul li:last-child {
+  min-width: 60px;
+}
+.pagination-ui ul li a.prev,
+.pagination-ui ul li a.next {
+  position: relative;
+  padding: 0 10px;
+}
+.pagination-ui ul li span.current {
+  background-color: #f34423;
+  border-color: #f34423;
+  color: #ffffff !important;
+  color: inherit;
+  text-decoration: none;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /*Responsive*/
