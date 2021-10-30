@@ -34,3 +34,9 @@ if (jQuery(window).width() > 991) {
     lastScrollTop = currentScrollTop;
   });
 }
+
+// Tool Tip Bootstrap
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
