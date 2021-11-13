@@ -194,7 +194,7 @@ jQuery(function(){
   jQuery('.sidebar .sbbody ul li a').first().click();
 });
 
-// copy
+// Copy
 function loadCopyScript() {
   jQuery('.copycode').on('click', function(){
     var copybtn = jQuery(this);
@@ -210,7 +210,7 @@ function loadCopyScript() {
 }
      
 function copyToClipboard(element) {
-  var $temp = jQuery("<textarea class='visibility-hidden' ></textarea>");
+  var $temp = jQuery("<textarea class='visibility-hidden'></textarea>");
   jQuery("body").append($temp);
   $temp.val(jQuery(element).html()).select();
   document.execCommand("copy");
