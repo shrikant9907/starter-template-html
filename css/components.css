@@ -305,6 +305,7 @@ pre.mycode {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-radius: 0;
 }
 
 .sidebar .sbbody ul li .btn-toggle:focus {
@@ -317,7 +318,6 @@ pre.mycode {
 
 .sidebar .sbbody ul li .btn-toggle:not(.collapsed) {
   background-color: rgba(0, 0, 0, 0.04);
-  color: inherit;
 }
 
 .sidebar .sbbody ul li .btn-toggle:hover {
@@ -3741,6 +3741,24 @@ button.btn_small,
   max-height: 100vh;
   overflow-y: auto;
   position: relative;
+}
+
+.codebefore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copycode {
+  background-color: #ebf5ff;
+  padding: 2px 5px;
+  color: #007bff;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 
 .wp-block-tag-cloud a {

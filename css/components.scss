@@ -308,7 +308,7 @@ pre {
             color: inherit;
           }
           &:not(.collapsed) {
-            @extend &:focus;
+            // @extend &::focus;
             background-color: rgba(0, 0, 0, 0.04);
           }
           &:hover {
@@ -3289,6 +3289,20 @@ button,
   overflow-y: auto;
   position: relative;
 }
+  
+.codebefore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copycode {
+  background-color: $secondaryLightColor;
+  padding: 2px 5px;
+  color: $secondaryColor;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  display: inline-block;
+}  
 
 // WP Styles
 .wp-block-tag-cloud a {

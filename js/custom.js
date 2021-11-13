@@ -178,3 +178,24 @@ jQuery(window).scroll(function() {
 	    }
 	}  
 }); 
+
+// copy
+jQuery('.copycode').on('click', function(){
+  var copybtn = jQuery(this);
+  var element = copybtn.parent().next();
+  copyToClipboard(element);
+  copybtn.text('Copied');
+  setTimeout(
+    function(){ 
+      copybtn.text('Copy Code'); 
+    }, 5000
+  );
+});
+     
+function copyToClipboard(element) {
+  var $temp = jQuery("<textarea class='visibility-hidden' ></textarea>");
+  jQuery("body").append($temp);
+  $temp.val(jQuery(element).html()).select();
+  document.execCommand("copy");
+  $temp.remove();
+ }
