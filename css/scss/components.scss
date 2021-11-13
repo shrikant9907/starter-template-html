@@ -192,6 +192,11 @@ pre {
   transition:unset !important;
   display: none;
 
+  &.sfixed_left {
+    width: 275px;
+    background-color: #dfdbdb;
+  }
+
   &.nooverlay {
       width: 275px;
       background: transparent;
@@ -2358,7 +2363,7 @@ button,
             background: rgba(255,255,255,0.1);
 
             &.scroller {
-                background: rgba(255,255,255);
+                background: rgb(255,255,255);
             }
         }
     }

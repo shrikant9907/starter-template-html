@@ -58,7 +58,6 @@ p {
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -66,12 +65,19 @@ p {
 
 .flex,
 .d_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .flex.center_center,
 .d_flex.center_center {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .d_i_block {
@@ -88,6 +94,8 @@ p {
 }
 
 .d_flexi {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -6812,57 +6820,68 @@ p {
 /* Hover Scale */
 .hover_scale_10:hover,
 .hs_10:hover {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .hover_scale_11:hover,
 .hs_11:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hover_scale_12:hover,
 .hs_12:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .hover_scale_13:hover,
 .hs_13:hover {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .hover_scale_14:hover,
 .hs_14:hover {
-  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .hover_scale_15:hover,
 .hs_15:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .hover_scale_16:hover,
 .hs_16:hover {
-  transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 .hover_scale_17:hover,
 .hs_17:hover {
-  transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 .hover_scale_18:hover,
 .hs_18:hover {
-  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .hover_scale_19:hover,
 .hs_19:hover {
-  transform: scale(1.9);
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
 }
 
 .hover_scale_20:hover,
 .hs_20:hover {
-  transform: scale(2);
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 /* Rounded */
@@ -7037,505 +7056,316 @@ p {
 /* Transition */
 .trans_0 {
   -webkit-transition: all 0s ease;
-  -moz-transition: all 0s ease;
-  -ms-transition: all 0s ease;
-  -o-transition: all 0s ease;
   transition: all 0s ease;
 }
 
 .trans_0_eio {
   -webkit-transition: all 0s ease-in-out;
-  -moz-transition: all 0s ease-in-out;
-  -ms-transition: all 0s ease-in-out;
-  -o-transition: all 0s ease-in-out;
   transition: all 0s ease-in-out;
 }
 
 .trans_0_eo {
   -webkit-transition: all 0s ease-out;
-  -moz-transition: all 0s ease-out;
-  -ms-transition: all 0s ease-out;
-  -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
 
 .trans_1 {
   -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
 .trans_1_eio {
   -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
 .trans_1_eo {
   -webkit-transition: all 0.1s ease-out;
-  -moz-transition: all 0.1s ease-out;
-  -ms-transition: all 0.1s ease-out;
-  -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 
 .trans_2 {
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 .trans_2_eio {
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .trans_2_eo {
   -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
 .trans_3 {
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .trans_3_eio {
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .trans_3_eo {
   -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 .trans_4 {
   -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .trans_4_eio {
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .trans_4_eo {
   -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 
 .trans_5 {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .trans_5_eio {
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .trans_5_eo {
   -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .trans_6 {
   -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
 .trans_6_eio {
   -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  -ms-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
 .trans_6_eo {
   -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
 }
 
 .trans_7 {
   -webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -ms-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
 .trans_7_eio {
   -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
 
 .trans_7_eo {
   -webkit-transition: all 0.7s ease-out;
-  -moz-transition: all 0.7s ease-out;
-  -ms-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
 }
 
 .trans_8 {
   -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }
 
 .trans_8_eio {
   -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
 
 .trans_8_eo {
   -webkit-transition: all 0.8s ease-out;
-  -moz-transition: all 0.8s ease-out;
-  -ms-transition: all 0.8s ease-out;
-  -o-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
 
 .trans_9 {
   -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
 
 .trans_9_eio {
   -webkit-transition: all 0.9s ease-in-out;
-  -moz-transition: all 0.9s ease-in-out;
-  -ms-transition: all 0.9s ease-in-out;
-  -o-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
 }
 
 .trans_9_eo {
   -webkit-transition: all 0.9s ease-out;
-  -moz-transition: all 0.9s ease-out;
-  -ms-transition: all 0.9s ease-out;
-  -o-transition: all 0.9s ease-out;
   transition: all 0.9s ease-out;
 }
 
 .trans_10 {
   -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 .trans_10_eio {
   -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
 .trans_10_eo {
   -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
 
 .trans_11 {
   -webkit-transition: all 1.1s ease;
-  -moz-transition: all 1.1s ease;
-  -ms-transition: all 1.1s ease;
-  -o-transition: all 1.1s ease;
   transition: all 1.1s ease;
 }
 
 .trans_11_eio {
   -webkit-transition: all 1.1s ease-in-out;
-  -moz-transition: all 1.1s ease-in-out;
-  -ms-transition: all 1.1s ease-in-out;
-  -o-transition: all 1.1s ease-in-out;
   transition: all 1.1s ease-in-out;
 }
 
 .trans_11_eo {
   -webkit-transition: all 1.1s ease-out;
-  -moz-transition: all 1.1s ease-out;
-  -ms-transition: all 1.1s ease-out;
-  -o-transition: all 1.1s ease-out;
   transition: all 1.1s ease-out;
 }
 
 .trans_12 {
   -webkit-transition: all 1.2s ease;
-  -moz-transition: all 1.2s ease;
-  -ms-transition: all 1.2s ease;
-  -o-transition: all 1.2s ease;
   transition: all 1.2s ease;
 }
 
 .trans_12_eio {
   -webkit-transition: all 1.2s ease-in-out;
-  -moz-transition: all 1.2s ease-in-out;
-  -ms-transition: all 1.2s ease-in-out;
-  -o-transition: all 1.2s ease-in-out;
   transition: all 1.2s ease-in-out;
 }
 
 .trans_12_eo {
   -webkit-transition: all 1.2s ease-out;
-  -moz-transition: all 1.2s ease-out;
-  -ms-transition: all 1.2s ease-out;
-  -o-transition: all 1.2s ease-out;
   transition: all 1.2s ease-out;
 }
 
 .trans_13 {
   -webkit-transition: all 1.3s ease;
-  -moz-transition: all 1.3s ease;
-  -ms-transition: all 1.3s ease;
-  -o-transition: all 1.3s ease;
   transition: all 1.3s ease;
 }
 
 .trans_13_eio {
   -webkit-transition: all 1.3s ease-in-out;
-  -moz-transition: all 1.3s ease-in-out;
-  -ms-transition: all 1.3s ease-in-out;
-  -o-transition: all 1.3s ease-in-out;
   transition: all 1.3s ease-in-out;
 }
 
 .trans_13_eo {
   -webkit-transition: all 1.3s ease-out;
-  -moz-transition: all 1.3s ease-out;
-  -ms-transition: all 1.3s ease-out;
-  -o-transition: all 1.3s ease-out;
   transition: all 1.3s ease-out;
 }
 
 .trans_14 {
   -webkit-transition: all 1.4s ease;
-  -moz-transition: all 1.4s ease;
-  -ms-transition: all 1.4s ease;
-  -o-transition: all 1.4s ease;
   transition: all 1.4s ease;
 }
 
 .trans_14_eio {
   -webkit-transition: all 1.4s ease-in-out;
-  -moz-transition: all 1.4s ease-in-out;
-  -ms-transition: all 1.4s ease-in-out;
-  -o-transition: all 1.4s ease-in-out;
   transition: all 1.4s ease-in-out;
 }
 
 .trans_14_eo {
   -webkit-transition: all 1.4s ease-out;
-  -moz-transition: all 1.4s ease-out;
-  -ms-transition: all 1.4s ease-out;
-  -o-transition: all 1.4s ease-out;
   transition: all 1.4s ease-out;
 }
 
 .trans_15 {
   -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  -ms-transition: all 1.5s ease;
-  -o-transition: all 1.5s ease;
   transition: all 1.5s ease;
 }
 
 .trans_15_eio {
   -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -ms-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
 }
 
 .trans_15_eo {
   -webkit-transition: all 1.5s ease-out;
-  -moz-transition: all 1.5s ease-out;
-  -ms-transition: all 1.5s ease-out;
-  -o-transition: all 1.5s ease-out;
   transition: all 1.5s ease-out;
 }
 
 .trans_16 {
   -webkit-transition: all 1.6s ease;
-  -moz-transition: all 1.6s ease;
-  -ms-transition: all 1.6s ease;
-  -o-transition: all 1.6s ease;
   transition: all 1.6s ease;
 }
 
 .trans_16_eio {
   -webkit-transition: all 1.6s ease-in-out;
-  -moz-transition: all 1.6s ease-in-out;
-  -ms-transition: all 1.6s ease-in-out;
-  -o-transition: all 1.6s ease-in-out;
   transition: all 1.6s ease-in-out;
 }
 
 .trans_16_eo {
   -webkit-transition: all 1.6s ease-out;
-  -moz-transition: all 1.6s ease-out;
-  -ms-transition: all 1.6s ease-out;
-  -o-transition: all 1.6s ease-out;
   transition: all 1.6s ease-out;
 }
 
 .trans_17 {
   -webkit-transition: all 1.7s ease;
-  -moz-transition: all 1.7s ease;
-  -ms-transition: all 1.7s ease;
-  -o-transition: all 1.7s ease;
   transition: all 1.7s ease;
 }
 
 .trans_17_eio {
   -webkit-transition: all 1.7s ease-in-out;
-  -moz-transition: all 1.7s ease-in-out;
-  -ms-transition: all 1.7s ease-in-out;
-  -o-transition: all 1.7s ease-in-out;
   transition: all 1.7s ease-in-out;
 }
 
 .trans_17_eo {
   -webkit-transition: all 1.7s ease-out;
-  -moz-transition: all 1.7s ease-out;
-  -ms-transition: all 1.7s ease-out;
-  -o-transition: all 1.7s ease-out;
   transition: all 1.7s ease-out;
 }
 
 .trans_18 {
   -webkit-transition: all 1.8s ease;
-  -moz-transition: all 1.8s ease;
-  -ms-transition: all 1.8s ease;
-  -o-transition: all 1.8s ease;
   transition: all 1.8s ease;
 }
 
 .trans_18_eio {
   -webkit-transition: all 1.8s ease-in-out;
-  -moz-transition: all 1.8s ease-in-out;
-  -ms-transition: all 1.8s ease-in-out;
-  -o-transition: all 1.8s ease-in-out;
   transition: all 1.8s ease-in-out;
 }
 
 .trans_18_eo {
   -webkit-transition: all 1.8s ease-out;
-  -moz-transition: all 1.8s ease-out;
-  -ms-transition: all 1.8s ease-out;
-  -o-transition: all 1.8s ease-out;
   transition: all 1.8s ease-out;
 }
 
 .trans_19 {
   -webkit-transition: all 1.9s ease;
-  -moz-transition: all 1.9s ease;
-  -ms-transition: all 1.9s ease;
-  -o-transition: all 1.9s ease;
   transition: all 1.9s ease;
 }
 
 .trans_19_eio {
   -webkit-transition: all 1.9s ease-in-out;
-  -moz-transition: all 1.9s ease-in-out;
-  -ms-transition: all 1.9s ease-in-out;
-  -o-transition: all 1.9s ease-in-out;
   transition: all 1.9s ease-in-out;
 }
 
 .trans_19_eo {
   -webkit-transition: all 1.9s ease-out;
-  -moz-transition: all 1.9s ease-out;
-  -ms-transition: all 1.9s ease-out;
-  -o-transition: all 1.9s ease-out;
   transition: all 1.9s ease-out;
 }
 
 .trans_20 {
   -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  -o-transition: all 2s ease;
   transition: all 2s ease;
 }
 
 .trans_20_eio {
   -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
 .trans_20_eo {
   -webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  -ms-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
   transition: all 2s ease-out;
 }
 
@@ -7680,24 +7510,29 @@ p {
 /*Box Shadow*/
 .box_shw,
 .box_shw1 {
-  box-shadow: 0px -1px 5px 0px #444444 !important;
+  -webkit-box-shadow: 0px -1px 5px 0px #444444 !important;
+          box-shadow: 0px -1px 5px 0px #444444 !important;
 }
 
 .box_shw2 {
-  box-shadow: rgba(0, 0, 0, 0.12) 0 0 25px !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 0 25px !important;
+          box-shadow: rgba(0, 0, 0, 0.12) 0 0 25px !important;
 }
 
 .box_shw3 {
-  box-shadow: 2px 2px 9px 5px #f5f5f5 !important;
+  -webkit-box-shadow: 2px 2px 9px 5px #f5f5f5 !important;
+          box-shadow: 2px 2px 9px 5px #f5f5f5 !important;
 }
 
 .section_shw {
-  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2) !important;
+  -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 /*Button Shadow*/
 .btn_shw {
-  box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.7) !important;
+  -webkit-box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.7) !important;
+          box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 0.7) !important;
 }
 
 /*Over Flow*/
@@ -8350,5 +8185,4 @@ p {
 .text_black {
   color: #000000 !important;
 }
-
 /*# sourceMappingURL=utils.css.map */
