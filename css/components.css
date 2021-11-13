@@ -183,17 +183,12 @@ pre.mycode {
   display: none;
 }
 
-.sidebar.sfixed_left {
-  width: 275px;
-  background-color: #dfdbdb;
-}
-
 .sidebar.nooverlay {
   width: 275px;
   background: transparent;
 }
 
-.sidebar .slisting {
+.sidebar .slisting, .sidebar .sbbody {
   width: 0px;
   display: block !important;
   position: fixed;
@@ -208,13 +203,13 @@ pre.mycode {
   overflow: hidden;
 }
 
-.sidebar .slisting ul {
+.sidebar .slisting ul, .sidebar .sbbody ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.sidebar .slisting ul li a {
+.sidebar .slisting ul li a, .sidebar .sbbody ul li a {
   color: inherit;
   position: relative;
   width: 275px;
@@ -223,9 +218,11 @@ pre.mycode {
   text-decoration: none;
 }
 
-.sidebar .slisting ul li a .icon,
+.sidebar .slisting ul li a .icon, .sidebar .sbbody ul li a .icon,
 .sidebar .slisting ul li a svg,
-.sidebar .slisting ul li a i {
+.sidebar .sbbody ul li a svg,
+.sidebar .slisting ul li a i,
+.sidebar .sbbody ul li a i {
   position: absolute;
   width: 50px;
   height: 100%;
@@ -242,11 +239,11 @@ pre.mycode {
   top: 0;
 }
 
-.sidebar .slisting ul li a.active, .sidebar .slisting ul li a:hover {
+.sidebar .slisting ul li a.active, .sidebar .sbbody ul li a.active, .sidebar .slisting ul li a:hover, .sidebar .sbbody ul li a:hover {
   background: rgba(0, 0, 0, 0.05);
 }
 
-.sidebar .slisting.slistingsm li a {
+.sidebar .slisting.slistingsm li a, .sidebar .slistingsm.sbbody li a {
   padding: 10px 10px 10px 50px;
 }
 
@@ -254,17 +251,66 @@ pre.mycode {
   display: block;
 }
 
-.sidebar.active .slisting {
+.sidebar.active .slisting, .sidebar.active .sbbody {
   width: 275px;
 }
 
-.sidebar.sright .slisting {
+.sidebar.sright .slisting, .sidebar.sright .sbbody {
   left: unset;
   right: 0px;
 }
 
 .sidebar.inverse {
   color: #ffffff;
+}
+
+.sidebar .sbheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: inherit;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.sidebar .sbheader .shlink {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.sidebar .sbbody {
+  position: static;
+  padding: 0;
+  height: auto;
+}
+
+.sidebar .sbbody ul li .btn-toggle {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.sidebar .sbbody ul li a {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.sidebar .sbbody ul li .collapse.collapsing, .sidebar .sbbody ul li .collapse.show {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.sidebar .sbbody ul li .collapse.collapsing a, .sidebar .sbbody ul li .collapse.show a {
+  padding-left: 30px;
 }
 
 .site_logo {
