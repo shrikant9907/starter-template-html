@@ -300,7 +300,15 @@ pre {
           font-size: inherit;
           display: flex;
           justify-content: space-between;
+          border-radius: 0;
+          &:focus {
+            box-shadow: unset !important;
+            outline: unset !important;
+            border: unset !important;
+            color: inherit;
+          }
           &:not(.collapsed) {
+            @extend &:focus;
             background-color: rgba(0, 0, 0, 0.04);
           }
           &:hover {
@@ -316,6 +324,7 @@ pre {
           background-color: rgba(0, 0, 0, 0.04);
           a {
             padding-left: 30px;
+            &.active,
             &:hover {
               color: #000000;
               background-color: $primaryLightColor;
@@ -324,6 +333,10 @@ pre {
         }
       }
     }
+  }
+
+  .sbfooter {
+   @extend .sbheader;
   }
 }
 
@@ -3268,6 +3281,13 @@ button,
             margin-right: 5px;
         }
     }
+}
+
+// Doc Content 
+.doc-content {
+  max-height: 100vh;
+  overflow-y: auto;
+  position: relative;
 }
 
 // WP Styles

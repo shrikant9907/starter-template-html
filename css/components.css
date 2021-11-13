@@ -264,7 +264,7 @@ pre.mycode {
   color: #ffffff;
 }
 
-.sidebar .sbheader {
+.sidebar .sbheader, .sidebar .sbfooter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +278,7 @@ pre.mycode {
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.sidebar .sbheader .shlink {
+.sidebar .sbheader .shlink, .sidebar .sbfooter .shlink {
   color: inherit;
   text-decoration: none;
   font-size: 20px;
@@ -307,8 +307,17 @@ pre.mycode {
           justify-content: space-between;
 }
 
+.sidebar .sbbody ul li .btn-toggle:focus {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  outline: unset !important;
+  border: unset !important;
+  color: inherit;
+}
+
 .sidebar .sbbody ul li .btn-toggle:not(.collapsed) {
   background-color: rgba(0, 0, 0, 0.04);
+  color: inherit;
 }
 
 .sidebar .sbbody ul li .btn-toggle:hover {
@@ -330,7 +339,8 @@ pre.mycode {
   padding-left: 30px;
 }
 
-.sidebar .sbbody ul li .collapsing a:hover,
+.sidebar .sbbody ul li .collapsing a.active, .sidebar .sbbody ul li .collapsing a:hover,
+.sidebar .sbbody ul li .collapse a.active,
 .sidebar .sbbody ul li .collapse a:hover {
   color: #000000;
   background-color: #ffeeee;
@@ -3725,6 +3735,12 @@ button.btn_small,
 
 .repeaterContainer .repeaterActions .btn:first-child {
   margin-right: 5px;
+}
+
+.doc-content {
+  max-height: 100vh;
+  overflow-y: auto;
+  position: relative;
 }
 
 .wp-block-tag-cloud a {

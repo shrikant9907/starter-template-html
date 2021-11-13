@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Start Template</title>
+  <title>Sidebar</title>
 
   <!-- Required meta tags -->
   <meta charset="UTF-8">
@@ -145,10 +145,6 @@
     </div>
   </div>
 
-  <div class="doc-content">
-    Content will load here
-  </div>
-
  	<a href="#" class="gotoparrow"><i class="fas fa-arrow-up"></i></a>
 	<!-- Script -->
 	<script src="assets/jquery/jquery.min.js" type="text/javascript"></script> 
@@ -156,16 +152,5 @@
 	<script src="assets/smooth-scroll/jquery.smooth-scroll.min.js" type="text/javascript"></script>
 	<!-- <script src="js/scripts.js" type="text/javascript"></script> -->
 
-  <script>
-    jQuery(function(){
-      jQuery('.sidebar .sbbody ul li a').click(function(){
-          jQuery('.doc-content').load(jQuery(this).attr('href'));
-          jQuery('.sidebar .sbbody ul li a').removeClass('active');
-          jQuery(this).addClass('active');
-          return false;
-      });
-      jQuery('.sidebar .sbbody ul li a').first().click();
-    });
-  </script>
 </body>
 </html>  
