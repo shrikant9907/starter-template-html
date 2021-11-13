@@ -178,6 +178,14 @@ pre {
   padding-right: 0;
   overflow: hidden;
 }
+
+.bodysidebar {
+  padding-left: 270px;
+  .nopaddingleft {
+    padding-left: 0;
+  }
+}
+
 .sidebar {
 
   background: rgba(0,0,0,0.5);
@@ -3302,6 +3310,7 @@ button,
   border-radius: 2px;
   margin-bottom: 5px;
   display: inline-block;
+  cursor: pointer;
 }  
 
 // WP Styles

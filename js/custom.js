@@ -179,18 +179,35 @@ jQuery(window).scroll(function() {
 	}  
 }); 
 
-// copy
-jQuery('.copycode').on('click', function(){
-  var copybtn = jQuery(this);
-  var element = copybtn.parent().next();
-  copyToClipboard(element);
-  copybtn.text('Copied');
-  setTimeout(
-    function(){ 
-      copybtn.text('Copy Code'); 
-    }, 5000
-  );
+jQuery(function(){
+  jQuery('.sidebar .sbbody ul li a').click(function(){
+      jQuery('.doc-content').load(jQuery(this).attr('href'));
+      jQuery('.sidebar .sbbody ul li a').removeClass('active');
+      jQuery(this).addClass('active');
+      setTimeout(
+        function(){ 
+          loadCopyScript();
+        }, 1000
+      );
+      return false;
+  });
+  jQuery('.sidebar .sbbody ul li a').first().click();
 });
+
+// copy
+function loadCopyScript() {
+  jQuery('.copycode').on('click', function(){
+    var copybtn = jQuery(this);
+    var element = copybtn.parent().next();
+    copyToClipboard(element);
+    copybtn.text('Copied');
+    setTimeout(
+      function(){ 
+        copybtn.text('Copy Code'); 
+      }, 5000
+    );
+  });
+}
      
 function copyToClipboard(element) {
   var $temp = jQuery("<textarea class='visibility-hidden' ></textarea>");

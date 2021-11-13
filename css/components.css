@@ -168,6 +168,14 @@ pre.mycode {
   overflow: hidden;
 }
 
+.bodysidebar {
+  padding-left: 270px;
+}
+
+.bodysidebar .nopaddingleft {
+  padding-left: 0;
+}
+
 .sidebar {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -3759,6 +3767,7 @@ button.btn_small,
   border-radius: 2px;
   margin-bottom: 5px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .wp-block-tag-cloud a {
