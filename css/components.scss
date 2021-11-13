@@ -298,6 +298,8 @@ pre {
           text-align: left;
           font-weight: bold;
           font-size: inherit;
+          display: flex;
+          justify-content: space-between;
           &:not(.collapsed) {
             background-color: rgba(0, 0, 0, 0.04);
           }
