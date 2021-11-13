@@ -290,7 +290,8 @@ pre.mycode {
 .sidebar .sbbody {
   position: static;
   padding: 0;
-  height: auto;
+  height: calc( 100vh - 50px);
+  overflow-y: auto;
 }
 
 .sidebar .sbbody ul li .btn-toggle {
@@ -300,17 +301,33 @@ pre.mycode {
   font-size: inherit;
 }
 
+.sidebar .sbbody ul li .btn-toggle:not(.collapsed) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.sidebar .sbbody ul li .btn-toggle:hover {
+  background-color: #ffeeee;
+}
+
 .sidebar .sbbody ul li a {
   padding: 10px 15px;
   font-size: 14px;
 }
 
-.sidebar .sbbody ul li .collapse.collapsing, .sidebar .sbbody ul li .collapse.show {
+.sidebar .sbbody ul li .collapsing,
+.sidebar .sbbody ul li .collapse {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.sidebar .sbbody ul li .collapse.collapsing a, .sidebar .sbbody ul li .collapse.show a {
+.sidebar .sbbody ul li .collapsing a,
+.sidebar .sbbody ul li .collapse a {
   padding-left: 30px;
+}
+
+.sidebar .sbbody ul li .collapsing a:hover,
+.sidebar .sbbody ul li .collapse a:hover {
+  color: #000000;
+  background-color: #ffeeee;
 }
 
 .site_logo {

@@ -289,7 +289,8 @@ pre {
     @extend .slisting;
     position: static;
     padding: 0;
-    height: auto;
+    height: calc( 100vh - 50px);
+    overflow-y: auto;
     ul { 
       li {
         .btn-toggle {
@@ -297,17 +298,25 @@ pre {
           text-align: left;
           font-weight: bold;
           font-size: inherit;
+          &:not(.collapsed) {
+            background-color: rgba(0, 0, 0, 0.04);
+          }
+          &:hover {
+            background-color: $primaryLightColor;
+          }
         }
         a {
           padding: 10px 15px;
           font-size: 14px;
         }
+        .collapsing,
         .collapse {
-          &.collapsing,
-          &.show {
-            background-color: rgba(0, 0, 0, 0.04);
-            a {
-              padding-left: 30px;
+          background-color: rgba(0, 0, 0, 0.04);
+          a {
+            padding-left: 30px;
+            &:hover {
+              color: #000000;
+              background-color: $primaryLightColor;
             }
           }
         }
