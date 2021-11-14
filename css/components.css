@@ -798,8 +798,9 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   display: block;
 }
 
-.banner_section.with_slider .slide-caption,
-.banner-section.with_slider .slide-caption {
+.banner_section.with_slider .slide-caption, .banner_section.with_slider .slide-text,
+.banner-section.with_slider .slide-caption,
+.banner-section.with_slider .slide-text {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: unset !important;
@@ -821,6 +822,18 @@ header .full-menu .navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
           align-items: center;
   font-size: 16px;
   z-index: 9;
+}
+
+.banner_section.with_slider .slide-text,
+.banner-section.with_slider .slide-text {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: auto;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .banner_section .main-heading,
@@ -2508,6 +2521,7 @@ button.btn_small,
 
 .slicksliderui {
   max-height: 500px;
+  position: relative;
 }
 
 .slicksliderui .slick-dots li:only-child {
@@ -2528,7 +2542,7 @@ button.btn_small,
 
 .slicksliderui .slider-item .overlay, .slicksliderui .slider-item::before {
   background: rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -2561,6 +2575,7 @@ button.btn_small,
   height: 45px;
   border-radius: 100%;
   display: inline-block;
+  min-width: 0;
 }
 
 .slicksliderui .slick-arrow.slick-prev:before, .slicksliderui .slick-arrow.slick-next:before {

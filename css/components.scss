@@ -734,6 +734,18 @@ header {
             font-size: 16px;
             z-index: 9;
         }
+
+        .slide-text {
+          @extend .slide-caption;
+          background-color: rgba(0, 0, 0, 0.2);
+          height: auto;
+          max-width: 1200px;
+          width: 90%;
+          margin: 0 auto;
+          font-size: 40px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
     }
 
     .main-heading {
@@ -2152,6 +2164,7 @@ button,
 
 .slicksliderui {
     max-height: 500px;
+    position: relative;
 
     .slick-dots li:only-child {
         display: none;
@@ -2167,7 +2180,7 @@ button,
         .overlay,
         &::before {
             background: rgba(0, 0, 0, 0.1);
-            position: fixed;
+            position: absolute;
             top: 0px;
             left: 0px;
             right: 0px;
@@ -2201,8 +2214,9 @@ button,
             color: #ffffff;
             width: 45px;
             height: 45px;
-            border-radius: 100%;
+            border-radius: 100%; 
             display: inline-block;        
+            min-width: 0;
         }
 
         &.slick-prev:before,
