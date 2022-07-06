@@ -36,14 +36,14 @@ jQuery('document').ready(function(){
 	});
 	
 	// Active Sidebar
-	jQuery('.sidebar.active').click(function(e){
-		e.preventDefault();
+	// jQuery('.sidebar.active').click(function(e){
+	// 	e.preventDefault();
 	
-		if (e.target !== this)
-    		return;
+	// 	if (e.target !== this)
+  //   		return;
 	
-		jQuery('.hamburger').click();
-	});
+	// 	jQuery('.hamburger').click();
+	// });
 
 	// Load HTML 
 	jQuery('.actionloadhtml li a').click(function(){
@@ -152,6 +152,7 @@ jQuery('.start_rating .far').click(function(){
   jQuery(this).addClass('selected').nextAll().removeClass('selected');
 });
 
+loadCopyScript();
 
 });
 
@@ -179,26 +180,7 @@ jQuery(window).scroll(function() {
 	}  
 }); 
 
-jQuery(function(){
-  jQuery('.sidebar .sbbody ul li a').on('click', function(){
-      var load = jQuery(this).data('noload');
-      if (!load) {
-        jQuery('.doc-content').load(jQuery(this).attr('href'));
-        jQuery('.sidebar .sbbody ul li a').removeClass('active');
-        jQuery(this).addClass('active');
-        setTimeout(
-          function(){ 
-            loadCopyScript();
-          }, 1000
-        );
-        return false;
-      } else {
-        jQuery('.doc-content').text('Opening in new tab');
-        window.open(jQuery(this).attr('href'));
-      }
-  });
-  jQuery('.sidebar .sbbody ul li a').first().trigger();
-});
+ 
 
 // Copy
 function loadCopyScript() {
